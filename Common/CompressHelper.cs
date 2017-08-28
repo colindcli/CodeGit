@@ -1,3 +1,6 @@
+using System.IO;
+using System.IO.Compression;
+
 /// <summary>
 /// 压缩
 /// </summary>
