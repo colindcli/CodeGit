@@ -1,3 +1,7 @@
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
+
 /// <summary>
 /// 对象转字节组
 /// </summary>
