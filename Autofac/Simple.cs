@@ -10,6 +10,12 @@ namespace ConsoleApp
         private static void Main(string[] args)
         {
             var builder = new ContainerBuilder();
+
+            //builder.Register(c => new TaskController(c.Resolve<ITaskRepository>()));
+            //builder.RegisterType<TaskController>();
+            //builder.RegisterInstance(new TaskController());
+            //builder.RegisterAssemblyTypes(controllerAssembly);
+
             builder.RegisterType<MyComponent>();
             builder.RegisterType<MyComponent>().As<IService>();
             //对每一个依赖或每一次调用创建一个新的唯一的实例。这也是默认的创建实例的方式。
