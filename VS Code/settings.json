@@ -1,0 +1,56 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+    "http.proxy": "http://dev-proxy.oa.com:8080",
+    // 配置 glob 模式以排除文件和文件夹。
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        ".vscode": true
+    },
+    "editor.mouseWheelScrollSensitivity": 13,
+    
+    "path-intellisense.extensionOnImport": true,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "eslint.validate": [{
+            "language": "javascript",
+            "autoFix": true
+        },
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "html",
+            "autoFix": true
+        }
+    ],
+    "beautify.config": {
+        "space_after_anon_function": true,
+        "space_before_conditional": true,
+        "end_with_newline": true,
+        "brace_style": "collapse,preserve-inline",
+        "break_chained_methods": false
+    },
+    // "editor.formatOnPaste": true,
+    "vsicons.projectDetection.autoReload": true,
+    "editor.wordWrap": "on",
+    "copy-syntax.defaults.lang": "js",
+    "copy-syntax.showMessage": false,
+    "copy-syntax.formatters.rtf": {
+        "style": "default",
+        "fontsize": 24,
+        "fontface": "Monaco"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.welcome.enabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "typescript.check.npmIsInstalled": false,
+    "files.autoSave": "off",
+    "guides.enabled": false
+}
