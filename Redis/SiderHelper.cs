@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using Sider;
 using System;
 
@@ -5,21 +6,6 @@ public class SiderHelper
 {
     private const string Host = "127.0.0.1";
     private const int Port = 6379;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <typeparam name="T2"></typeparam>
-    /// <param name="func"></param>
-    /// <returns></returns>
-    private static T2 Db<T, T2>(Func<RedisClient<T>, T2> func)
-    {
-        var client = new RedisClient<T>(Host, Port);
-        var b = func(client);
-        client.Dispose();
-        return b;
-    }
 
     /// <summary>
     /// 
@@ -34,6 +20,16 @@ public class SiderHelper
         return b;
     }
 
+    private static string ToJson(object value)
+    {
+        return JsonConvert.SerializeObject(value);
+    }
+
+    private static T FromJson<T>(string value)
+    {
+        return JsonConvert.DeserializeObject<T>(value);
+    }
+
     /// <summary>
     /// 写入键值
     /// </summary>
@@ -42,11 +38,11 @@ public class SiderHelper
     /// <param name="value"></param>
     /// <param name="expireTime"></param>
     /// <returns></returns>
-    public static bool Set<T>(string key, T value, DateTime? expireTime = null)
+    public static bool Set(string key, object value, DateTime? expireTime = null)
     {
-        return Db<T, bool>(p =>
+        return Db(p =>
         {
-            var b = p.Set(key, value);
+            var b = p.Set(key, ToJson(value));
             if (!b || !expireTime.HasValue) return b;
             var dt = Convert.ToDateTime(expireTime.Value.ToString("yyyy-MM-dd HH:mm:ss")).ToUniversalTime();
             var s = p.ExpireAt(key, dt);
@@ -62,9 +58,13 @@ public class SiderHelper
     /// <typeparam name="T"></typeparam>
     /// <param name="key"></param>
     /// <returns></returns>
-    public static T Get<T>(string key)
+    public static T Get<T>(string key) where T : class
     {
-        return Db<T, T>(p => p.Get(key));
+        return Db(p =>
+        {
+            var s = p.Get(key);
+            return !string.IsNullOrWhiteSpace(s) ? FromJson<T>(s) : null;
+        });
     }
 
     /// <summary>
