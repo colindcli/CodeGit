@@ -32,8 +32,7 @@ public class QuartzHelper
 
             foreach (var jobList in jobLists)
             {
-
-                var job = JobBuilder.Create(jobList.JobType).WithIdentity(jobList.Name, jobList.Group).Build();
+                var job = JobBuilder.Create(jobList.JobType.GetType()).WithIdentity(jobList.Name, jobList.Group).Build();
                 var trigger = new Quartz.Impl.Triggers.CronTriggerImpl(jobList.Name, jobList.Group, jobList.CronExpression);
                 await scheduler.ScheduleJob(job, trigger);
             }
@@ -55,7 +54,7 @@ public class QuartzHelper
         /// <summary>
         /// 作业类(继承IJob)
         /// </summary>
-        public Type JobType { get; set; }
+        public IJob JobType { get; set; }
     }
 
     private class QuartzLogProvider : ILogProvider
