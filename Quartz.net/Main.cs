@@ -18,7 +18,7 @@ class Program
                 Name = "job",
                 Group = "group",
                 CronExpression = "0/5 * * * * ?",
-                JobType = typeof(HelloJob)
+                JobType = new HelloJob()
             }
         };
 
