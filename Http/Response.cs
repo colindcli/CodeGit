@@ -15,7 +15,7 @@ public class Response
         response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
         {
             FileName = fileName,
-            FileNameStar = fileName //文件名乱码问题
+            FileNameStar = fileName //IE、firefox文件名乱码问题
         };
         response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
         return response;
