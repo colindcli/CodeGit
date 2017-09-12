@@ -29,7 +29,7 @@ namespace MyConsole
             var root = "D:\\";
             //root = AppDomain.CurrentDomain.BaseDirectory;
             fileName = root + Guid.NewGuid() + ".pdf";
-            var cmd = $@"{root + "phantomjs\\phantomjs.exe"} {root + "phantomjs\\print.js"}  -url {url} -filename {fileName} -pdfSize A3 -timeout 1000";
+            var cmd = $@"{root + "phantomjs.exe"} {root + "print.js"}  -url {url} -filename {fileName} -pdfSize A3 -timeout 1000";
             return RunCmd("cmd.exe", cmd) && File.Exists(fileName);
         }
 
