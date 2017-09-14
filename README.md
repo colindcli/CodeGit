@@ -8,3 +8,4 @@
 - 文件压缩 [SharpZipLib](https://github.com/colindcli/CodeGit/tree/master/SharpZipLib)
 - API生成调试 [Swagger](https://github.com/colindcli/CodeGit/tree/master/Swagger)
 - 日志 [Log4net](https://github.com/colindcli/CodeGit/tree/master/log4net)
+- 消息列队 EQueue
