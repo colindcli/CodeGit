@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 public class TaskConfig
 {
-    public static void Run()
+    public static void RegisterQuartz()
     {
 
         var jobLists = new List<QuartzHelper.JobList>()
