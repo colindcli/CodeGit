@@ -3,7 +3,7 @@ using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-public class ServiceHelper
+public class HttpClientHelper
 {
     /// <summary>
     /// 
