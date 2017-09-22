@@ -73,15 +73,7 @@ namespace Project.DataAccess
         }
         
         #region SELECT
-        /// <summary>
-        /// 获取记录数
-        /// </summary>
-        /// <returns></returns>
-        public int GetRecord()
-        {
-            return Db(p => p.RecordCount<User>("Where age > @Age", new { Age = 20 }));
-        }
-
+        
         /// <summary>
         /// 获取映射到强类型对象的单个记录
         /// </summary>
@@ -119,6 +111,15 @@ namespace Project.DataAccess
         {
             //sql: Select * from [User] where age = 10 or Name like '%Smith%'
             return Db(p => p.GetList<User>("where age = @Age or Name like @Name", new { Age = 10, Name = "%Smith%" }).ToList());
+        }
+
+        /// <summary>
+        /// 获取记录数
+        /// </summary>
+        /// <returns></returns>
+        public int GetRecord()
+        {
+            return Db(p => p.RecordCount<User>("Where age > @Age", new { Age = 20 }));
         }
 
         /// <summary>
