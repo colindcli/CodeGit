@@ -1,153 +1,167 @@
-/// <summary> 
-/// jpeg图片压缩 
-/// </summary> 
-/// <param name="sFile"></param> 
-/// <param name="outPath"></param> 
-/// <param name="flag"></param> 
-/// <returns></returns> 
-private static bool GetPicThumbnail(string sFile, string outPath, int flag)
+using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Linq;
+
+public class ImageUtil
 {
-
-    var iSource = Image.FromFile(sFile);
-    var tFormat = iSource.RawFormat;
-    var ep = new EncoderParameters();
-    var qy = new long[1];
-    qy[0] = flag;
-    var eParam = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, qy);
-    ep.Param[0] = eParam;
-    try
+    /// <summary>
+    /// 是否图片
+    /// </summary>
+    /// <param name="fileTitle"></param>
+    /// <returns></returns>
+    public static bool IsPic(string fileTitle)
     {
-        var arrayIci = ImageCodecInfo.GetImageEncoders();
-        ImageCodecInfo jpegIcIinfo = null;
-        for (var x = 0; x < arrayIci.Length; x++)
-        {
-            if (!arrayIci[x].FormatDescription.Equals("JPEG")) continue;
+        var exts = ".jpg;.png;.gif;.jpeg;.bmp";
+        var fileType = Path.GetExtension(fileTitle);
+        return !string.IsNullOrWhiteSpace(fileType) && exts.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries).Contains(fileType, StringComparer.OrdinalIgnoreCase);
+    }
 
-            jpegIcIinfo = arrayIci[x];
-            break;
-        }
-        if (jpegIcIinfo != null)
+    /// <summary>
+    /// 生成缩略图
+    /// </summary>
+    /// <param name="oldPath"></param>
+    /// <param name="newPath"></param>
+    /// <param name="intWidth"></param>
+    /// <param name="intHeight"></param>
+    /// <param name="qty">质量</param>
+    /// <returns></returns>
+    public static bool CreateThumbnail(string oldPath, string newPath, int intWidth, int intHeight, int qty = 60)
+    {
+        if (File.Exists(oldPath))
         {
-            iSource.Save(outPath, jpegIcIinfo, ep);
+            var thFileinfo = new FileInfo(oldPath);
+            if (thFileinfo.Length <= 200 * 1024)
+            {
+                var newFile = thFileinfo.CopyTo(newPath, true);
+                return newFile.Exists;
+            }
+        }
+
+        var path = AppDomain.CurrentDomain.BaseDirectory + "Files";
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
+        path += "\\Temp_" + Guid.NewGuid();
+
+        var isExists = GenerateThumbnail(oldPath, path, intWidth, intHeight);
+        var b = CompressionImage(isExists ? path : oldPath, newPath, qty);
+        if (isExists)
+        {
+            File.Delete(path);
         }
         else
         {
-            iSource.Save(outPath, tFormat);
+            LogHelper.Info($"文件不存在:{path}");
         }
-        return true;
+        return b;
     }
-    catch (Exception ex)
+
+    /// <summary>
+    /// 生成缩略图
+    /// </summary>
+    /// <param name="oldPath"></param>
+    /// <param name="newPath"></param>
+    /// <param name="intWidth"></param>
+    /// <param name="intHeight"></param>
+    /// <returns></returns>
+    private static bool GenerateThumbnail(string oldPath, string newPath, int intWidth, int intHeight)
     {
-        LogHelper.Error("jpeg图片压缩", ex);
-        return false;
-    }
-    finally
-    {
-        iSource.Dispose();
-        iSource.Dispose();
-    }
-}
-
-
-
-
-
-/// <summary>
-/// 缩放图片大小
-/// </summary>
-/// <param name="oldPath"></param>
-/// <param name="newPath"></param>
-/// <param name="maxWidth"></param>
-/// <param name="maxSize"></param>
-private static string Resize(string oldPath, string newPath, int maxWidth, int maxSize)
-{
-    var fac = new ImageProcessor.ImageFactory();
-    var img = fac.Load(oldPath);
-    if (img.Image.Width > maxWidth || img.Image.Height > maxWidth)
-    {
-        var w = 0;
-        var h = 0;
-        if (img.Image.Width > img.Image.Height)
+        var b = false;
+        Bitmap objPic = null;
+        Bitmap objNewPic = null;
+        try
         {
-            w = maxWidth;
-            h = img.Image.Height * maxWidth / img.Image.Width;
+            objPic = new Bitmap(oldPath);
+            int width;
+            int height;
+            if ((objPic.Width * 1.0000) / objPic.Height > intWidth * 1.0000 / intHeight)
+            {
+                width = intWidth;
+                height = intWidth * objPic.Height / objPic.Width;
+            }
+            else
+            {
+                height = intHeight;
+                width = intHeight * objPic.Width / objPic.Height;
+            }
+
+            objNewPic = new Bitmap(objPic, width, height);
+            objNewPic.Save(newPath);
+            objPic.Dispose();
+            objNewPic.Dispose();
+
+            if (File.Exists(newPath))
+            {
+                b = true;
+            }
+            else
+            {
+                LogHelper.Info("生成缩略图不存在");
+            }
         }
-        else
+        catch (Exception ex)
         {
-            h = maxWidth;
-            w = img.Image.Width * maxWidth / img.Image.Height;
+            objPic?.Dispose();
+            objNewPic?.Dispose();
+
+            LogHelper.Error("生成缩略图", ex);
         }
+        return b;
+    }
 
-        var fac2 = img.Resize(new Size()
+    /// <summary> 
+    /// jpeg图片压缩 
+    /// </summary> 
+    /// <param name="sFile"></param> 
+    /// <param name="outPath"></param> 
+    /// <param name="flag"></param> 
+    /// <returns></returns> 
+    private static bool CompressionImage(string sFile, string outPath, int flag)
+    {
+
+        var iSource = Image.FromFile(sFile);
+        var tFormat = iSource.RawFormat;
+        var ep = new EncoderParameters();
+        var qy = new long[1];
+        qy[0] = flag;
+        var eParam = new EncoderParameter(Encoder.Quality, qy);
+        ep.Param[0] = eParam;
+        var b = false;
+        try
         {
-            Width = w,
-            Height = h
-        });
-        fac2.Save(newPath);
+            var arrayIci = ImageCodecInfo.GetImageEncoders();
+            ImageCodecInfo jpegIcIinfo = null;
+            for (var x = 0; x < arrayIci.Length; x++)
+            {
+                if (!arrayIci[x].FormatDescription.Equals("JPEG")) continue;
 
-        fac2.Dispose();
-        img.Dispose();
-        fac.Dispose();
-
-        var fileInfo = new FileInfo(newPath);
-        if (fileInfo.Length <= maxSize) return newPath;
-
-        var newPath2 = FileUtil.GetTempFilePath(Root);
-        System.IO.File.Move(newPath, newPath2);
-        if (File.Exists(newPath2))
-        {
-            File.Delete(newPath);
+                jpegIcIinfo = arrayIci[x];
+                break;
+            }
+            if (jpegIcIinfo != null)
+            {
+                iSource.Save(outPath, jpegIcIinfo, ep);
+            }
+            else
+            {
+                iSource.Save(outPath, tFormat);
+            }
+            b = true;
         }
-        var mw = (int)(maxWidth * 0.8);
-        return Resize(newPath2, newPath, mw, maxSize);
+        catch (Exception ex)
+        {
+            LogHelper.Error("jpeg图片压缩", ex);
+            b = false;
+        }
+        finally
+        {
+            iSource.Dispose();
+            iSource.Dispose();
+        }
+        return b && File.Exists(outPath);
     }
 
-    System.IO.File.Copy(oldPath, newPath);
-    return newPath;
-}
-
-/// <summary>
-/// 缩放图片大小
-/// </summary>
-/// <param name="stream"></param>
-/// <param name="maxWidth"></param>
-/// <param name="maxSize"></param>
-private static Stream Resize(Stream stream, int maxWidth, int maxSize)
-{
-    var fac = new ImageProcessor.ImageFactory();
-    var img = fac.Load(stream);
-    if (img.Image.Width <= maxWidth && img.Image.Height <= maxWidth && stream.Length <= maxSize) return stream;
-
-    var w = 0;
-    var h = 0;
-    if (img.Image.Width > img.Image.Height)
-    {
-        w = maxWidth;
-        h = img.Image.Height * maxWidth / img.Image.Width;
-    }
-    else
-    {
-        h = maxWidth;
-        w = img.Image.Width * maxWidth / img.Image.Height;
-    }
-
-    var fac2 = img.Resize(new Size()
-    {
-        Width = w,
-        Height = h
-    });
-
-    var ms = new MemoryStream();
-    fac2.Save(ms);
-
-    fac2.Dispose();
-    img.Dispose();
-    fac.Dispose();
-
-    if (ms.Length > maxSize)
-    {
-        var mw = (int)(maxWidth * 0.8);
-        return Resize(ms, mw, maxSize);
-    }
-    return ms;
 }
