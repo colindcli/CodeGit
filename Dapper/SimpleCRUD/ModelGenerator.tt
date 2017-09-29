@@ -30,8 +30,8 @@ It is based on the T4 template from the PetaPoco project which in turn is based 
 */
 	// Settings
     ConnectionStringName = "DefaultConnectionString"; // Uses last connection string in config if not specified
-	ConfigPath = Host.ResolveAssemblyReference("$(SolutionDir)")+"Project.WebApiPc\\Web.config"; //Looks in current project for web.config or app.config by default. This overrides to a relative path - useful for seperate class library projects.
-    Namespace = "Project.Entity";
+	ConfigPath = Host.ResolveAssemblyReference("$(SolutionDir)")+"WeProject.WebApiPc\\Web.config"; //Looks in current project for web.config or app.config by default. This overrides to a relative path - useful for seperate class library projects.
+    Namespace = "WeProject.Entity";
 	ClassPrefix = "";
 	ClassSuffix = "";
     IncludeViews = true;
@@ -69,10 +69,15 @@ foreach(Table tbl in from t in tables where !t.Ignore select t){
 	{
 <#foreach(Column col in from c in tbl.Columns where !c.Ignore select c)
 {#>
-	<# if (tbl.PK!=null && tbl.PK.Name==col.PropertyName) { #>
-	[Key]
-	<#}#>
-	public virtual <#=col.PropertyType #><#=CheckNullable(col)#> <#=col.PropertyName #> { get; set; }
+<# if (!string.IsNullOrWhiteSpace(col.Remark)) { #>
+        /// <summary>
+        /// <#= col.Remark #>
+        /// </summary>
+<#}#>
+<# if (tbl.PK!=null && tbl.PK.Name==col.PropertyName) { #>
+        [Key]
+<#}#>
+        public virtual <#=col.PropertyType #><#=CheckNullable(col)#> <#=col.PropertyName #> { get; set; }
 <#}#>
 <# if (IncludeRelationships) { #>
 <#foreach(Key key in from k in tbl.OuterKeys select k)
@@ -156,6 +161,7 @@ public class Column
     public bool IsNullable;
 	public bool IsAutoIncrement;
 	public bool Ignore;
+	public string Remark;
 }
 
 public class Key
@@ -587,6 +593,7 @@ class SqlServerSchemaReader : SchemaReader
 					col.PropertyType=GetPropertyType(rdr["DataType"].ToString());
 					col.IsNullable=rdr["IsNullable"].ToString()=="YES";
 					col.IsAutoIncrement=((int)rdr["IsIdentity"])==1;
+					col.Remark=rdr["Remark"].ToString();
 					result.Add(col);
 				}
 			}
@@ -758,7 +765,8 @@ class SqlServerSchemaReader : SchemaReader
 			CHARACTER_MAXIMUM_LENGTH AS MaxLength, 
 			DATETIME_PRECISION AS DatePrecision,
 			COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsIdentity') AS IsIdentity,
-			COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsComputed') as IsComputed
+			COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsComputed') as IsComputed,
+			(SELECT TOP 1 t.value FROM sys.extended_properties t WHERE t.major_id=OBJECT_ID(COLUMNS.TABLE_NAME) AND minor_id=COLUMNS.ORDINAL_POSITION) Remark
 		FROM  INFORMATION_SCHEMA.COLUMNS
 		WHERE TABLE_NAME=@tableName AND TABLE_SCHEMA=@schemaName
 		ORDER BY OrdinalPosition ASC";
