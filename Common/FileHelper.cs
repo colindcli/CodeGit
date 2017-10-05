@@ -86,4 +86,19 @@ public class FileHelper
         fileStream.Dispose();
         return File.Exists(fileName);
     }
+    
+    /// <summary>
+    /// 写文件
+    /// </summary>
+    /// <param name="fileName">文件地址</param>
+    /// <param name="bt"></param>
+    /// <returns></returns>
+    public static bool WriteFile(string fileName, byte[] bt)
+    {
+        var fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.Write);
+        fileStream.Write(bt, 0, bt.Length);
+        fileStream.Close();
+        fileStream.Dispose();
+        return File.Exists(fileName);
+    }
 }
