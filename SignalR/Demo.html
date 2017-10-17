@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Demo</title>
+</head>
+<body>
+    <script src="/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script type="text/javascript">
+        $(function () {
+            var userId = 10;
+            $.get("/api/Message/Registration?userId=" + userId, function () {
+                $.connection.hub.logging = false;
+                var chat = $.connection.messageHub;
+                chat.client.broadcastMessage = function (messageArea) {
+                    //messageArea：0我的工作台；1部门；2项目；3群组；4任务
+
+                    console.log(messageArea);
+                };
+                $.connection.hub.start();
+            });
+        });
+    </script>
+</body>
+</html>
