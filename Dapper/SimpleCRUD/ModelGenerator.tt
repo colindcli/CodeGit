@@ -18,22 +18,22 @@
 <#@ import namespace="System.Text.RegularExpressions" #>
 <#@ import namespace="System.Configuration" #>
 <#@ import namespace="System.Windows.Forms" #>
-<#
+<#  
 /*
 This code is part of the Dapper.SimpleCRUD project
 It is based on the T4 template from the PetaPoco project which in turn is based on the subsonic project.
- -----------------------------------------------------------------------------------------
- This template can read minimal schema information from the following databases:
+ ----------------------------------------------------------------------------------------- 
+ This template can read minimal schema information from the following databases: 
 
-	* SQL Server
- -----------------------------------------------------------------------------------------
-*/
+	* SQL Server 
+ ----------------------------------------------------------------------------------------- 
+*/ 
 	// Settings
     ConnectionStringName = "DefaultConnectionString"; // Uses last connection string in config if not specified
-	ConfigPath = Host.ResolveAssemblyReference("$(SolutionDir)")+"Project.WebApiPc\\Web.config"; //Looks in current project for web.config or app.config by default. This overrides to a relative path - useful for seperate class library projects.
-    Namespace = "Project.Entity";
+	ConfigPath = Host.ResolveAssemblyReference("$(SolutionDir)")+"WebApiPc\\Web.config"; //Looks in current project for web.config or app.config by default. This overrides to a relative path - useful for seperate class library projects.
+    Namespace = "Entity";
 	ClassPrefix = "";
-	ClassSuffix = "";
+	ClassSuffix = ""; 
     IncludeViews = true;
     IncludeRelationships = true;
 	ExcludeTablePrefixes = new string[]{"aspnet_","webpages_","sysdiagrams"};
@@ -65,7 +65,7 @@ foreach(Table tbl in from t in tables where !t.Ignore select t){
     /// A class which represents the <#=tbl.Name#> <#=(tbl.IsView)?"view":"table"#>.
     /// </summary>
 	[Table("<#=tbl.Name#>")]
-	public partial class <#=tbl.ClassName#>
+	public partial class <#=tbl.Name#>
 	{
 <#foreach(Column col in from c in tbl.Columns where !c.Ignore select c)
 {#>
@@ -664,12 +664,36 @@ class SqlServerSchemaReader : SchemaReader
 
 	string GetPK(string table){
 		
-		string sql=@"SELECT c.name AS ColumnName
-                FROM sys.indexes AS i 
-                INNER JOIN sys.index_columns AS ic ON i.object_id = ic.object_id AND i.index_id = ic.index_id 
-                INNER JOIN sys.objects AS o ON i.object_id = o.object_id 
-                LEFT OUTER JOIN sys.columns AS c ON ic.object_id = c.object_id AND c.column_id = ic.column_id
-                WHERE (i.type = 1) AND (o.name = @tableName)";
+		string sql=@"
+WITH indexCTE
+AS
+(
+    SELECT ic.column_id,
+           ic.index_column_id,
+           ic.object_id
+    FROM sys.indexes idx
+    INNER JOIN sys.index_columns ic
+        ON idx.index_id=ic.index_id
+        AND idx.object_id=ic.object_id
+    WHERE idx.object_id=OBJECT_ID(@Tablename)
+        AND idx.is_primary_key=1
+)
+SELECT 
+       colm.name ColumnName
+FROM sys.columns colm
+INNER JOIN sys.types systype
+    ON colm.system_type_id=systype.system_type_id
+    AND colm.user_type_id=systype.user_type_id
+LEFT JOIN syscomments sc ON colm.default_object_id=sc.id
+LEFT JOIN sys.extended_properties prop
+    ON colm.object_id=prop.major_id
+    AND colm.column_id=prop.minor_id
+LEFT JOIN indexCTE
+    ON colm.column_id=indexCTE.column_id
+    AND colm.object_id=indexCTE.object_id
+WHERE colm.object_id=OBJECT_ID(@Tablename)
+AND CAST(CASE WHEN indexCTE.column_id IS NULL THEN 0 ELSE 1 END AS Bit)=1;
+		";
 
 		using (var cmd=_factory.CreateCommand())
 		{
