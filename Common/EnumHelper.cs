@@ -13,7 +13,6 @@ public class EnumHelper
     public static string GetEnumDescription<TEnum>(int value)
     {
         var enumType = typeof(TEnum);
-
         if (!enumType.IsEnum)
         {
             throw new ArgumentException("不是枚举类型");
@@ -24,18 +23,14 @@ public class EnumHelper
         {
             return string.Empty;
         }
-
         var objs = enumType.GetField(enumItem).GetCustomAttributes(typeof(DescriptionAttribute), false);
 
         if (objs.Length == 0)
         {
             return string.Empty;
         }
-        else
-        {
-            var attr = objs[0] as DescriptionAttribute;
-            return attr.Description;
-        }
+        var attr = objs[0] as DescriptionAttribute;
+        return attr?.Description;
     }
 
     /// <summary>
