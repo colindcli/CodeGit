@@ -41,10 +41,14 @@ public class EnumHelper
     public static Dictionary<int, string> GetEnumList<T>()
     {
         var enumType = typeof(T);
+        if (!enumType.IsEnum)
+        {
+            throw new ArgumentException("不是枚举类型");
+        }
         var lists = new Dictionary<int, string>();
         foreach (int i in Enum.GetValues(enumType))
         {
-            var name = GetEnumDescription<Entity.Enums.DynamicMsgTypeEnum>(i);
+            var name = GetEnumDescription<T>(i);
             lists.Add(i, name);
         }
         return lists;
