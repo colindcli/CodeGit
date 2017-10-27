@@ -43,6 +43,11 @@ public class SchemaHelper
                 }
                 sb.AppendLine($"{GetTab(depth)}{key}:[{string.Join(",", lists)}]");
             }
+            else if (string.Equals(array[0], "Object", StringComparison.OrdinalIgnoreCase))
+            {
+                var json = GetJSchema(value, depth + 1);
+                sb.AppendLine($"{GetTab(depth)}{key}: {json},");
+            }
             else
             {
                 sb.AppendLine($"{GetTab(depth)}{key}:{array[0]}");
