@@ -22,6 +22,9 @@ public class SchemaHelper
     /// <returns></returns>
     private static string GetJSchema(JSchema schema, int depth = 1)
     {
+        if (schema.Properties == null)
+            return schema.Type.ToString();
+        
         var sb = new StringBuilder();
         sb.AppendLine("{");
         foreach (var item in schema.Properties)
