@@ -14,7 +14,7 @@ public class AuthorizeFilter : AuthorizeAttribute
     {
         base.HandleUnauthorizedRequest(actionContext);
 
-        //返回错误消息到前端
+        //自定义返回错误消息到前端
     }
 
     /// <summary>
