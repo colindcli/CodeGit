@@ -42,6 +42,31 @@ public class EmailHelper
     /// <summary>
     /// 发送邮件
     /// </summary>
+    /// <param name="email"></param>
+    /// <param name="displayName"></param>
+    /// <param name="subject"></param>
+    /// <param name="body"></param>
+    /// <returns></returns>
+    public static bool Send(string email, string displayName, string subject, string body)
+    {
+        return Send(new Email()
+        {
+            Emails = new List<Receiver>()
+            {
+                new Receiver()
+                {
+                    DisplayName = displayName,
+                    EmailAddress = email
+                }
+            },
+            Subject = subject,
+            Body = body
+        });
+    }
+
+    /// <summary>
+    /// 发送邮件
+    /// </summary>
     /// <param name="model"></param>
     public static bool Send(Email model)
     {
