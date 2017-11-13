@@ -10,3 +10,5 @@
 - 文件压缩 [SharpZipLib](https://github.com/colindcli/CodeGit/tree/master/SharpZipLib)
 - API生成调试 [Swagger](https://github.com/colindcli/CodeGit/tree/master/Swagger)
 - 消息列队 [分布式EQueuev2.3.5](https://github.com/colindcli/EQueueService)；[EQueue2.0.4](https://github.com/colindcli/EQueueSample)
+- 实时通信 [SignalR](https://github.com/colindcli/CodeGit/tree/master/SignalR)
+- 工具 [VS CODE](https://github.com/colindcli/CodeGit/tree/master/VS%20Code)、[Visual Studio](https://github.com/colindcli/CodeGit/tree/master/VS2017)、[Sql Server](https://github.com/colindcli/CodeGit/tree/master/SqlServer) 、[Resharper](https://github.com/colindcli/CodeGit/tree/master/Soft)
