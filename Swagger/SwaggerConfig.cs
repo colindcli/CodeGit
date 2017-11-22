@@ -24,6 +24,27 @@ public class GlobalHttpHeaderFilter : IOperationFilter
 }
 
 /// <summary>
+/// 上传文件
+/// </summary>
+public class UploadFilter : IOperationFilter
+{
+    public void Apply(Operation operation, SchemaRegistry schemaRegistry, ApiDescription apiDescription)
+    {
+        if (!string.IsNullOrWhiteSpace(operation.summary) && operation.summary.Contains("upload"))
+        {
+            operation.consumes.Add("application/form-data");
+            operation.parameters.Add(new Parameter
+            {
+                name = "file",
+                @in = "formData",
+                required = true,
+                type = "file"
+            });
+        }
+    }
+}
+
+/// <summary>
 /// 
 /// </summary>
 public class SwaggerConfig
@@ -49,7 +70,7 @@ public class SwaggerConfig
 
                 c.OperationFilter<GlobalHttpHeaderFilter>();
 
-
+                c.OperationFilter<UploadFilter>();
             })
             .EnableSwaggerUi(c =>
             {
