@@ -13,4 +13,4 @@
 - 实时通信 [SignalR](https://github.com/colindcli/CodeGit/tree/master/SignalR)
 - 工具 [VS CODE](https://github.com/colindcli/CodeGit/tree/master/Development%20Tools/VS%20Code)、[Visual Studio](https://github.com/colindcli/CodeGit/tree/master/Development%20Tools/Visual%20Studio)、[Sql Server](https://github.com/colindcli/CodeGit/tree/master/Development%20Tools/SqlServer) 、[Resharper](https://github.com/colindcli/CodeGit/tree/master/Development%20Tools/Resharper)
 
-- 对象映射 [AutoMapper](https://github.com/colindcli/CodeGit/tree/master/AutoMapper) / [TinyMapper](https://github.com/colindcli/CodeGit/tree/master/TinyMapper)
+- 对象映射 [AutoMapper](https://github.com/colindcli/CodeGit/tree/master/Mapper/AutoMapper) / [TinyMapper](https://github.com/colindcli/CodeGit/tree/master/Mapper/TinyMapper)
