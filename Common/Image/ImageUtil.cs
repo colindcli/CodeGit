@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 
@@ -164,4 +165,65 @@ public class ImageUtil
         return b && File.Exists(outPath);
     }
 
+    /// <summary>
+    /// 根据文字生成图片
+    /// </summary>
+    /// <param name="text">文字内容</param>
+    /// <param name="fontName">字体名称</param>
+    /// <param name="fontSize">字体大小</param>
+    /// <param name="fontColor">字体颜色,如Brushes.Black</param>
+    /// <param name="bgColor">背景颜色,如Brushes.Transparent(透明色)</param>
+    /// <param name="savePath">保存路径</param>
+    /// <param name="fileName">文件名</param>
+    /// <returns></returns>
+    public static string CreateTextPic(string text, string fontName, float fontSize, Color fontColor, Color bgColor, string savePath,string fileName)
+    {
+        var bgBrush = new SolidBrush(bgColor);
+        var fontBrush = Brushes.White;
+        try
+        {
+            Graphics g;
+            var format = new StringFormat(StringFormatFlags.NoClip)
+            {
+                Alignment = StringAlignment.Center,
+                LineAlignment = StringAlignment.Center
+            };
+
+            if (string.IsNullOrEmpty(fontName))
+            {
+                fontName = "宋体";
+            }
+            var font = new Font(fontName, fontSize);
+
+            var bmp = new Bitmap(1, 1);
+            g = Graphics.FromImage(bmp);
+            var sizef = g.MeasureString(text, font, PointF.Empty, format);
+
+            var width = Convert.ToInt32(sizef.Width) + 20;
+            var rect = new RectangleF(0, 0, width, width);
+            bmp.Dispose();
+            bmp = new Bitmap(width, width);
+
+            g = Graphics.FromImage(bmp);
+            g.TextRenderingHint = TextRenderingHint.SingleBitPerPixelGridFit;
+            g.FillRectangle(bgBrush, rect);
+            g.DrawString(text, font, fontBrush, rect, format);
+
+            if (!Directory.Exists(savePath))
+            {
+                Directory.CreateDirectory(savePath);
+            }
+
+            var filePath = savePath + fileName + Config.ExtName;
+
+            bmp.Save(filePath, ImageFormat.Png);
+
+            return filePath;
+        }
+        catch (Exception ex)
+        {
+            LogHelper.Error("在ImageUtil.CreateTextPic出错", ex);
+            return "";
+        }
+    }
 }
