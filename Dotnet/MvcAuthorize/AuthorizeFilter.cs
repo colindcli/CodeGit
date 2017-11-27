@@ -1,5 +1,5 @@
 using System;
-using System.Security.Claims;
+using System.Web;
 using System.Web.Mvc;
 
 /// <summary>
@@ -8,27 +8,51 @@ using System.Web.Mvc;
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
 public class AuthorizeFilter : AuthorizeAttribute
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="filterContext"></param>
     public override void OnAuthorization(AuthorizationContext filterContext)
     {
+        base.OnAuthorization(filterContext);
+
+        var controller = (BaseController)filterContext.Controller;
+        controller.AdminId = int.Parse(Users);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="httpContext"></param>
+    /// <returns></returns>
+    protected override bool AuthorizeCore(HttpContextBase httpContext)
+    {
+        base.AuthorizeCore(httpContext);
+
         var token = CookieHelper.GetCookie("Access_Token");
         if (string.IsNullOrWhiteSpace(token))
         {
-            filterContext.Result = new HttpUnauthorizedResult();
-            return;
+            return false;
         }
         var m = TokenHelper.GetModel<TokenModel>(token);
         if (m == null)
         {
-            filterContext.Result = new HttpUnauthorizedResult();
-            return;
+            return false;
         }
         if (m.ExpiryDate < DateTime.Now)
         {
-            filterContext.Result = new HttpUnauthorizedResult();
-            return;
+            return false;
         }
+        Users = m.AdminId.ToString();
+        return true;
+    }
 
-        filterContext.HttpContext.User = new ClaimsPrincipal(new ClaimsIdentity(m.AdminId.ToString()));
-        base.OnAuthorization(filterContext);
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="filterContext"></param>
+    protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
+    {
+        filterContext.Result = new RedirectResult("/Admin/Login");
     }
 }
