@@ -24,8 +24,6 @@ public class WebApiApplication : HttpApplication
         RouteConfig.RegisterRoutes(RouteTable.Routes);
         BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-        AutoMapperConfig.RegisterMapper();
-
         var json = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
         //json.MediaTypeMappings.Add(new QueryStringMapping("format", "json", "application/json"));
         //json.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
