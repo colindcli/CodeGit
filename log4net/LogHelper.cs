@@ -20,7 +20,7 @@ public static class LogHelper
     /// <returns></returns>
     private static string GetName(MethodBase method)
     {
-        return (method.ReflectedType != null ? "类名:[" + method.ReflectedType.Name + "]; " : "") + "方法:[" + method.Name + "];\r\n" + "网址：" + HttpContext.Current.Request.Url;
+        return (method.ReflectedType != null ? "类名:[" + method.ReflectedType.Name + "]; " : "") + "方法:[" + method.Name + "];\r\n" + "网址：" + HttpContext.Current.Request.Url+ ";\r\n";
     }
 
     /// <summary>
