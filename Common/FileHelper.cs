@@ -68,6 +68,25 @@ public class FileHelper
         fileStream.Dispose();
         return bytes;
     }
+    
+    /// <summary>
+    /// 读文本
+    /// </summary>
+    /// <param name="fileName">文件地址</param>
+    /// <param name="encoding"></param>
+    /// <returns></returns>
+    public static string ReadText(string fileName, Encoding encoding = null)
+    {
+        string result;
+        var fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read);
+        using (var rs = encoding != null ? new StreamReader(fileStream, encoding) : new StreamReader(fileStream))
+        {
+            result = rs.ReadToEnd();
+        }
+        fileStream.Close();
+        fileStream.Dispose();
+        return result;
+    }
 
     /// <summary>
     /// 写文件
