@@ -1,4 +1,4 @@
-using RazorEngine;
+using RazorEngine;//Install-Package RazorEngine
 using RazorEngine.Templating;
 
 public class TemplateHelper
