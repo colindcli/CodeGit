@@ -14,37 +14,26 @@ public class AuthorizeFilter : AuthorizeAttribute
     /// <param name="filterContext"></param>
     public override void OnAuthorization(AuthorizationContext filterContext)
     {
-        base.OnAuthorization(filterContext);
-
-        var controller = (BaseController)filterContext.Controller;
-        controller.AdminId = int.Parse(Users);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="httpContext"></param>
-    /// <returns></returns>
-    protected override bool AuthorizeCore(HttpContextBase httpContext)
-    {
-        base.AuthorizeCore(httpContext);
-
         var token = CookieHelper.GetCookie("Access_Token");
         if (string.IsNullOrWhiteSpace(token))
         {
-            return false;
+            base.OnAuthorization(filterContext);
         }
         var m = TokenHelper.GetModel<TokenModel>(token);
         if (m == null)
         {
-            return false;
+            base.OnAuthorization(filterContext);
         }
         if (m.ExpiryDate < DateTime.Now)
         {
-            return false;
+            base.OnAuthorization(filterContext);
         }
-        Users = m.AdminId.ToString();
-        return true;
+        var controller = filterContext.Controller as BaseController;
+        if (controller == null)
+        {
+            base.OnAuthorization(filterContext);
+        }
+        controller.AdminId = m.AdminId;
     }
 
     /// <summary>
