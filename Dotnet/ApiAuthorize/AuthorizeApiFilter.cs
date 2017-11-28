@@ -34,8 +34,11 @@ public class AuthorizeApiFilter : AuthorizeAttribute
             return false;
         }
         var controller = actionContext.ControllerContext.Controller as BaseApiController;
-        if (controller != null)
-            controller.AdminId = m.AdminId;
+        if (controller == null)
+        {
+            return false;
+        }
+        controller.AdminId = m.AdminId;
         return true;
     }
 
