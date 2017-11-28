@@ -1,5 +1,4 @@
 using System;
-using System.Web;
 using System.Web.Mvc;
 
 /// <summary>
@@ -18,20 +17,24 @@ public class AuthorizeFilter : AuthorizeAttribute
         if (string.IsNullOrWhiteSpace(token))
         {
             base.OnAuthorization(filterContext);
+            return;
         }
         var m = TokenHelper.GetModel<TokenModel>(token);
         if (m == null)
         {
             base.OnAuthorization(filterContext);
+            return;
         }
         if (m.ExpiryDate < DateTime.Now)
         {
             base.OnAuthorization(filterContext);
+            return;
         }
         var controller = filterContext.Controller as BaseController;
         if (controller == null)
         {
             base.OnAuthorization(filterContext);
+            return;
         }
         controller.AdminId = m.AdminId;
     }
