@@ -1,4 +1,7 @@
+using System;
+using System.IO;
 using System.IO.Compression;
+using System.Web;
 using System.Web.Mvc;
 
 /// <summary>
@@ -8,6 +11,33 @@ public class CompressionFilter : ActionFilterAttribute
 {
     private const string Gzip = "gzip";
     private const string Deflate = "deflate";
+
+    private static void Compress(HttpResponseBase response, Func<Stream, Stream> compress, string acceptEncoding)
+    {
+        response.Filter = compress(response.Filter);
+        response.Headers.Remove("Content-Encoding");
+        response.AppendHeader("Content-Encoding", acceptEncoding);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="data"></param>
+    /// <returns></returns>
+    private static Stream DeflateCompress(Stream data)
+    {
+        return new DeflateStream(data, CompressionMode.Compress);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="data"></param>
+    /// <returns></returns>
+    private static Stream GzipCompress(Stream data)
+    {
+        return new GZipStream(data, CompressionMode.Compress);
+    }
 
     /// <summary>
     /// 
@@ -28,15 +58,11 @@ public class CompressionFilter : ActionFilterAttribute
 
         if (acceptEncoding.Contains(Gzip))
         {
-            response.Filter = new GZipStream(response.Filter, CompressionMode.Compress);
-            response.Headers.Remove("Content-Encoding");
-            response.AppendHeader("Content-Encoding", Gzip);
+            Compress(response, GzipCompress, Gzip);
         }
         else if (acceptEncoding.Contains(Deflate))
         {
-            response.Filter = new DeflateStream(response.Filter, CompressionMode.Compress);
-            response.Headers.Remove("Content-Encoding");
-            response.AppendHeader("Content-Encoding", Deflate);
+            Compress(response, DeflateCompress, Deflate);
         }
     }
 }
