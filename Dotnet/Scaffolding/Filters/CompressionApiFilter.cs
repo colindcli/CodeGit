@@ -16,8 +16,9 @@ public class CompressionApiFilter : ActionFilterAttribute
     /// 
     /// </summary>
     /// <param name="data"></param>
+    /// <param name="compress"></param>
     /// <returns></returns>
-    private static byte[] DeflateCompress(byte[] data)
+    private static byte[] Compress(byte[] data, Func<MemoryStream, Stream> compress)
     {
         if (data == null || data.Length < 1)
             return data;
@@ -25,7 +26,7 @@ public class CompressionApiFilter : ActionFilterAttribute
         {
             using (var stream = new MemoryStream())
             {
-                using (var gZipStream = new DeflateStream(stream, CompressionMode.Compress))
+                using (var gZipStream = compress(stream))
                 {
                     gZipStream.Write(data, 0, data.Length);
                     gZipStream.Close();
@@ -45,28 +46,19 @@ public class CompressionApiFilter : ActionFilterAttribute
     /// </summary>
     /// <param name="data"></param>
     /// <returns></returns>
+    private static byte[] DeflateCompress(byte[] data)
+    {
+        return Compress(data, ms => new DeflateStream(ms, CompressionMode.Compress));
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="data"></param>
+    /// <returns></returns>
     private static byte[] GzipCompress(byte[] data)
     {
-        if (data == null || data.Length < 1)
-            return data;
-        try
-        {
-            using (var stream = new MemoryStream())
-            {
-                using (var gZipStream = new GZipStream(stream, CompressionMode.Compress))
-                {
-                    gZipStream.Write(data, 0, data.Length);
-                    gZipStream.Close();
-                }
-                return stream.ToArray();
-            }
-        }
-        catch (Exception ex)
-        {
-            LogHelper.Fatal(ex.Message, ex);
-            return data;
-        }
-
+        return Compress(data, ms => new GZipStream(ms, CompressionMode.Compress));
     }
 
     /// <summary>
