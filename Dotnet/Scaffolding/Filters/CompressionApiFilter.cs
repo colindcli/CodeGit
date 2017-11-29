@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Web.Http.Filters;
 
 /// <summary>
-/// 压缩
+/// API压缩
 /// </summary>
 public class CompressionApiFilter : ActionFilterAttribute
 {
