@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>select2</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="Select2/css/select2.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Select2/js/select2.full.min.js"></script>
+    <script src="Select2/js/i18n/zh-CN.js"></script>
+    <script>
+        var lists = [
+            {
+                id: 10,
+                text: 'enhancement'
+            },
+            {
+                id: 11,
+                text: 'bug'
+            },
+            {
+                id: 12,
+                text: 'duplicate'
+            },
+            {
+                id: 13,
+                text: 'invalid'
+            },
+            {
+                id: 14,
+                text: 'wontfix'
+            }
+        ];
+
+        $(function () {
+            //https://select2.org/
+            var select2Obj = {
+                select: function (id, selectedId, width, multiple) {
+                    if (!multiple) {
+                        $('#' + id).prepend('<option disabled selected value="0">请选择</option>');
+                    }
+                    $('#' + id).select2({
+                        dropdownAutoWidth: true,
+                        multiple: multiple || false,
+                        width: width || 200,
+                        placeholder: '请选择',
+                        //allowClear: true
+                    });
+                    if (selectedId != null) {
+                        $('#' + id).val(selectedId).change();
+                    }
+                },
+                select2: function (id, data, selectedId, width, multiple) {
+                    if (!multiple) {
+                        $('#' + id).html('<option disabled selected value="0">请选择</option>');
+                    }
+                    $('#' + id).select2({
+                        data: data,
+                        dropdownAutoWidth: true,
+                        multiple: multiple || false,
+                        width: width || 200,
+                        placeholder: '请选择',
+                        //allowClear: true,
+                    });
+                    if (selectedId != null) {
+                        $('#' + id).val(selectedId).change();
+                    }
+                },
+                //?search=[term]&page=[page]; 设置默认值需要在select添加行：<option id="0">selected</option>
+                selectAjax: function (id, url, selectedId, width, multiple) {
+                    $('#' + id).select2({
+                        dropdownAutoWidth: true,
+                        multiple: multiple || false,
+                        width: width || 200,
+                        placeholder: '请选择',
+                        //allowClear: true,
+                        ajax: {
+                            url: url,
+                            data: function (params) {
+                                var query = {
+                                    search: params.term,
+                                    page: params.page || 1
+                                }
+                                return query;
+                            }
+                        }
+                    });
+                }
+            };
+
+            //普通下拉
+            select2Obj.select('select');
+
+            //普通下拉
+            select2Obj.select2('select2', lists);
+
+            //ajax
+            select2Obj.selectAjax('select2Ajax', 'http://www.demo.com/data.json');
+        });
+    </script>
+</head>
+
+<body>
+    <select id="select">
+        <option id="1">1</option>
+        <option id="2">2</option>
+    </select>
+
+    <select id="select2"></select>
+
+    <select id="select2Ajax"></select>
+</body>
+
+</html>
