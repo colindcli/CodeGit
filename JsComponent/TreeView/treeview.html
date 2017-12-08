@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>dialogTreeview</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="artDialog/css/dialog.css" rel="stylesheet" />
+    <link href="zTree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="artDialog/js/dialog.js"></script>
+    <script src="zTree/js/jquery.ztree.all.js"></script>
+
+    <script>
+        $(function () {
+            var treeViewObj = {
+                option: {
+                    id: 'selectTreeView',
+                    url: '',
+                    width: 350,
+                    height: 400,
+                    callback: function (treeNode) { console.log(treeNode); },
+                    dialogId: 'dialogTreeview',
+                    treeViewId: 'treeView'
+                },
+                dialogObj: null,
+                zTreeObj: null,
+                init: function (opt) {
+                    var self = this;
+                    self.option = $.extend({}, self.option, opt);
+
+                    //
+                    var dialogObj = $("#" + self.option.dialogId);
+                    if (dialogObj.length === 0) {
+                        $("body").append('<div id="' + self.option.dialogId + '"><div id="' + self.option.treeViewId + '" class="ztree"></div></div>');
+                        dialogObj = $("#" + self.option.dialogId);
+                    }
+
+                    var height = self.option.height;
+                    $("#" + self.option.id).click(function () {
+                        self.dialogObj = dialog({
+                            content: dialogObj,
+                            width: self.option.width,
+                            height: height,
+                            quickClose: true// 点击空白处快速关闭
+                        });
+                        self.dialogObj.show(document.getElementById(self.option.id));
+
+                        dialogObj.css({ "height": height, "overflow": "auto" });
+                        self.treeview();
+                    });
+                },
+                treeview: function () {
+                    var self = this;
+                    var setting = {
+                        view: {
+                            dblClickExpand: false,
+                            showLine: true,
+                            selectedMulti: false
+                        },
+                        callback: {
+                            onClick: function (event, treeId, treeNode) {
+                                self.option.callback.call(new Object(), treeNode);
+                                self.dialogObj.close().remove();
+                            }
+                        },
+                        data: {
+                            simpleData: {
+                                enable: true,
+                                idKey: "id",
+                                pIdKey: "pId",
+                                rootPId: 0
+                            }
+                        }
+                    };
+                    $.get(self.option.url, function (nodes) {
+                        console.log(nodes)
+                        self.zTreeObj = $.fn.zTree.init($("#" + self.option.treeViewId), setting, nodes);
+                    });
+                }
+            };
+            treeViewObj.init({
+                url: 'data.json'
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="selectTreeView">selectTreeView</button>
+</body>
+
+</html>
