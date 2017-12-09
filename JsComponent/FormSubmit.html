@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            $("#formId").on("submit", function () {
+                var fields = $(this).serializeArray();
+                var obj = {};
+                $.each(fields, function (i, field) {
+                    obj[field.name] = field.value;
+                });
+                console.log(obj);
+                return false;
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <form id="formId">
+        <input type="text" name="a" value="1">
+        <input type="text" name="b" value="2">
+        <input name="" type="submit" value="提交">
+    </form>
+</body>
+</html>
