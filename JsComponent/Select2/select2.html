@@ -13,33 +13,27 @@
     <script src="js/select2.full.min.js"></script>
     <script src="js/i18n/zh-CN.js"></script>
     <script>
-        var lists = [
-            {
-                id: 10,
-                text: 'enhancement'
-            },
-            {
-                id: 11,
-                text: 'bug'
-            },
-            {
-                id: 12,
-                text: 'duplicate'
-            },
-            {
-                id: 13,
-                text: 'invalid'
-            },
-            {
-                id: 14,
-                text: 'wontfix'
-            }
-        ];
+        var lists = [{
+            id: 10,
+            text: 'enhancement'
+        }, {
+            id: 11,
+            text: 'bug'
+        }, {
+            id: 12,
+            text: 'duplicate'
+        }, {
+            id: 13,
+            text: 'invalid'
+        }, {
+            id: 14,
+            text: 'wontfix'
+        }];
 
-        $(function () {
+        $(function() {
             //https://select2.org/
             var select2Obj = {
-                select: function (id, selectedId, width, multiple) {
+                select: function(id, selectedId, width, multiple) {
                     if (!multiple) {
                         $('#' + id).prepend('<option disabled selected value="0">请选择</option>');
                     }
@@ -54,7 +48,7 @@
                         $('#' + id).val(selectedId).change();
                     }
                 },
-                select2: function (id, data, selectedId, width, multiple) {
+                select2: function(id, data, selectedId, width, multiple) {
                     if (!multiple) {
                         $('#' + id).html('<option disabled selected value="0">请选择</option>');
                     }
@@ -71,7 +65,7 @@
                     }
                 },
                 //?search=[term]&page=[page]; 设置默认值需要在select添加行：<option id="0">selected</option>
-                selectAjax: function (id, url, selectedId, width, multiple) {
+                selectAjax: function(id, url, selectedId, width, multiple) {
                     $('#' + id).select2({
                         dropdownAutoWidth: true,
                         multiple: multiple || false,
@@ -80,7 +74,7 @@
                         //allowClear: true,
                         ajax: {
                             url: url,
-                            data: function (params) {
+                            data: function(params) {
                                 var query = {
                                     search: params.term,
                                     page: params.page || 1
@@ -99,7 +93,16 @@
             select2Obj.select2('select2', lists);
 
             //ajax
-            select2Obj.selectAjax('select2Ajax', 'data.json');
+            select2Obj.selectAjax('select2Ajax', 'data.json', null, null, true);
+
+            $(function() {
+                $("#btn").click(function() {
+                    console.log('select', $("#select").val())
+                    console.log('select2', $("#select2").val())
+                    console.log('select2Ajax', $("#select2Ajax").val())
+                })
+
+            });
         });
     </script>
 </head>
@@ -113,6 +116,7 @@
     <select id="select2"></select>
 
     <select id="select2Ajax"></select>
+    <button id="btn">获取值</button>
 </body>
 
 </html>
