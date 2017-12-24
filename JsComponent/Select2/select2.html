@@ -65,8 +65,8 @@
                     }
                 },
                 //?search=[term]&page=[page]; 设置默认值需要在select添加行：<option id="0">selected</option>
-                //注意：multiple=true时：select设置 multiple="multiple"；option设置 selected="selected"
-                //取值：var data = $("#id").select2('data'); $.each(data, function (i, item) { var id = item.element.id != "" ? item.element.id:item.id});
+                //注意：multiple=true时：设置：select（multiple="multiple"）；option（selected="selected"）
+                //注意：multiple=true时：取值：var data = $("#id").select2('data'); $.each(data, function (i, item) { var id = item.selected ? item.element.id : item.id; });
                 selectAjax: function(id, url, selectedId, width, multiple) {
                     $('#' + id).select2({
                         dropdownAutoWidth: true,
