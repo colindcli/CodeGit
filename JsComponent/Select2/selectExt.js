@@ -1,8 +1,8 @@
 ﻿var select2Obj = {};
-$(function () {
+$(function() {
     //https://select2.org/
     select2Obj = {
-        select: function (id, selectedId, width, multiple) {
+        select: function(id, selectedId, width, multiple) {
             if (!multiple) {
                 $('#' + id).prepend('<option disabled selected value="0">请选择</option>');
             }
@@ -17,7 +17,7 @@ $(function () {
                 $('#' + id).val(selectedId).change();
             }
         },
-        select2: function (id, data, selectedId, width, multiple) {
+        select2: function(id, data, selectedId, width, multiple) {
             if (!multiple) {
                 $('#' + id).html('<option disabled selected value="0">请选择</option>');
             }
@@ -34,8 +34,11 @@ $(function () {
             }
         },
         //?search=[term]&page=[page]; 设置默认值需要在select添加行：<option id="0">selected</option>
-        selectAjax: function (id, url, selectedId, width, multiple) {
-            $('#' + id).select2({
+        selectAjax: function(id, url, selectedId, selectedName, width, multiple) {
+            if (selectedId != null && selectedName != null) {
+                $('#' + id).html('<option value="' + selectedId + '">' + selectedName + '</option>');
+            }
+            var obj = $('#' + id).select2({
                 dropdownAutoWidth: true,
                 multiple: multiple || false,
                 width: width || 200,
@@ -43,7 +46,7 @@ $(function () {
                 //allowClear: true,
                 ajax: {
                     url: url,
-                    data: function (params) {
+                    data: function(params) {
                         var query = {
                             search: params.term,
                             page: params.page || 1
@@ -52,6 +55,7 @@ $(function () {
                     }
                 }
             });
+            return obj;
         }
     };
 });
