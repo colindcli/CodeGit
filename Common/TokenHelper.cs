@@ -2,6 +2,7 @@ using JWT;
 using JWT.Algorithms;
 using JWT.Serializers;
 
+//web.config: <add key="Secret" value="GQDstcKsx0NHjPOuXOYg5MbeJ1XT0uFiwDVvVBrg" />
 public class TokenHelper
 {
     /// <summary>
