@@ -3,3 +3,5 @@
 - 数据备份：[Backup.sql](https://github.com/colindcli/CodeGit/blob/master/SqlServer/Backup.sql)
 - 创建表值函数：[FunctionTable.sql](https://github.com/colindcli/CodeGit/blob/master/SqlServer/FunctionTable.sql)
 - 创建标量值函数：[FunctionValue.sql](https://github.com/colindcli/CodeGit/blob/master/SqlServer/FunctionValue.sql)
+- 优化查询：[QueryPerformance.sql](https://github.com/colindcli/CodeGit/blob/master/SqlServer/QueryPerformance.sql)
+- 日期转换：[DateVarchar.sql](https://github.com/colindcli/CodeGit/blob/master/SqlServer/DateVarchar.sql)
