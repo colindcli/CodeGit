@@ -26,3 +26,8 @@ LEFT JOIN indexCTE
     AND colm.object_id=indexCTE.object_id
 WHERE colm.object_id=OBJECT_ID(@Tablename)
 AND CAST(CASE WHEN indexCTE.column_id IS NULL THEN 0 ELSE 1 END AS Bit)=1;
+
+
+
+--other
+SELECT COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsIdentity') AS IsIdentity;
