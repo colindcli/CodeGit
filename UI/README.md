@@ -7,3 +7,4 @@
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
 - 生成二维码：[jquery-qrcode](https://github.com/jeromeetienne/jquery-qrcode)
+- [jquery.scrollTo](https://github.com/flesler/jquery.scrollTo)
