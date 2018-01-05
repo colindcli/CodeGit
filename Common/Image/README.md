@@ -4,3 +4,4 @@
 - Base64转图片：[Base64ToString.cs](https://github.com/colindcli/CodeGit/blob/master/Common/Image/Base64ToString.cs)
 - 图片打水印：[Image.cs](https://github.com/colindcli/CodeGit/blob/master/Common/Image/Image.cs)
 - 手机图片旋转：[photo.exif.cs](https://github.com/colindcli/CodeGit/blob/master/Common/Image/photo.exif.cs)
+- 头像截图：[cropbox](https://github.com/hongkhanh/cropbox)
