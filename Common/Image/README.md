@@ -5,3 +5,4 @@
 - 图片打水印：[Image.cs](https://github.com/colindcli/CodeGit/blob/master/Common/Image/Image.cs)
 - 手机图片旋转：[photo.exif.cs](https://github.com/colindcli/CodeGit/blob/master/Common/Image/photo.exif.cs)
 - 头像截图：[cropbox](https://github.com/hongkhanh/cropbox)
+- 文件预览：[File-Input-Image-Preview](https://github.com/bobbymarko/File-Input-Image-Preview)
