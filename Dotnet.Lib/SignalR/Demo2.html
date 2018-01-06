@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Home Demo</title>
+</head>
+
+<body>
+    <script src="/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script type="text/javascript">
+        $(function () {
+            //Demo
+            var userId = window.location.search.split('=')[1] || -1;
+            console.log('当前连接的用户Id为：' + userId);
+            console.log('需要修改当前连接的用户Id，请在Url加：?userId=0，列如：http://dev.our.tm:8066/?userId=0');
+            $.get("/api/Dynamic/Registration?userId=" + userId, function () {
+                $.connection.hub.url = window.location.href + 'signalr';
+                $.connection.hub.logging = false;
+                var chat = $.connection.messageHub;
+                chat.client.broadcastMessage = function (obj) {
+                    console.log("接收到的动态：", new Date());
+                    console.log(obj);
+                };
+                $.connection.hub.start();
+            });
+
+            //Test
+            $("#btDynamic").click(function () {
+                var list = [{
+                    UserId: userId,
+                    ShowAreaObjectTypeId: 1,
+                    ShowAreaObjectId: 11,
+                    ShowAreaObjectGuid: '338BF70E-6FB4-4CE2-9D60-91A81567F596',
+                    ObjectTypeId: 2,
+                    ObjectId: 22,
+                    ObjectGuid: '4FC88D7A-EDC9-43D7-AB36-A972E82840C6',
+                    IsHide: false
+                },
+                {
+                    UserId: userId,
+                    ShowAreaObjectTypeId: 3,
+                    ShowAreaObjectId: 33,
+                    ShowAreaObjectGuid: 'CFC2E499-7854-4E74-8660-F0EF6D3EA9E6',
+                    ObjectTypeId: 4,
+                    ObjectId: 44,
+                    ObjectGuid: 'DD52D54F-530F-4703-AB89-62FBE9356726',
+                    IsHide: false
+                }
+                ];
+                $.ajax({
+                    type: "POST",
+                    url: "/api/Send/Dynamic",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(list),
+                    dataType: "json"
+                });
+            });
+        });
+
+    </script>
+
+    <div><button id="btDynamic">测试发送动态（在Console查看）</button></div>
+</body>
+
+</html>

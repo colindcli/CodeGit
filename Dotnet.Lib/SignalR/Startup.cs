@@ -21,8 +21,22 @@ namespace MessageService.WebApi
     {
         public string GetUserId(IRequest request)
         {
-            var cookie = request.Cookies["UserId"];
-            return !string.IsNullOrWhiteSpace(cookie?.Value) ? cookie.Value : null;
+            try
+            {
+                if (request.Cookies.Count == 0)
+                {
+                    return null;
+                }
+
+                var cookie = request.Cookies["UserId"];
+                return !string.IsNullOrWhiteSpace(cookie?.Value) ? cookie.Value : null;
+            }
+            catch (Exception ex)
+            {
+                LogHelper.Fatal(string.Join("; ", request.Cookies.Keys.Select(p => p).ToList()), ex);
+                return null;
+            }
+
         }
     }
 }

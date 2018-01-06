@@ -7,7 +7,7 @@
 /// <para>备注：如果使用Nuget安装，会自动添加了以上代码到Web.config</para>
 /// <para>2、IIS设置*.css,*.js扩展名做Net映射。</para>
 /// </summary>
-public class DcHttpCompress : IHttpHandler
+public class CompressHttp : IHttpHandler
 {
     private const string DEFLATE = "deflate";
 
