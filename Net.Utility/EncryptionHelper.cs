@@ -5,6 +5,37 @@ using System.Text;
 
 public class EncryptionHelper
 {
+    /// <summary>
+    /// MD5加密字符串
+    /// </summary>
+    /// <param name="normalString">普通的字符串</param>
+    /// <returns>加密后的二进制字符串</returns>
+    private static string Md5Encrypt(string normalString)
+    {
+        var algroithm = new MD5CryptoServiceProvider();
+        var buffer = algroithm.ComputeHash(Encoding.UTF8.GetBytes(normalString));
+        return BitConverter.ToString(buffer);
+    }
+
+    /// <summary>
+    /// MD5加密
+    /// </summary>
+    /// <param name="str">this</param>
+    /// <returns>MD5值</returns>
+    public static string Md5Encrypt(string str)
+    {
+        var md5 = MD5.Create();
+
+        // 计算字符串的散列值
+        var bytes = md5.ComputeHash(Encoding.UTF8.GetBytes(str));
+        var sbd = new StringBuilder();
+        foreach (var item in bytes)
+        {
+            sbd.Append(item.ToString("x2"));
+        }
+        return sbd.ToString();
+    }
+
     #region DES加密/解密
     /// <summary>
     /// DES加密字符串
