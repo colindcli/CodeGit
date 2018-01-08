@@ -15,3 +15,9 @@
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
 - 生成二维码：[jquery-qrcode](https://github.com/jeromeetienne/jquery-qrcode)
 - 滚动事件：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo)
+- 浏览器favico：[favico.js](https://github.com/ejci/favico.js)
+- 图片浏览(酷)：[fancybox](https://github.com/fancyapps/fancybox) GPLv3
+- 流动背景图：[BigVideo.js](http://dfcb.github.io/BigVideo.js/) MIT
+- 视频转换：[videoconverter.js](https://github.com/bgrins/videoconverter.js)
+- loading: [loading](https://github.com/jxnblk/loading)
+- 懒图片：[lazysizes](https://github.com/aFarkas/lazysizes)
