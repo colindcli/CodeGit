@@ -10,25 +10,70 @@
 - Extension/layui-tableExt.js（引用：jquery、layui、jquery.form）：layui table
 
 
-> 插件收藏
+## 插件收藏
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
-- 生成二维码：[jquery-qrcode](https://github.com/jeromeetienne/jquery-qrcode)
-- 滚动事件：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo)
-- 浏览器favico：[favico.js](https://github.com/ejci/favico.js)
-- 图片浏览(酷)：[fancybox](https://github.com/fancyapps/fancybox) GPLv3
-- 流动背景图：[BigVideo.js](http://dfcb.github.io/BigVideo.js/) MIT
+- 滚动事件：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo) MIT
+
+
+> 工具
+
 - 视频转换：[videoconverter.js](https://github.com/bgrins/videoconverter.js)
+- 生成二维码：[jquery-qrcode](https://github.com/jeromeetienne/jquery-qrcode)
+
+
+> 优化
+
+- 延期加载CSS：[loadCSS](https://github.com/filamentgroup/loadCSS) MIT
+
+
+> 修饰
+
+- 流动背景图：[BigVideo.js](http://dfcb.github.io/BigVideo.js/) MIT
+- 浏览器favico：[favico.js](https://github.com/ejci/favico.js)
+
+
+> Loading
+
 - loading: [loading](https://github.com/jxnblk/loading)
+- 按钮加载中：[Ladda](https://github.com/hakimel/Ladda)
+
+
+> 动画
+
+- 文字跳动：[animate.css](https://github.com/daneden/animate.css) / [demo](https://daneden.github.io/animate.css/) MIT
+- 文字动画：[vivify](https://github.com/Martz90/vivify) / [demo](http://vivify.mkcreative.cz/) MIT
+- 动作运动：[anime](https://github.com/juliangarnier/anime) / [demo](http://animejs.com/documentation/) MIT
+- 运动变化：[velocity](https://github.com/julianshapiro/velocity) / [demo](http://velocityjs.org/) MIT
+- 运动写字：[vivus](http://maxwellito.github.io/vivus/) MIT
+- 开场动画：[animateplus](https://github.com/bendc/animateplus) MIT
+- 移动动画：[move.js](http://visionmedia.github.io/move.js/)
+- 简易配置动画：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
+- 线性移动动画：[move](https://github.com/flfwzgl/move) MIT
+
+
+> 图片放大
+
+- 当前DIV滚动鼠标放大：[svg.pan-zoom.js](https://github.com/jillix/svg.pan-zoom.js) / [demo](http://jillix.github.io/svg.pan-zoom.js/) MIT
+- 点击图片弹出层显示大图：[jquery-lighter](https://github.com/ksylvest/jquery-lighter)
+- 鼠标放上在另一窗口放大：[jZoom](https://github.com/pciapcib/jZoom) MIT
+
+
+> 图片浏览
+
+- 图片浏览(酷)：[fancybox](https://github.com/fancyapps/fancybox) GPLv3
+
+
+> 图片懒加载
+
 - 小大图切换：[lazysizes](https://github.com/aFarkas/lazysizes) MIT
 - 图片懒加载：[jquery_lazyload](https://github.com/tuupola/jquery_lazyload)
-- 延期加载CSS：[loadCSS](https://github.com/filamentgroup/loadCSS) MIT
-- 按钮加载中：[Ladda](https://github.com/hakimel/Ladda)
-- 动画：[animate.css](https://daneden.github.io/animate.css/)
-- 动画：[anime](https://github.com/juliangarnier/anime) MIT
-- 动画：[velocity](https://github.com/julianshapiro/velocity) MIT
-- 动画：[vivus](http://maxwellito.github.io/vivus/) MIT
-- 动画：[animateplus](https://github.com/bendc/animateplus) MIT
-- 动画：[move.js](http://visionmedia.github.io/move.js/)
-- 动画：[bounce.js](https://github.com/tictail/bounce.js) MIT
-- 动画：[vivify](https://github.com/Martz90/vivify) MIT
+
+
+> 视频播放器
+
+- [video.js](https://github.com/videojs/video.js) Apache 2.0
+- [mediaelement](https://github.com/mediaelement/mediaelement)  MIT
+- [jPlayer](https://github.com/jplayer/jPlayer) MIT
+- [accessible-html5-video-player](https://github.com/paypal/accessible-html5-video-player) BSD.
+- [iphone-inline-video](https://github.com/bfred-it/iphone-inline-video) MIT
