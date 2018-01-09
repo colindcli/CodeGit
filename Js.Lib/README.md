@@ -20,4 +20,15 @@
 - 流动背景图：[BigVideo.js](http://dfcb.github.io/BigVideo.js/) MIT
 - 视频转换：[videoconverter.js](https://github.com/bgrins/videoconverter.js)
 - loading: [loading](https://github.com/jxnblk/loading)
-- 懒图片：[lazysizes](https://github.com/aFarkas/lazysizes)
+- 小大图切换：[lazysizes](https://github.com/aFarkas/lazysizes) MIT
+- 图片懒加载：[jquery_lazyload](https://github.com/tuupola/jquery_lazyload)
+- 延期加载CSS：[loadCSS](https://github.com/filamentgroup/loadCSS) MIT
+- 按钮加载中：[Ladda](https://github.com/hakimel/Ladda)
+- 动画：[animate.css](https://daneden.github.io/animate.css/)
+- 动画：[anime](https://github.com/juliangarnier/anime) MIT
+- 动画：[velocity](https://github.com/julianshapiro/velocity) MIT
+- 动画：[vivus](http://maxwellito.github.io/vivus/) MIT
+- 动画：[animateplus](https://github.com/bendc/animateplus) MIT
+- 动画：[move.js](http://visionmedia.github.io/move.js/)
+- 动画：[bounce.js](https://github.com/tictail/bounce.js) MIT
+- 动画：[vivify](https://github.com/Martz90/vivify) MIT
