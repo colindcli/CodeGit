@@ -30,13 +30,14 @@
 > 修饰
 
 - 流动背景图：[BigVideo.js](http://dfcb.github.io/BigVideo.js/) MIT
-- 浏览器favico：[favico.js](https://github.com/ejci/favico.js)
+- 浏览器favico：[favico.js](https://github.com/ejci/favico.js) GPL 2.0
 
 
 > Loading
 
-- loading: [loading](https://github.com/jxnblk/loading)
-- 按钮加载中：[Ladda](https://github.com/hakimel/Ladda)
+- loading: [loading](https://github.com/jxnblk/loading) MIT
+- loading: [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders) MIT
+- 按钮加载中：[Ladda](https://github.com/hakimel/Ladda) MIT
 
 
 > 动画
