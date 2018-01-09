@@ -28,6 +28,19 @@ namespace MessageService.WebApi
                     return null;
                 }
 
+                var exists = false;
+                foreach (var item in request.Cookies)
+                {
+                    if (string.Equals(item.Key, "UserId", StringComparison.OrdinalIgnoreCase))
+                    {
+                        exists = true;
+                    }
+                }
+                if (!exists)
+                {
+                    return null;
+                }
+
                 var cookie = request.Cookies["UserId"];
                 return !string.IsNullOrWhiteSpace(cookie?.Value) ? cookie.Value : null;
             }
