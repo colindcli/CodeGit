@@ -57,7 +57,8 @@
 - 当前DIV滚动鼠标放大：[svg.pan-zoom.js](https://github.com/jillix/svg.pan-zoom.js) / [demo](http://jillix.github.io/svg.pan-zoom.js/) MIT
 - DIV图片内放大：[zoom](https://github.com/jackmoore/zoom) / [demo](http://www.jacklmoore.com/zoom/) MIT
 - 点击图片弹出层显示大图：[jquery-lighter](https://github.com/ksylvest/jquery-lighter) MIT
-- 点击弹层放大：[zoom.js](https://github.com/fat/zoom.js) MIT
+- 点击弹层放大：[zoom.js](https://github.com/fat/zoom.js) / [demo](https://fat.github.io/zoom.js/) MIT
+- 点击弹出放大：[zooming](https://github.com/kingdido999/zooming) / [demo](https://desmonding.me/zooming/) MIT
 - 鼠标放上在另一窗口放大：[jZoom](https://github.com/pciapcib/jZoom) MIT
 - 页面古怪转变：[zoomooz](https://github.com/jaukia/zoomooz) / [demo](http://jaukia.github.io/zoomooz/) 
 
