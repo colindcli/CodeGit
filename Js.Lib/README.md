@@ -13,7 +13,8 @@
 ## 插件收藏
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
-- 滚动事件：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo) MIT
+- 滚动条：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo) MIT
+- 平滑滚动：[animatescroll.js](https://github.com/ramswaroop/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
 
 
 > 工具
@@ -37,6 +38,7 @@
 
 - loading: [loading](https://github.com/jxnblk/loading) MIT
 - loading: [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders) MIT
+- loading: [css-loaders](https://github.com/lukehaas/css-loaders) / [demo](https://projects.lukehaas.me/css-loaders/) MIT
 - 按钮加载中：[Ladda](https://github.com/hakimel/Ladda) MIT
 
 
