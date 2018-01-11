@@ -17,6 +17,11 @@
 - 平滑滚动：[animatescroll.js](https://github.com/ramswaroop/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
 
 
+- 上传文件
+
+- [bootstrap-fileinput](https://github.com/kartik-v/bootstrap-fileinput) / [demo](http://plugins.krajee.com/file-basic-usage-demo) BSD
+
+
 > 工具
 
 - 视频转换：[videoconverter.js](https://github.com/bgrins/videoconverter.js)
@@ -83,3 +88,8 @@
 - [jPlayer](https://github.com/jplayer/jPlayer) MIT
 - [accessible-html5-video-player](https://github.com/paypal/accessible-html5-video-player) BSD.
 - [iphone-inline-video](https://github.com/bfred-it/iphone-inline-video) MIT
+
+> PDF
+
+- [pdf.js](https://github.com/mozilla/pdf.js) Apache 2.0
+- [jsPDF](https://github.com/MrRio/jsPDF) MIT
