@@ -1,3 +1,4 @@
+--分割字符串
 CREATE FUNCTION [dbo].[FnStringSplit]
 (
 	@SplitString NVARCHAR(MAX),

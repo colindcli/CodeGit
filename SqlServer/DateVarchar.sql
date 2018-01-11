@@ -1,3 +1,4 @@
+--转时间
 DECLARE @dt DATETIME=getdate();
 DECLARE @Tb TABLE(Number int)
 DECLARE @i int=0;

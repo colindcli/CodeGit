@@ -1,3 +1,4 @@
+--创建表值函数
 CREATE FUNCTION [dbo].[FnTable]
 (
 	@Id int
