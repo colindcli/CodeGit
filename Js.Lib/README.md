@@ -15,6 +15,8 @@
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
 - 滚动条：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo) MIT
 - 平滑滚动：[animatescroll.js](https://github.com/ramswaroop/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
+- 滚动条样式：[iscroll](https://github.com/cubiq/iscroll) / [demo](http://lab.cubiq.org/iscroll5/demos/scrollbars/) MIT
+- 滚动条页面变换魔术：[ScrollMagic](https://github.com/janpaepke/ScrollMagic) / [demo](http://scrollmagic.io/examples/) MIT/GPL
 
 
 - 上传文件
