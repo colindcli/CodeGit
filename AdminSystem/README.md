@@ -16,6 +16,7 @@
 - [H-ui](http://www.h-ui.net/H-ui.admin.shtml)
 - [larrycms](https://github.com/larryqin/larrycms)
 - [Ace](https://github.com/bopoda/ace)
+- [hadmin](https://github.com/huangyaoxin/hAdmin)
 
 > 收费授权
 - [layui后台系统](http://yanshi.sucaihuo.com/modals/32/3252/demo/)

@@ -13,6 +13,24 @@
 ## 插件收藏
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
+- blog：[hexo](https://github.com/hexojs/hexo) MIT
+- 3D场景：[three.js](https://github.com/mrdoob/three.js) / [demo](https://threejs.org/examples/) MIT
+- h5历史记录：[history.js](https://github.com/browserstate/history.js) BSD-3
+- h5支持：[html5shiv](https://github.com/aFarkas/html5shiv)
+- 图像处理库：[AlloyImage](https://github.com/AlloyTeam/AlloyImage)
+- 右键：[jQuery-contextMenu](https://github.com/swisnl/jQuery-contextMenu) MIT
+- 步骤：[jquery-steps](https://github.com/rstaib/jquery-steps) / [demo](https://github.com/rstaib/jquery-steps/wiki) MIT
+- 桌面通知：[HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications)
+
+
+> 规范
+
+- js规范：[js](https://github.com/bevacqua/js)
+- html5规范：[html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
+
+
+> 滚动条及动画
+
 - 滚动条：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo) MIT
 - 平滑滚动：[animatescroll.js](https://github.com/ramswaroop/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
 - 滚动条样式：[iscroll](https://github.com/cubiq/iscroll) / [demo](http://lab.cubiq.org/iscroll5/demos/scrollbars/) MIT
@@ -71,6 +89,8 @@
 - 点击弹出放大：[zooming](https://github.com/kingdido999/zooming) / [demo](https://desmonding.me/zooming/) MIT
 - 鼠标放上在另一窗口放大：[jZoom](https://github.com/pciapcib/jZoom) MIT
 - 页面古怪转变：[zoomooz](https://github.com/jaukia/zoomooz) / [demo](http://jaukia.github.io/zoomooz/) 
+- 魔幻线条：[curvejs](https://github.com/AlloyTeam/curvejs)
+
 
 > 图片浏览
 
@@ -90,11 +110,23 @@
 - [jPlayer](https://github.com/jplayer/jPlayer) MIT
 - [accessible-html5-video-player](https://github.com/paypal/accessible-html5-video-player) BSD.
 - [iphone-inline-video](https://github.com/bfred-it/iphone-inline-video) MIT
+- [flv.js](https://github.com/Bilibili/flv.js) MIT
+
+
+> 音频
+
+- [SoundJS](https://github.com/CreateJS/SoundJS)
+
 
 > PDF
 
 - [pdf.js](https://github.com/mozilla/pdf.js) Apache 2.0
 - [jsPDF](https://github.com/MrRio/jsPDF) MIT
+
+
+- excel
+
+- [js-xlsx](https://github.com/SheetJS/js-xlsx) Apache-2.0
 
 
 > 文件预览
