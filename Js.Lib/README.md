@@ -95,3 +95,8 @@
 
 - [pdf.js](https://github.com/mozilla/pdf.js) Apache 2.0
 - [jsPDF](https://github.com/MrRio/jsPDF) MIT
+
+
+> 文件预览
+
+- [kkFileView](https://github.com/kekingcn/kkFileView) Apache-2.0
