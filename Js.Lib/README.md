@@ -23,6 +23,7 @@
 - 桌面通知：[HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications)
 
 
+
 > 规范
 
 - js规范：[js](https://github.com/bevacqua/js)
@@ -40,7 +41,9 @@
 - 上传文件
 
 - [bootstrap-fileinput](https://github.com/kartik-v/bootstrap-fileinput) / [demo](http://plugins.krajee.com/file-basic-usage-demo) BSD
-
+- [dropzone](https://github.com/enyo/dropzone) / [demo](http://www.dropzonejs.com/#usage) MIT
+- [Simple-Ajax-Uploader](https://github.com/LPology/Simple-Ajax-Uploader) / [demo](https://www.lpology.com/code/ajaxuploader/) MIT
+- [uploader](https://github.com/danielm/uploader) / [demo](https://danielmg.org/demo/java-script/uploader/basic) MIT
 
 > 工具
 
@@ -65,6 +68,14 @@
 - loading: [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders) MIT
 - loading: [css-loaders](https://github.com/lukehaas/css-loaders) / [demo](https://projects.lukehaas.me/css-loaders/) MIT
 - 按钮加载中：[Ladda](https://github.com/hakimel/Ladda) MIT
+
+
+> 进度
+
+- 页面顶部进度：[nanobar](https://github.com/jacoborus/nanobar) / [demo](http://nanobar.jacoborus.codes/) MIT
+- 页面顶部进度：[ToProgress](https://github.com/djyde/ToProgress) / [demo](http://djyde.github.io/ToProgress/) MIT
+- 页签进度：[piecon](https://github.com/lipka/piecon) / [demo](http://lipka.github.io/piecon/) MIT
+- 圆形进度：[jquery-circle-progress](https://github.com/kottenator/jquery-circle-progress)
 
 
 > 动画
