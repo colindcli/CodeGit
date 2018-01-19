@@ -1,5 +1,8 @@
 ## 万维网
 
+- 腾讯开源：[github](https://github.com/TencentOpen) / [tencent](http://code.tencent.com/)
+- C#代码检查：[tscancode](http://code.tencent.com/tscancode.html)
+
 - 邮件短信发送服务：[sendcloud](https://www.sendcloud.net/)
 - 原型设计与协同工具：[墨刀](https://v2.modao.cc/)
 - 原型分享：[axure](https://share.axure.com/)
