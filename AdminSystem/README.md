@@ -1,5 +1,7 @@
 ### 后台系统集成
 
+- PlayCommunity 社区系统: [play-community](https://github.com/playcommunity/play-community)
+
 > CMS
 - [DoraCMS](https://github.com/doramart/DoraCMS)
 - [ASP.NET-MVC-CMS](https://github.com/SeriaWei/ASP.NET-MVC-CMS)
