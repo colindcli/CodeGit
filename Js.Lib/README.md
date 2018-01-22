@@ -21,6 +21,10 @@
 - 右键：[jQuery-contextMenu](https://github.com/swisnl/jQuery-contextMenu) MIT
 - 步骤：[jquery-steps](https://github.com/rstaib/jquery-steps) / [demo](https://github.com/rstaib/jquery-steps/wiki) MIT
 - 桌面通知：[HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications)
+- 输入优化：[fancyInput](https://github.com/yairEO/fancyInput)
+- 图案魔术：[magic](https://github.com/miniMAC/magic) / [demo](https://minimamente.com/example/magic_animations/) 
+- 计数器：[jquery-counter](https://github.com/sophilabs/jquery-counter) / [demo](http://sophilabs.github.io/jquery-counter/) MIT
+- 鼠标悬停效果：[hover](https://github.com/yaochuxia/hover) / [demo](http://yaochuxia.github.io/hover/) 
 
 
 
@@ -36,6 +40,7 @@
 - 平滑滚动：[animatescroll.js](https://github.com/ramswaroop/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
 - 滚动条样式：[iscroll](https://github.com/cubiq/iscroll) / [demo](http://lab.cubiq.org/iscroll5/demos/scrollbars/) MIT
 - 滚动条页面变换魔术：[ScrollMagic](https://github.com/janpaepke/ScrollMagic) / [demo](http://scrollmagic.io/examples/) MIT/GPL
+- 滚动页面变化：[kissui.scrollanim](https://github.com/usablica/kissui.scrollanim) / [demo](http://scrollanim.kissui.io/) MIT
 
 
 - 上传文件
@@ -68,6 +73,7 @@
 - loading: [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders) MIT
 - loading: [css-loaders](https://github.com/lukehaas/css-loaders) / [demo](https://projects.lukehaas.me/css-loaders/) MIT
 - 按钮加载中：[Ladda](https://github.com/hakimel/Ladda) MIT
+- loading：[CSS3-Loaders](https://github.com/Grafikart/CSS3-Loaders) / [demo](http://htmlpreview.github.io/?https://github.com/Grafikart/CSS3-Loaders/blob/master/index.html)
 
 
 > 进度
@@ -89,6 +95,7 @@
 - 移动动画：[move.js](http://visionmedia.github.io/move.js/)
 - 简易配置动画：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
 - 线性移动动画：[move](https://github.com/flfwzgl/move) MIT
+- 图形跳动：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
 
 
 > 图片放大
