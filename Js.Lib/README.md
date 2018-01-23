@@ -25,6 +25,8 @@
 - 图案魔术：[magic](https://github.com/miniMAC/magic) / [demo](https://minimamente.com/example/magic_animations/) 
 - 计数器：[jquery-counter](https://github.com/sophilabs/jquery-counter) / [demo](http://sophilabs.github.io/jquery-counter/) MIT
 - 鼠标悬停效果：[hover](https://github.com/yaochuxia/hover) / [demo](http://yaochuxia.github.io/hover/) 
+- 类似excel进度：[timesheet.js](https://github.com/sbstjn/timesheet.js)
+- 弹框页面缩小：[Avgrund](https://github.com/hakimel/Avgrund) / [demo](https://lab.hakim.se/avgrund/) MIT
 
 
 
@@ -84,6 +86,12 @@
 - 圆形进度：[jquery-circle-progress](https://github.com/kottenator/jquery-circle-progress)
 
 
+> 页面动画
+
+- 页面动画：[impress.js](https://github.com/impress/impress.js) / [demo](https://impress.js.org/) MIT
+- 整页进度：[progress.js](https://github.com/usablica/progress.js) / [demo](http://usablica.github.io/progress.js/) MIT
+
+
 > 动画
 
 - 文字跳动：[animate.css](https://github.com/daneden/animate.css) / [demo](https://daneden.github.io/animate.css/) MIT
@@ -96,6 +104,7 @@
 - 简易配置动画：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
 - 线性移动动画：[move](https://github.com/flfwzgl/move) MIT
 - 图形跳动：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
+- div动画变化：[](https://github.com/thednp/kute.js) / [demo](http://thednp.github.io/kute.js/css.html) MIT
 
 
 > 图片放大
