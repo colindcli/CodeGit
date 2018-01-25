@@ -151,7 +151,8 @@
 - [jsPDF](https://github.com/MrRio/jsPDF) MIT
 - [PDF viewer](https://flowpaper.com/)
 
-- excel
+
+> excel
 
 - [js-xlsx](https://github.com/SheetJS/js-xlsx) Apache-2.0
 
