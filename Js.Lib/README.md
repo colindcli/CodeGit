@@ -149,7 +149,7 @@
 
 - [pdf.js](https://github.com/mozilla/pdf.js) Apache 2.0
 - [jsPDF](https://github.com/MrRio/jsPDF) MIT
-
+- [PDF viewer](https://flowpaper.com/)
 
 - excel
 
