@@ -27,6 +27,9 @@
 - 鼠标悬停效果：[hover](https://github.com/yaochuxia/hover) / [demo](http://yaochuxia.github.io/hover/) 
 - 类似excel进度：[timesheet.js](https://github.com/sbstjn/timesheet.js)
 - 弹框页面缩小：[Avgrund](https://github.com/hakimel/Avgrund) / [demo](https://lab.hakim.se/avgrund/) MIT
+- 发送页面弹幕：[jquery.barrager.js](https://github.com/yaseng/jquery.barrager.js)
+- 过去时间显示：[jquery-timeago](https://github.com/rmm5t/jquery-timeago) / [demo](http://timeago.yarp.com/) MIT
+- 鼠标滚轮插件：[jquery-mousewheel](https://github.com/jquery/jquery-mousewheel)
 
 
 
@@ -43,6 +46,7 @@
 - 滚动条样式：[iscroll](https://github.com/cubiq/iscroll) / [demo](http://lab.cubiq.org/iscroll5/demos/scrollbars/) MIT
 - 滚动条页面变换魔术：[ScrollMagic](https://github.com/janpaepke/ScrollMagic) / [demo](http://scrollmagic.io/examples/) MIT/GPL
 - 滚动页面变化：[kissui.scrollanim](https://github.com/usablica/kissui.scrollanim) / [demo](http://scrollanim.kissui.io/) MIT
+- 满屏滚动：[fullPage.js](https://github.com/alvarotrigo/fullPage.js) / [demo](https://alvarotrigo.com/fullPage/) MIT
 
 
 - 上传文件
