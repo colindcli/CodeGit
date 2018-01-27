@@ -164,3 +164,9 @@
 > 文件预览
 
 - [kkFileView](https://github.com/kekingcn/kkFileView) Apache-2.0
+
+
+> 打印
+
+- [print.js](https://github.com/crabbly/print.js) 
+- [jQuery-printPage-plugin](https://github.com/posabsolute/jQuery-printPage-plugin)
