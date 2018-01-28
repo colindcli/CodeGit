@@ -94,7 +94,7 @@ public class EmailHelper
             catch (Exception ex)
             {
                 LogHelper.Fatal($"发送邮件失败：To:{email.EmailAddress};Subject:{model.Subject};Body:{model.Body}", ex);
-                success = true;
+                success = false;
             }
         });
         return success;
