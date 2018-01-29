@@ -11,6 +11,8 @@
 
 
 ## 插件收藏
+- [underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
+
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
 - blog：[hexo](https://github.com/hexojs/hexo) MIT
