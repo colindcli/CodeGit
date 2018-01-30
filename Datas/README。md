@@ -1,5 +1,7 @@
 ## 数据
 
-- 民族：Ethnic.xml
-- 学历：Education.xml
-- 工作岗位：JobPosition.xml
+- 民族：Ethnic.xml / dbo.Ethnic.Table.sql
+- 学历：Education.xml / dbo.Education.Table.sql
+- 工作岗位：JobPosition.xml / dbo.JobPosition.Table.sql
+
+- 中国行政区：[data_location](https://github.com/mumuy/data_location)
