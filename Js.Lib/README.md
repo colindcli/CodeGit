@@ -14,16 +14,17 @@
 - [underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
 
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
+- 日程：[fullcalendar](https://github.com/fullcalendar/fullcalendar)
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
 - blog：[hexo](https://github.com/hexojs/hexo) MIT
 - 3D场景：[three.js](https://github.com/mrdoob/three.js) / [demo](https://threejs.org/examples/) MIT
-- h5历史记录：[history.js](https://github.com/browserstate/history.js) BSD-3
-- h5支持：[html5shiv](https://github.com/aFarkas/html5shiv)
 - 图像处理库：[AlloyImage](https://github.com/AlloyTeam/AlloyImage)
 - 右键：[jQuery-contextMenu](https://github.com/swisnl/jQuery-contextMenu) MIT
 - 步骤：[jquery-steps](https://github.com/rstaib/jquery-steps) / [demo](https://github.com/rstaib/jquery-steps/wiki) MIT
 - 桌面通知：[HTML5-Desktop-Notifications](https://github.com/ttsvetko/HTML5-Desktop-Notifications)
 - 输入优化：[fancyInput](https://github.com/yairEO/fancyInput)
+- 设置光标位置：[jquery.caret](https://github.com/acdvorak/jquery.caret) MIT
+- @人：[jquery-atwho-rails](https://github.com/ichord/jquery-atwho-rails) MIT
 - 图案魔术：[magic](https://github.com/miniMAC/magic) / [demo](https://minimamente.com/example/magic_animations/) 
 - 计数器：[jquery-counter](https://github.com/sophilabs/jquery-counter) / [demo](http://sophilabs.github.io/jquery-counter/) MIT
 - 鼠标悬停效果：[hover](https://github.com/yaochuxia/hover) / [demo](http://yaochuxia.github.io/hover/) 
@@ -34,11 +35,17 @@
 - 鼠标滚轮插件：[jquery-mousewheel](https://github.com/jquery/jquery-mousewheel)
 
 
-
 > 规范
 
 - js规范：[js](https://github.com/bevacqua/js)
 - html5规范：[html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
+
+
+> H5及CSS3支持
+
+- h5历史记录：[history.js](https://github.com/browserstate/history.js) BSD-3
+- h5支持IE9：[html5shiv](https://github.com/aFarkas/html5shiv)
+- CSS助手和CSS3媒体查询启动器: [css3-mediaqueries-js](https://github.com/livingston/css3-mediaqueries-js) MIT
 
 
 > 滚动条及动画
