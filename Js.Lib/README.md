@@ -11,7 +11,8 @@
 
 
 ## 插件收藏
-- 城市三级联动/图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/演示：[widget](https://github.com/mumuy/widget)
+- 城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
+- 图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/聊天表情：[widget](https://github.com/mumuy/widget)
 - [underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
 
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
