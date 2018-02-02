@@ -145,6 +145,14 @@
 - 图片懒加载：[jquery_lazyload](https://github.com/tuupola/jquery_lazyload)
 
 
+> 图片处理
+
+- 图片裁剪：[JavaScript-Load-Image](https://github.com/blueimp/JavaScript-Load-Image) MIT
+- 图片裁剪：[cropbox](https://github.com/tuxingsheng/cropbox)
+- 图片裁剪：[js-cropbox](https://github.com/bupy7/js-cropbox) BSD 3
+- 头像裁剪：[cropbox](https://github.com/hongkhanh/cropbox) MIT
+
+
 > 视频播放器
 
 - [video.js](https://github.com/videojs/video.js) Apache 2.0
@@ -186,3 +194,10 @@
 > API:
 
 - [获取当前城市或IP](http://passer-by.com/api/#docs/ip)
+
+
+> 酷酷
+
+- d3：[d3](https://github.com/d3/d3)
+- [D3液体填充量表](http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6)
+- [泡泡菜单](http://sunsp.net/demo/BubbleMenu/)
