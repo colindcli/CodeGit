@@ -38,7 +38,12 @@
 - 复制到粘贴板：[clipboard.js](https://github.com/zenorocha/clipboard.js) / [demo](https://clipboardjs.com/) MIT
 - 本地存储：[store.js](https://github.com/marcuswestin/store.js) MIT
 - 导航滚动显示隐藏：[headroom.js](https://github.com/WickyNilliams/headroom.js) / [demo](http://wicky.nillia.ms/headroom.js/playroom/) MIT
-- 格式化输入：[cleave.js](https://github.com/nosir/cleave.js) / [demo](http://nosir.github.io/cleave.js/) Apache-2.0
+- 格式化电话信用卡：[cleave.js](https://github.com/nosir/cleave.js) / [demo](http://nosir.github.io/cleave.js/) Apache-2.0
+- 格式化数量：[Numeral-js](https://github.com/adamwdraper/Numeral-js) / [demo](http://numeraljs.com/) MIT
+- 图片下雨点：[rainyday.js](https://github.com/maroslaw/rainyday.js) / [demo](https://mubaidr.github.io/rainyday.js/) GPL
+- 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
+- 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
+- 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 
 
 > 规范
@@ -119,7 +124,7 @@
 - 运动变化：[velocity](https://github.com/julianshapiro/velocity) / [demo](http://velocityjs.org/) MIT
 - 运动写字：[vivus](http://maxwellito.github.io/vivus/) MIT
 - 开场动画：[animateplus](https://github.com/bendc/animateplus) MIT
-- 移动动画：[move.js](http://visionmedia.github.io/move.js/)
+- 移动动画：[move.js](https://github.com/visionmedia/move.js) / [demo](http://visionmedia.github.io/move.js/) MIT
 - 简易配置动画：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
 - 线性移动动画：[move](https://github.com/flfwzgl/move) MIT
 - 图形跳动：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
@@ -147,6 +152,7 @@
 
 - 小大图切换：[lazysizes](https://github.com/aFarkas/lazysizes) MIT
 - 图片懒加载：[jquery_lazyload](https://github.com/tuupola/jquery_lazyload)
+- 图片懒加载：[layzr.js](https://github.com/callmecavs/layzr.js) / [demo](http://callmecavs.com/layzr.js/) MIT
 
 
 > 图片处理
@@ -205,3 +211,11 @@
 - d3：[d3](https://github.com/d3/d3)
 - [D3液体填充量表](http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6)
 - [泡泡菜单](http://sunsp.net/demo/BubbleMenu/)
+
+
+> 公司效果
+
+- [adrenalinmedia](http://www.adrenalinmedia.com.au/home)
+- [magacom](http://magacom.fr/)
+- [budidiokojinedostaje](http://www.budidiokojinedostaje.hr)
+- [stanleystella](https://www.stanleystella.com)
