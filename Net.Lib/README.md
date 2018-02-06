@@ -1,6 +1,8 @@
 ## .Net库
 
 - 中文转拼音：[TinyPinyin.Net](https://github.com/hstarorg/TinyPinyin.Net)
+- 反编译：[ILSpy](https://github.com/icsharpcode/ILSpy)
+- Zip压缩：[SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
 
 
 > 支付

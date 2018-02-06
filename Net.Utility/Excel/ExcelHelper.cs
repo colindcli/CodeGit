@@ -11,13 +11,6 @@ using NPOI.SS.UserModel;
 /// <summary>
 /// Excel操作类
 /// </summary>
-/// <remarks>
-/// FileName: 	ExcelHelper.cs
-/// CLRVersion: 4.0.30319.18444
-/// Author: 	Devin
-/// DateTime: 	2016/1/28 9:47:01
-/// GitHub:		https://github.com/v5bep7/Utility
-/// </remarks>
 public class ExcelHelper
 {
 

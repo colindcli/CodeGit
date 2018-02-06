@@ -7,6 +7,7 @@
 - [ASP.NET-MVC-CMS](https://github.com/SeriaWei/ASP.NET-MVC-CMS)
 - [nopCommerce](https://github.com/nopSolutions/nopCommerce)
 - [ABP-ASP.NET-Boilerplate-Project-CMS](https://github.com/Jimmey-Jiang/ABP-ASP.NET-Boilerplate-Project-CMS)
+- [netlify-cms](https://github.com/netlify/netlify-cms)
 
 > WMS
 - [gitwms](https://github.com/hechenqingyuan/gitwms)
@@ -26,4 +27,5 @@
 
 
 > 商城
--微信小程序：[wechat-weapp-mal](https://github.com/liuxuanqiang/wechat-weapp-mall)
+- 微信小程序：[wechat-weapp-mal](https://github.com/liuxuanqiang/wechat-weapp-mall)
+- 销售系统：[ShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
