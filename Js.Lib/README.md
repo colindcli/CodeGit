@@ -35,6 +35,10 @@
 - 发送页面弹幕：[jquery.barrager.js](https://github.com/yaseng/jquery.barrager.js)
 - 过去时间显示：[jquery-timeago](https://github.com/rmm5t/jquery-timeago) / [demo](http://timeago.yarp.com/) MIT
 - 鼠标滚轮插件：[jquery-mousewheel](https://github.com/jquery/jquery-mousewheel)
+- 复制到粘贴板：[clipboard.js](https://github.com/zenorocha/clipboard.js) / [demo](https://clipboardjs.com/) MIT
+- 本地存储：[store.js](https://github.com/marcuswestin/store.js) MIT
+- 导航滚动显示隐藏：[headroom.js](https://github.com/WickyNilliams/headroom.js) / [demo](http://wicky.nillia.ms/headroom.js/playroom/) MIT
+- 格式化输入：[cleave.js](https://github.com/nosir/cleave.js) / [demo](http://nosir.github.io/cleave.js/) Apache-2.0
 
 
 > 规范
