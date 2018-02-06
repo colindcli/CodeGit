@@ -39,7 +39,9 @@
 - 本地存储：[store.js](https://github.com/marcuswestin/store.js) MIT
 - 导航滚动显示隐藏：[headroom.js](https://github.com/WickyNilliams/headroom.js) / [demo](http://wicky.nillia.ms/headroom.js/playroom/) MIT
 - 格式化电话信用卡：[cleave.js](https://github.com/nosir/cleave.js) / [demo](http://nosir.github.io/cleave.js/) Apache-2.0
+- 格式化信用卡：[card](https://github.com/jessepollak/card) / [demo](https://jessepollak.github.io/card/) MIT
 - 格式化数量：[Numeral-js](https://github.com/adamwdraper/Numeral-js) / [demo](http://numeraljs.com/) MIT
+- 格式化时间：[moment](https://github.com/colindcli/moment) / [demo](http://momentjs.com/)
 - 图片下雨点：[rainyday.js](https://github.com/maroslaw/rainyday.js) / [demo](https://mubaidr.github.io/rainyday.js/) GPL
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
 - 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
@@ -62,6 +64,7 @@
 > 滚动条及动画
 
 - 滚动条：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo) MIT
+- 滚动条美化：[smooth-scrollbar](https://github.com/colindcli/smooth-scrollbar) / [demo](http://idiotwu.github.io/smooth-scrollbar/) MIT
 - 平滑滚动：[animatescroll.js](https://github.com/ramswaroop/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
 - 滚动条样式：[iscroll](https://github.com/cubiq/iscroll) / [demo](http://lab.cubiq.org/iscroll5/demos/scrollbars/) MIT
 - 滚动条页面变换魔术：[ScrollMagic](https://github.com/janpaepke/ScrollMagic) / [demo](http://scrollmagic.io/examples/) MIT/GPL
