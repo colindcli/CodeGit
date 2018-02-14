@@ -29,3 +29,4 @@
 > 商城
 - 微信小程序：[wechat-weapp-mal](https://github.com/liuxuanqiang/wechat-weapp-mall)
 - 销售系统：[ShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
+- [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
