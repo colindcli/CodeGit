@@ -29,6 +29,4 @@
     , imageUrl: URL +"../../File/EditorUpload"             //图片上传提交地址
     , imagePath:URL + "../../"                         //图片修正地址，引用了fixedImagePath,如有特殊需求，可自行配置
     
-> 上传后返回对象
-
-    FileReturnModel.cs
+> 上传后返回对象：[FileReturnModel.cs](https://github.com/colindcli/CodeGit/blob/master/Js.Lib/UMeditor/FileReturnModel.cs)
