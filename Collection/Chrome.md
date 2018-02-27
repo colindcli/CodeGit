@@ -5,7 +5,7 @@
 - EditThisCookie
 - Advanced REST client
 - 谷歌访问助手
-- JSONView
+- JSONView：[JSONView-for-Chrome](https://github.com/gildas-lormeau/JSONView-for-Chrome)
 - Axure RP Extension for Chrome
 - [ReplaceGoogleCDN](https://github.com/colindcli/ReplaceGoogleCDN)
 
