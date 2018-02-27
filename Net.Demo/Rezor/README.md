@@ -1,4 +1,4 @@
-> Engine Razor Compile
+## Engine Razor Compile
 
 - Common项目添加 RazorEngine
 - web项目添加 Microsoft.CodeAnalysis.CSharp
@@ -13,3 +13,8 @@
 > Asp.Net core
 - http://blog.csdn.net/linux12a/article/details/77824043
 - http://www.zkea.net/codesnippet/detail/post-62
+
+
+## RazorMachine
+
+- [RazorMachine](https://github.com/jlamfers/RazorMachine)
