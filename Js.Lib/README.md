@@ -46,6 +46,13 @@
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
 - 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
 - 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
+- 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) MIT
+- 代码高亮：[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) MIT
+- 艺术二维码：[qart.js](https://github.com/kciter/qart.js) / [demo](https://kciter.github.io/qart.js/) GPL3
+- 表单验证：[jQuery-Form-Validator](https://github.com/victorjonsson/jQuery-Form-Validator)
+- DIV固定粘性：[fixed-sticky](https://github.com/filamentgroup/fixed-sticky) / [demo](http://filamentgroup.github.io/fixed-sticky/demos/demo-control.html) MIT
+- DIV固定粘性：[fixto](https://github.com/bbarakaci/fixto) / [demo](http://bbarakaci.github.io/fixto/) MIT
+- 滚动固定位置：[stickymojo](https://github.com/mojotech/stickymojo) / [demo](http://mojotech.github.io/stickymojo/)
 
 
 > 规范
@@ -70,6 +77,8 @@
 - 滚动条页面变换魔术：[ScrollMagic](https://github.com/janpaepke/ScrollMagic) / [demo](http://scrollmagic.io/examples/) MIT/GPL
 - 滚动页面变化：[kissui.scrollanim](https://github.com/usablica/kissui.scrollanim) / [demo](http://scrollanim.kissui.io/) MIT
 - 满屏滚动：[fullPage.js](https://github.com/alvarotrigo/fullPage.js) / [demo](https://alvarotrigo.com/fullPage/) MIT
+- 页面块滚动响应：[ScrollTrigger](https://github.com/terwanerik/ScrollTrigger) / [demo](https://terwanerik.github.io/ScrollTrigger/) MIT
+- 平滑进度滚动：[naturalScroll](https://github.com/asvd/naturalScroll) / [demo](http://asvd.github.io/viewport/) MIT
 
 
 - 上传文件
