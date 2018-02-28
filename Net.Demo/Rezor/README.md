@@ -1,7 +1,7 @@
 ## Engine Razor Compile
 
-- Common项目添加 RazorEngine
-- web项目添加 Microsoft.CodeAnalysis.CSharp
+- web项目添加 RazorEngine/Microsoft.CodeAnalysis.CSharp
+- Common项目引用RazorEngine
 
 > 参考
 - https://antaris.github.io/RazorEngine/
