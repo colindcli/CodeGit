@@ -10,7 +10,7 @@ public class TemplateHelper
     /// <param name="templatePath">cshtml文件路径</param>
     /// <param name="model"></param>
     /// <returns></returns>
-    public static string ToHtml<T>(string templatePath, T model)
+    public static string RenderHtml<T>(string templatePath, T model)
     {
         var template = System.IO.File.ReadAllText(templatePath);
         return Engine.Razor.RunCompile(template, template.GetHashCode().ToString(), model.GetType(), model);
