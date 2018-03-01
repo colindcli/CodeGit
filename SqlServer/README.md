@@ -17,5 +17,5 @@
 - 连续排序：ROW_NUMBER()OVER(ORDER BY t.TypeId ASC) Id
 - 分组连续排序：ROW_NUMBER()OVER(PARTITION BY t.TypeId ORDER BY t.CreateDate DESC) Id，取每组第一条则：Id=1
 
-- 跳跃排序：RANK()OVER(ORDER BY t.TypeId ASC)
+- 跳跃排序：RANK()OVER(ORDER BY t.TypeId ASC) [如成绩排名]
 - 分组跳跃排序：DENSE_RANK()OVER(PARTITION BY t.TypeId ORDER BY t.CreateDate DESC)
