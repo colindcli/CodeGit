@@ -30,3 +30,8 @@
 - 微信小程序：[wechat-weapp-mal](https://github.com/liuxuanqiang/wechat-weapp-mall)
 - 销售系统：[ShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
 - [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
+- 门店：[Sheng.WeixinConstruction](https://github.com/iccb1013/Sheng.WeixinConstruction)
+
+
+> 其他
+- 在线文档管理系统:[mindoc](https://github.com/lifei6671/mindoc) / [BookStack](https://github.com/TruthHun/BookStack)

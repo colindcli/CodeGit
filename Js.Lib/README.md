@@ -153,6 +153,7 @@
 - 鼠标放上在另一窗口放大：[jZoom](https://github.com/pciapcib/jZoom) MIT
 - 页面古怪转变：[zoomooz](https://github.com/jaukia/zoomooz) / [demo](http://jaukia.github.io/zoomooz/) 
 - 魔幻线条：[curvejs](https://github.com/AlloyTeam/curvejs)
+- 图片浏览器：[cImageViewer](https://github.com/xingqiao/cImageViewer)
 
 
 > 图片浏览

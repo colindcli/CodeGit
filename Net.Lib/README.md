@@ -20,3 +20,7 @@
 - Pdf:[Aspose.Pdf-for-.NET](https://github.com/aspose-pdf/Aspose.Pdf-for-.NET)
 - Excel:[Aspose.Cells-for-.NET](https://github.com/aspose-cells/Aspose.Cells-for-.NET)
 - PowerPoint:[Aspose.Slides-for-.NET](https://github.com/aspose-slides/Aspose.Slides-for-.NET)
+
+
+> ASP.NET core 2.0
+- HTTP请求：[c-sharp-http-client](https://github.com/yaroncon/c-sharp-http-client) / [doc](http://www.codescales.com/)
