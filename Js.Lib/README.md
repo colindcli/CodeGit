@@ -49,6 +49,7 @@
 - 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) MIT
 - 代码高亮：[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) MIT
 - 艺术二维码：[qart.js](https://github.com/kciter/qart.js) / [demo](https://kciter.github.io/qart.js/) GPL3
+- 提交表单：[form](https://github.com/jquery-form/form) / [demo](http://malsup.com/jquery/form/) MIT
 - 表单验证：[jQuery-Form-Validator](https://github.com/victorjonsson/jQuery-Form-Validator)
 - DIV固定粘性：[fixed-sticky](https://github.com/filamentgroup/fixed-sticky) / [demo](http://filamentgroup.github.io/fixed-sticky/demos/demo-control.html) MIT
 - DIV固定粘性：[fixto](https://github.com/bbarakaci/fixto) / [demo](http://bbarakaci.github.io/fixto/) MIT
