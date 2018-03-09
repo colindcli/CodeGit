@@ -1,6 +1,6 @@
 ## 修改Excel并导出
 
-- 使用组件：[NPOI](https://github.com/dotnetcore/NPOI)
+- 使用组件：[NPOI](https://github.com/dotnetcore/NPOI) / [exmaple](https://github.com/tonyqus/npoi/tree/master/examples)
 
 > 读取
 
