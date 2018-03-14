@@ -1,5 +1,7 @@
 ## .Net库
 
+- 基库(字符截断、格式化英文、格式化时间、枚举、字节)：[Humanizer](https://github.com/Humanizr/Humanizer)
+- 枚举：[Enums.NET](https://github.com/TylerBrinkley/Enums.NET)
 - 中文转拼音：[TinyPinyin.Net](https://github.com/hstarorg/TinyPinyin.Net)
 - 反编译：[ILSpy](https://github.com/icsharpcode/ILSpy)
 - Zip压缩：[SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
