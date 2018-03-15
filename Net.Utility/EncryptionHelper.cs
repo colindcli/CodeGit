@@ -31,6 +31,7 @@ public class EncryptionHelper
         var sbd = new StringBuilder();
         foreach (var item in bytes)
         {
+            //如果使用大写（X）则格式后的字符是大写字符
             sbd.Append(item.ToString("x2"));
         }
         return sbd.ToString();
