@@ -3,6 +3,7 @@
 - [微信Web开发工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)
 
 - [https://weixin.senparc.com/](https://weixin.senparc.com/)
+- [WeiXinMPSDK](https://github.com/JeffreySu/WeiXinMPSDK)
 
 
 > 准备
