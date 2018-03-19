@@ -2,6 +2,7 @@
 
 - [微信Web开发工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)
 - [小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html)
+- [测试号入口](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
 
 
 - [https://weixin.senparc.com/](https://weixin.senparc.com/)
