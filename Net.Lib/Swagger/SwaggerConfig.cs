@@ -19,6 +19,7 @@ public class GlobalHttpHeaderFilter : IOperationFilter
         if (operation.parameters == null)
             operation.parameters = new List<Parameter>();
 
+        //https://swagger.io/specification/#parameterObject
         operation.parameters.Add(new Parameter { name = "Id", @in = "header", description = "Id", required = false, type = "string", @default = "0" });
     }
 }
@@ -36,7 +37,7 @@ public class UploadFilter : IOperationFilter
             operation.parameters.Add(new Parameter
             {
                 name = "file",
-                @in = "formData",
+                @in = "formData", //Possible values are "query", "header", "path" or "cookie".
                 required = true,
                 type = "file"
             });
