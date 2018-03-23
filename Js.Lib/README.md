@@ -11,7 +11,7 @@
 
 
 ## 插件收藏
-- 下拉菜单：[multiple-select](https://github.com/wenzhixin/multiple-select) / [demo](http://selectric.js.org/demo.html) MIT
+- 自定义下拉菜单：[multiple-select](https://github.com/wenzhixin/multiple-select) / [demo](http://selectric.js.org/demo.html) MIT
 - 城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
 - 图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/聊天表情：[widget](https://github.com/mumuy/widget)
 - [underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
