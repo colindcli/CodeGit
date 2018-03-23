@@ -21,5 +21,5 @@
 
 **如果以上还不能解决，尝试一下方法：**
 
-https://jingyan.baidu.com/article/870c6fc37678c4b03fe4bef6.html
-SQL Server ReportingServices (SQLEXPRESS) 服务占用80端口
+ 1. https://jingyan.baidu.com/article/870c6fc37678c4b03fe4bef6.html
+ 2. SQL Server ReportingServices (SQLEXPRESS) 服务占用80端口
