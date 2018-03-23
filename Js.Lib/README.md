@@ -11,7 +11,6 @@
 
 
 ## 插件收藏
-- 自定义下拉菜单：[multiple-select](https://github.com/wenzhixin/multiple-select) / [demo](http://selectric.js.org/demo.html) MIT
 - 城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
 - 图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/聊天表情：[widget](https://github.com/mumuy/widget)
 - [underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
@@ -55,6 +54,7 @@
 - DIV固定粘性：[fixed-sticky](https://github.com/filamentgroup/fixed-sticky) / [demo](http://filamentgroup.github.io/fixed-sticky/demos/demo-control.html) MIT
 - DIV固定粘性：[fixto](https://github.com/bbarakaci/fixto) / [demo](http://bbarakaci.github.io/fixto/) MIT
 - 滚动固定位置：[stickymojo](https://github.com/mojotech/stickymojo) / [demo](http://mojotech.github.io/stickymojo/)
+- 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
 
 
 > 规范
@@ -68,6 +68,17 @@
 - h5历史记录：[history.js](https://github.com/browserstate/history.js) BSD-3
 - h5支持IE9：[html5shiv](https://github.com/aFarkas/html5shiv)
 - CSS助手和CSS3媒体查询启动器: [css3-mediaqueries-js](https://github.com/livingston/css3-mediaqueries-js) MIT
+
+
+> 下拉菜单（选择菜单）
+
+- 自定义下拉菜单：[multiple-select](https://github.com/wenzhixin/multiple-select) / [demo](http://selectric.js.org/demo.html) MIT
+- 美化下拉菜单：[jquery.selectBoxIt.js](https://github.com/gfranko/jquery.selectBoxIt.js) / [demo](http://gregfranko.com/jquery.selectBoxIt.js) MIT
+- 美化下拉菜单：[jquery-nice-select](https://github.com/hernansartorio/jquery-nice-select) / [demo](http://hernansartorio.com/jquery-nice-select/)
+- input输入选中项：[Choices](https://github.com/jshjohnson/Choices) / [demo](https://joshuajohnson.co.uk/Choices/) MIT
+- 选择菜单：[multi-select](https://github.com/lou/multi-select) / [demo](http://loudev.com/) MIT
+- 选择菜单:[multi.js](https://github.com/Fabianlindfors/multi.js) / [demo](https://fabianlindfors.se/multijs/) MIT
+- 多选菜单：[multiselect](https://github.com/crlcu/multiselect) / [demo](http://crlcu.github.io/multiselect/) MIT
 
 
 > 滚动条及动画
