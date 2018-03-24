@@ -14,6 +14,8 @@
 - 支付宝/微信：[pay](https://github.com/yansongda/pay) MIT
 - 微信支付/支付宝：[OSS.PaySdk](https://github.com/KevinWG/OSS.PaySdk) Apache-2.0
 - 微信支付/支付宝/银联：[ICanPay](https://github.com/Varorbc/ICanPay) MIT
+- 各种支付：[Payment](https://github.com/Essensoft/Payment)
+- 京东支付：[JdPayWebApi](https://github.com/lousaibiao/JdPayWebApi) MIT
 
 
 > 文件预览
