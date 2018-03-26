@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="static/css/ztreestyle.css" rel="stylesheet" />
+
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/jquery.ztree.all.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .clearfix:before,
+        .clearfix:after {
+            display: table;
+            content: " ";
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        html, body {
+            background: #ffffff;
+        }
+
+        #selectUsers {
+            background: #ffffff;
+            padding: 2px;
+            margin: 12px;
+            font-size: 14px;
+            border: 1px solid #fda3a3;
+            border-radius: 3px;
+        }
+
+        .selectTitle {
+            line-height: 30px;
+            border-bottom: 1px solid #fda3a3;
+            background: #d1282b;
+            padding: 0 8px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+            .selectTitle span {
+                color: #ffbebe;
+                font-size: 12px;
+                font-weight: normal;
+            }
+
+            .selectTitle a {
+                font-weight: normal;
+                float: right;
+            }
+
+        div#selectedItem {
+            padding: 12px 8px;
+            border-bottom: 1px solid #fda3a3;
+            max-height: 200px;
+            min-height: 80px;
+            overflow: auto;
+        }
+
+        label.selected {
+            border: 1px solid #d1282b;
+            border-radius: 3px;
+            padding: 2px 8px;
+            background: #d1282b;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            margin: 0 8px 8px 0px;
+            float: left;
+        }
+
+        #Items .item {
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            padding: 2px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            margin: 0 8px 8px 0px;
+            float: left;
+        }
+
+        #Items .select {
+            border: 1px solid #d1282b;
+            border-radius: 3px;
+            padding: 2px 8px;
+            background: #d1282b;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            margin: 0 8px 8px 0px;
+            float: left;
+        }
+
+        .selectLeft {
+            border-right: 1px solid #fda3a3;
+            padding: 0px 8px 0px 0;
+            vertical-align: top;
+        }
+
+        .orgDiv {
+            width: 200px;
+            min-height: 200px;
+            max-height: 500px;
+            overflow: auto;
+        }
+
+        .selectRight {
+            vertical-align: top;
+            padding: 8px;
+        }
+
+        .selectBody {
+            margin-top: 2px;
+            min-height: 100px;
+        }
+
+        .selectBtn {
+            text-align: right;
+            border-top: 1px solid #fda3a3;
+            padding: 8px;
+            margin-top: 2px;
+        }
+
+        .layui-btn {
+            line-height: 32px;
+            padding: 0 20px;
+            background: #d1282b;
+            font-size: 16px;
+            color: #fff;
+            font-weight: normal;
+            cursor: pointer;
+            border: 0;
+        }
+
+            .layui-btn:hover {
+                opacity: .9;
+                filter: alpha(opacity=90);
+                color: #fff;
+            }
+    </style>
+    <style>
+        .ztree {
+            padding: 12px;
+            overflow: auto;
+        }
+
+            .ztree * {
+                font-family: tahoma, "Microsoft YaHei", 'Open Sans', sans-serif, "微软雅黑", Helvetica, Arial, "华文细黑", Heiti, "黑体", sans-serif;
+            }
+
+            .ztree li span {
+                margin-right: 0;
+            }
+
+                .ztree li span.button.noline_close, .ztree li span.button.root_close, .ztree li span.button.center_close {
+                    width: 20px;
+                    height: 20px;
+                    background: url('static/images/switch_arr.png') no-repeat;
+                    background-position: 0 -2px;
+                    margin-top: 6px;
+                }
+
+                .ztree li span.button.noline_open, .ztree li span.button.root_open, .ztree li span.button.center_open {
+                    width: 20px;
+                    height: 20px;
+                    background: url('static/images/switch_arr.png') no-repeat;
+                    background-position: 0 -22px;
+                    margin-top: 6px;
+                }
+
+            .ztree li a:hover {
+                text-decoration: none;
+            }
+
+            .ztree li a {
+                padding: 10px 0 !important;
+            }
+
+                .ztree li a.curSelectedNode {
+                    padding-top: 0px;
+                    background-color: transparent;
+                    color: #d1282b;
+                    height: 16px;
+                    border: none;
+                    opacity: 1;
+                }
+
+            .ztree li {
+                position: relative;
+            }
+    </style>
+
+
+    <div id="selectUsers">
+        <div class="selectTitle">已选择<span>(点击取消选择)</span><a id="cancelSelected" href="javascript:;">全部移除</a></div>
+        <div class="clearfix" id="selectedItem"></div>
+        <div class="selectTitle">选择人员<span>(先选择部门，再选择人员)</span><a id="cancelSelect" href="javascript:;">全部移除</a><a id="selectAll" href="javascript:;" style="margin-right:12px;">全部选择</a></div>
+        <div class="selectBody">
+            <table>
+                <tr>
+                    <td class="selectLeft">
+                        <div class="orgDiv">
+                            <div id="orgTree" class="ztree"></div>
+                        </div>
+                    </td>
+                    <td class="selectRight">
+                        <div id="Items"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="selectBtn"><button id="okBtn" class="layui-btn" type="button">确定</button></div>
+    </div>
+
+    <script>
+        $(function () {
+            //option
+            var op = {
+                items: [{ id: 1, name: '张三' }, { id: 2, name: '李四' }, { id: 3, name: '王五' }],
+                getOrg: function (callbackData) {
+                    /*
+                    $.get("Url", {}, function (data) {
+                        callbackData.call(new Object(), data);
+                    });
+                    */
+                    var data = [{ "id": "48529362-a5e3-4eb6-89a7-dce93e0f964e", "pId": "a56e3934-e81f-46aa-8b57-3e7525413ef7", "name": "互联网+第一党支部互联网+第一党支部互联网+第一党支部", "open": false }, { "id": "a56e3934-e81f-46aa-8b57-3e7525413ef7", "pId": "62e494e3-48f9-43c6-9387-d61778bb1302", "name": "互联网+事业部党总支", "open": false }, { "id": "e4e47e24-e9ac-46ee-88ed-115cd0b04570", "pId": "e2c5a673-023b-478d-9d2e-94fd954f52a8", "name": "科技第一党支部", "open": false }, { "id": "e2c5a673-023b-478d-9d2e-94fd954f52a8", "pId": "62e494e3-48f9-43c6-9387-d61778bb1302", "name": "科技事业部党总支", "open": false }, { "id": "62e494e3-48f9-43c6-9387-d61778bb1302", "pId": "00000000-0000-0000-0000-000000000000", "name": "中国共产党党委", "open": true }, { "id": "e05eaa39-f96f-48ec-8090-2a3d03e3dc4b", "pId": "d6512996-e3c1-4ea3-a176-1fc8ccd4d617", "name": "文化第一党支部", "open": false }, { "id": "d6512996-e3c1-4ea3-a176-1fc8ccd4d617", "pId": "62e494e3-48f9-43c6-9387-d61778bb1302", "name": "文化事业部党总支", "open": false }];
+                    callbackData.call(new Object(), data);
+                },
+                getUserByOrgId: function (orgId, callbackData) {
+                    /*
+                    $.get("/Manager/User/GetUserByOrgId/" + orgId,
+                        {},
+                        function (data) {
+                            var array = [];
+                            $.each(data,
+                                function (i, item) {
+                                    array.push({ id: item.UserId, name: item.UserName });
+                                });
+                            callbackData.call(new Object(), array);
+                        });
+                    */
+                    var data = [{ id: 2, name: "李四" }, { id: 3, name: "王五" }, { id: 4, name: "田晓晓" }];
+                    callbackData.call(new Object(), data);
+                },
+                callback: function (data) {
+                    console.log(data);
+                }
+            };
+
+            //
+            var selectUserObj = {
+                option: {
+                    //当前选择
+                    items: [/*{id:1, name:'1'}*/],
+                    getOrg: function (callbackData) {
+                        /*
+                        $.get('', function(data){
+                            //data: [{id: "1", pId: "0", name: ""]
+                            callbackData.call(new Object(), data);
+                        });
+                        */
+                    },
+                    getUserByOrgId: function (orgId, callbackData) {
+                        /*
+                        $.get('url', function (data) {
+                            //[{id:2, name:'2'}]
+                            callbackData.call(new Object(), data);
+                        });
+                        */
+                    },
+                    callback: function (data) {
+                        //console.log(data)
+                    }
+                },
+                selected: [],
+                zTreeObj: null,
+                init: function (opt) {
+                    var self = this;
+                    self.option = $.extend({}, self.option, opt);
+                    self.selected = self.option.items;
+                    self.initSelected();
+                    self.getOrgs();
+
+                    self.removeAllSelected();
+                    self.showAddAll();
+                    self.showRemoveAll();
+
+                    self.selectBtn();
+                },
+                initSelected: function () {
+                    var self = this;
+                    var array = [];
+                    $.each(self.selected, function (i, item) {
+                        array.push('<label data-id="' + item.id + '" class="selected">' + item.name + '</label>');
+                    });
+                    $("#selectedItem").html(array.join(''));
+                    //
+                    $("#selectedItem label").unbind("click").on("click",
+                        function () {
+                            var id = $(this).data("id");
+                            self.removeSelected(id);
+                        });
+                },
+                addSelected: function (id, name) {
+                    var self = this;
+                    var lists = [];
+                    lists.push({ id: id, name: name });
+                    $.each(self.selected, function (i, item) {
+                        if (item.id != id) {
+                            lists.push(item);
+                        }
+                    });
+                    self.selected = lists;
+                    self.initSelected();
+                },
+                addListSelected: function (rows) {
+                    var self = this;
+                    var ids = self.getIds(rows);
+                    var lists = rows;
+                    $.each(self.selected, function (i, item) {
+                        var b = self.isExists(ids, item.id);
+                        if (!b) {
+                            lists.push(item);
+                        }
+                    });
+                    self.selected = lists;
+                    self.initSelected();
+                },
+                removeListSelected: function (rows) {
+                    var self = this;
+                    var ids = self.getIds(rows);
+                    var lists = [];
+                    $.each(self.selected, function (i, item) {
+                        var b = self.isExists(ids, item.id);
+                        if (!b) {
+                            lists.push(item);
+                        }
+                    });
+                    self.selected = lists;
+                    self.initSelected();
+                },
+                removeSelected: function (id) {
+                    var self = this;
+                    var lists = [];
+                    $.each(self.selected, function (i, item) {
+                        if (item.id != id) {
+                            lists.push(item);
+                        }
+                    });
+                    $("#Items label").each(function () {
+                        var i = $(this).data("id");
+                        if (i == id) {
+                            $(this).removeClass("select");
+                            return;
+                        }
+                    });
+                    self.selected = lists;
+                    self.initSelected();
+                },
+                removeAllSelected: function () {
+                    var self = this;
+                    $("#cancelSelected").unbind("click").on("click",
+                        function () {
+                            var ids = [];
+                            $("#selectedItem label").each(function () {
+                                ids.push($(this).data('id'));
+                            });
+                            $("#Items label").each(function () {
+                                var id = $(this).data("id");
+                                var b = self.isExists(ids, id);
+                                if (b) {
+                                    $(this).removeClass("select");
+                                }
+                            });
+                            self.selected = [];
+                            self.initSelected();
+                        });
+                },
+                //
+                getOrgs: function () {
+                    var self = this;
+                    self.option.getOrg(function (data) {
+                        var setting = {
+                            view: {
+                                showIcon: false, // 是否显示文件夹图片
+                                showLine: false,
+                                showTitle: false,
+                                selectedMulti: false,
+                                dblClickExpand: false
+                            },
+                            callback: {
+                                onClick: function (event, treeId, treeNode) {
+                                    self.getOrgUsers(treeNode.id);
+                                }
+                            },
+                            data: {
+                                simpleData: {
+                                    enable: true,
+                                    idKey: "id",
+                                    pIdKey: "pId",
+                                    rootPId: 0
+                                }
+                            }
+                        };
+                        self.zTreeObj = $.fn.zTree.init($("#orgTree"), setting, data);
+                    });
+                },
+                getOrgUsers: function (orgId) {
+                    var self = this;
+                    self.option.getUserByOrgId(orgId, function (data) {
+                        //var data = [{id:2, name:'2'}];
+                        self.initShowUser(data);
+                    });
+                },
+                initShowUser: function (lists) {
+                    var self = this;
+                    var ids = self.getIds(self.selected);
+                    var array = [];
+                    $.each(lists, function (i, item) {
+                        var b = self.isExists(ids, item.id);
+                        if (b) {
+                            array.push('<label data-id="' + item.id + '" class="item select">' + item.name + '</label>');
+                        } else {
+                            array.push('<label data-id="' + item.id + '" class="item">' + item.name + '</label>');
+                        }
+                    });
+                    $("#Items").html(array.join(''));
+                    //
+                    $("#Items label").unbind("click").on("click",
+                        function () {
+                            var h = $(this).hasClass("select");
+                            var id = $(this).data("id");
+                            if (h) {
+                                self.removeSelected(id);
+                                $(this).removeClass("select");
+                            } else {
+                                var name = $(this).text();
+                                self.addSelected(id, name);
+                                $(this).addClass("select");
+                            }
+                        });
+                },
+                showAddAll: function () {
+                    var self = this;
+                    $("#selectAll").unbind("click").on("click", function () {
+                        var lists = self.getShowList();
+                        self.addListSelected(lists);
+                        $("#Items label").addClass("select");
+                    });
+                },
+                showRemoveAll: function () {
+                    var self = this;
+                    $("#cancelSelect").unbind("click").on("click", function () {
+                        var lists = self.getShowList();
+                        self.removeListSelected(lists);
+                        $("#Items label").removeClass("select");
+                    });
+                },
+                selectBtn: function () {
+                    var self = this;
+                    $("#okBtn").unbind("click").on("click", function () {
+                        self.option.callback(self.selected);
+                    });
+                },
+                //
+                getIds: function (lists) {
+                    var ids = [];
+                    $.each(lists, function (i, item) {
+                        ids.push(item.id);
+                    });
+                    return ids;
+                },
+                isExists: function (ids, id) {
+                    var b = false;
+                    $.each(ids, function name(i, item) {
+                        if (id == item) {
+                            b = true;
+                            return;
+                        }
+                    });
+                    return b;
+                },
+                getShowList: function () {
+                    var lists = [];
+                    $("#Items label").each(function () {
+                        var id = $(this).data("id");
+                        var name = $(this).text();
+                        lists.push({ id: id, name: name });
+                    });
+                    return lists;
+                }
+            }
+            selectUserObj.init(op);
+        })
+    </script>
+</body>
+
+</html>
