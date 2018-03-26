@@ -3,6 +3,7 @@
 - [marketplace visualstudio](https://marketplace.visualstudio.com/)
 
 - AnkhSVN
+- Select Next Occurrence:多选编辑，快捷键搜索SelectNextOccurrence（选择下一个：Alt+D；全选：Alt+F3）
 - Format All Files
 - Debug Attach Manager
 - Color Theme Editor
