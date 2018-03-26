@@ -230,7 +230,7 @@
                 items: [{ id: 1, name: '张三' }, { id: 2, name: '李四' }, { id: 3, name: '王五' }],
                 getOrg: function (callbackData) {
                     /*
-                    $.get("Url", {}, function (data) {
+                    $.get("URL", {}, function (data) {
                         callbackData.call(new Object(), data);
                     });
                     */
@@ -239,7 +239,7 @@
                 },
                 getUserByOrgId: function (orgId, callbackData) {
                     /*
-                    $.get("/Manager/User/GetUserByOrgId/" + orgId,
+                    $.get("URL" + orgId,
                         {},
                         function (data) {
                             var array = [];
