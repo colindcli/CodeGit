@@ -49,7 +49,7 @@
 
 > 全家桶商城
 
-- php: [yii2_fecshop](https://github.com/fecshop/yii2_fecshop) DBS3
+- php: [yii2_fecshop](https://github.com/fecshop/yii2_fecshop) / [demo](http://www.fecshop.com/nav) BSD-3-Clause + [license](http://www.fecshop.com/license)
 - php: [bzfshop](https://github.com/bzfshop-net/bzfshop) 有声明
 - [litemall](https://github.com/linlinjava/litemall) MIT
 - php: [verydows](https://github.com/Verytops/verydows)
