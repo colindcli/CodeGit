@@ -6,11 +6,10 @@
 - php: [bzfshop](https://github.com/bzfshop-net/bzfshop) 有声明
 - [litemall](https://github.com/linlinjava/litemall) MIT
 - php: [verydows](https://github.com/Verytops/verydows)
-- .net: [nopCommerce](https://github.com/nopSolutions/nopCommerce)
+- .net: [nopCommerce](https://github.com/nopSolutions/nopCommerce) GPLv3
+- .net: [ShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
+- .net: [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
 
-
-- 销售系统：[ShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
-- [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
 - 门店：[Sheng.WeixinConstruction](https://github.com/iccb1013/Sheng.WeixinConstruction)
 - [LKShop](https://github.com/Shuyun123/LKShop)
 - [e3-h5](https://github.com/huihoo/e3-h5)
