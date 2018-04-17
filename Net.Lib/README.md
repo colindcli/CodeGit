@@ -6,6 +6,7 @@
 - 反编译：[ILSpy](https://github.com/icsharpcode/ILSpy)
 - Zip压缩：[SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
 - 失败重试：[Polly](https://github.com/App-vNext/Polly)
+- 对象模型验证：[FluentValidation](https://github.com/JeremySkinner/FluentValidation) apache2.0
 
 
 > 支付
