@@ -55,6 +55,10 @@
 - DIV固定粘性：[fixto](https://github.com/bbarakaci/fixto) / [demo](http://bbarakaci.github.io/fixto/) MIT
 - 滚动固定位置：[stickymojo](https://github.com/mojotech/stickymojo) / [demo](http://mojotech.github.io/stickymojo/)
 - 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
+- H5首屏加载速度：[VasSonic](https://github.com/Tencent/VasSonic) BSD
+- 下拉刷新：[minirefresh](https://github.com/minirefresh/minirefresh) MIT
+- 切页面动画：[H5FullscreenPage](https://github.com/lvming6816077/H5FullscreenPage) / [demo](https://www.nihaoshijie.com.cn/H5FullscreenPage/)
+- 滑动页面动画：[iSlider](https://github.com/kele527/iSlider) / [demo](http://kele527.github.io/iSlider/demo1.html) MIT
 
 
 > 规范
