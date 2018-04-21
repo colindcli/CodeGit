@@ -14,4 +14,6 @@ public class IpHelper
         var request = current.Request;
         return request.Headers["Cdn-Src-Ip"] ?? request.ServerVariables["HTTP_X_FORWARDED_FOR"] ?? request.ServerVariables["REMOTE_ADDR"] ?? request.UserHostAddress;
     }
+
+    //ip 获取地址：http://int.dpool.sina.com.cn/iplookup/iplookup.php?ip=
 }
