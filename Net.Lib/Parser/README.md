@@ -7,3 +7,7 @@
 - [HtmlParserSharp](https://github.com/jamietre/HtmlParserSharp)
 - [Html Agility Pack](https://github.com/zzzprojects/html-agility-pack) / [demo](http://html-agility-pack.net/)
 - [HtmlAgilityPack.CssSelector](https://github.com/hcesar/HtmlAgilityPack.CssSelector)
+- [tsql-parser](https://github.com/bruce-dunwiddie/tsql-parser)
+- [CK.SqlServer.Parser](https://www.nuget.org/packages/CK.SqlServer.Parser/)
+- [NSqlParser](https://www.nuget.org/packages/NSqlParser/)
+- [net commandline](https://github.com/commandlineparser/commandline)
