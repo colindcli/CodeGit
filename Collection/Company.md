@@ -9,3 +9,4 @@
 
 - [泛微](http://www.weaver.com.cn/e8/index.html)
 - [M1云端](http://www.m1world.com/)
+- [建站之星](https://www.sitestar.cn/)
