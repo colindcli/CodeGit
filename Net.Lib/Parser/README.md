@@ -10,7 +10,7 @@
 
 - [AngleSharp](https://github.com/AngleSharp/AngleSharp) / [doc](https://anglesharp.github.io/) (支持Js/CSS)
 - [Html Agility Pack](https://github.com/zzzprojects/html-agility-pack) / [demo](http://html-agility-pack.net/)
-- [HtmlAgilityPack.CssSelector](https://github.com/hcesar/HtmlAgilityPack.CssSelector)
+- [HtmlAgilityPack.CssSelector](https://www.nuget.org/packages/HtmlAgilityPack.CssSelectors/) / [github](https://github.com/hcesar/HtmlAgilityPack.CssSelector)
 - [Fizzler](https://github.com/atifaziz/Fizzler)
 - [CsQuery](https://github.com/jamietre/CsQuery)
 - [HtmlParserSharp](https://github.com/jamietre/HtmlParserSharp)
