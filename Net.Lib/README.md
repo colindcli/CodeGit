@@ -8,6 +8,7 @@
 - 失败重试：[Polly](https://github.com/App-vNext/Polly)
 - 对象模型验证：[FluentValidation](https://github.com/JeremySkinner/FluentValidation) apache2.0
 - Http请求：[Flurl.Http](https://www.nuget.org/packages/Flurl.Http/)
+- 文件数据库：[LiteDB](https://www.nuget.org/packages/LiteDB/) / [ORG](https://www.litedb.org/)
 
 
 > 支付
