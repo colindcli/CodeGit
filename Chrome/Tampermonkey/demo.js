@@ -66,14 +66,18 @@
                 //card Number
                 if (i == 0) {
                     $("#account").val(item).change().focus().blur();
+                    angular.element(document.getElementById('account')).triggerHandler('change');
                 }
                 if (i == 1) {
                     var ym = item.split('/');
                     $("#cardExpirationMonth").val("string:" + ym[0]).change().focus().blur();
+                    angular.element(document.getElementById('cardExpirationMonth')).triggerHandler('change');
                     $("#cardExpirationYear").val("string:" + ym[1]).change().focus().blur();
+                    angular.element(document.getElementById('cardExpirationYear')).triggerHandler('change');
                 }
                 if (i == 2) {
                     $("#securityCode").val(item).change().focus().blur();
+                    angular.element(document.getElementById('securityCode')).triggerHandler('change');
                 }
                 //姓名
                 if (i == 3) {
@@ -101,19 +105,26 @@
                         }
 
                         $("#fname,#middleInitial,#lname").change().focus().blur();
+                        angular.element(document.getElementById('fname')).triggerHandler('change');
+                        angular.element(document.getElementById('middleInitial')).triggerHandler('change');
+                        angular.element(document.getElementById('lname')).triggerHandler('change');
                     }
                 }
                 //电话
                 if (i == 9) {
                     $("#phone").val(item).change().focus().blur();
+                    angular.element($("#phone")).triggerHandler('change');
                 }
                 //邮箱
                 if (i == 10) {
                     $("#email,#emailConfirmation").val(item).change().focus().blur();
+                    angular.element($("#email")).triggerHandler('change');
+                    angular.element($("#emailConfirmation")).triggerHandler('change');
                 }
                 //street address
                 if (i == 4) {
                     $("#address1").val(item).change().focus().blur();
+                    angular.element($("#address1")).triggerHandler('change');
                 }
                 //apt/suite
                 if (i == 4) {
@@ -132,14 +143,17 @@
                         }
                     });
                     cObj.val(v).change().focus().blur();
+                    angular.element(cObj).triggerHandler('change');
                 }
                 //zip
                 if (i == 7) {
                     $("#zip").val(item).change().focus().blur();
+                    angular.element($("#zip")).triggerHandler('change');
                 }
                 //city
                 if (i == 5) {
                     $("#inputCity").val(item).change().focus().blur();
+                    angular.element($("#inputCity")).triggerHandler('change');
                 }
                 //province
                 if (i == 6) {
@@ -158,6 +172,7 @@
                         vs = "string:ON";
                     }
                     $('[name="state"]').val(vs).change().focus().blur();
+                    angular.element($('[name="state"]')).triggerHandler('change');
                 }
 
                 console.log(i + ":" + item);
