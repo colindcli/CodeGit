@@ -45,7 +45,11 @@
 - [启明信息](http://www.qm.cn/)
 
 
-案例展示：
+> 案例展示：
 
 - [海洋网络](http://www.hy755.cn/case2/)
 - [凡科网](http://jz.fkw.com/case.html)
+
+> 单页面：
+
+- https://www.parallels.com/cn/landingpage/pd/windows-on-mac/
