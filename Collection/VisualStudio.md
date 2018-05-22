@@ -11,6 +11,8 @@
 - Snippet Designer
 - OzCode
 - Multi Edit Mode
+- Browser Reload on Save
+- Web Essentials
 
 
 ## VS2017
