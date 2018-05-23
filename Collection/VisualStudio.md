@@ -4,13 +4,15 @@
 
 - AnkhSVN
 - Select Next Occurrence:多选编辑，快捷键搜索SelectNextOccurrence（选择下一个：Alt+D；全选：Alt+F3）
-- Format All Files
-- Debug Attach Manager
-- Color Theme Editor
+- BuildOnSave
 - Resharper
+- Multi Edit Mode
+- Debug Attach Manager
+
+- Format All Files
+- Color Theme Editor
 - Snippet Designer
 - OzCode
-- Multi Edit Mode
 - Browser Reload on Save
 - Web Essentials
 
