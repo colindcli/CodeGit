@@ -9,6 +9,7 @@
 - JSONView：[JSONView-for-Chrome](https://github.com/gildas-lormeau/JSONView-for-Chrome)
 - Axure RP Extension for Chrome
 - [ReplaceGoogleCDN](https://github.com/colindcli/ReplaceGoogleCDN)
+- 自动刷新浏览器：[github](https://github.com/Linrstudio/LinrF5)
 
 注：如果chrome商店下载不了，请使用QQ浏览器。
 
