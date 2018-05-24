@@ -35,6 +35,7 @@
 - 发送页面弹幕：[jquery.barrager.js](https://github.com/yaseng/jquery.barrager.js)
 - 过去时间显示：[jquery-timeago](https://github.com/rmm5t/jquery-timeago) / [demo](http://timeago.yarp.com/) MIT
 - 鼠标滚轮插件：[jquery-mousewheel](https://github.com/jquery/jquery-mousewheel)
+- 复制到粘贴板：[zeroclipboard](https://github.com/zeroclipboard/zeroclipboard)
 - 复制到粘贴板：[clipboard.js](https://github.com/zenorocha/clipboard.js) / [demo](https://clipboardjs.com/) MIT
 - 本地存储：[store.js](https://github.com/marcuswestin/store.js) MIT
 - 导航滚动显示隐藏：[headroom.js](https://github.com/WickyNilliams/headroom.js) / [demo](http://wicky.nillia.ms/headroom.js/playroom/) MIT
@@ -42,6 +43,10 @@
 - 格式化信用卡：[card](https://github.com/jessepollak/card) / [demo](https://jessepollak.github.io/card/) MIT
 - 格式化数量：[Numeral-js](https://github.com/adamwdraper/Numeral-js) / [demo](http://numeraljs.com/) MIT
 - 格式化时间：[moment](https://github.com/moment/moment/) / [demo](http://momentjs.com/)
+- 格式化文档：[js-beautify](https://github.com/beautify-web/js-beautify) [demo](http://jsbeautifier.org/) MIT
+- C#格式化js：[Jsbeautifier](https://github.com/denis-ivanov/Jsbeautifier) MIT
+- C#格式化html：[jsBeautifier.net](https://github.com/rhoney/jsBeautifier.net) MIT
+- java格式化文档：[beautify](https://github.com/hwangfantasy/beautify)
 - 时间时区：[moment-timezone](https://github.com/moment/moment-timezone/) / [doc](http://momentjs.com/timezone/)
 - 图片下雨点：[rainyday.js](https://github.com/maroslaw/rainyday.js) / [demo](https://mubaidr.github.io/rainyday.js/) GPL
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
