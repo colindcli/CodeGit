@@ -10,6 +10,11 @@
 - Extension/layui-tableExt.js（引用：jquery、layui、jquery.form）：layui table
 
 
+## 小程序
+- wepy开发小程序：[wepy](https://github.com/Tencent/wepy)
+- vue开发小程序：[mpvue](https://github.com/Meituan-Dianping/mpvue)
+
+
 ## 插件收藏
 - 城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
 - 图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/聊天表情：[widget](https://github.com/mumuy/widget)
