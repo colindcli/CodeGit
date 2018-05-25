@@ -11,8 +11,11 @@
 - 文件数据库：[LiteDB](https://www.nuget.org/packages/LiteDB/) / [ORG](https://www.litedb.org/)
 - 清除xss代码：[HtmlSanitizer](https://github.com/mganss/HtmlSanitizer)
 - Net调用Js：[Javascript.Net](https://github.com/JavascriptNet/Javascript.Net) / [nuget(版本太旧)](https://www.nuget.org/packages/Noesis.Javascript/)
+- Net调用Js：[jint](https://github.com/sebastienros/jint) BSD-2
 - Chrome项目：[cefsharp](https://github.com/cefsharp/cefsharp) / [doc](https://www.codeproject.com/Articles/1058700/Embedding-Chrome-in-your-Csharp-App-using-CefSharp)
-- WinForm轻量级HTML和CSS UI引擎：[Sciter](https://github.com/MISoftware/SciterSharp) / [demo](https://www.codeproject.com/Articles/1057199/Sciter-HTML-Csharp-based-desktop-apps-walkthrough) / [doc](https://ourcodeworld.com/articles/read/479/how-to-implement-sciter-lightweight-html-and-css-ui-engine-in-your-winforms-application-with-c-sharp)
+- WinForm轻量级HTML和CSS UI引擎：[Sciter](https://github.com/MISoftware/SciterSharp) / [demo](https://www.codeproject.com/Articles/1057199/Sciter-HTML-Csharp-based-desktop-apps-walkthrough) / [doc]
+(https://ourcodeworld.com/articles/read/479/how-to-implement-sciter-lightweight-html-and-css-ui-engine-in-your-winforms-application-with-c-sharp)
+- Net UI框架：[Avalonia](https://github.com/AvaloniaUI/Avalonia)
 
 
 > 支付

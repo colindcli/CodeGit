@@ -7,3 +7,6 @@ Tampermonkey 是一款免费的浏览器扩展和最为流行的用户脚本管�
 > @require    导入脚本
 > @match      匹配网址
 > @run-at     运行点
+
+
+插件参考：https://github.com/iuunhao/ChromePlugIns#tampermonkey%E8%84%9A%E6%9C%AC

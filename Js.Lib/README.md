@@ -1,6 +1,6 @@
 > Js插件
 
-> 本库
+## 本库
 - Select2/select2.js（引用：jquery、select2）
 - TreeView/treeView.js（引用：jquery、zTree、artDialog）
 
@@ -16,7 +16,9 @@
 
 
 ## 插件收藏
-- 城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
+- 地区城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
+- 地区城市选择：[city-picker](https://github.com/tshi0912/city-picker) / [demo](http://tshi0912.github.io/city-picker/) MIT
+- vue地区选择：[element-china-area-data](https://github.com/Plortinus/element-china-area-data) / [demo](https://plortinus.github.io/element-china-area-data/index.html) MIT
 - 图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/聊天表情：[widget](https://github.com/mumuy/widget)
 - [underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
 
@@ -48,13 +50,14 @@
 - 格式化信用卡：[card](https://github.com/jessepollak/card) / [demo](https://jessepollak.github.io/card/) MIT
 - 格式化数量：[Numeral-js](https://github.com/adamwdraper/Numeral-js) / [demo](http://numeraljs.com/) MIT
 - 格式化时间：[moment](https://github.com/moment/moment/) / [demo](http://momentjs.com/)
-- 格式化文档：[js-beautify](https://github.com/beautify-web/js-beautify) [demo](http://jsbeautifier.org/) MIT
+- 美化格式化文档：[js-beautify](https://github.com/beautify-web/js-beautify) [demo](http://jsbeautifier.org/) MIT
 - C#格式化js：[Jsbeautifier](https://github.com/denis-ivanov/Jsbeautifier) MIT
 - C#格式化html：[jsBeautifier.net](https://github.com/rhoney/jsBeautifier.net) MIT
 - java格式化文档：[beautify](https://github.com/hwangfantasy/beautify)
 - 时间时区：[moment-timezone](https://github.com/moment/moment-timezone/) / [doc](http://momentjs.com/timezone/)
 - 图片下雨点：[rainyday.js](https://github.com/maroslaw/rainyday.js) / [demo](https://mubaidr.github.io/rainyday.js/) GPL
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
+- 确认对话框：[jquery-confirm](https://github.com/craftpip/jquery-confirm) / [demo](http://craftpip.github.io/jquery-confirm/) MIT
 - 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
 - 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 - 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) MIT
@@ -66,6 +69,7 @@
 - DIV固定粘性：[fixto](https://github.com/bbarakaci/fixto) / [demo](http://bbarakaci.github.io/fixto/) MIT
 - 滚动固定位置：[stickymojo](https://github.com/mojotech/stickymojo) / [demo](http://mojotech.github.io/stickymojo/)
 - 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
+- 日期选择：[jemui](https://github.com/singod/jeDate) / [doc](http://www.jemui.com/) MIT
 - H5首屏加载速度：[VasSonic](https://github.com/Tencent/VasSonic) BSD
 - 下拉刷新：[minirefresh](https://github.com/minirefresh/minirefresh) MIT
 - 切页面动画：[H5FullscreenPage](https://github.com/lvming6816077/H5FullscreenPage) / [demo](https://www.nihaoshijie.com.cn/H5FullscreenPage/)
