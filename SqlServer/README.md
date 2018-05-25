@@ -19,3 +19,10 @@
 
 - 跳跃排序：RANK()OVER(ORDER BY t.TypeId ASC) [如成绩排名]
 - 分组跳跃排序：DENSE_RANK()OVER(PARTITION BY t.TypeId ORDER BY t.CreateDate DESC)
+
+
+## 插件
+
+- IDataReader批量写入：[SqlCeBulkCopy](https://github.com/ErikEJ/SqlCeBulkCopy) / [nuget](https://www.nuget.org/packages/ErikEJ.SqlCeBulkCopy)
+- List批量写入：[SimpleSqlBulkCopy](https://github.com/cdemi/SimpleSqlBulkCopy) / [nuget](https://www.nuget.org/packages/SimpleSqlBulkCopy/)
+- Linq批量写入:[bulk-writer](https://github.com/HeadspringLabs/bulk-writer)
