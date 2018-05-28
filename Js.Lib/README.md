@@ -10,11 +10,6 @@
 - Extension/layui-tableExt.js（引用：jquery、layui、jquery.form）：layui table
 
 
-## 小程序
-- wepy开发小程序：[wepy](https://github.com/Tencent/wepy)
-- vue开发小程序：[mpvue](https://github.com/Meituan-Dianping/mpvue)
-
-
 ## 插件收藏
 - 地区城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
 - 地区城市选择：[city-picker](https://github.com/tshi0912/city-picker) / [demo](http://tshi0912.github.io/city-picker/) MIT
