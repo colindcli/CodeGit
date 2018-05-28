@@ -34,6 +34,10 @@
 > 开源
 
 - [AdminLTE](https://github.com/almasaeed2010/AdminLTE) / [doc](https://adminlte.io/docs) MIT
+- [gentelella](https://github.com/puikinsh/gentelella) / [doc](https://puikinsh.github.io/gentelella/) MIT
+- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) / [demo](http://panjiachen.github.io/vue-element-admin/#/dashboard) MIT
+- [blur-admin](https://github.com/akveo/blur-admin) MIT
+- [vue-admin](https://github.com/vue-bulma/vue-admin)
 - [beginner_admin](https://gitee.com/besteasyteam/beginner_admin)/[演示地址](http://m.zhengjinfan.cn/)
 - [X-admin](https://gitee.com/daniuit/X-admin/tree/V1.0/)/[演示地址](http://x.xuebingsi.com/)
 - [jqadmin](https://gitee.com/jqcool/jqadmin)/[演示地址](https://jqadmin.jqcool.net/)
