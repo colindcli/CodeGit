@@ -3,12 +3,12 @@
 
 > 导入(推荐)：
 
-- Npoi.Mapper：[Npoi.Mapper](https://www.nuget.org/packages/Npoi.Mapper/) / [doc](http://donnytian.github.io/Npoi.Mapper/) [导入demo:Npoi.Mapper.cs]
+- Npoi.Mapper：[Npoi.Mapper](https://www.nuget.org/packages/Npoi.Mapper/) / [doc](http://donnytian.github.io/Npoi.Mapper/) [参考:Npoi.Mapper.cs]
 
 
 > 导出(推荐)：
 
-- Npoi:[NPOI](https://github.com/dotnetcore/NPOI)
+- Npoi:[NPOI](https://github.com/dotnetcore/NPOI) 参考：NPOI.md
 
 
 >其他：
