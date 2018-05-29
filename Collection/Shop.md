@@ -18,16 +18,7 @@
 
 
 
-> 小程序商城
 
-- [m-mall](https://github.com/skyvow/m-mall) MIT
-- [wepy-books](https://github.com/KingJeason/wepy-books) MIT
-- [wechat](https://github.com/htmlk/wechat)
-- [wxYuHanStore](https://github.com/dyq086/wxYuHanStore) MIT
-- [leshare-shop-wepy](https://github.com/coolhwm/leshare-shop-wepy) MIT
-- [wechat-app-mall](https://github.com/EastWorld/wechat-app-mall) apache2.0
-- [wechat-weapp-mal](https://github.com/liuxuanqiang/wechat-weapp-mall)
-- Node.js+MySQL：[nideshop-mini-program](https://github.com/tumobi/nideshop-mini-program) MIT
 
 
 > 手机端(vue)商城
