@@ -1,59 +1,36 @@
+using NPOI.HSSF.UserModel;
+using NPOI.SS.UserModel;
+using NPOI.XSSF.UserModel;
 using System;
 using System.Collections.Generic;
-using System.Data;
+using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Web;
-using NPOI;
-using NPOI.HPSF;
-using NPOI.HSSF;
-using NPOI.SS.UserModel;
-using NPOI.POIFS;
-using NPOI.Util;
-using NPOI.HSSF.UserModel;
-using System.Text;
-using NPOI.SS.Util;
-using NPOI.XSSF.UserModel;
 
 /// <summary>
-/// 
+/// 导出Excel
+/// Install-Package NPOI
 /// </summary>
-public class NPOIHelper
+public class NpoiHelper
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="dtSource"></param>
-    /// <param name="strHeaderText"></param>
-    /// <param name="strFileName"></param>
-    public static void Export(DataTable dtSource, string strHeaderText, string strFileName)
-    {
-        using (MemoryStream ms = Export(dtSource, strHeaderText))
-        {
-            using (FileStream fs = new FileStream(strFileName, FileMode.Create, FileAccess.Write))
-            {
-                byte[] data = ms.ToArray();
-                fs.Write(data, 0, data.Length);
-                fs.Flush();
-            }
-        }
-    }
-
-
     /// <summary>  
-    /// 从Excel中获取数据到DataTable  
-    /// </summary>  
-    /// <param name="strFileName">Excel文件全路径(服务器路径)</param>  
-    /// <param name="SheetIndex">要获取数据的工作表序号(从0开始)</param>  
-    /// <param name="HeaderRowIndex">工作表标题行所在行号(从0开始)</param>  
-    /// <returns></returns>  
-    public static DataTable RenderDataTableFromExcel(string strFileName, int SheetIndex, int HeaderRowIndex)
+    /// 导出Excel
+    /// </summary>
+    /// <param name="lists"></param>
+    /// <param name="fileName">Excel文件全路径(服务器路径)</param>
+    /// <param name="sheetIndex">要获取数据的工作表序号(从0开始)</param>
+    /// <param name="headerRowIndex">工作表标题行所在行号(从0开始)</param>
+    /// <returns></returns>
+    public static byte[] ExportExcel<T>(List<T> lists, string fileName, int sheetIndex = 0, int headerRowIndex = 1) where T : class
     {
-        using (FileStream file = new FileStream(strFileName, FileMode.Open, FileAccess.Read))
+        if (!File.Exists(fileName))
         {
-            var ext = Path.GetExtension(strFileName).ToLower();
+            throw new Exception("文件不存在！");
+        }
 
-            IWorkbook workbook;
+        var ext = Path.GetExtension(fileName)?.ToLower();
+        IWorkbook workbook;
+        using (var file = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+        {
             if (ext == ".xls")
             {
                 workbook = new HSSFWorkbook(file);
@@ -62,209 +39,82 @@ public class NPOIHelper
             {
                 workbook = new XSSFWorkbook(file);
             }
-
-            string SheetName = workbook.GetSheetName(SheetIndex);
-            return RenderDataTableFromExcel(workbook, SheetName, HeaderRowIndex);
         }
-    }
+        var sheet = workbook.GetSheetAt(sheetIndex);
 
-
-
-    /// <summary>  
-    /// 从Excel中获取数据到DataTable  
-    /// </summary>  
-    /// <param name="workbook">要处理的工作薄</param>  
-    /// <param name="SheetName">要获取数据的工作表名称</param>  
-    /// <param name="HeaderRowIndex">工作表标题行所在行号(从0开始)</param>  
-    /// <returns></returns>  
-    public static DataTable RenderDataTableFromExcel(IWorkbook workbook, string SheetName, int HeaderRowIndex)
-    {
-        ISheet sheet = workbook.GetSheet(SheetName);
-        DataTable table = new DataTable();
-        try
+        var propertyList = typeof(T).GetProperties();
+        for (var i = 0; i < lists.Count; i++)
         {
-            IRow headerRow = sheet.GetRow(HeaderRowIndex);
-            int cellCount = headerRow.LastCellNum;
-
-            for (int i = headerRow.FirstCellNum; i < cellCount; i++)
+            var row = sheet.CreateRow(i + 1);
+            for (var j = 0; j < propertyList.Length; j++)
             {
-                if (headerRow.GetCell(i) == null)
+                var cell = row.CreateCell(j);
+                var obj = propertyList[j].GetValue(lists[i]);
+                if (obj is DateTime dt)
                 {
-                    break;
+                    cell.SetCellValue(dt);
+                    continue;
                 }
-                DataColumn column = new DataColumn(headerRow.GetCell(i).StringCellValue.Trim());
-                table.Columns.Add(column);
-            }
 
-            int rowCount = sheet.LastRowNum;
-
-            #region 循环各行各列,写入数据到DataTable
-            for (int i = (sheet.FirstRowNum + 1); i < sheet.LastRowNum + 1; i++)
-            {
-                IRow row = sheet.GetRow(i);
-                DataRow dataRow = table.NewRow();
-                for (int j = row.FirstCellNum; j < cellCount; j++)
+                if (obj is double d)
                 {
-                    ICell cell = row.GetCell(j);
-                    if (cell == null)
+                    cell.SetCellValue(d);
+                    continue;
+                }
+
+                if (obj is decimal de)
+                {
+                    if (double.TryParse(de.ToString(CultureInfo.InvariantCulture), out var v))
                     {
-                        dataRow[j] = null;
+                        cell.SetCellValue(v);
                     }
                     else
                     {
-                        //dataRow[j] = cell.ToString();  
-                        switch (cell.CellType)
-                        {
-                            case CellType.Blank:
-                                dataRow[j] = null;
-                                break;
-                            case CellType.Boolean:
-                                dataRow[j] = cell.BooleanCellValue;
-                                break;
-                            case CellType.Numeric:
-                                dataRow[j] = cell.ToString();
-                                break;
-                            case CellType.String:
-                                dataRow[j] = cell.StringCellValue;
-                                break;
-                            case CellType.Error:
-                                dataRow[j] = cell.ErrorCellValue;
-                                break;
-                            case CellType.Formula:
-                            default:
-                                dataRow[j] = "=" + cell.CellFormula;
-                                break;
-                        }
+                        cell.SetCellValue(obj.ToString());
                     }
+                    continue;
                 }
-                table.Rows.Add(dataRow);
-                //dataRow[j] = row.GetCell(j).ToString();  
-            }
-            #endregion
-        }
-        catch (System.Exception ex)
-        {
-            table.Clear();
-            table.Columns.Clear();
-            table.Columns.Add("出错了");
-            DataRow dr = table.NewRow();
-            dr[0] = ex.Message;
-            table.Rows.Add(dr);
-            return table;
-        }
-        finally
-        {
-            //sheet.Dispose();  
-            workbook = null;
-            sheet = null;
-        }
-        #region 清除最后的空行
-        for (int i = table.Rows.Count - 1; i > 0; i--)
-        {
-            bool isnull = true;
-            for (int j = 0; j < table.Columns.Count; j++)
-            {
-                if (table.Rows[i][j] != null)
+
+                if (obj is int it)
                 {
-                    if (table.Rows[i][j].ToString() != "")
+                    if (double.TryParse(it.ToString(CultureInfo.InvariantCulture), out var v))
                     {
-                        isnull = false;
-                        break;
+                        cell.SetCellValue(v);
                     }
+                    else
+                    {
+                        cell.SetCellValue(obj.ToString());
+                    }
+                    continue;
                 }
-            }
-            if (isnull)
-            {
-                table.Rows[i].Delete();
-            }
-        }
-        #endregion
-        return table;
-    }
 
+                if (obj is long l)
+                {
+                    if (double.TryParse(l.ToString(CultureInfo.InvariantCulture), out var v))
+                    {
+                        cell.SetCellValue(v);
+                    }
+                    else
+                    {
+                        cell.SetCellValue(obj.ToString());
+                    }
+                    continue;
+                }
 
+                if (obj is bool b)
+                {
+                    cell.SetCellValue(b);
+                    continue;
+                }
 
-    /// <summary>
-    /// 将DataTable数据导出到Excel文件中(xlsx)
-    /// </summary>
-    /// <param name="dt"></param>
-    /// <param name="file"></param>
-    public static MemoryStream Export(DataTable dt, string file)
-    {
-        XSSFWorkbook xssfworkbook = new XSSFWorkbook();
-        ISheet sheet = xssfworkbook.CreateSheet();
-
-        //表头
-        IRow row = sheet.CreateRow(0);
-        for (int i = 0; i < dt.Columns.Count; i++)
-        {
-            ICell cell = row.CreateCell(i);
-            cell.SetCellValue(dt.Columns[i].ColumnName);
-        }
-
-        //数据
-        for (int i = 0; i < dt.Rows.Count; i++)
-        {
-            IRow row1 = sheet.CreateRow(i + 1);
-            for (int j = 0; j < dt.Columns.Count; j++)
-            {
-                ICell cell = row1.CreateCell(j);
-                cell.SetCellValue(dt.Rows[i][j].ToString());
+                cell.SetCellValue(obj.ToString());
             }
         }
 
-        using (MemoryStream ms = new MemoryStream())
+        using (var ms = new MemoryStream())
         {
-            xssfworkbook.Write(ms);
-            // ms.Flush();
-            // ms.Position = 0;
-            return ms;
-        }
-
-        ////转为字节数组
-        //MemoryStream stream = new MemoryStream();
-        //xssfworkbook.Write(stream);
-        //var buf = stream.ToArray();
-
-        ////保存为Excel文件
-        //using (FileStream fs = new FileStream(file, FileMode.Create, FileAccess.Write))
-        //{
-        //    fs.Write(buf, 0, buf.Length);
-        //    fs.Flush();
-        //}
-
-        //return stream;
-
-
-    }
-
-
-    /// <summary>
-    /// 获取单元格类型(xlsx)
-    /// </summary>
-    /// <param name="cell"></param>
-    /// <returns></returns>
-    private static object GetValueTypeForXLSX(XSSFCell cell)
-    {
-        if (cell == null)
-            return null;
-        switch (cell.CellType)
-        {
-            case CellType.Blank: //BLANK:
-                return null;
-            case CellType.Boolean: //BOOLEAN:
-                return cell.BooleanCellValue;
-            case CellType.Numeric: //NUMERIC:
-                return cell.NumericCellValue;
-            case CellType.String: //STRING:
-                return cell.StringCellValue;
-            case CellType.Error: //ERROR:
-                return cell.ErrorCellValue;
-            case CellType.Formula: //FORMULA:
-            default:
-                return "=" + cell.CellFormula;
+            workbook.Write(ms);
+            return ms.ToArray();
         }
     }
-
-
 }
