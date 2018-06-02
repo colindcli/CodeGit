@@ -60,6 +60,7 @@
 - 艺术二维码：[qart.js](https://github.com/kciter/qart.js) / [demo](https://kciter.github.io/qart.js/) GPL3
 - 提交表单：[form](https://github.com/jquery-form/form) / [demo](http://malsup.com/jquery/form/) MIT
 - 表单验证：[jQuery-Form-Validator](https://github.com/victorjonsson/jQuery-Form-Validator)
+- 表单验证：[jqBootstrapValidation](https://github.com/ReactiveRaven/jqBootstrapValidation) MIT
 - DIV固定粘性：[fixed-sticky](https://github.com/filamentgroup/fixed-sticky) / [demo](http://filamentgroup.github.io/fixed-sticky/demos/demo-control.html) MIT
 - DIV固定粘性：[fixto](https://github.com/bbarakaci/fixto) / [demo](http://bbarakaci.github.io/fixto/) MIT
 - 滚动固定位置：[stickymojo](https://github.com/mojotech/stickymojo) / [demo](http://mojotech.github.io/stickymojo/)
