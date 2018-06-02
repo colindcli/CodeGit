@@ -69,6 +69,7 @@
 - 下拉刷新：[minirefresh](https://github.com/minirefresh/minirefresh) MIT
 - 切页面动画：[H5FullscreenPage](https://github.com/lvming6816077/H5FullscreenPage) / [demo](https://www.nihaoshijie.com.cn/H5FullscreenPage/)
 - 滑动页面动画：[iSlider](https://github.com/kele527/iSlider) / [demo](http://kele527.github.io/iSlider/demo1.html) MIT
+- 验证码：[verify](https://github.com/Hibear/verify) / [demo](https://veui.net/) MIT
 
 
 > 规范
