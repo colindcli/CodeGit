@@ -42,9 +42,9 @@ namespace AbstractStyle
                 var style = htmlNode.Attributes["style"];
                 var className = $"{classPreName}{i}";
 
-                if (nvs.Exists(p => string.Equals(style.Value, p.Value, StringComparison.OrdinalIgnoreCase)))
+                var obj = nvs.Find(p => string.Equals(style.Value, p.Value, StringComparison.OrdinalIgnoreCase));
+                if (obj.Key != null)
                 {
-                    var obj = nvs.Find(p => string.Equals(style.Value, p.Value, StringComparison.OrdinalIgnoreCase));
                     className = obj.Key;
                 }
                 else
