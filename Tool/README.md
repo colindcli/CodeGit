@@ -4,6 +4,7 @@
 > 视频转为GIF(Free Video to GIF Converter) 2.01 ：https://www.cr173.com/soft/41211.html
 
 
-## 控制台工具
+## 工具代码
 
 > Excel转json数据：ExcelToJson.cs
+> 提取行内样式：AbstractStyle.cs
