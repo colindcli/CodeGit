@@ -13,6 +13,13 @@ $(function () {
                 init: function () {
                     var self = this;
                     $.extend(self, option);
+                    self.initView();
+                    self.render();
+                    self.sort();
+                },
+                initView: function () {
+                    var self = this;
+                    $.extend(self, option);
                     var obj = $("#" + self.tableId).parent();
                     if (!obj.hasClass(self.tableId)) {
                         obj.addClass(self.tableId);
@@ -20,8 +27,8 @@ $(function () {
                     if (!$('#' + self.tableId).attr('lay-filter')) {
                         $('#' + self.tableId).attr('lay-filter', self.tableId);
                     }
-                    self.render();
-                    self.sort();
+                    var h = $('#' + self.tableId).parent().height();
+                    $('#' + self.tableId).parent().css({height: h});
                 },
                 render: function () {
                     var self = this;
