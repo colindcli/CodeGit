@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>table</title>
+    <link rel="stylesheet" href="static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/jQuery-contextMenu/jquery.contextMenu.min.css">
+</head>
+
+<body>
+    <div style="height: 100%; width: 100%;">
+        <table id="tableList"></table>
+    </div>
+
+    <script src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js"></script>
+    <script src="static/layui/layui.all.js"></script>
+    <script src="static/jQuery-contextMenu/jquery.contextMenu.min.js"></script>
+    <script src="static/jquery-extension.js"></script>
+    <script>
+        $(function () {
+            $.tableObjec({
+                tableId: 'tableList',
+                tableOption: {
+                    url: 'data/data.html',
+                    page: true,
+                    where: {},
+                    cols: [
+                        [
+                            { field: 'id', title: 'ID', width: 70, sort: true, fixed: 'left' },
+                            { field: 'aa', title: '用户名' },
+                            { field: 'aa', title: '性别', sort: true },
+                            { field: 'cc', title: '城市' },
+                            { field: 'dd', title: '签名' },
+                            { field: 'ee', title: '积分', sort: true },
+                            { field: 'ff', title: '评分', sort: true },
+                            { field: 'gg', title: '职业' },
+                            { field: 'hh', title: '财富', sort: true }
+                        ]
+                    ]
+                },
+                menuItem: {
+                    foo: { name: "Foo", callback: function (key, opt) { console.log(key, opt, $(this).html()); } },
+                    bar: { name: "Bar", callback: function (key, opt) { console.log(key, opt, $(this).html()); } }
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
