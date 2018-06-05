@@ -4,11 +4,14 @@
 
 - AnkhSVN
 - Select Next Occurrence:多选编辑，快捷键搜索SelectNextOccurrence（选择下一个：Alt+D；全选：Alt+F3）
-- BuildOnSave
 - Resharper
-- Multi Edit Mode
 - Debug Attach Manager
+- SQL Prompt Core: sql智能感知
 
+- Visual-Studio-jQuery-Code-Snippets
+
+- Multi Edit Mode
+- BuildOnSave
 - Format All Files
 - Color Theme Editor
 - Snippet Designer

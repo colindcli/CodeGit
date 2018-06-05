@@ -25,3 +25,15 @@
 - vscode-pdf
 - VueHelper
 
+
+- jQuery Code Snippets
+- jQuery Snippets
+- Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets
+- Bootstrap 3 Snippets
+- HTML Snippets
+- HTML Boilerplate
+- Live Server Preview
+- Live HTML Previewer
+- Sorting HTML and Jade attributes
+- IntelliSense for CSS class names in HTML
+- Copy Relative Path
