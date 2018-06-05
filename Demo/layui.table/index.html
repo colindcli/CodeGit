@@ -39,8 +39,8 @@
                     ]
                 },
                 menuItem: {
-                    foo: { name: "Foo", callback: function (key, opt) { console.log(key, opt, $(this).html()); } },
-                    bar: { name: "Bar", callback: function (key, opt) { console.log(key, opt, $(this).html()); } }
+                    foo: { name: "Foo", callback: function (key, opt, self) { console.log(key, opt, $(self).html()); } },
+                    bar: { name: "Bar", callback: function (key, opt, self) { console.log(key, opt, $(self).html()); } }
                 }
             });
         });

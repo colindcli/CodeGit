@@ -41,11 +41,21 @@ $(function () {
                 menu: function () {
                     var self = this;
                     if (!$.isEmptyObject(self.menuItem)) {
+                        $.each(self.menuItem, function (i, item) {
+                            var fn = item.callback;
+                            item.callback = function (key, opt) {
+                                self.openDialog(key, opt);
+                                fn.call(new Object(),key, opt, this);
+                            };
+                        })
                         $.contextMenu({
                             selector: '.' + self.tableId + ' .layui-table-body table tr',
                             items: self.menuItem
                         });
                     }
+                },
+                openDialog: function (key, opt) {
+                    console.log(key, opt)
                 },
                 sort: function () {
                     var self = this;
