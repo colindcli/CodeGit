@@ -1,6 +1,6 @@
 $(function () {
     $.extend({
-        tableObjec: function (option) {
+        tableObject: function (option) {
             var tableObj = {
                 tableId: '',
                 tableOption: {
