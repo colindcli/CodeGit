@@ -38,4 +38,7 @@
 - Sorting HTML and Jade attributes
 - IntelliSense for CSS class names in HTML
 - Copy Relative Path
-- console-log-snippet-javascript
+
+- console-log-snippet-javascript: conl
+- console-snippets: cl or clog
+- javascript console utils
