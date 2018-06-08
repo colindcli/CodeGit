@@ -1,11 +1,11 @@
 ## Chrome开发
 
 - Chrome脚本注入：Tampermonkey
-- 捕捉网页截图 - FireShot
+- 捕捉网页截图 - FireShot: [chorme](https://download.csdn.net/download/winsty2008/10467191)
 - Vue.js devtools：vue开发工具
-- EditThisCookie：Cookie修改
+- EditThisCookie：Cookie修改: [chorme](https://download.csdn.net/download/winsty2008/10467191)
 - Advanced REST client
-- 谷歌访问助手
+- 谷歌访问助手: [chorme](https://download.csdn.net/download/winsty2008/10467191)
 - JSONView：[JSONView-for-Chrome](https://github.com/gildas-lormeau/JSONView-for-Chrome)
 - Axure RP Extension for Chrome
 - [ReplaceGoogleCDN](https://github.com/colindcli/ReplaceGoogleCDN)
