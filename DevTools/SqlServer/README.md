@@ -1,3 +1,4 @@
 > sql
 
-- [Sqlcompletefree](http://download.csdn.net/download/haolove527/8883609)
+- [sqlcomplete](https://www.devart.com/dbforge/sql/sqlcomplete/) / [sqlcomplete free](https://download.csdn.net/download/winsty2008/10467129)
+- [MsSqlTools.zip](https://download.csdn.net/download/winsty2008/10467155)
