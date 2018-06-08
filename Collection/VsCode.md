@@ -33,6 +33,7 @@
 - Bootstrap 3 Snippets
 - HTML Snippets
 - HTML Boilerplate
+- Live Server
 - Live Server Preview
 - Live HTML Previewer
 - Sorting HTML and Jade attributes
