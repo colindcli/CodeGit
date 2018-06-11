@@ -75,6 +75,8 @@
 - 钉：[jquery.pin](https://github.com/webpop/jquery.pin) / [demo](http://webpop.github.io/jquery.pin/)
 - 单选框开关：[bootstrap-switch](https://github.com/Bttstrp/bootstrap-switch) / [demo](http://bootstrapswitch.site/examples.html) MIT
 - 页面介绍(按步介绍)：[intro.js](https://github.com/usablica/intro.js) / [demo](https://introjs.com/docs/getting-started/examples) GNU AGPLv3
+- 页面过渡效果：[animsition](https://github.com/blivesta/animsition) / [demo](http://git.blivesta.com/animsition/) MIT
+- 左滑导航栏：[drawer](https://github.com/blivesta/drawer) / [demo](http://git.blivesta.com/drawer/) MIT
 
 
 > 规范
@@ -104,8 +106,9 @@
 > 滚动条及动画
 
 - 滚动条：[jquery.scrollTo](https://github.com/flesler/jquery.scrollTo) MIT
+- 滚动条样式：[jquery.scrollbar](https://github.com/gromo/jquery.scrollbar)
 - 滚动条美化：[smooth-scrollbar](https://github.com/colindcli/smooth-scrollbar) / [demo](http://idiotwu.github.io/smooth-scrollbar/) MIT
-- 平滑滚动：[animatescroll.js](https://github.com/ramswaroop/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
+- 平滑滚动：[animatescroll.js](https://github.com/rampatra/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
 - 滚动条样式：[iscroll](https://github.com/cubiq/iscroll) / [demo](http://lab.cubiq.org/iscroll5/demos/scrollbars/) MIT
 - 滚动条页面变换魔术：[ScrollMagic](https://github.com/janpaepke/ScrollMagic) / [demo](http://scrollmagic.io/examples/) MIT/GPL
 - 滚动页面变化：[kissui.scrollanim](https://github.com/usablica/kissui.scrollanim) / [demo](http://scrollanim.kissui.io/) MIT
