@@ -71,6 +71,9 @@
 - 切页面动画：[H5FullscreenPage](https://github.com/lvming6816077/H5FullscreenPage) / [demo](https://www.nihaoshijie.com.cn/H5FullscreenPage/)
 - 滑动页面动画：[iSlider](https://github.com/kele527/iSlider) / [demo](http://kele527.github.io/iSlider/demo1.html) MIT
 - 验证码：[verify](https://github.com/Hibear/verify) / [demo](https://veui.net/) MIT
+- 右下角消息提示框：[messenger](https://github.com/HubSpot/messenger) / [doc&demo](http://github.hubspot.com/messenger/docs/welcome/) MIT
+- 钉：[jquery.pin](https://github.com/webpop/jquery.pin) / [demo](http://webpop.github.io/jquery.pin/)
+- 单选框开关：[bootstrap-switch](https://github.com/Bttstrp/bootstrap-switch) / [demo](http://bootstrapswitch.site/examples.html) MIT
 
 
 > 规范
@@ -253,3 +256,23 @@
 - d3：[d3](https://github.com/d3/d3)
 - [D3液体填充量表](http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6)
 - [泡泡菜单](http://sunsp.net/demo/BubbleMenu/)
+
+
+## UI
+
+- [WeUi](https://github.com/lihongxun945/jquery-weui)
+- [ant-design](https://github.com/ant-design/ant-design)
+- [layui](https://github.com/sentsin/layui)
+- [toastr](https://www.nuget.org/packages/toastr/) / [Github](https://github.com/CodeSeven/toastr)
+- [Flat-UI](https://github.com/designmodo/Flat-UI) / [demo](http://designmodo.github.io/Flat-UI/)
+- [bootstrap](https://github.com/twbs/bootstrap) / [doc](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+
+## 字体图标
+
+- [iconfont](http://www.iconfont.cn/)
+
+
+## CSS#
+
+- 鼠标经过变化：[Hover](https://github.com/IanLunn/Hover) / [demo](http://ianlunn.github.io/Hover/) MIT-2.2
+- 3D 行星动画效果：[css3-](https://github.com/chokcoco/css3-)
