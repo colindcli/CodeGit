@@ -25,6 +25,7 @@
 ## 推荐
 - vscode-icons
 - Auto Rename Tag
+- Auto Close Tag
 - Beautify
 - HTML CSS Support
 - jQuery Code Snippets
@@ -43,3 +44,10 @@
 - console-log-snippet-javascript: conl
 - console-snippets: cl or clog
 - javascript console utils
+
+- Auto px2rem
+- Auto Scroll
+- html to javascript string
+- TortoiseSVN for VS Code
+- Todo Tree
+- TODO Parser
