@@ -74,6 +74,7 @@
 - 右下角消息提示框：[messenger](https://github.com/HubSpot/messenger) / [doc&demo](http://github.hubspot.com/messenger/docs/welcome/) MIT
 - 钉：[jquery.pin](https://github.com/webpop/jquery.pin) / [demo](http://webpop.github.io/jquery.pin/)
 - 单选框开关：[bootstrap-switch](https://github.com/Bttstrp/bootstrap-switch) / [demo](http://bootstrapswitch.site/examples.html) MIT
+- 页面介绍(按步介绍)：[intro.js](https://github.com/usablica/intro.js) / [demo](https://introjs.com/docs/getting-started/examples) GNU AGPLv3
 
 
 > 规范
@@ -186,6 +187,7 @@
 - 页面古怪转变：[zoomooz](https://github.com/jaukia/zoomooz) / [demo](http://jaukia.github.io/zoomooz/) 
 - 魔幻线条：[curvejs](https://github.com/AlloyTeam/curvejs)
 - 图片浏览器：[cImageViewer](https://github.com/xingqiao/cImageViewer)
+- 图片全屏浏览：[screenfull.js](https://github.com/sindresorhus/screenfull.js)
 
 
 > 图片浏览
