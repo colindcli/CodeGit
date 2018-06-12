@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>var500</Title>
+      <Shortcut>var500</Shortcut>
+      <Description>VARCHAR(500)</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[VARCHAR(500)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

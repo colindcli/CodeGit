@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!---->
+<Categories version="2" type="Categories">
+  <UseFlatColors>False</UseFlatColors>
+  <ColorStatusStrip>True</ColorStatusStrip>
+  <CategoryList type="CategoryList" version="2">
+    <value version="2" type="ServerCategory">
+      <Category>Production</Category>
+      <Color>#FFFF0000</Color>
+    </value>
+    <value version="2" type="ServerCategory">
+      <Category>Staging</Category>
+      <Color>#FFABD9FC</Color>
+    </value>
+    <value version="2" type="ServerCategory">
+      <Category>Testing</Category>
+      <Color>#FFF1900C</Color>
+    </value>
+    <value version="2" type="ServerCategory">
+      <Category>Development</Category>
+      <Color>#FF3CAD3C</Color>
+    </value>
+    <value version="2" type="ServerCategory">
+      <Category>Local</Category>
+      <Color>#FF9357D4</Color>
+    </value>
+  </CategoryList>
+</Categories>

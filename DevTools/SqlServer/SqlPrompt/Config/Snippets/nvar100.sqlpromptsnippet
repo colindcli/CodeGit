@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>nvar100</Title>
+      <Shortcut>nvar100</Shortcut>
+      <Description>NVARCHAR(100)</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[NVARCHAR(100)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

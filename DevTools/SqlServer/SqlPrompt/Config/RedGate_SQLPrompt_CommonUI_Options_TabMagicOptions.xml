@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!---->
+<TabMagicOptions version="1" type="TabMagicOptions">
+  <Enabled>True</Enabled>
+  <OpenTabsOnStartup>True</OpenTabsOnStartup>
+  <ReconnectTabs>True</ReconnectTabs>
+  <UseKeyboardShortcut>False</UseKeyboardShortcut>
+  <RecentlyClosedTabsWidth>800</RecentlyClosedTabsWidth>
+  <RecentlyClosedTabsHeight>400</RecentlyClosedTabsHeight>
+  <GridSplitterLeftWidth>280</GridSplitterLeftWidth>
+  <LastRunWasLicensed>True</LastRunWasLicensed>
+  <SelectedFilterType>0</SelectedFilterType>
+  <SelectedFilterTypeForKeyboardShortcut>1</SelectedFilterTypeForKeyboardShortcut>
+  <KeyboardShortcut>Ctrl+Q</KeyboardShortcut>
+  <DatabaseFilePath />
+  <MaximumQuerySize>1048576</MaximumQuerySize>
+  <MaximumNumberOfTabsToRestore>20</MaximumNumberOfTabsToRestore>
+  <MaximumNumberOfConnectionsToRestorePerTab>1</MaximumNumberOfConnectionsToRestorePerTab>
+  <ShownRedGateToolbar>True</ShownRedGateToolbar>
+</TabMagicOptions>

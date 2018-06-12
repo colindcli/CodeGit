@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!---->
+<UIOptions version="1" type="UIOptions">
+  <SuggestionsEnabledOnStartUpSSMS>True</SuggestionsEnabledOnStartUpSSMS>
+  <SuggestionsEnabledOnStartUpVisualStudio>True</SuggestionsEnabledOnStartUpVisualStudio>
+  <CandidateListCompleteEnter>True</CandidateListCompleteEnter>
+  <MarkSyntaxErrors>False</MarkSyntaxErrors>
+  <CandidateListCompleteSpace>False</CandidateListCompleteSpace>
+  <CandidateListCompleteTab>True</CandidateListCompleteTab>
+  <CandidateListOrderColumnsAlphabetically>True</CandidateListOrderColumnsAlphabetically>
+  <CandidateListCompleteDot>False</CandidateListCompleteDot>
+  <CandidateListCompleteComma>False</CandidateListCompleteComma>
+  <CandidateListCompleteSquareBrackets>False</CandidateListCompleteSquareBrackets>
+  <CandidateListCompleteParentheses>False</CandidateListCompleteParentheses>
+  <CandidateListCompleteSemicolon>False</CandidateListCompleteSemicolon>
+  <CandidateListDisplayTypeInfo>True</CandidateListDisplayTypeInfo>
+  <ShowSchemaPanel>True</ShowSchemaPanel>
+  <SchemaPanelDelayMilliseconds>500</SchemaPanelDelayMilliseconds>
+  <SuggestionsPopupDelayMilliseconds>0</SuggestionsPopupDelayMilliseconds>
+  <EnableCtrlLeftCtrlRight>True</EnableCtrlLeftCtrlRight>
+  <EnableShiftlLeftShiftRight>False</EnableShiftlLeftShiftRight>
+  <EnableObjectDefns>True</EnableObjectDefns>
+  <EnableParamHints>True</EnableParamHints>
+  <EnableLayout>True</EnableLayout>
+  <SchemaPanelWidth>300</SchemaPanelWidth>
+  <SchemaPanelHeight>275</SchemaPanelHeight>
+  <SchemaPanelShowTable>True</SchemaPanelShowTable>
+  <CandidateListWidth>350</CandidateListWidth>
+  <CandidateListHeight>200</CandidateListHeight>
+  <CandidateListColumnDivider>0.5</CandidateListColumnDivider>
+  <CandidateListSaveSizeBetweenSessions>True</CandidateListSaveSizeBetweenSessions>
+  <CandidateListUseEditorFont>True</CandidateListUseEditorFont>
+  <CandidateListUserFontFamily />
+  <CandidateListUserFontSize>10</CandidateListUserFontSize>
+  <CurrentStylePath />
+  <CurrentStyleModified>False</CurrentStyleModified>
+  <ShowColumnPickerTip>True</ShowColumnPickerTip>
+  <ShowSwitchToColumnPickerTip>True</ShowSwitchToColumnPickerTip>
+  <ShowDontDisplayObjectDescriptionBoxTip>True</ShowDontDisplayObjectDescriptionBoxTip>
+  <ShowSnippetTemplateParameterDialog>True</ShowSnippetTemplateParameterDialog>
+  <ShowSchemaPrefixes>False</ShowSchemaPrefixes>
+  <HighlightChanges>True</HighlightChanges>
+  <UseCamelHumps>False</UseCamelHumps>
+  <ShowExecutionWarnings>True</ShowExecutionWarnings>
+  <ShowExecutionWarningsForInnerJoins>True</ShowExecutionWarningsForInnerJoins>
+  <ShowExecutionWarningsForProcsAndTriggers>True</ShowExecutionWarningsForProcsAndTriggers>
+  <ShowExecutionWarningsForTruncateStatements>False</ShowExecutionWarningsForTruncateStatements>
+  <EnableSurroundWithPopup>True</EnableSurroundWithPopup>
+  <EnableHighlightMatchingObjects>True</EnableHighlightMatchingObjects>
+  <DisableTabColoring>False</DisableTabColoring>
+  <AlwaysRecreateCommands>False</AlwaysRecreateCommands>
+  <FormatterActiveStyleName>MyFormat</FormatterActiveStyleName>
+  <FreeEditionFirstUseTimestamp>131726537429612342</FreeEditionFirstUseTimestamp>
+  <GracePeriodWarningIsDismissed>False</GracePeriodWarningIsDismissed>
+  <GracePeriodIsEnded>False</GracePeriodIsEnded>
+  <AbTestingEnabled>True</AbTestingEnabled>
+  <MigratedStyles>True</MigratedStyles>
+  <KeyboardBindingOverrides version="1" type="RedGate.SQLPrompt.CommonUI.Options.KeyboardBindingOverrides">
+    <Overrides type="Overrides" version="2" />
+  </KeyboardBindingOverrides>
+  <ProvidedFirstUseLoginPopup>False</ProvidedFirstUseLoginPopup>
+  <IsCodeAnalysisEnabled>True</IsCodeAnalysisEnabled>
+</UIOptions>

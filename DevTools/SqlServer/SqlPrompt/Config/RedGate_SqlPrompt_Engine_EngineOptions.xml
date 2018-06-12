@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!---->
+<EngineOptions version="1" type="EngineOptions">
+  <AutoPopupEnabled>True</AutoPopupEnabled>
+  <QualifyObjectNames>True</QualifyObjectNames>
+  <AliasTableViewNames>False</AliasTableViewNames>
+  <IncludeAsInAliasDefinition>True</IncludeAsInAliasDefinition>
+  <CapitaliseGeneratedAliases>False</CapitaliseGeneratedAliases>
+  <QualifyColumnNames>False</QualifyColumnNames>
+  <QualifyColumnNamesWithAliases>True</QualifyColumnNamesWithAliases>
+  <EncloseIdentifiersInSquareBrackets>False</EncloseIdentifiersInSquareBrackets>
+  <InsertInvocationSignatureForFunctionsAndSPs>True</InsertInvocationSignatureForFunctionsAndSPs>
+  <DeclareVariablesForOutputParameters>True</DeclareVariablesForOutputParameters>
+  <AddDefaultValuesForParameters>True</AddDefaultValuesForParameters>
+  <InsertTypeHintsForParameters>True</InsertTypeHintsForParameters>
+  <InsertParenthesesForFunctionInvocation>True</InsertParenthesesForFunctionInvocation>
+  <GenerateFullInsertStatement>True</GenerateFullInsertStatement>
+  <AddDefaultValuesForInsert>True</AddDefaultValuesForInsert>
+  <IncludeValuesClauseForInsert>True</IncludeValuesClauseForInsert>
+  <InsertOutputColumnList>False</InsertOutputColumnList>
+  <IncludeTypeHintsForInsertedValues>True</IncludeTypeHintsForInsertedValues>
+  <IncludeColumnNameHints>True</IncludeColumnNameHints>
+  <IncludePartialFKJoinConditions>False</IncludePartialFKJoinConditions>
+  <AlwaysIncludeNameMatchedJoinConditions>True</AlwaysIncludeNameMatchedJoinConditions>
+  <AlwaysIncludeTypeMatchedJoinConditions>False</AlwaysIncludeTypeMatchedJoinConditions>
+  <FlipColumnsOnJoinCondition>False</FlipColumnsOnJoinCondition>
+  <AutoGenerateAlterProcStatement>True</AutoGenerateAlterProcStatement>
+  <AutoInsertParenthesesForBuiltInFunctionsAndTypes>True</AutoInsertParenthesesForBuiltInFunctionsAndTypes>
+  <MaxFileSizeToCacheInKB>5120</MaxFileSizeToCacheInKB>
+  <EnableAllColumnsDisplay>False</EnableAllColumnsDisplay>
+  <AutoTerminateMultilineComments>True</AutoTerminateMultilineComments>
+  <AutoInsertClosingParenthesis>False</AutoInsertClosingParenthesis>
+  <AutoInsertClosingSquareBrace>True</AutoInsertClosingSquareBrace>
+  <AutoInsertClosingSingleQuote>True</AutoInsertClosingSingleQuote>
+  <AutoInsertClosingDoubleQuote>False</AutoInsertClosingDoubleQuote>
+  <AttemptDecryption>True</AttemptDecryption>
+  <SynonymsEnabled>True</SynonymsEnabled>
+  <CacheLinkedServers>True</CacheLinkedServers>
+  <CacheSynonymDatabases>False</CacheSynonymDatabases>
+  <ShowSystemObjects>False</ShowSystemObjects>
+  <MatchIndentationOnNewline>False</MatchIndentationOnNewline>
+  <IndentAllInsertions>True</IndentAllInsertions>
+  <ParserLookAheadDistance>3000</ParserLookAheadDistance>
+  <ParserUncachedLines>50</ParserUncachedLines>
+  <IncludedServersAndDatabases />
+  <ExcludedServersAndDatabases />
+  <FilterServers>0</FilterServers>
+  <LogFileMaxAgeDays>7</LogFileMaxAgeDays>
+  <UserDefinedAliases>&lt;UserDefinedAliases&gt;
+  &lt;Count&gt;0&lt;/Count&gt;
+&lt;/UserDefinedAliases&gt;</UserDefinedAliases>
+  <IgnoredPrefixes>&lt;IgnoredPrefixes&gt;
+  &lt;Count&gt;0&lt;/Count&gt;
+&lt;/IgnoredPrefixes&gt;</IgnoredPrefixes>
+  <OrderColumnsAlphabetically>False</OrderColumnsAlphabetically>
+  <MaxSupportedColumns>-1</MaxSupportedColumns>
+  <CommandTimeout>30</CommandTimeout>
+  <ConnectionTimeout>15</ConnectionTimeout>
+  <IsAutoRefreshEnabled>False</IsAutoRefreshEnabled>
+  <RefreshSsmsIntellisense>False</RefreshSsmsIntellisense>
+  <OvertypeClosingChars>True</OvertypeClosingChars>
+  <TestGenerateFullUpdateStatement>False</TestGenerateFullUpdateStatement>
+  <TestAddDefaultValuesForUpdate>False</TestAddDefaultValuesForUpdate>
+  <TestIncludeTypeHintsForUpdatedValues>False</TestIncludeTypeHintsForUpdatedValues>
+</EngineOptions>
