@@ -3,18 +3,18 @@ using System.Text;
 using System.Security.Cryptography;
 
 /// <summary>
-/// µÃµ½Ëæ»ú°²È«Âë£¨¹şÏ£¼ÓÃÜ£©¡£
+/// å¾—åˆ°éšæœºå®‰å…¨ç ï¼ˆå“ˆå¸ŒåŠ å¯†ï¼‰ã€‚
 /// </summary>
 public class HashEncode
 {
 	public HashEncode()
 	{
 		//
-		// TODO: ÔÚ´Ë´¦Ìí¼Ó¹¹Ôìº¯ÊıÂß¼­
+		// TODO: åœ¨æ­¤å¤„æ·»åŠ æ„é€ å‡½æ•°é€»è¾‘
 		//
 	}
 	/// <summary>
-	/// µÃµ½Ëæ»ú¹şÏ£¼ÓÃÜ×Ö·û´®
+	/// å¾—åˆ°éšæœºå“ˆå¸ŒåŠ å¯†å­—ç¬¦ä¸²
 	/// </summary>
 	/// <returns></returns>
 	public static string GetSecurity()
@@ -23,7 +23,7 @@ public class HashEncode
 		return Security;
 	}
 	/// <summary>
-	/// µÃµ½Ò»¸öËæ»úÊıÖµ
+	/// å¾—åˆ°ä¸€ä¸ªéšæœºæ•°å€¼
 	/// </summary>
 	/// <returns></returns>
 	public static string GetRandomValue()
@@ -33,7 +33,7 @@ public class HashEncode
 		return RandomVaule;
 	}
 	/// <summary>
-	/// ¹şÏ£¼ÓÃÜÒ»¸ö×Ö·û´®
+	/// å“ˆå¸ŒåŠ å¯†ä¸€ä¸ªå­—ç¬¦ä¸²
 	/// </summary>
 	/// <param name="Security"></param>
 	/// <returns></returns>

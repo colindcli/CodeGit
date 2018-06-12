@@ -3,7 +3,7 @@ using System.Text;
 using System.Security.Cryptography;
 
 /// <summary> 
-/// RSA¼ÓÃÜ½âÃÜ¼°RSAÇ©ÃûºÍÑéÖ¤
+/// RSAåŠ å¯†è§£å¯†åŠRSAç­¾åå’ŒéªŒè¯
 /// </summary> 
 public class RSACryption 
 { 		
@@ -12,12 +12,12 @@ public class RSACryption
 	} 
 	
 
-	#region RSA ¼ÓÃÜ½âÃÜ 
+	#region RSA åŠ å¯†è§£å¯† 
 
-	#region RSA µÄÃÜÔ¿²úÉú 
+	#region RSA çš„å¯†é’¥äº§ç”Ÿ 
 
 	/// <summary>
-	/// RSA µÄÃÜÔ¿²úÉú ²úÉúË½Ô¿ ºÍ¹«Ô¿ 
+	/// RSA çš„å¯†é’¥äº§ç”Ÿ äº§ç”Ÿç§é’¥ å’Œå…¬é’¥ 
 	/// </summary>
 	/// <param name="xmlKeys"></param>
 	/// <param name="xmlPublicKey"></param>
@@ -29,14 +29,14 @@ public class RSACryption
 	} 
 	#endregion 
 
-	#region RSAµÄ¼ÓÃÜº¯Êı 
+	#region RSAçš„åŠ å¯†å‡½æ•° 
 	//############################################################################## 
-	//RSA ·½Ê½¼ÓÃÜ 
-	//ËµÃ÷KEY±ØĞëÊÇXMLµÄĞĞÊ½,·µ»ØµÄÊÇ×Ö·û´® 
-	//ÔÚÓĞÒ»µãĞèÒªËµÃ÷£¡£¡¸Ã¼ÓÃÜ·½Ê½ÓĞ ³¤¶È ÏŞÖÆµÄ£¡£¡ 
+	//RSA æ–¹å¼åŠ å¯† 
+	//è¯´æ˜KEYå¿…é¡»æ˜¯XMLçš„è¡Œå¼,è¿”å›çš„æ˜¯å­—ç¬¦ä¸² 
+	//åœ¨æœ‰ä¸€ç‚¹éœ€è¦è¯´æ˜ï¼ï¼è¯¥åŠ å¯†æ–¹å¼æœ‰ é•¿åº¦ é™åˆ¶çš„ï¼ï¼ 
 	//############################################################################## 
 
-	//RSAµÄ¼ÓÃÜº¯Êı  string
+	//RSAçš„åŠ å¯†å‡½æ•°  string
 	public string RSAEncrypt(string xmlPublicKey,string m_strEncryptString ) 
 	{ 
 		
@@ -51,7 +51,7 @@ public class RSACryption
 		return Result; 
 		
 	} 
-	//RSAµÄ¼ÓÃÜº¯Êı byte[]
+	//RSAçš„åŠ å¯†å‡½æ•° byte[]
 	public string RSAEncrypt(string xmlPublicKey,byte[] EncryptString ) 
 	{ 
 		
@@ -66,8 +66,8 @@ public class RSACryption
 	} 
 	#endregion 
 
-	#region RSAµÄ½âÃÜº¯Êı 
-	//RSAµÄ½âÃÜº¯Êı  string
+	#region RSAçš„è§£å¯†å‡½æ•° 
+	//RSAçš„è§£å¯†å‡½æ•°  string
 	public string RSADecrypt(string xmlPrivateKey, string m_strDecryptString ) 
 	{			
 		byte[] PlainTextBArray; 
@@ -82,7 +82,7 @@ public class RSACryption
 		
 	} 
 
-	//RSAµÄ½âÃÜº¯Êı  byte
+	//RSAçš„è§£å¯†å‡½æ•°  byte
 	public string RSADecrypt(string xmlPrivateKey, byte[] DecryptString ) 
 	{			
 		byte[] DypherTextBArray; 
@@ -98,13 +98,13 @@ public class RSACryption
 
 	#endregion 
 
-	#region RSAÊı×ÖÇ©Ãû 
+	#region RSAæ•°å­—ç­¾å 
 
-	#region »ñÈ¡HashÃèÊö±í 
-	//»ñÈ¡HashÃèÊö±í 
+	#region è·å–Hashæè¿°è¡¨ 
+	//è·å–Hashæè¿°è¡¨ 
 	public bool GetHash(string m_strSource, ref byte[] HashData) 
 	{ 			
-		//´Ó×Ö·û´®ÖĞÈ¡µÃHashÃèÊö 
+		//ä»å­—ç¬¦ä¸²ä¸­å–å¾—Hashæè¿° 
 		byte[] Buffer; 
 		System.Security.Cryptography.HashAlgorithm MD5 = System.Security.Cryptography.HashAlgorithm.Create("MD5"); 
 		Buffer = System.Text.Encoding.GetEncoding("GB2312").GetBytes(m_strSource); 
@@ -113,11 +113,11 @@ public class RSACryption
 		return true; 			
 	} 
 
-	//»ñÈ¡HashÃèÊö±í 
+	//è·å–Hashæè¿°è¡¨ 
 	public bool GetHash(string m_strSource, ref string strHashData) 
 	{ 
 		
-		//´Ó×Ö·û´®ÖĞÈ¡µÃHashÃèÊö 
+		//ä»å­—ç¬¦ä¸²ä¸­å–å¾—Hashæè¿° 
 		byte[] Buffer; 
 		byte[] HashData; 
 		System.Security.Cryptography.HashAlgorithm MD5 = System.Security.Cryptography.HashAlgorithm.Create("MD5"); 
@@ -129,11 +129,11 @@ public class RSACryption
 		
 	} 
 
-	//»ñÈ¡HashÃèÊö±í 
+	//è·å–Hashæè¿°è¡¨ 
 	public bool GetHash(System.IO.FileStream objFile, ref byte[] HashData) 
 	{ 
 		
-		//´ÓÎÄ¼şÖĞÈ¡µÃHashÃèÊö 
+		//ä»æ–‡ä»¶ä¸­å–å¾—Hashæè¿° 
 		System.Security.Cryptography.HashAlgorithm MD5 = System.Security.Cryptography.HashAlgorithm.Create("MD5"); 
 		HashData = MD5.ComputeHash(objFile); 
 		objFile.Close(); 
@@ -142,11 +142,11 @@ public class RSACryption
 		
 	} 
 
-	//»ñÈ¡HashÃèÊö±í 
+	//è·å–Hashæè¿°è¡¨ 
 	public bool GetHash(System.IO.FileStream objFile, ref string strHashData) 
 	{ 
 		
-		//´ÓÎÄ¼şÖĞÈ¡µÃHashÃèÊö 
+		//ä»æ–‡ä»¶ä¸­å–å¾—Hashæè¿° 
 		byte[] HashData; 
 		System.Security.Cryptography.HashAlgorithm MD5 = System.Security.Cryptography.HashAlgorithm.Create("MD5"); 
 		HashData = MD5.ComputeHash(objFile); 
@@ -159,8 +159,8 @@ public class RSACryption
 	} 
 	#endregion 
 
-	#region RSAÇ©Ãû 
-	//RSAÇ©Ãû 
+	#region RSAç­¾å 
+	//RSAç­¾å 
 	public bool SignatureFormatter(string p_strKeyPrivate, byte[] HashbyteSignature, ref byte[] EncryptedSignatureData) 
 	{ 
 		
@@ -168,16 +168,16 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPrivate); 
 			System.Security.Cryptography.RSAPKCS1SignatureFormatter RSAFormatter = new System.Security.Cryptography.RSAPKCS1SignatureFormatter(RSA); 
-			//ÉèÖÃÇ©ÃûµÄËã·¨ÎªMD5 
+			//è®¾ç½®ç­¾åçš„ç®—æ³•ä¸ºMD5 
 			RSAFormatter.SetHashAlgorithm("MD5"); 
-			//Ö´ĞĞÇ©Ãû 
+			//æ‰§è¡Œç­¾å 
 			EncryptedSignatureData = RSAFormatter.CreateSignature(HashbyteSignature); 
 
 			return true; 
 		
 	} 
 
-	//RSAÇ©Ãû 
+	//RSAç­¾å 
 	public bool SignatureFormatter(string p_strKeyPrivate, byte[] HashbyteSignature, ref string m_strEncryptedSignatureData) 
 	{ 
 		
@@ -187,9 +187,9 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPrivate); 
 			System.Security.Cryptography.RSAPKCS1SignatureFormatter RSAFormatter = new System.Security.Cryptography.RSAPKCS1SignatureFormatter(RSA); 
-			//ÉèÖÃÇ©ÃûµÄËã·¨ÎªMD5 
+			//è®¾ç½®ç­¾åçš„ç®—æ³•ä¸ºMD5 
 			RSAFormatter.SetHashAlgorithm("MD5"); 
-			//Ö´ĞĞÇ©Ãû 
+			//æ‰§è¡Œç­¾å 
 			EncryptedSignatureData = RSAFormatter.CreateSignature(HashbyteSignature); 
 
 			m_strEncryptedSignatureData = Convert.ToBase64String(EncryptedSignatureData); 
@@ -198,7 +198,7 @@ public class RSACryption
 		
 	} 
 
-	//RSAÇ©Ãû 
+	//RSAç­¾å 
 	public bool SignatureFormatter(string p_strKeyPrivate, string m_strHashbyteSignature, ref byte[] EncryptedSignatureData) 
 	{ 
 		
@@ -209,16 +209,16 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPrivate); 
 			System.Security.Cryptography.RSAPKCS1SignatureFormatter RSAFormatter = new System.Security.Cryptography.RSAPKCS1SignatureFormatter(RSA); 
-			//ÉèÖÃÇ©ÃûµÄËã·¨ÎªMD5 
+			//è®¾ç½®ç­¾åçš„ç®—æ³•ä¸ºMD5 
 			RSAFormatter.SetHashAlgorithm("MD5"); 
-			//Ö´ĞĞÇ©Ãû 
+			//æ‰§è¡Œç­¾å 
 			EncryptedSignatureData = RSAFormatter.CreateSignature(HashbyteSignature); 
 
 			return true; 
 		
 	} 
 
-	//RSAÇ©Ãû 
+	//RSAç­¾å 
 	public bool SignatureFormatter(string p_strKeyPrivate, string m_strHashbyteSignature, ref string m_strEncryptedSignatureData) 
 	{ 
 		
@@ -230,9 +230,9 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPrivate); 
 			System.Security.Cryptography.RSAPKCS1SignatureFormatter RSAFormatter = new System.Security.Cryptography.RSAPKCS1SignatureFormatter(RSA); 
-			//ÉèÖÃÇ©ÃûµÄËã·¨ÎªMD5 
+			//è®¾ç½®ç­¾åçš„ç®—æ³•ä¸ºMD5 
 			RSAFormatter.SetHashAlgorithm("MD5"); 
-			//Ö´ĞĞÇ©Ãû 
+			//æ‰§è¡Œç­¾å 
 			EncryptedSignatureData = RSAFormatter.CreateSignature(HashbyteSignature); 
 
 			m_strEncryptedSignatureData = Convert.ToBase64String(EncryptedSignatureData); 
@@ -242,7 +242,7 @@ public class RSACryption
 	} 
 	#endregion 
 
-	#region RSA Ç©ÃûÑéÖ¤ 
+	#region RSA ç­¾åéªŒè¯ 
 
 	public bool SignatureDeformatter(string p_strKeyPublic, byte[] HashbyteDeformatter, byte[] DeformatterData) 
 	{ 
@@ -251,7 +251,7 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPublic); 
 			System.Security.Cryptography.RSAPKCS1SignatureDeformatter RSADeformatter = new System.Security.Cryptography.RSAPKCS1SignatureDeformatter(RSA); 
-			//Ö¸¶¨½âÃÜµÄÊ±ºòHASHËã·¨ÎªMD5 
+			//æŒ‡å®šè§£å¯†çš„æ—¶å€™HASHç®—æ³•ä¸ºMD5 
 			RSADeformatter.SetHashAlgorithm("MD5"); 
 
 			if(RSADeformatter.VerifySignature(HashbyteDeformatter,DeformatterData)) 
@@ -276,7 +276,7 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPublic); 
 			System.Security.Cryptography.RSAPKCS1SignatureDeformatter RSADeformatter = new System.Security.Cryptography.RSAPKCS1SignatureDeformatter(RSA); 
-			//Ö¸¶¨½âÃÜµÄÊ±ºòHASHËã·¨ÎªMD5 
+			//æŒ‡å®šè§£å¯†çš„æ—¶å€™HASHç®—æ³•ä¸ºMD5 
 			RSADeformatter.SetHashAlgorithm("MD5"); 
 
 			if(RSADeformatter.VerifySignature(HashbyteDeformatter,DeformatterData)) 
@@ -299,7 +299,7 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPublic); 
 			System.Security.Cryptography.RSAPKCS1SignatureDeformatter RSADeformatter = new System.Security.Cryptography.RSAPKCS1SignatureDeformatter(RSA); 
-			//Ö¸¶¨½âÃÜµÄÊ±ºòHASHËã·¨ÎªMD5 
+			//æŒ‡å®šè§£å¯†çš„æ—¶å€™HASHç®—æ³•ä¸ºMD5 
 			RSADeformatter.SetHashAlgorithm("MD5"); 
 
 			DeformatterData =Convert.FromBase64String(p_strDeformatterData); 
@@ -326,7 +326,7 @@ public class RSACryption
 
 			RSA.FromXmlString(p_strKeyPublic); 
 			System.Security.Cryptography.RSAPKCS1SignatureDeformatter RSADeformatter = new System.Security.Cryptography.RSAPKCS1SignatureDeformatter(RSA); 
-			//Ö¸¶¨½âÃÜµÄÊ±ºòHASHËã·¨ÎªMD5 
+			//æŒ‡å®šè§£å¯†çš„æ—¶å€™HASHç®—æ³•ä¸ºMD5 
 			RSADeformatter.SetHashAlgorithm("MD5"); 
 
 			DeformatterData =Convert.FromBase64String(p_strDeformatterData); 

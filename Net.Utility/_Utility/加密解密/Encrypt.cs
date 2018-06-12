@@ -3,16 +3,16 @@ using System.Security.Cryptography;
 using System.IO;
 
 /// <summary>
-/// ¼ÓÃÜ½âÃÜÊµÓÃÀà¡£
+/// åŠ å¯†è§£å¯†å®ç”¨ç±»ã€‚
 /// </summary>
 public class Encrypt
 {
-	//ÃÜÔ¿
+	//å¯†é’¥
 	private static byte[] arrDESKey = new byte[] {42, 16, 93, 156, 78, 4, 218, 32};
 	private static byte[] arrDESIV = new byte[] {55, 103, 246, 79, 36, 99, 167, 3};
 
 	/// <summary>
-	/// ¼ÓÃÜ¡£
+	/// åŠ å¯†ã€‚
 	/// </summary>
 	/// <param name="m_Need_Encode_String"></param>
 	/// <returns></returns>
@@ -20,7 +20,7 @@ public class Encrypt
 	{
 		if (m_Need_Encode_String == null)
 		{
-			throw new Exception("Error: \nÔ´×Ö·û´®Îª¿Õ£¡£¡");
+			throw new Exception("Error: \næºå­—ç¬¦ä¸²ä¸ºç©ºï¼ï¼");
 		}
 		DESCryptoServiceProvider objDES = new DESCryptoServiceProvider();
 		MemoryStream objMemoryStream = new MemoryStream();
@@ -34,7 +34,7 @@ public class Encrypt
 	}
 
 	/// <summary>
-	/// ½âÃÜ¡£
+	/// è§£å¯†ã€‚
 	/// </summary>
 	/// <param name="m_Need_Encode_String"></param>
 	/// <returns></returns>
@@ -42,7 +42,7 @@ public class Encrypt
 	{
 		if (m_Need_Encode_String == null)
 		{
-			throw new Exception("Error: \nÔ´×Ö·û´®Îª¿Õ£¡£¡");
+			throw new Exception("Error: \næºå­—ç¬¦ä¸²ä¸ºç©ºï¼ï¼");
 		}
 		DESCryptoServiceProvider objDES = new DESCryptoServiceProvider();
 		byte[] arrInput = Convert.FromBase64String(m_Need_Encode_String);
@@ -55,10 +55,10 @@ public class Encrypt
 	 
 
 	/// <summary>
-	/// 32Î»MD5¼ÓÃÜ
+	/// 32ä½MD5åŠ å¯†
 	/// </summary>
-	/// <param name="strText">Òª¼ÓÃÜ×Ö·û´®</param>
-	/// <param name="IsLower">ÊÇ·ñÒÔĞ¡Ğ´·½Ê½·µ»Ø</param>
+	/// <param name="strText">è¦åŠ å¯†å­—ç¬¦ä¸²</param>
+	/// <param name="IsLower">æ˜¯å¦ä»¥å°å†™æ–¹å¼è¿”å›</param>
 	/// <returns></returns>
 	public static string MD5Encrypt(string strText, bool IsLower)
 	{
