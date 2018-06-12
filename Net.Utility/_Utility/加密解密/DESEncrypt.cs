@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 
 /// <summary>
-/// 
+/// DESC加解密
 /// </summary>
 public class DesEncrypt
 {
