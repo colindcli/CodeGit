@@ -54,7 +54,7 @@
   <GroupByOrderByFirstItemBreakType>Never</GroupByOrderByFirstItemBreakType>
   <InValuesFirstItemBreakType>ChopAlways</InValuesFirstItemBreakType>
   <InValuesOpeningParenthesisAlignment>ToStatement</InValuesOpeningParenthesisAlignment>
-  <InValuesOpeningParenthesisBreakType>Never</InValuesOpeningParenthesisBreakType>
+  <InValuesOpeningParenthesisBreakType>ChopAlways</InValuesOpeningParenthesisBreakType>
   <InValuesSubsequentListItemsBreakType>SimpleWrap</InValuesSubsequentListItemsBreakType>
   <IndentBeginEndKeywords>true</IndentBeginEndKeywords>
   <IndentBlockContents>true</IndentBlockContents>
@@ -74,19 +74,19 @@
   <JoinClauseAlignment>ToStatement</JoinClauseAlignment>
   <JoinConditionBreakType>Never</JoinConditionBreakType>
   <JoinOnAlignment>TabbedFromJoin</JoinOnAlignment>
-  <JoinOnConditionAlignment>ToOnKeyword</JoinOnConditionAlignment>
+  <JoinOnConditionAlignment>Tabbed</JoinOnConditionAlignment>
   <Name>MyFormat</Name>
   <NewLineAfterTopRowFilter>true</NewLineAfterTopRowFilter>
   <NewLineBeforeTopRowFilter>false</NewLineBeforeTopRowFilter>
   <NewLineForCorrelatedTableSource>true</NewLineForCorrelatedTableSource>
-  <NumberOfEmptyLinesAfterBatchSeparator>1</NumberOfEmptyLinesAfterBatchSeparator>
+  <NumberOfEmptyLinesAfterBatchSeparator>0</NumberOfEmptyLinesAfterBatchSeparator>
   <NumberOfEmptyLinesBetweenStatements>1</NumberOfEmptyLinesBetweenStatements>
   <NumberOfSpacesInTab>4</NumberOfSpacesInTab>
   <OpeningParenthesisAlignment>ToStatement</OpeningParenthesisAlignment>
   <OpeningParenthesisBreakType>ChopAlways</OpeningParenthesisBreakType>
   <OptionsVersion>12</OptionsVersion>
   <OverrideParenthesesOptionsForCreateAlterStatements>true</OverrideParenthesesOptionsForCreateAlterStatements>
-  <ParenthesisLayout>ExpandedToStatement</ParenthesisLayout>
+  <ParenthesisLayout>ExpandedSimple</ParenthesisLayout>
   <ParenthesisedExpressionAlignment>TabbedFromOpeningBracket</ParenthesisedExpressionAlignment>
   <ParenthesisedExpressionBreakType>ChopAlways</ParenthesisedExpressionBreakType>
   <PlaceBeginOnNewLine>true</PlaceBeginOnNewLine>
@@ -106,12 +106,12 @@
   <PreferBreakBeforeEquals>false</PreferBreakBeforeEquals>
   <PreferBreakBeforeInsertTable>false</PreferBreakBeforeInsertTable>
   <PreferBreakBeforeThenKeyword>false</PreferBreakBeforeThenKeyword>
-  <PreserveLineSpacingBetweenStatements>true</PreserveLineSpacingBetweenStatements>
+  <PreserveLineSpacingBetweenStatements>false</PreserveLineSpacingBetweenStatements>
   <PreserveLineSpacingWithinStatements>false</PreserveLineSpacingWithinStatements>
   <ReservedKeywordsCasing>Uppercase</ReservedKeywordsCasing>
   <SemicolonWhitespace>None</SemicolonWhitespace>
   <SpaceBeforeUnits>false</SpaceBeforeUnits>
-  <SpaceBetweenDataTypeAndParameters>false</SpaceBetweenDataTypeAndParameters>
+  <SpaceBetweenDataTypeAndParameters>true</SpaceBetweenDataTypeAndParameters>
   <SpaceInsideEmptyParentheses>false</SpaceInsideEmptyParentheses>
   <SpacesAroundArithmeticOperators>
     <m_After>false</m_After>
@@ -138,14 +138,14 @@
     <m_Before>true</m_Before>
   </SpacesAroundInPredicateContents>
   <SpacesAroundParentheses>
-    <m_After>true</m_After>
-    <m_Before>true</m_Before>
+    <m_After>false</m_After>
+    <m_Before>false</m_Before>
   </SpacesAroundParentheses>
   <SpacesAroundParenthesesContents>
     <m_After>false</m_After>
     <m_Before>false</m_Before>
   </SpacesAroundParenthesesContents>
-  <SpacesOrTabs>OnlySpaces</SpacesOrTabs>
+  <SpacesOrTabs>TabsWherePossible</SpacesOrTabs>
   <SubsequentInsertColumnsListItemsBreakType>ChopAlways</SubsequentInsertColumnsListItemsBreakType>
   <SubsequentInsertValuesListItemsBreakType>SimpleWrap</SubsequentInsertValuesListItemsBreakType>
   <SubsequentListItemsBreakType>ChopAlways</SubsequentListItemsBreakType>
@@ -155,7 +155,7 @@
   <VerticallyAlignClauseItems>false</VerticallyAlignClauseItems>
   <VerticallyAlignColumnDefinitions>true</VerticallyAlignColumnDefinitions>
   <VerticallyAlignComparisonOperators>false</VerticallyAlignComparisonOperators>
-  <VerticallyAlignDataTypes>false</VerticallyAlignDataTypes>
+  <VerticallyAlignDataTypes>true</VerticallyAlignDataTypes>
   <VerticallyAlignJoinConditionWithJoinTable>false</VerticallyAlignJoinConditionWithJoinTable>
   <VerticallyAlignListItemComments>true</VerticallyAlignListItemComments>
   <VerticallyAlignListItems>false</VerticallyAlignListItems>
