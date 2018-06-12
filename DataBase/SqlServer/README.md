@@ -10,6 +10,7 @@
 - 日期转换：DateVarchar.sql [转换示例](https://github.com/colindcli/CodeGit/blob/master/SqlServer/images/date.png)
 - 分割字符串：FnStringSplit.sql
 - 查找区间日期：BetweenDate.sql
+- 编译执行时间：ExcuteTime.sql
 
 
 ## 查询
