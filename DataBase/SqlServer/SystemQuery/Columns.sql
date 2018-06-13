@@ -14,3 +14,15 @@ SELECT
 FROM  INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME=@tableName AND TABLE_SCHEMA=@schemaName
 ORDER BY OrdinalPosition ASC;
+
+
+--2
+SELECT
+	x.name [Key],
+	y.name Value
+FROM sysobjects x
+INNER JOIN syscolumns y
+	ON x.xtype='U'
+	   AND y.id=x.id
+ORDER BY x.name ASC,
+	y.name ASC;
