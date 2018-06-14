@@ -77,6 +77,7 @@
 - 页面介绍(按步介绍)：[intro.js](https://github.com/usablica/intro.js) / [demo](https://introjs.com/docs/getting-started/examples) GNU AGPLv3
 - 页面过渡效果：[animsition](https://github.com/blivesta/animsition) / [demo](http://git.blivesta.com/animsition/) MIT
 - 左滑导航栏：[drawer](https://github.com/blivesta/drawer) / [demo](http://git.blivesta.com/drawer/) MIT
+- 单页导航定位：[jQuery-One-Page-Nav](https://github.com/davist11/jQuery-One-Page-Nav) / [demo](http://davist11.github.io/jQuery-One-Page-Nav/#examples) MIT
 
 
 > 规范
@@ -115,6 +116,7 @@
 - 满屏滚动：[fullPage.js](https://github.com/alvarotrigo/fullPage.js) / [demo](https://alvarotrigo.com/fullPage/) MIT
 - 页面块滚动响应：[ScrollTrigger](https://github.com/terwanerik/ScrollTrigger) / [demo](https://terwanerik.github.io/ScrollTrigger/) MIT
 - 平滑进度滚动：[naturalScroll](https://github.com/asvd/naturalScroll) / [demo](http://asvd.github.io/viewport/) MIT
+- 滚动到某高度固定块：[ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed) MIT
 
 
 - 上传文件

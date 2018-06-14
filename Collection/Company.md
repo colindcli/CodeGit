@@ -58,3 +58,9 @@
 > 单页面：
 
 - https://www.parallels.com/cn/landingpage/pd/windows-on-mac/
+
+
+> 小型站点
+
+- https://www.pingxx.com/
+- http://www.zhozh.com/
