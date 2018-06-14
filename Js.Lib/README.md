@@ -78,6 +78,10 @@
 - 页面过渡效果：[animsition](https://github.com/blivesta/animsition) / [demo](http://git.blivesta.com/animsition/) MIT
 - 左滑导航栏：[drawer](https://github.com/blivesta/drawer) / [demo](http://git.blivesta.com/drawer/) MIT
 - 单页导航定位：[jQuery-One-Page-Nav](https://github.com/davist11/jQuery-One-Page-Nav) / [demo](http://davist11.github.io/jQuery-One-Page-Nav/#examples) MIT
+- 截屏：[pageres](https://github.com/sindresorhus/pageres) MIT
+- 演示教程/页面新功能教程/操作演示：[driver.js](https://github.com/kamranahmedse/driver.js) / [demo](https://kamranahmed.info/driver) MIT
+- 手机端Console.log：[vConsole](https://github.com/Tencent/vConsole) / [demo](http://wechatfe.github.io/vconsole/demo.html) MIT
+- iframe宽高设置：[iframe-resizer](https://github.com/davidjbradshaw/iframe-resizer) / [demo](http://davidjbradshaw.com/iframe-resizer/example/) MIT
 
 
 > 规范
@@ -110,13 +114,16 @@
 - 滚动条样式：[jquery.scrollbar](https://github.com/gromo/jquery.scrollbar)
 - 滚动条美化：[smooth-scrollbar](https://github.com/colindcli/smooth-scrollbar) / [demo](http://idiotwu.github.io/smooth-scrollbar/) MIT
 - 平滑滚动：[animatescroll.js](https://github.com/rampatra/animatescroll.js) / [demo](https://plugins.compzets.com/animatescroll/) MIT
+- 平滑滚动：[jquery-smooth-scroll](https://github.com/kswedberg/jquery-smooth-scroll) / [demo](https://kswedberg.github.io/jquery-smooth-scroll/demo/) MIT
 - 滚动条样式：[iscroll](https://github.com/cubiq/iscroll) / [demo](http://lab.cubiq.org/iscroll5/demos/scrollbars/) MIT
 - 滚动条页面变换魔术：[ScrollMagic](https://github.com/janpaepke/ScrollMagic) / [demo](http://scrollmagic.io/examples/) MIT/GPL
 - 滚动页面变化：[kissui.scrollanim](https://github.com/usablica/kissui.scrollanim) / [demo](http://scrollanim.kissui.io/) MIT
 - 满屏滚动：[fullPage.js](https://github.com/alvarotrigo/fullPage.js) / [demo](https://alvarotrigo.com/fullPage/) MIT
+- 整页滚动：[onepage-scroll](https://github.com/peachananr/onepage-scroll) / [demo](http://www.thepetedesign.com/demos/onepage_scroll_demo.html)
 - 页面块滚动响应：[ScrollTrigger](https://github.com/terwanerik/ScrollTrigger) / [demo](https://terwanerik.github.io/ScrollTrigger/) MIT
 - 平滑进度滚动：[naturalScroll](https://github.com/asvd/naturalScroll) / [demo](http://asvd.github.io/viewport/) MIT
 - 滚动到某高度固定块：[ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed) MIT
+- 滚动动画：[WOW](https://github.com/matthieua/WOW) / [demo](http://mynameismatthieu.com/WOW/) Commercial
 
 
 - 上传文件
@@ -179,6 +186,7 @@
 - 线性移动动画：[move](https://github.com/flfwzgl/move) MIT
 - 图形跳动：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
 - div动画变化：[](https://github.com/thednp/kute.js) / [demo](http://thednp.github.io/kute.js/css.html) MIT
+- 页面动画：[barba.js](https://github.com/luruke/barba.js) / [demo](http://barbajs.org/demos.html) MIT
 
 
 > 图片放大
