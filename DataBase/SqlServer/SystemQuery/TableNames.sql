@@ -8,3 +8,28 @@ ORDER BY TABLES.TABLE_CATALOG ASC,TABLES.TABLE_SCHEMA ASC,TABLES.TABLE_TYPE ASC,
 SELECT
 	*
 FROM sysobjects x WHERE x.xtype='U'
+
+
+--表和视图/列
+SELECT
+	x.*,
+	y.name,
+	z.xtype
+FROM
+(
+	SELECT
+		OBJECT_ID(a.TABLE_SCHEMA+'.'+TABLE_NAME) Id,
+		a.TABLE_SCHEMA,
+		a.TABLE_NAME
+	FROM
+	(
+		SELECT DISTINCT
+			TABLE_SCHEMA,
+			TABLE_NAME
+		FROM INFORMATION_SCHEMA.COLUMNS
+	)a
+)x
+INNER JOIN sys.syscolumns y
+	ON y.id=x.Id
+INNER JOIN sys.sysobjects z
+	ON z.id=x.Id;
