@@ -1,3 +1,12 @@
+--主键（已验证）
+SELECT z.name FROM sys.indexes t 
+INNER JOIN sys.index_columns y ON t.object_id=object_id('dbo.Article') AND t.is_primary_key=1 AND y.object_id=t.object_id AND y.index_id=t.index_id
+INNER JOIN sys.syscolumns z ON z.id=t.object_id AND z.colid=y.column_id
+ORDER BY z.colid ASC;
+
+
+
+--
 WITH indexCTE
 AS
 (
