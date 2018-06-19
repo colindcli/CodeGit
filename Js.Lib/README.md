@@ -71,6 +71,7 @@
 - 切页面动画：[H5FullscreenPage](https://github.com/lvming6816077/H5FullscreenPage) / [demo](https://www.nihaoshijie.com.cn/H5FullscreenPage/)
 - 滑动页面动画：[iSlider](https://github.com/kele527/iSlider) / [demo](http://kele527.github.io/iSlider/demo1.html) MIT
 - 验证码：[verify](https://github.com/Hibear/verify) / [demo](https://veui.net/) MIT
+- 滑动验证：[VerificationCode](https://github.com/eatage/VerificationCode)
 - 右下角消息提示框：[messenger](https://github.com/HubSpot/messenger) / [doc&demo](http://github.hubspot.com/messenger/docs/welcome/) MIT
 - 钉：[jquery.pin](https://github.com/webpop/jquery.pin) / [demo](http://webpop.github.io/jquery.pin/)
 - 单选框开关：[bootstrap-switch](https://github.com/Bttstrp/bootstrap-switch) / [demo](http://bootstrapswitch.site/examples.html) MIT
