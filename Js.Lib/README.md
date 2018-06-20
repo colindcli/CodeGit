@@ -83,6 +83,7 @@
 - 演示教程/页面新功能教程/操作演示：[driver.js](https://github.com/kamranahmedse/driver.js) / [demo](https://kamranahmed.info/driver) MIT
 - 手机端Console.log：[vConsole](https://github.com/Tencent/vConsole) / [demo](http://wechatfe.github.io/vconsole/demo.html) MIT
 - iframe宽高设置：[iframe-resizer](https://github.com/davidjbradshaw/iframe-resizer) / [demo](http://davidjbradshaw.com/iframe-resizer/example/) MIT
+- 滑动条：[rangeslider.js](https://github.com/andreruffert/rangeslider.js) / [demo](http://rangeslider.js.org/) MIT
 
 
 > 规范
@@ -282,6 +283,8 @@
 - [toastr](https://www.nuget.org/packages/toastr/) / [Github](https://github.com/CodeSeven/toastr)
 - [Flat-UI](https://github.com/designmodo/Flat-UI) / [demo](http://designmodo.github.io/Flat-UI/)
 - [bootstrap](https://github.com/twbs/bootstrap) / [doc](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+- [vue mint-ui](https://github.com/ElemeFE/mint-ui) / [demo](http://mint-ui.github.io/#!/zh-cn) MIT
+- [vue vue-ydui](https://github.com/ydcss/vue-ydui) / [doc/demo](http://vue.ydui.org/demo/#/) MIT
 
 ## 字体图标
 
