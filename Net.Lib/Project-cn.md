@@ -1,3 +1,6 @@
+## https://github.com/thangchung/awesome-dotnet-core#build-automation
+
+
 真棒.NET核心 真棒
 一系列令人敬畏的.NET Core框架，库，工具，资源和软件。
 
