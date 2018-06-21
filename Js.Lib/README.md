@@ -56,6 +56,7 @@
 - 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
 - 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 - 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) MIT
+- 在线编辑器：[/CodeMirror](https://github.com/codemirror/CodeMirror) / [doc/demo](http://codemirror.net/) MIT
 - 代码高亮：[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) MIT
 - 艺术二维码：[qart.js](https://github.com/kciter/qart.js) / [demo](https://kciter.github.io/qart.js/) GPL3
 - 提交表单：[form](https://github.com/jquery-form/form) / [demo](http://malsup.com/jquery/form/) MIT
