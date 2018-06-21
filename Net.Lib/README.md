@@ -4,7 +4,6 @@
 - 枚举：[Enums.NET](https://github.com/TylerBrinkley/Enums.NET)
 - 中文转拼音：[TinyPinyin.Net](https://github.com/hstarorg/TinyPinyin.Net)
 - 反编译：[ILSpy](https://github.com/icsharpcode/ILSpy)
-- Zip压缩：[SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
 - 失败重试：[Polly](https://github.com/App-vNext/Polly)
 - 对象模型验证：[FluentValidation](https://github.com/JeremySkinner/FluentValidation) apache2.0
 - Http请求：[Flurl.Http](https://www.nuget.org/packages/Flurl.Http/)
@@ -16,6 +15,21 @@
 - WinForm轻量级HTML和CSS UI引擎：[Sciter](https://github.com/MISoftware/SciterSharp) / [demo](https://www.codeproject.com/Articles/1057199/Sciter-HTML-Csharp-based-desktop-apps-walkthrough) / [doc]
 (https://ourcodeworld.com/articles/read/479/how-to-implement-sciter-lightweight-html-and-css-ui-engine-in-your-winforms-application-with-c-sharp)
 - Net UI框架：[Avalonia](https://github.com/AvaloniaUI/Avalonia)
+- 二维码生成：[QRCoder](https://github.com/codebude/QRCoder) MIT
+
+
+> 压缩
+
+- Zip压缩：[SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
+- 普通压缩：[sharpcompress](https://github.com/adamhathcock/sharpcompress) / [demo](https://github.com/adamhathcock/sharpcompress/blob/master/USAGE.md) MIT
+- 快速压缩：[lz4net](https://github.com/MiloszKrajewski/lz4net) / [demo](https://github.com/MiloszKrajewski/lz4net#use-with-streams) BSD2
+
+
+> 缓存
+
+- [CacheManager](https://github.com/MichaCo/CacheManager) / [doc/demo](http://cachemanager.michaco.net/documentation/CacheManagerGettingStarted)/[demo2](https://github.com/MichaCo/CacheManager/blob/master/samples/CacheManager.Examples/Program.cs#L79)
+- [Foundatio](https://github.com/FoundatioFx/Foundatio) Apache2
+- [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis) / [demo](https://stackexchange.github.io/StackExchange.Redis/Basics)
 
 
 > 支付
