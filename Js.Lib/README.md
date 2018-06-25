@@ -15,7 +15,8 @@
 - 地区城市选择：[city-picker](https://github.com/tshi0912/city-picker) / [demo](http://tshi0912.github.io/city-picker/) MIT
 - vue地区选择：[element-china-area-data](https://github.com/Plortinus/element-china-area-data) / [demo](https://plortinus.github.io/element-china-area-data/index.html) MIT
 - 图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/聊天表情：[widget](https://github.com/mumuy/widget)
-- [underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
+- 类库：[underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
+- 类库：[lodash](https://github.com/lodash/lodash) / [doc](https://lodash.com/)
 
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
 - 日程：[fullcalendar](https://github.com/fullcalendar/fullcalendar)

@@ -20,3 +20,10 @@
 
 
 其他插件：https://github.com/iuunhao/ChromePlugIns#%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91
+
+
+
+
+## Chrome api
+
+- [puppeteer](https://github.com/GoogleChrome/puppeteer) / [doc](https://pptr.dev/)
