@@ -11,3 +11,5 @@
 
 
 - 反向代理: [proxy](https://github.com/colindcli/CodeGit/issues/19)
+
+- 代理：[AnyProxy](https://github.com/alibaba/anyproxy) / [doc](http://anyproxy.io/cn/) apache2
