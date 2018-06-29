@@ -10,6 +10,11 @@
 - Extension/layui-tableExt.js（引用：jquery、layui、jquery.form）：layui table
 
 
+## 素材网站
+
+- 素材搜索：[jq22](http://www.jq22.com/)
+
+
 ## 插件收藏
 - 地区城市三级联动：[distpicker](https://github.com/fengyuanchen/distpicker) / [demo](https://fengyuanchen.github.io/distpicker/) MIT
 - 地区城市选择：[city-picker](https://github.com/tshi0912/city-picker) / [demo](http://tshi0912.github.io/city-picker/) MIT
@@ -278,7 +283,7 @@
 
 ## UI
 
-- [WeUi](https://github.com/lihongxun945/jquery-weui)
+- [WeUi](https://github.com/lihongxun945/jquery-weui) / [doc](https://github.com/pengtikui/WeUI-Simple-Guide) / [demo](https://weui.io/weui.js/)
 - [ant-design](https://github.com/ant-design/ant-design)
 - [layui](https://github.com/sentsin/layui)
 - [toastr](https://www.nuget.org/packages/toastr/) / [Github](https://github.com/CodeSeven/toastr)
