@@ -8,16 +8,16 @@ public class CacheHelper
     /// 获取数据缓存
     /// </summary>
     /// <param name="cacheKey">键</param>
-    public static object GetCache(string cacheKey)
+    public static object GetCache<T>(string cacheKey)
     {
         var objCache = HttpRuntime.Cache;
-        return objCache[cacheKey];
+        return (T)objCache[cacheKey];
     }
 
     /// <summary>
     /// 设置数据缓存
     /// </summary>
-    public static void SetCache(string cacheKey, object objObject)
+    public static void SetCache<T>(string cacheKey, T objObject)
     {
         var objCache = HttpRuntime.Cache;
         objCache.Insert(cacheKey, objObject);
@@ -26,7 +26,7 @@ public class CacheHelper
     /// <summary>
     /// 设置数据缓存
     /// </summary>
-    public static void SetCache(string cacheKey, object objObject, TimeSpan timeout)
+    public static void SetCache<T>(string cacheKey, T objObject, TimeSpan timeout)
     {
         var objCache = HttpRuntime.Cache;
         objCache.Insert(cacheKey, objObject, null, DateTime.MaxValue, timeout, CacheItemPriority.NotRemovable, null);
@@ -35,7 +35,7 @@ public class CacheHelper
     /// <summary>
     /// 设置数据缓存
     /// </summary>
-    public static void SetCache(string cacheKey, object objObject, DateTime absoluteExpiration, TimeSpan slidingExpiration)
+    public static void SetCache<T>(string cacheKey, T objObject, DateTime absoluteExpiration, TimeSpan slidingExpiration)
     {
         var objCache = HttpRuntime.Cache;
         objCache.Insert(cacheKey, objObject, null, absoluteExpiration, slidingExpiration);
