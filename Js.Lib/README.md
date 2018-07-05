@@ -63,7 +63,6 @@
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
 - 确认对话框：[jquery-confirm](https://github.com/craftpip/jquery-confirm) / [demo](http://craftpip.github.io/jquery-confirm/) MIT
 - 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
-- 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 - 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) MIT
 - 在线编辑器：[/CodeMirror](https://github.com/codemirror/CodeMirror) / [doc/demo](http://codemirror.net/) MIT
 - 代码高亮：[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) MIT
@@ -137,6 +136,7 @@
 - 平滑进度滚动：[naturalScroll](https://github.com/asvd/naturalScroll) / [demo](http://asvd.github.io/viewport/) MIT
 - 滚动到某高度固定块：[ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed) MIT
 - 滚动动画：[WOW](https://github.com/matthieua/WOW) / [demo](http://mynameismatthieu.com/WOW/) Commercial
+- 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 
 
 - 上传文件
