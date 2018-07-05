@@ -41,7 +41,7 @@
 - [beginner_admin](https://gitee.com/besteasyteam/beginner_admin)/[演示地址](http://m.zhengjinfan.cn/)
 - [X-admin](https://gitee.com/daniuit/X-admin/tree/V1.0/)/[演示地址](http://x.xuebingsi.com/)
 - [jqadmin](https://gitee.com/jqcool/jqadmin)/[演示地址](https://jqadmin.jqcool.net/)
-- [H-ui](http://www.h-ui.net/H-ui.admin.shtml)
+- [H-ui](http://www.h-ui.net/H-ui.admin.shtml) / (https://github.com/jackying/H-ui.admin) MIT
 - [larrycms](https://github.com/larryqin/larrycms)
 - [Ace](https://github.com/bopoda/ace)
 - [hadmin](https://github.com/huangyaoxin/hAdmin)
