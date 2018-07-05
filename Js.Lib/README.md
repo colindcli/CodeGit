@@ -94,6 +94,7 @@
 - 手机端Console.log：[vConsole](https://github.com/Tencent/vConsole) / [demo](http://wechatfe.github.io/vconsole/demo.html) MIT
 - iframe宽高设置：[iframe-resizer](https://github.com/davidjbradshaw/iframe-resizer) / [demo](http://davidjbradshaw.com/iframe-resizer/example/) MIT
 - 滑动条：[rangeslider.js](https://github.com/andreruffert/rangeslider.js) / [demo](http://rangeslider.js.org/) MIT
+- 对比文本差异：[jQuery.PrettyTextDiff](https://github.com/arnab/jQuery.PrettyTextDiff) MIT
 
 
 > 规范
@@ -140,6 +141,7 @@
 
 - 上传文件
 
+- [webuploader](https://github.com/fex-team/webuploader) / [demo/doc](http://fex.baidu.com/webuploader/) MIT
 - [bootstrap-fileinput](https://github.com/kartik-v/bootstrap-fileinput) / [demo](http://plugins.krajee.com/file-basic-usage-demo) BSD
 - [dropzone](https://github.com/enyo/dropzone) / [demo](http://www.dropzonejs.com/#usage) MIT
 - [Simple-Ajax-Uploader](https://github.com/LPology/Simple-Ajax-Uploader) / [demo](https://www.lpology.com/code/ajaxuploader/) MIT
@@ -243,6 +245,7 @@
 - [accessible-html5-video-player](https://github.com/paypal/accessible-html5-video-player) BSD.
 - [iphone-inline-video](https://github.com/bfred-it/iphone-inline-video) MIT
 - [flv.js](https://github.com/Bilibili/flv.js) MIT
+- [plyr](https://github.com/sampotts/plyr)
 
 
 > 音频

@@ -33,8 +33,13 @@ public class CacheHelper
     }
 
     /// <summary>
-    /// 设置数据缓存
+    /// 设置数据缓存(指定缓存到时间)
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="cacheKey"></param>
+    /// <param name="objObject"></param>
+    /// <param name="absoluteExpiration">Convert.ToDateTime("2018-12-31")</param>
+    /// <param name="slidingExpiration">TimeSpan.Zero</param>
     public static void SetCache<T>(string cacheKey, T objObject, DateTime absoluteExpiration, TimeSpan slidingExpiration)
     {
         var objCache = HttpRuntime.Cache;
