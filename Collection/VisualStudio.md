@@ -7,6 +7,8 @@
 - Resharper
 - Debug Attach Manager
 - SQL Prompt Core: sql智能感知
+- Toggle Comment
+- Hot Commands
 
 - Visual-Studio-jQuery-Code-Snippets
 
