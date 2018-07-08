@@ -63,7 +63,6 @@
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
 - 确认对话框：[jquery-confirm](https://github.com/craftpip/jquery-confirm) / [demo](http://craftpip.github.io/jquery-confirm/) MIT
 - 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
-- 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 - 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) MIT
 - 在线编辑器：[/CodeMirror](https://github.com/codemirror/CodeMirror) / [doc/demo](http://codemirror.net/) MIT
 - 代码高亮：[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) MIT
@@ -94,6 +93,7 @@
 - 手机端Console.log：[vConsole](https://github.com/Tencent/vConsole) / [demo](http://wechatfe.github.io/vconsole/demo.html) MIT
 - iframe宽高设置：[iframe-resizer](https://github.com/davidjbradshaw/iframe-resizer) / [demo](http://davidjbradshaw.com/iframe-resizer/example/) MIT
 - 滑动条：[rangeslider.js](https://github.com/andreruffert/rangeslider.js) / [demo](http://rangeslider.js.org/) MIT
+- 对比文本差异：[jQuery.PrettyTextDiff](https://github.com/arnab/jQuery.PrettyTextDiff) MIT
 
 
 > 规范
@@ -136,10 +136,12 @@
 - 平滑进度滚动：[naturalScroll](https://github.com/asvd/naturalScroll) / [demo](http://asvd.github.io/viewport/) MIT
 - 滚动到某高度固定块：[ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed) MIT
 - 滚动动画：[WOW](https://github.com/matthieua/WOW) / [demo](http://mynameismatthieu.com/WOW/) Commercial
+- 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 
 
 - 上传文件
 
+- [webuploader](https://github.com/fex-team/webuploader) / [demo/doc](http://fex.baidu.com/webuploader/) MIT
 - [bootstrap-fileinput](https://github.com/kartik-v/bootstrap-fileinput) / [demo](http://plugins.krajee.com/file-basic-usage-demo) BSD
 - [dropzone](https://github.com/enyo/dropzone) / [demo](http://www.dropzonejs.com/#usage) MIT
 - [Simple-Ajax-Uploader](https://github.com/LPology/Simple-Ajax-Uploader) / [demo](https://www.lpology.com/code/ajaxuploader/) MIT
@@ -243,6 +245,7 @@
 - [accessible-html5-video-player](https://github.com/paypal/accessible-html5-video-player) BSD.
 - [iphone-inline-video](https://github.com/bfred-it/iphone-inline-video) MIT
 - [flv.js](https://github.com/Bilibili/flv.js) MIT
+- [plyr](https://github.com/sampotts/plyr)
 
 
 > 音频
