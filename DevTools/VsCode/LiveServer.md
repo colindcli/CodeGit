@@ -1,10 +1,12 @@
 ## LiveServer
 
-- 代理
+- 代理 (host也使用域名)
     
+    // To switch between localhost or 127.0.0.1 or anything else. Default is 127.0.0.1
+    "liveServer.settings.host": "www.demo.com",
     // To Setup Proxy
     "liveServer.settings.proxy": {
         "enable": true,
         "baseUri": "/api/",
-        "proxyUri": "http://www.myproject.com/api/"
+        "proxyUri": "http://www.demo.com/api/"
     },
