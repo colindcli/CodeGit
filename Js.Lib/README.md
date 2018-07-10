@@ -75,6 +75,7 @@
 - 滚动固定位置：[stickymojo](https://github.com/mojotech/stickymojo) / [demo](http://mojotech.github.io/stickymojo/)
 - 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
 - 日期选择：[jemui](https://github.com/singod/jeDate) / [doc](http://www.jemui.com/) MIT
+- 日期选择：[pickerjs](https://github.com/fengyuanchen/pickerjs) / [demo](https://fengyuanchen.github.io/pickerjs/) MIT
 - H5首屏加载速度：[VasSonic](https://github.com/Tencent/VasSonic) BSD
 - 下拉刷新：[minirefresh](https://github.com/minirefresh/minirefresh) MIT
 - 切页面动画：[H5FullscreenPage](https://github.com/lvming6816077/H5FullscreenPage) / [demo](https://www.nihaoshijie.com.cn/H5FullscreenPage/)
