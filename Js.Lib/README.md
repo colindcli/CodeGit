@@ -95,6 +95,9 @@
 - iframe宽高设置：[iframe-resizer](https://github.com/davidjbradshaw/iframe-resizer) / [demo](http://davidjbradshaw.com/iframe-resizer/example/) MIT
 - 滑动条：[rangeslider.js](https://github.com/andreruffert/rangeslider.js) / [demo](http://rangeslider.js.org/) MIT
 - 对比文本差异：[jQuery.PrettyTextDiff](https://github.com/arnab/jQuery.PrettyTextDiff) MIT
+- 树脑图：[treed](https://github.com/jaredly/treed) / [demo](https://jaredforsyth.com/treed/)
+- 表格树：[jquery-treegrid](https://github.com/maxazan/jquery-treegrid) / [demo/doc](http://maxazan.github.io/jquery-treegrid/) MIT
+- 树：[bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview) / [demo](http://jonmiles.github.io/bootstrap-treeview/) Apache2
 
 
 > 规范
