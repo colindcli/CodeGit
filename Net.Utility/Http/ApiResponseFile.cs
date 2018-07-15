@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 public class Response
 {
     /// <summary>
-    /// API Response
+    /// API Response 下载文件
     /// </summary>
     /// <param name="bt"></param>
     /// <param name="fileName"></param>
