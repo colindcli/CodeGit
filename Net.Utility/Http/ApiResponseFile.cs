@@ -1,10 +1,11 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 
+//输出文件、输出图片
 public class Response
 {
     /// <summary>
-    /// API Response 下载文件
+    /// API Response 下载文件、下载图片
     /// </summary>
     /// <param name="bt"></param>
     /// <param name="fileName"></param>
