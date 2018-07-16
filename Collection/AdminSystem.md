@@ -37,7 +37,9 @@
 - [gentelella](https://github.com/puikinsh/gentelella) / [doc](https://puikinsh.github.io/gentelella/) MIT
 - [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) / [demo](http://panjiachen.github.io/vue-element-admin/#/dashboard) MIT
 - [blur-admin](https://github.com/akveo/blur-admin) MIT
+- [iview-admin](https://github.com/iview/iview-admin) / [demo](https://iview.github.io/iview-admin/) MIT
 - [vue-admin](https://github.com/vue-bulma/vue-admin)
+- [vue-admin](https://github.com/taylorchen709/vue-admin) / [demo](https://taylorchen709.github.io/vue-admin/)
 - [vue nx-admin](https://github.com/mgbq/nx-admin) / [demo](https://mgbq.github.io/vue-permission/#/dashboard/dashboard) MIT
 - [beginner_admin](https://gitee.com/besteasyteam/beginner_admin)/[演示地址](http://m.zhengjinfan.cn/)
 - [X-admin](https://gitee.com/daniuit/X-admin/tree/V1.0/)/[演示地址](http://x.xuebingsi.com/)

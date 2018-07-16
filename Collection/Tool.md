@@ -5,3 +5,4 @@
 - [vsniffer](http://download.csdn.net/download/wangjianguo121/4374988)
 - [httpwatch](https://www.httpwatch.com/)
 - [httpfox](https://addons.mozilla.org/en-US/firefox/addon/httpfox/)
+- [CSS内联工具](https://templates.mailchimp.com/resources/inline-css/) / [邮件蓝图](https://github.com/mailchimp/email-blueprints)

@@ -98,6 +98,15 @@
 - 树脑图：[treed](https://github.com/jaredly/treed) / [demo](https://jaredforsyth.com/treed/)
 - 表格树：[jquery-treegrid](https://github.com/maxazan/jquery-treegrid) / [demo/doc](http://maxazan.github.io/jquery-treegrid/) MIT
 - 树：[bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview) / [demo](http://jonmiles.github.io/bootstrap-treeview/) Apache2
+- 模板渲染：[jquery-tmpl](https://github.com/BorisMoore/jquery-tmpl)
+- 模板渲染：[jsrender](https://github.com/borismoore/jsrender)
+- 模板渲染：[template.js](https://github.com/yanhaijing/template.js) MIT
+- 邮件模板编辑器：[mosaico](https://github.com/voidlabs/mosaico) / [在线编辑器](https://mosaico.io/)
+- 邮件模板：[templates](https://github.com/sendwithus/templates) / [demo](https://www.sendwithus.com/resources/templates) Apache2
+- 邮件模板：[postmark-templates](https://github.com/wildbit/postmark-templates) / [demo](https://postmarkapp.com/transactional-email-templates) MIT
+- 邮件模板：[email-templates](https://github.com/konsav/email-templates) MIT
+- 邮件模板：[foundation-emails-template](https://github.com/zurb/foundation-emails-template) / [demo](https://foundation.zurb.com/emails/email-templates.html) MIT
+- H5模板生成器：[initializr-template](https://github.com/verekia/initializr-template) / [demo](http://www.initializr.com/)
 
 
 > 规范
