@@ -10,3 +10,5 @@
         "baseUri": "/api/",
         "proxyUri": "http://www.demo.com/api/"
     },
+
+    // 注：如果在c盘，请设置根目录权限。
