@@ -106,6 +106,7 @@
 - 邮件模板：[postmark-templates](https://github.com/wildbit/postmark-templates) / [demo](https://postmarkapp.com/transactional-email-templates) MIT
 - 邮件模板：[email-templates](https://github.com/konsav/email-templates) MIT
 - 邮件模板：[foundation-emails-template](https://github.com/zurb/foundation-emails-template) / [demo](https://foundation.zurb.com/emails/email-templates.html) MIT
+- 邮件模板：[Shopify-HTML-Email-Templates](https://github.com/Cam/Shopify-HTML-Email-Templates) / [demo](https://foundation.zurb.com/emails/email-templates.html)
 - H5模板生成器：[initializr-template](https://github.com/verekia/initializr-template) / [demo](http://www.initializr.com/)
 
 
