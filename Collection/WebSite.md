@@ -3,6 +3,7 @@
 - 我们的代码世界：[ourcodeworld](https://ourcodeworld.com/)
 
 - 流程图、思维导图、原型图、网络拓扑图和UML: [processon](https://www.processon.com/)
+- 幕布:一键生成思维导图：[mubu](https://mubu.com/)
 - 腾讯开源：[github](https://github.com/TencentOpen) / [tencent](http://code.tencent.com/)
 - C#代码检查：[tscancode](http://code.tencent.com/tscancode.html)
 
