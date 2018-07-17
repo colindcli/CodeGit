@@ -101,13 +101,17 @@
 - 模板渲染：[jquery-tmpl](https://github.com/BorisMoore/jquery-tmpl)
 - 模板渲染：[jsrender](https://github.com/borismoore/jsrender)
 - 模板渲染：[template.js](https://github.com/yanhaijing/template.js) MIT
+- H5模板生成器：[initializr-template](https://github.com/verekia/initializr-template) / [demo](http://www.initializr.com/)
+
+
+> 邮件
+
 - 邮件模板编辑器：[mosaico](https://github.com/voidlabs/mosaico) / [在线编辑器](https://mosaico.io/)
 - 邮件模板：[templates](https://github.com/sendwithus/templates) / [demo](https://www.sendwithus.com/resources/templates) Apache2
 - 邮件模板：[postmark-templates](https://github.com/wildbit/postmark-templates) / [demo](https://postmarkapp.com/transactional-email-templates) MIT
 - 邮件模板：[email-templates](https://github.com/konsav/email-templates) MIT
 - 邮件模板：[foundation-emails-template](https://github.com/zurb/foundation-emails-template) / [demo](https://foundation.zurb.com/emails/email-templates.html) MIT
 - 邮件模板：[Shopify-HTML-Email-Templates](https://github.com/Cam/Shopify-HTML-Email-Templates) / [demo](https://foundation.zurb.com/emails/email-templates.html)
-- H5模板生成器：[initializr-template](https://github.com/verekia/initializr-template) / [demo](http://www.initializr.com/)
 
 
 > 规范
