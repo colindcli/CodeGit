@@ -1,0 +1,35 @@
+{
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "function () {\r",
+      "    $0",
+      "}${1:,}"
+    ],
+    "description": "空方法"
+  },
+  "objinit": {
+    "prefix": "objinit",
+    "body": [
+      "var obj${1:Init} = {\r",
+      "    init: function () {\r",
+      "        var self = this;\r",
+      "        self.render();\r",
+      "    },\r",
+      "    render:function () {\r",
+      "        var self = this;\r",
+      "        $2\r",
+      "    },\r",
+      "};\r",
+      "obj${1:Init}.init();"
+    ],
+    "description": "var objInit = {init: function(){}, render: function(){}};"
+  },
+  "self": {
+    "prefix": "vs",
+    "body": [
+      "var self = this;"
+    ],
+    "description": "var self = this;"
+  }
+}
