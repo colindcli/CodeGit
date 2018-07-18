@@ -101,7 +101,10 @@
 - 模板渲染：[jquery-tmpl](https://github.com/BorisMoore/jquery-tmpl)
 - 模板渲染：[jsrender](https://github.com/borismoore/jsrender)
 - 模板渲染：[template.js](https://github.com/yanhaijing/template.js) MIT
+- 模板渲染：[handlebars.js](https://github.com/wycats/handlebars.js) MIT
 - H5模板生成器：[initializr-template](https://github.com/verekia/initializr-template) / [demo](http://www.initializr.com/)
+- 3D旋转动画：[impress.js](https://github.com/impress/impress.js) / [doc](https://github.com/impress/impress.js/blob/master/DOCUMENTATION.md) / [demo](https://impress.js.org/#/its-in-3d) / [demo2](https://impress.js.org/#/bored)
+- 手机返回键事件：[xback](https://github.com/iazrael/xback)
 
 
 > 邮件
