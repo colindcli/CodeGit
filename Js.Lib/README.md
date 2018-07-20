@@ -105,6 +105,8 @@
 - H5模板生成器：[initializr-template](https://github.com/verekia/initializr-template) / [demo](http://www.initializr.com/)
 - 3D旋转动画：[impress.js](https://github.com/impress/impress.js) / [doc](https://github.com/impress/impress.js/blob/master/DOCUMENTATION.md) / [demo](https://impress.js.org/#/its-in-3d) / [demo2](https://impress.js.org/#/bored)
 - 手机返回键事件：[xback](https://github.com/iazrael/xback)
+- url to json/url parser：[js-url](https://github.com/websanova/js-url) MIT
+- url解析器：[query-string](https://github.com/sindresorhus/query-string) MIT
 
 
 > 邮件
