@@ -91,7 +91,6 @@
 - 单页导航定位：[jQuery-One-Page-Nav](https://github.com/davist11/jQuery-One-Page-Nav) / [demo](http://davist11.github.io/jQuery-One-Page-Nav/#examples) MIT
 - 截屏：[pageres](https://github.com/sindresorhus/pageres) MIT
 - 演示教程/页面新功能教程/操作演示：[driver.js](https://github.com/kamranahmedse/driver.js) / [demo](https://kamranahmed.info/driver) MIT
-- 手机端Console.log：[vConsole](https://github.com/Tencent/vConsole) / [demo](http://wechatfe.github.io/vconsole/demo.html) MIT
 - iframe宽高设置：[iframe-resizer](https://github.com/davidjbradshaw/iframe-resizer) / [demo](http://davidjbradshaw.com/iframe-resizer/example/) MIT
 - 滑动条：[rangeslider.js](https://github.com/andreruffert/rangeslider.js) / [demo](http://rangeslider.js.org/) MIT
 - 对比文本差异：[jQuery.PrettyTextDiff](https://github.com/arnab/jQuery.PrettyTextDiff) MIT

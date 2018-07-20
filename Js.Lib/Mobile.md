@@ -1,6 +1,8 @@
 ## 手机端
 
 - 真机调试：[spy-debugger](https://github.com/wuchangming/spy-debugger)
+- 手机端Console.log：[vConsole](https://github.com/Tencent/vConsole) / [demo](http://wechatfe.github.io/vconsole/demo.html) MIT
+- 可伸缩解决方案：[lib-flexible](https://github.com/amfe/lib-flexible)
 
 
 > Vue UI

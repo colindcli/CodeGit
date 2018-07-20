@@ -9,6 +9,8 @@
 - SQL Prompt Core: sql智能感知
 - Toggle Comment
 - Hot Commands
+- Snippet Designer  系统目录：C:\Users\Administrator\Documents\Visual Studio 2017\Code Snippets
+
 
 - Visual-Studio-jQuery-Code-Snippets
 
@@ -16,7 +18,6 @@
 - BuildOnSave
 - Format All Files
 - Color Theme Editor
-- Snippet Designer
 - OzCode
 - Browser Reload on Save
 - Web Essentials
