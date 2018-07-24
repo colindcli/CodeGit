@@ -19,6 +19,7 @@
 
 - 开启屏幕尺寸：[viewport-resizer](http://lab.maltewassermann.com/viewport-resizer/)
 - pc/phones/tablets媒体查询：[snippets](http://nmsdvid.com/snippets/)
+- 懒设计：[fotor](https://www.fotor.com.cn/app.html#/design)
 
 
 > 服务

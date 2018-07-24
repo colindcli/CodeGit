@@ -89,4 +89,12 @@
 
 > 更多素材（网页模板）
 
-- http://www.17sucai.com/category/1
+- 17素材：[17sucai](http://www.17sucai.com/)
+- 模板之家: [cssmoban](http://www.cssmoban.com/)
+- 凡客：[fkw](http://jz.fkw.com/model.html)
+- 托米站：[metinfo](https://www.metinfo.cn/product/)
+- 手机模板：[ke01](http://www.ke01.com/h5MobileTemplate/)
+- 手机模板：[html5code](http://www.html5code.net/)
+- 手机模板：[youdiancms](http://www.youdiancms.com/mobile.html)
+- Chinaz：[moban](http://sc.chinaz.com/moban/)
+- 网站模板：[mobanzhongxin](http://www.mobanzhongxin.com/)
