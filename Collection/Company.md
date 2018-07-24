@@ -89,5 +89,6 @@
 - 托米站：[metinfo](https://www.metinfo.cn/product/)
 - 手机模板：[ke01](http://www.ke01.com/h5MobileTemplate/)
 - 手机模板：[html5code](http://www.html5code.net/)
+- 手机模板：[youdiancms](http://www.youdiancms.com/mobile.html)
 - Chinaz：[moban](http://sc.chinaz.com/moban/)
 - 网站模板：[mobanzhongxin](http://www.mobanzhongxin.com/)
