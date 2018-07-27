@@ -193,6 +193,7 @@
 - loading: [css-loaders](https://github.com/lukehaas/css-loaders) / [demo](https://projects.lukehaas.me/css-loaders/) MIT
 - 按钮加载中：[Ladda](https://github.com/hakimel/Ladda) MIT
 - loading：[CSS3-Loaders](https://github.com/Grafikart/CSS3-Loaders) / [demo](http://htmlpreview.github.io/?https://github.com/Grafikart/CSS3-Loaders/blob/master/index.html)
+- loading: [spin.js](https://github.com/fgnass/spin.js)
 
 
 > 进度
