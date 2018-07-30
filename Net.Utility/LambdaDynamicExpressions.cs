@@ -1,6 +1,6 @@
-//动态Linq表达式
+//Lambda动态表达式
 
-public static class DynamicLinqExpressions
+public static class LambdaDynamicExpressions
 {
     public static Expression<Func<T, bool>> True<T>() { return f => true; }
     public static Expression<Func<T, bool>> False<T>() { return f => false; }
