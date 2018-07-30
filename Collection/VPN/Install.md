@@ -1,5 +1,8 @@
 ## VPN搭建：
 
+
+> 服务端
+
 1、安装nodejs
 
 2、NPM安装shadowsocks：https://www.npmjs.com/package/shadowsocks
@@ -19,6 +22,11 @@ C:\Users\Administrator\AppData\Roaming\npm\node_modules\shadowsocks\config.json
 
 4、在目录：C:\Users\Administrator\AppData\Roaming\npm\node_modules\shadowsocks\ 运行cmd：ssserver启动
 
+5、创建 server.bat
 
-5、下载客户端：https://github.com/shadowsocks/shadowsocks-windows/releases
+
+
+> 客户端
+
+6、下载客户端：https://github.com/shadowsocks/shadowsocks-windows/releases
 
