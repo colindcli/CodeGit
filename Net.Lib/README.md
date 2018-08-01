@@ -17,6 +17,7 @@
 - Net UI框架：[Avalonia](https://github.com/AvaloniaUI/Avalonia)
 - 二维码生成：[QRCoder](https://github.com/codebude/QRCoder) MIT
 - 相对路径转绝对路径：[CSharpPathResolver](https://github.com/alexeveritt/CSharpPathResolver) MIT
+- Bson: [Kernys.Bson](https://github.com/kernys/Kernys.Bson) MIT
 
 
 > 压缩
