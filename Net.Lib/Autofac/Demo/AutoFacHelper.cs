@@ -12,7 +12,7 @@ public class AutoFacHelper
         }
 
         var builder = new ContainerBuilder();
-        var assembly = Assembly.Load(Config.DataAccess);
+        var assembly = Assembly.Load("DataAccess");
         builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces().InstancePerLifetimeScope();
         Container = builder.Build();
         return Container;
