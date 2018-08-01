@@ -1,5 +1,7 @@
 > Js插件
 
+- 区块可视化组装工具：[Iceworks](https://github.com/alibaba/ice) / [demo/doc](https://alibaba.github.io/ice/iceworks)
+
 ## 本库
 - Select2/select2.js（引用：jquery、select2）
 - TreeView/treeView.js（引用：jquery、zTree、artDialog）
