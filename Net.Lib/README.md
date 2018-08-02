@@ -23,7 +23,7 @@
 > 压缩
 
 - Zip压缩：[SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
-- 普通压缩：[sharpcompress](https://github.com/adamhathcock/sharpcompress) / [demo](https://github.com/adamhathcock/sharpcompress/blob/master/USAGE.md) MIT
+- 普通压缩（压缩文件夹/解压缩文件夹）：[sharpcompress](https://github.com/adamhathcock/sharpcompress) / [demo](https://github.com/adamhathcock/sharpcompress/blob/master/USAGE.md) MIT
 - 快速压缩：[lz4net](https://github.com/MiloszKrajewski/lz4net) / [demo](https://github.com/MiloszKrajewski/lz4net#use-with-streams) BSD2
 
 
