@@ -1,6 +1,7 @@
 > Js插件
 
 - 区块可视化组装工具：[Iceworks](https://github.com/alibaba/ice) / [demo/doc](https://alibaba.github.io/ice/iceworks)
+- web代码部署工具: [walle-web](https://github.com/meolu/walle-web)
 
 ## 本库
 - Select2/select2.js（引用：jquery、select2）
