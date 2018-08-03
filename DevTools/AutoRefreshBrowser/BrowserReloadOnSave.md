@@ -1,8 +1,8 @@
 ## Browser Reload on Save
 
 1、安装插件：
-- [BrowserReloadonSave](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.BrowserReloadonSave)
-- [Autosave2017](https://marketplace.visualstudio.com/items?itemName=fluffyerug.Autosave2017)
+- 自动刷新浏览器：[BrowserReloadonSave](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.BrowserReloadonSave)
+- 自动保存和自动编译：[Autosave2017](https://marketplace.visualstudio.com/items?itemName=fluffyerug.Autosave2017)
 
 2、配置：
 web.config配置：
