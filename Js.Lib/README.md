@@ -109,7 +109,7 @@
 - 手机返回键事件：[xback](https://github.com/iazrael/xback)
 - url to json/url parser：[js-url](https://github.com/websanova/js-url) MIT
 - url解析器：[query-string](https://github.com/sindresorhus/query-string) MIT
-- 分页：[laypage](http://www.layui.com/doc/modules/laypage.html)
+- js分页：[laypage](http://www.layui.com/doc/modules/laypage.html)
 
 
 > 邮件

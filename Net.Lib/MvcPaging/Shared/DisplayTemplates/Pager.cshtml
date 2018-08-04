@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+@model PaginationModel
+<ul class="pagination">
+    @foreach (var link in Model.PaginationLinks)
+    {
+        @BuildLink(link)
+    }
+</ul>
+
+@helper BuildLink(PaginationLink link)
+{
+    var liBuilder = new TagBuilder("li");
+    if (link.IsCurrent)
+    {
+        liBuilder.MergeAttribute("class", "active");
+    }
+    if (!link.Active)
+    {
+        liBuilder.MergeAttribute("class", "disabled");
+    }
+
+    TagBuilder aBuilder = new TagBuilder("a");
+    if (!link.Active)
+    {
+        aBuilder = new TagBuilder("span");
+    }
+    else
+    {
+        aBuilder.MergeAttribute("href", link.Url);
+    }
+
+    // Ajax support
+    if (Model.AjaxOptions != null)
+    {
+        foreach (var ajaxOption in Model.AjaxOptions.ToUnobtrusiveHtmlAttributes())
+        {
+            aBuilder.MergeAttribute(ajaxOption.Key, ajaxOption.Value.ToString(), true);
+        }
+    }
+
+    if (link.DisplayText == "«")
+    {
+        aBuilder.InnerHtml = "上一页";
+    }
+    else if (link.DisplayText == "»")
+    {
+        aBuilder.InnerHtml = "下一页";
+    }
+    else if (link.DisplayText == "<")
+    {
+        aBuilder.InnerHtml = "首页";
+    }
+    else if (link.DisplayText == ">")
+    {
+        aBuilder.InnerHtml = "尾页";
+    }
+    else
+    {
+        aBuilder.SetInnerText(link.DisplayText);
+    }
+    liBuilder.InnerHtml = aBuilder.ToString();
+
+    @Html.Raw(liBuilder.ToString())
+}
