@@ -10,6 +10,8 @@
 - Toggle Comment
 - Hot Commands
 - Snippet Designer  系统目录：C:\Users\Administrator\Documents\Visual Studio 2017\Code Snippets
+- Autosave2017
+- Browser Reload on Save
 
 
 - Visual-Studio-jQuery-Code-Snippets
@@ -19,7 +21,6 @@
 - Format All Files
 - Color Theme Editor
 - OzCode
-- Browser Reload on Save
 - Web Essentials
 
 
