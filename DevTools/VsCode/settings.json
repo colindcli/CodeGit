@@ -1,16 +1,19 @@
 // 将设置放入此文件中以覆盖默认设置
 {
-    "http.proxy": "http://dev-proxy.oa.com:8080",
+    // "http.proxy": "http://dev-proxy.oa.com:8080",
     // 配置 glob 模式以排除文件和文件夹。
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true,
-        ".vscode": true
+        ".vscode": true,
+        "library": true,
+        "WebSite": true,
+        "db": true
     },
-    "editor.mouseWheelScrollSensitivity": 13,
-    
+    "editor.mouseWheelScrollSensitivity": 5,
+
     "path-intellisense.extensionOnImport": true,
     "emmet.syntaxProfiles": {
         "vue-html": "html",
@@ -51,6 +54,45 @@
     "workbench.welcome.enabled": false,
     "workbench.iconTheme": "vscode-icons",
     "typescript.check.npmIsInstalled": false,
-    "files.autoSave": "off",
-    "guides.enabled": false
+    "files.autoSave": "afterDelay",
+    "guides.enabled": false,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "extensions.ignoreRecommendations": false,
+    "editor.lineNumbers": "on",
+    "git.ignoreMissingGitWarning": true,
+    // 控制编辑器是否在用户键入、粘贴或移动行时自动调整缩进。语言的缩进规则必须可用。
+    "editor.autoIndent": false,
+    "csharp.format.enable": false,
+
+
+    // 将 TS 服务器的日志保存到一个文件。此日志可用于诊断 TS 服务器问题。日志可能包含你的项目中的文件路径、源代码和其他可能敏感的信息。
+    "typescript.tsserver.log": "on",
+
+    // If true an input box will always show when logging with a prefix.
+    "wrap-console-log.alwaysInputBoxOnPrefix": true,
+
+    // If true ALL wraps will log with the selected word as prefix.
+    "wrap-console-log.alwaysUsePrefix": true,
+
+    // When 'setCursorOnNewLine' is enabled this setting controls where on the new line the cursor should be placed. If 'setCursorOnNewLine' is disabled this setting will have no effect.
+    "wrap-console-log.cursorPositionNewLine": "Right",
+
+    // When enabled run "editor.action.formatDocument" after 'console.log' has been inserted.
+    "wrap-console-log.formatDocument": true,
+
+    // To switch between localhost or 127.0.0.1 or anything else. Default is 127.0.0.1
+    "liveServer.settings.host": "www.demo.com",
+    // Set Custom Port Number of Live Server. Set 0 if you want random port.
+    "liveServer.settings.port": 5500,
+
+    // To Setup Proxy
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/api/",
+        "proxyUri": "http://www.demo.com/api/"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDragAndDrop": false,
 }

@@ -1,7 +1,7 @@
 ## VS Code插件
 
 系统目录: C:\Users\用户\.vscode
-配置文件: https://github.com/colindcli/CodeGit/tree/master/Development%20Tools/VS%20Code
+配置文件: VsCode/settings.json
 
 
 - Babel ES6/ES7
@@ -41,6 +41,8 @@
 - IntelliSense for CSS class names in HTML
 - Copy Relative Path
 - Easy Snippet Maker
+- Sorting HTML and Jade attributes
+- Chinese (Simplified) Language Pack for Visual Studio Code
 
 
 - console-log-snippet-javascript: conl
