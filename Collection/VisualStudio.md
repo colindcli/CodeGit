@@ -12,11 +12,10 @@
 - Snippet Designer  系统目录：C:\Users\Administrator\Documents\Visual Studio 2017\Code Snippets
 - Autosave2017
 - Browser Reload on Save
+- Multi Edit Mode
 
 
 - Visual-Studio-jQuery-Code-Snippets
-
-- Multi Edit Mode
 - BuildOnSave
 - Format All Files
 - Color Theme Editor
