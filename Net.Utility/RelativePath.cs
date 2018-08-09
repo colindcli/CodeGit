@@ -1,5 +1,11 @@
 // 1、绝对路径转相对路径
 
+var path = "C:\\Users\\Administrator\\source\\repos\\demo\\Category\\Index.html".ToRelativePath("C:\\Users\\Administrator\\source\\repos\\demo\\static\\css\\style.css");
+path == "../static/css/style.css"
+
+var path = "http://www.demo.com/Category/Index.html".ToRelativePath("http://www.demo.com/static/css/style.css");
+path == "../static/css/style.css"
+
 /// <summary>
 /// 绝对路径转相对路径
 /// </summary>
@@ -7,14 +13,14 @@
 /// <param name="relativePath"></param>
 public static string ToRelativePath(this string staticFile, string relativePath)
 {
-    var arrayStaticFile = staticFile.Split('/');
-    var path2Array = relativePath.Split('/');
+    var arrayStaticFile = staticFile.Split(new[] { '/', '\\' }, StringSplitOptions.RemoveEmptyEntries);
+    var path2Array = relativePath.Split(new[] { '/', '\\' }, StringSplitOptions.RemoveEmptyEntries);
     var s = arrayStaticFile.Length >= path2Array.Length ? path2Array.Length : arrayStaticFile.Length;
     //两个目录最底层的共用目录索引
     var closestRootIndex = -1;
     for (var i = 0; i < s; i++)
     {
-        if (arrayStaticFile[i] == path2Array[i])
+        if (string.Equals(arrayStaticFile[i], path2Array[i], StringComparison.OrdinalIgnoreCase))
         {
             closestRootIndex = i;
         }
