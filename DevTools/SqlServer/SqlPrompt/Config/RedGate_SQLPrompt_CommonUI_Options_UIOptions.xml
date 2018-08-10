@@ -25,8 +25,8 @@
   <SchemaPanelWidth>300</SchemaPanelWidth>
   <SchemaPanelHeight>275</SchemaPanelHeight>
   <SchemaPanelShowTable>True</SchemaPanelShowTable>
-  <CandidateListWidth>350</CandidateListWidth>
-  <CandidateListHeight>200</CandidateListHeight>
+  <CandidateListWidth>456</CandidateListWidth>
+  <CandidateListHeight>777</CandidateListHeight>
   <CandidateListColumnDivider>0.5</CandidateListColumnDivider>
   <CandidateListSaveSizeBetweenSessions>True</CandidateListSaveSizeBetweenSessions>
   <CandidateListUseEditorFont>True</CandidateListUseEditorFont>
@@ -38,10 +38,10 @@
   <ShowSwitchToColumnPickerTip>True</ShowSwitchToColumnPickerTip>
   <ShowDontDisplayObjectDescriptionBoxTip>True</ShowDontDisplayObjectDescriptionBoxTip>
   <ShowSnippetTemplateParameterDialog>True</ShowSnippetTemplateParameterDialog>
-  <ShowSchemaPrefixes>False</ShowSchemaPrefixes>
+  <ShowSchemaPrefixes>True</ShowSchemaPrefixes>
   <HighlightChanges>True</HighlightChanges>
   <UseCamelHumps>False</UseCamelHumps>
-  <ShowExecutionWarnings>True</ShowExecutionWarnings>
+  <ShowExecutionWarnings>False</ShowExecutionWarnings>
   <ShowExecutionWarningsForInnerJoins>True</ShowExecutionWarningsForInnerJoins>
   <ShowExecutionWarningsForProcsAndTriggers>True</ShowExecutionWarningsForProcsAndTriggers>
   <ShowExecutionWarningsForTruncateStatements>False</ShowExecutionWarningsForTruncateStatements>
@@ -52,12 +52,12 @@
   <FormatterActiveStyleName>MyFormat</FormatterActiveStyleName>
   <FreeEditionFirstUseTimestamp>131726537429612342</FreeEditionFirstUseTimestamp>
   <GracePeriodWarningIsDismissed>False</GracePeriodWarningIsDismissed>
-  <GracePeriodIsEnded>False</GracePeriodIsEnded>
+  <GracePeriodIsEnded>True</GracePeriodIsEnded>
   <AbTestingEnabled>True</AbTestingEnabled>
   <MigratedStyles>True</MigratedStyles>
   <KeyboardBindingOverrides version="1" type="RedGate.SQLPrompt.CommonUI.Options.KeyboardBindingOverrides">
     <Overrides type="Overrides" version="2" />
   </KeyboardBindingOverrides>
-  <ProvidedFirstUseLoginPopup>False</ProvidedFirstUseLoginPopup>
+  <ProvidedFirstUseLoginPopup>True</ProvidedFirstUseLoginPopup>
   <IsCodeAnalysisEnabled>True</IsCodeAnalysisEnabled>
 </UIOptions>

@@ -3,8 +3,8 @@
 <EngineOptions version="1" type="EngineOptions">
   <AutoPopupEnabled>True</AutoPopupEnabled>
   <QualifyObjectNames>True</QualifyObjectNames>
-  <AliasTableViewNames>False</AliasTableViewNames>
-  <IncludeAsInAliasDefinition>True</IncludeAsInAliasDefinition>
+  <AliasTableViewNames>True</AliasTableViewNames>
+  <IncludeAsInAliasDefinition>False</IncludeAsInAliasDefinition>
   <CapitaliseGeneratedAliases>False</CapitaliseGeneratedAliases>
   <QualifyColumnNames>False</QualifyColumnNames>
   <QualifyColumnNamesWithAliases>True</QualifyColumnNamesWithAliases>
@@ -23,16 +23,16 @@
   <IncludePartialFKJoinConditions>False</IncludePartialFKJoinConditions>
   <AlwaysIncludeNameMatchedJoinConditions>True</AlwaysIncludeNameMatchedJoinConditions>
   <AlwaysIncludeTypeMatchedJoinConditions>False</AlwaysIncludeTypeMatchedJoinConditions>
-  <FlipColumnsOnJoinCondition>False</FlipColumnsOnJoinCondition>
+  <FlipColumnsOnJoinCondition>True</FlipColumnsOnJoinCondition>
   <AutoGenerateAlterProcStatement>True</AutoGenerateAlterProcStatement>
   <AutoInsertParenthesesForBuiltInFunctionsAndTypes>True</AutoInsertParenthesesForBuiltInFunctionsAndTypes>
   <MaxFileSizeToCacheInKB>5120</MaxFileSizeToCacheInKB>
   <EnableAllColumnsDisplay>False</EnableAllColumnsDisplay>
   <AutoTerminateMultilineComments>True</AutoTerminateMultilineComments>
-  <AutoInsertClosingParenthesis>False</AutoInsertClosingParenthesis>
+  <AutoInsertClosingParenthesis>True</AutoInsertClosingParenthesis>
   <AutoInsertClosingSquareBrace>True</AutoInsertClosingSquareBrace>
   <AutoInsertClosingSingleQuote>True</AutoInsertClosingSingleQuote>
-  <AutoInsertClosingDoubleQuote>False</AutoInsertClosingDoubleQuote>
+  <AutoInsertClosingDoubleQuote>True</AutoInsertClosingDoubleQuote>
   <AttemptDecryption>True</AttemptDecryption>
   <SynonymsEnabled>True</SynonymsEnabled>
   <CacheLinkedServers>True</CacheLinkedServers>

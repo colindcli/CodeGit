@@ -5,11 +5,11 @@
   <OpenTabsOnStartup>True</OpenTabsOnStartup>
   <ReconnectTabs>True</ReconnectTabs>
   <UseKeyboardShortcut>False</UseKeyboardShortcut>
-  <RecentlyClosedTabsWidth>800</RecentlyClosedTabsWidth>
-  <RecentlyClosedTabsHeight>400</RecentlyClosedTabsHeight>
+  <RecentlyClosedTabsWidth>1407</RecentlyClosedTabsWidth>
+  <RecentlyClosedTabsHeight>873</RecentlyClosedTabsHeight>
   <GridSplitterLeftWidth>280</GridSplitterLeftWidth>
   <LastRunWasLicensed>True</LastRunWasLicensed>
-  <SelectedFilterType>0</SelectedFilterType>
+  <SelectedFilterType>1</SelectedFilterType>
   <SelectedFilterTypeForKeyboardShortcut>1</SelectedFilterTypeForKeyboardShortcut>
   <KeyboardShortcut>Ctrl+Q</KeyboardShortcut>
   <DatabaseFilePath />
