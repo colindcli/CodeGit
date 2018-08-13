@@ -246,7 +246,7 @@
 
 > 图片浏览
 
-- 图片浏览(酷)：[fancybox](https://github.com/fancyapps/fancybox) GPLv3
+- 图片浏览(酷)：[fancybox](https://github.com/fancyapps/fancybox) / [demo](http://fancyapps.com/fancybox/3/) GPLv3
 
 
 > 图片懒加载
@@ -264,8 +264,14 @@
 - 头像裁剪：[cropbox](https://github.com/hongkhanh/cropbox) MIT
 
 
+> 屏幕视频截屏
+
+- 屏幕视频截屏：[FFcast](https://github.com/lolilolicon/FFcast) / [demo](https://github.com/lolilolicon/FFcast/wiki/Demos) GPL3.0
+
+
 > 视频播放器
 
+- [DPlayer](https://github.com/MoePlayer/DPlayer) / [doc](http://dplayer.js.org/#/zh-Hans/) MIT
 - [video.js](https://github.com/videojs/video.js) Apache 2.0
 - [mediaelement](https://github.com/mediaelement/mediaelement)  MIT
 - [jPlayer](https://github.com/jplayer/jPlayer) MIT
@@ -273,6 +279,8 @@
 - [iphone-inline-video](https://github.com/bfred-it/iphone-inline-video) MIT
 - [flv.js](https://github.com/Bilibili/flv.js) MIT
 - [plyr](https://github.com/sampotts/plyr)
+- [clappr](https://github.com/clappr/clappr) / [demo](http://clappr.io/demo/) BSD3
+- [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js) / [demo](https://sachinchoolur.github.io/lightgallery.js/demos/) GPL3
 
 
 > 音频

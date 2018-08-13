@@ -2,7 +2,10 @@
 
 - https://www.w3schools.com/
 - https://htmlcolorcodes.com/zh/
+- http://www.jq22.com/
 
+
+- 看国内网站视频神器：https://github.com/phobal/ivideo
 
 > 编码区别
 
