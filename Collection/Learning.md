@@ -1,6 +1,6 @@
 ## 学习
 
-- https://www.w3schools.com/
+- https://www.w3schools.com/ 或 http://w3schools.fzxgj.top/
 - https://htmlcolorcodes.com/zh/
 - http://www.jq22.com/
 

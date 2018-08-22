@@ -98,6 +98,7 @@
 - 手机模板：[youdiancms](http://www.youdiancms.com/mobile.html)
 - Chinaz：[moban](http://sc.chinaz.com/moban/)
 - 网站模板：[mobanzhongxin](http://www.mobanzhongxin.com/)
+- 仿站模板：[moban](http://www.fzxgj.top/)
 
 
 > 其他
