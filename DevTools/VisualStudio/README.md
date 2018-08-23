@@ -18,6 +18,12 @@
 - Autosave2017
 - Browser Reload on Save
 
+- Mapping Generator 映射生成对象
+- xeam Project Rename Tool VS 2013 项目命名
+- Enum Case Generator 枚举生成器
+- Clean Solution
+- Fix Namespace 修复命名空间
+- Regionizer 2.1 with Auto Commenting
 
 - Visual-Studio-jQuery-Code-Snippets
 - BuildOnSave
