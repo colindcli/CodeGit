@@ -23,7 +23,8 @@
                     console.log("接收到的动态：", new Date());
                     console.log(obj);
                 };
-                $.connection.hub.start();
+                //webSockets、foreverFrame、serverSentEvents、longPolling
+                $.connection.hub.start({ transport: ['webSockets', 'longPolling'] });
             });
 
             //Test
