@@ -18,6 +18,8 @@
 - Autosave2017
 - Browser Reload on Save
 - Enum Case Generator 枚举生成器
+- Highlight all occurrences of selected word++  （编辑》Selected Highlight++，选择第3行第7个棕色）
+
 
 
 - Mapping Generator 映射生成对象
