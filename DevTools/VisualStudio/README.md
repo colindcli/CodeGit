@@ -17,11 +17,11 @@
 - Snippet Designer  系统目录：C:\Users\Administrator\Documents\Visual Studio 2017\Code Snippets
 - Autosave2017
 - Browser Reload on Save
+- Enum Case Generator 枚举生成器
+
 
 - Mapping Generator 映射生成对象
 - xeam Project Rename Tool VS 2013 项目命名
-- Enum Case Generator 枚举生成器
-- Clean Solution
 - Fix Namespace 修复命名空间
 - Regionizer 2.1 with Auto Commenting
 
@@ -32,6 +32,7 @@
 - OzCode
 - Web Essentials
 - Multi Edit Mode
+- Clean Solution
 
 
 ## VS2017
