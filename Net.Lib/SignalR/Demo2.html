@@ -23,7 +23,9 @@
                     console.log("接收到的动态：", new Date());
                     console.log(obj);
                 };
-                $.connection.hub.start();
+                //webSockets、foreverFrame、serverSentEvents、longPolling
+                //https://docs.microsoft.com/en-us/aspnet/signalr/overview/getting-started/introduction-to-signalr
+                $.connection.hub.start({ transport: ['webSockets', 'longPolling'] });
             });
 
             //Test

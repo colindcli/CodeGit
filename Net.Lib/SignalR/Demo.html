@@ -13,12 +13,13 @@
             $.get("/api/Message/Registration?userId=" + userId, function () {
                 $.connection.hub.logging = false;
                 var chat = $.connection.messageHub;
-                chat.client.broadcastMessage = function (messageArea) {
-                    //messageArea：0我的工作台；1部门；2项目；3群组；4任务
-
-                    console.log(messageArea);
+                chat.client.broadcastMessage = function (obj) {
+                    console.log("接收到的动态：", new Date());
+                    console.log(obj);
                 };
-                $.connection.hub.start();
+                //webSockets、foreverFrame、serverSentEvents、longPolling。 
+                //https://docs.microsoft.com/en-us/aspnet/signalr/overview/getting-started/introduction-to-signalr
+                $.connection.hub.start({ transport: ['webSockets', 'longPolling'] });
             });
         });
     </script>
