@@ -8,7 +8,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var mc = new MaskConfig(49, 0, 14);
+        var mc = new MaskConfig(50, 0, 13);
 
         //Js最大值：9007199254740992
         long jsMaxValue = 9007199254740992;
