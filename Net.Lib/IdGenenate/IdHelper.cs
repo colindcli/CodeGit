@@ -12,7 +12,10 @@ using System.Linq;
 /// </summary>
 public class IdHelper
 {
-    private static readonly IdGenerator Generator = new IdGenerator(0, new DateTime(2015, 1, 1, 0, 0, 0, DateTimeKind.Utc), new MaskConfig(45, 2, 16));
+    /// <summary>
+    /// new MaskConfig(50, 0, 13), 根据Js最大值计算，可用34年，每秒产生8192个Id
+    /// </summary>
+    private static readonly IdGenerator Generator = new IdGenerator(0, new DateTime(2018, 1, 1, 0, 0, 0, DateTimeKind.Utc), new MaskConfig(50, 0, 13));
 
     /// <summary>
     /// 生成一个Id
