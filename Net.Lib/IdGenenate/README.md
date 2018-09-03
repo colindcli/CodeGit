@@ -19,6 +19,9 @@
 > new MaskConfig(53, 0, 10);  278年，每秒1024个
 
 
+- 如果突破Js最大值限制，需要在Json返回值将long转string，参考：Global.asax.cs
+
+
 ## 有顺序的Guid生成器
 
 - NewId: [NuGet](https://www.nuget.org/packages/NewId/) / [doc](https://github.com/phatboyg/NewId) Apache2.0
@@ -31,6 +34,6 @@
 
 
 
-## 短Id (底重复)
+## 短Id (低重复)
 
 - shortid: [NuGet](https://www.nuget.org/packages/shortid/) / [doc](https://github.com/bolorundurowb/shortid/) MIT
