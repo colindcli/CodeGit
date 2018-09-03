@@ -1,4 +1,3 @@
 ## 生成设备Id
 
-- https://www.nuget.org/packages/DeviceId/
-- https://github.com/MatthewKing/DeviceId
+- DeviceId：[NuGet](https://www.nuget.org/packages/DeviceId/) / [doc](https://github.com/MatthewKing/DeviceId) MIT
