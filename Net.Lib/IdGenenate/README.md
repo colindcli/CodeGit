@@ -1,7 +1,6 @@
 ## IdGen  Id生成器
 
-- https://www.nuget.org/packages/IdGen/
-- https://github.com/RobThree/IdGen
+- IdGen: [NuGet](https://www.nuget.org/packages/IdGen/) / [doc](https://github.com/RobThree/IdGen) MIT
 
 
 > 第一部分，1位为标识位，不用。
@@ -22,5 +21,16 @@
 
 ## 有顺序的Guid生成器
 
-- https://www.nuget.org/packages/NewId/
-- https://github.com/phatboyg/NewId
+- NewId: [NuGet](https://www.nuget.org/packages/NewId/) / [doc](https://github.com/phatboyg/NewId) Apache2.0
+
+
+
+## 分布式/独立/有序/无状态/线程安全/随机Id生成器
+
+- Funcular.IdGenerators: [NuGet](https://www.nuget.org/packages/Funcular.IdGenerators/) / [doc](https://github.com/piranout/Funcular.IdGenerators)
+
+
+
+## 短Id (底重复)
+
+- shortid: [NuGet](https://www.nuget.org/packages/shortid/) / [doc](https://github.com/bolorundurowb/shortid/) MIT
