@@ -22,16 +22,9 @@ public class FileHelper
     /// </summary>
     /// <param name="fileNames"></param>
     /// <returns></returns>
-    public static bool DeleteFile(params string[] fileNames)
+    public static bool DeleteFiles(params string[] fileNames)
     {
-        var i = 0;
-        foreach (var fileName in fileNames)
-        {
-            if (DeleteFile(fileName))
-            {
-                i++;
-            }
-        }
+        var i = fileNames.Count(DeleteFile);
         return fileNames.Length == i;
     }
 
@@ -42,7 +35,11 @@ public class FileHelper
     /// <returns></returns>
     private static bool DeleteFile(string fileName)
     {
-        if (!File.Exists(fileName)) return true;
+        if (!File.Exists(fileName))
+        {
+            return true;
+        }
+
         try
         {
             File.Delete(fileName);
