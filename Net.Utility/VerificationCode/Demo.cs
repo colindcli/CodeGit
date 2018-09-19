@@ -27,12 +27,14 @@ namespace VerificationCode
         static void Main(string[] args)
         {
             var root = AppDomain.CurrentDomain.BaseDirectory;
-            var datPath =$"{root}163.dat";
+            var datPath =$"{root}test.dat";
 
-            if (LoadWmFromFile(datPath, "163"))
+            if (LoadWmFromFile(datPath, "123"))
             {
                 //SetWmOption(6, 90);
-                var imgPath = $"{root}code.jpg";
+
+                //http://api2-287.zcgsrg.com:65/cloud/api.do?pa=captcha.next&key=94824340
+                var imgPath = $"{root}safeCode.jpg";
 
                 var result = new StringBuilder();
                 GetImageFromFile(imgPath, result);
