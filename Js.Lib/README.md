@@ -112,6 +112,7 @@
 - url解析器：[query-string](https://github.com/sindresorhus/query-string) MIT
 - js分页：[laypage](http://www.layui.com/doc/modules/laypage.html)
 - markdown编辑器: [editor.md](https://github.com/pandao/editor.md) / [demo](https://pandao.github.io/editor.md/) MIT
+- sha1: [js-sha1](https://github.com/emn178/js-sha1) MIT
 
 
 > 邮件
