@@ -51,7 +51,7 @@ public class HttpService
 
         var cookies = new CookieCollection();
         var domain = uri.Host;
-        var items = _cookie.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+        var items = cookie.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries).ToList();
         items.ForEach(item =>
         {
             var kvs = item.Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries).ToList();
