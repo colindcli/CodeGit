@@ -101,4 +101,4 @@ public static class LogHelper
         var method = new StackTrace().GetFrame(1).GetMethod();
         Sqllog.Debug(GetName(method) + message, ex);
     }
-};
+}
