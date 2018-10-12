@@ -115,6 +115,7 @@
 - sha1加密: [js-sha1](https://github.com/emn178/js-sha1) MIT
 - sha1加密: [sha1.min.js](https://github.com/kazuho/sha1.min.js) BSDL
 - md5加密：[JavaScript-MD5](https://github.com/blueimp/JavaScript-MD5) MIT
+- base64加密：[js-base64](https://github.com/dankogai/js-base64) BSD3
 
 
 > 邮件

@@ -17,6 +17,7 @@
 (https://ourcodeworld.com/articles/read/479/how-to-implement-sciter-lightweight-html-and-css-ui-engine-in-your-winforms-application-with-c-sharp)
 - Net UI框架：[Avalonia](https://github.com/AvaloniaUI/Avalonia)
 - 二维码生成：[QRCoder](https://github.com/codebude/QRCoder) MIT
+- 二维码：[QrCode.Net](https://www.nuget.org/packages/QrCode.Net/) / [Github](https://github.com/Alxandr/QrCode.Net)
 - 后端生成二维码：[CreateQrCodeAndMergeImage](https://github.com/AkonCoder/CreateQrCodeAndMergeImage)
 - 相对路径转绝对路径：[CSharpPathResolver](https://github.com/alexeveritt/CSharpPathResolver) MIT
 - Bson: [Kernys.Bson](https://github.com/kernys/Kernys.Bson) MIT
