@@ -112,7 +112,9 @@
 - url解析器：[query-string](https://github.com/sindresorhus/query-string) MIT
 - js分页：[laypage](http://www.layui.com/doc/modules/laypage.html)
 - markdown编辑器: [editor.md](https://github.com/pandao/editor.md) / [demo](https://pandao.github.io/editor.md/) MIT
-- sha1: [js-sha1](https://github.com/emn178/js-sha1) MIT
+- sha1加密: [js-sha1](https://github.com/emn178/js-sha1) MIT
+- sha1加密: [sha1.min.js](https://github.com/kazuho/sha1.min.js) BSDL
+- md5加密：[JavaScript-MD5](https://github.com/blueimp/JavaScript-MD5) MIT
 
 
 > 邮件
