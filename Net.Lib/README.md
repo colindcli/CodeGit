@@ -24,6 +24,7 @@
 - 滑动验证码：[VerificationCode](https://github.com/eatage/VerificationCode)
 - 加密解密：[EasyEncryption](https://www.nuget.org/packages/EasyEncryption/) / [doc](https://github.com/polischuk/EasyEncryption/wiki/Usage-wiki)
 - 收发邮件：[MailKit](https://www.nuget.org/packages/MailKit/) / [doc](https://github.com/jstedfast/MailKit) view
+- Base64Url: [Base64Url](https://www.nuget.org/packages/Base64Url/) / [doc](https://github.com/chaowlert/base64url) MIT
 
 
 > 压缩
