@@ -21,6 +21,8 @@
 - 相对路径转绝对路径：[CSharpPathResolver](https://github.com/alexeveritt/CSharpPathResolver) MIT
 - Bson: [Kernys.Bson](https://github.com/kernys/Kernys.Bson) MIT
 - 滑动验证码：[VerificationCode](https://github.com/eatage/VerificationCode)
+- 加密解密：[EasyEncryption](https://www.nuget.org/packages/EasyEncryption/) / [doc](https://github.com/polischuk/EasyEncryption/wiki/Usage-wiki)
+- 收发邮件：[MailKit](https://www.nuget.org/packages/MailKit/) / [doc](https://github.com/jstedfast/MailKit) view
 
 
 > 压缩
