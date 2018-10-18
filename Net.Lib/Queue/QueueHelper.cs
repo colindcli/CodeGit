@@ -44,8 +44,8 @@ public class QueueHelper<T>
                     }
                     catch (Exception)
                     {
-                            // ignored
-                        }
+                        // ignored
+                    }
                 }
 
                 Thread.Sleep(50);

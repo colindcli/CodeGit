@@ -19,7 +19,6 @@
 - 二维码生成：[QRCoder](https://github.com/codebude/QRCoder) MIT
 - 二维码：[QrCode.Net](https://www.nuget.org/packages/QrCode.Net/) / [Github](https://github.com/Alxandr/QrCode.Net)
 - 后端生成二维码：[CreateQrCodeAndMergeImage](https://github.com/AkonCoder/CreateQrCodeAndMergeImage)
-- 相对路径转绝对路径：[CSharpPathResolver](https://github.com/alexeveritt/CSharpPathResolver) MIT
 - Bson: [Kernys.Bson](https://github.com/kernys/Kernys.Bson) MIT
 - 滑动验证码：[VerificationCode](https://github.com/eatage/VerificationCode)
 - 加密解密：[EasyEncryption](https://www.nuget.org/packages/EasyEncryption/) / [doc](https://github.com/polischuk/EasyEncryption/wiki/Usage-wiki)
