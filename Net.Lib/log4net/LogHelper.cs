@@ -11,7 +11,7 @@ public static class LogHelper
     private static readonly ILog Warnlog = LogManager.GetLogger("Warnlog");
     private static readonly ILog Infolog = LogManager.GetLogger("Infolog");
     private static readonly ILog Debuglog = LogManager.GetLogger("Debuglog");
-    private static readonly ILog Sqllog = LogManager.GetLogger("Sqllog");
+    private static readonly ILog Quartzlog = LogManager.GetLogger("Quartzlog");
 
     /// <summary>
     /// 
@@ -20,13 +20,7 @@ public static class LogHelper
     /// <returns></returns>
     private static string GetName(MethodBase method)
     {
-        var name = (method.ReflectedType != null ? "类名:[" + method.ReflectedType.Name + "]; " : "") + "方法:[" +
-                   method.Name + "];\r\n";
-        if (HttpContext.Current?.Request.Url != null)
-        {
-            name += "网址：" + HttpContext.Current.Request.Url + ";\r\n";
-        }
-        return name;
+        return (method.ReflectedType != null ? "类名:[" + method.ReflectedType.Name + "]; " : "") + "方法:[" + method.Name + "];\r\n";
     }
 
     /// <summary>
@@ -95,10 +89,9 @@ public static class LogHelper
     /// </summary>
     /// <param name="message"></param>
     /// <param name="ex"></param>
-    public static void AddSqlLog(object message, Exception ex = null)
+    public static void Quartz(object message, Exception ex = null)
     {
-        if (!Fatallog.IsFatalEnabled) return;
-        var method = new StackTrace().GetFrame(1).GetMethod();
-        Sqllog.Debug(GetName(method) + message, ex);
+        if (!Quartzlog.IsDebugEnabled) return;
+        Quartzlog.Debug(message, ex);
     }
 }
