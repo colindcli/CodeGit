@@ -25,7 +25,7 @@
 //https://github.com/nong0126/nong0126.github.com/blob/cc3a12525bee53a0bda5d8ffed1e733786569c3c/_site/html5/js/html5.js
 <script>
 (function (window) {
-    //判断移动端
+    //判断移动端（判断手机）
     var isMobi = false;
     if (/(iPhone|iPad|iPod|android|windows phone os|iemobile)/i.test(navigator.userAgent)) {
         isMobi = true;
