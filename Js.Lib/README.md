@@ -116,6 +116,7 @@
 - sha1加密: [sha1.min.js](https://github.com/kazuho/sha1.min.js) BSDL  (注：.Net use EasyEncryption)
 - md5加密：[JavaScript-MD5](https://github.com/blueimp/JavaScript-MD5) MIT  (注：.Net use EasyEncryption)
 - base64加密：[js-base64](https://github.com/dankogai/js-base64) BSD3
+- 解码条形码：[ZXing.Net](https://github.com/micjahn/ZXing.Net) Apache2.0
 
 
 > 邮件
