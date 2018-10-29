@@ -44,6 +44,7 @@
 - 图案魔术：[magic](https://github.com/miniMAC/magic) / [demo](https://minimamente.com/example/magic_animations/) 
 - 计数器：[jquery-counter](https://github.com/sophilabs/jquery-counter) / [demo](http://sophilabs.github.io/jquery-counter/) MIT
 - 鼠标悬停效果：[hover](https://github.com/yaochuxia/hover) / [demo](http://yaochuxia.github.io/hover/) 
+- 鼠标经过效果：[Hover](https://github.com/IanLunn/Hover) / [demo](http://ianlunn.github.io/Hover/)
 - 类似excel进度：[timesheet.js](https://github.com/sbstjn/timesheet.js)
 - 弹框页面缩小：[Avgrund](https://github.com/hakimel/Avgrund) / [demo](https://lab.hakim.se/avgrund/) MIT
 - 发送页面弹幕：[jquery.barrager.js](https://github.com/yaseng/jquery.barrager.js)
@@ -116,7 +117,6 @@
 - sha1加密: [sha1.min.js](https://github.com/kazuho/sha1.min.js) BSDL  (注：.Net use EasyEncryption)
 - md5加密：[JavaScript-MD5](https://github.com/blueimp/JavaScript-MD5) MIT  (注：.Net use EasyEncryption)
 - base64加密：[js-base64](https://github.com/dankogai/js-base64) BSD3
-- 解码条形码：[ZXing.Net](https://github.com/micjahn/ZXing.Net) Apache2.0
 
 
 > 邮件

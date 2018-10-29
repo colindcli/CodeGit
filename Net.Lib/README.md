@@ -25,6 +25,7 @@
 - 收发邮件：[MailKit](https://www.nuget.org/packages/MailKit/) / [doc](https://github.com/jstedfast/MailKit) view
 - Base64Url: [Base64Url](https://www.nuget.org/packages/Base64Url/) / [doc](https://github.com/chaowlert/base64url) MIT
 - 转文件大小：[FileSize](https://www.nuget.org/packages/FileSize/) / [nuget](https://github.com/StevePotter/FileSize) MIT
+- 解码条形码：[ZXing.Net](https://github.com/micjahn/ZXing.Net) Apache2.0
 
 
 > 压缩
