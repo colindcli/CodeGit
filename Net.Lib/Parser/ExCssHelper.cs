@@ -14,8 +14,7 @@ public class ExCssHelper
         {
             foreach (var declaration in stylesheetStyleRule.Declarations)
             {
-                var declarationTerm = declaration.Term as PrimitiveTerm;
-                if (declarationTerm != null)
+                if (declaration.Term is PrimitiveTerm declarationTerm)
                 {
                     var primitiveTerm = declarationTerm;
                     if (primitiveTerm.PrimitiveType != UnitType.Uri)
@@ -27,11 +26,11 @@ public class ExCssHelper
                 {
                     var termLists = (TermList)declaration.Term;
                     paths.AddRange(from termList in termLists
-                        select termList as PrimitiveTerm into term
-                        select term into primitiveTerm
-                        where primitiveTerm?.PrimitiveType == UnitType.Uri && primitiveTerm.Value != null
-                        select primitiveTerm.Value into url
-                        select url.ToString());
+                                    select termList as PrimitiveTerm into term
+                                    select term into primitiveTerm
+                                    where primitiveTerm?.PrimitiveType == UnitType.Uri && primitiveTerm.Value != null
+                                    select primitiveTerm.Value into url
+                                    select url.ToString());
                 }
             }
         }
@@ -52,8 +51,7 @@ public class ExCssHelper
         {
             foreach (var declaration in stylesheetStyleRule.Declarations)
             {
-                var declarationTerm = declaration.Term as PrimitiveTerm;
-                if (declarationTerm != null)
+                if (declaration.Term is PrimitiveTerm declarationTerm)
                 {
                     var primitiveTerm = declarationTerm;
                     if (primitiveTerm.PrimitiveType != UnitType.Uri)
@@ -89,8 +87,6 @@ public class ExCssHelper
     /// <returns></returns>
     public static List<string> GetCssDocumentImport(StyleSheet stylesheet, Guid pageGuid, string pageUrl)
     {
-        var urlUri = new Uri(pageUrl);
-
         var paths = (from import in stylesheet.ImportDirectives
                         where import.RuleType == RuleType.Import && !string.IsNullOrWhiteSpace(import.Href)
                         select import.Href
