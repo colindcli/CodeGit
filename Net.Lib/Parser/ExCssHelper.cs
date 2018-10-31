@@ -1,4 +1,5 @@
 //Install-Package ExCSS -Version 2.0.6（最新版本是.Net Core）
+//var stylesheet = new Parser().Parse(text);
 
 public class ExCssHelper
 {
@@ -82,10 +83,8 @@ public class ExCssHelper
     /// 提取样式中的Import链接
     /// </summary>
     /// <param name="stylesheet"></param>
-    /// <param name="pageGuid"></param>
-    /// <param name="pageUrl"></param>
     /// <returns></returns>
-    public static List<string> GetCssDocumentImport(StyleSheet stylesheet, Guid pageGuid, string pageUrl)
+    public static List<string> GetCssDocumentImport(StyleSheet stylesheet)
     {
         var paths = (from import in stylesheet.ImportDirectives
                         where import.RuleType == RuleType.Import && !string.IsNullOrWhiteSpace(import.Href)
