@@ -117,6 +117,7 @@
 - sha1加密: [sha1.min.js](https://github.com/kazuho/sha1.min.js) BSDL  (注：.Net use EasyEncryption)
 - md5加密：[JavaScript-MD5](https://github.com/blueimp/JavaScript-MD5) MIT  (注：.Net use EasyEncryption)
 - base64加密：[js-base64](https://github.com/dankogai/js-base64) BSD3
+- 地图：[jvectormap](https://github.com/bjornd/jvectormap) / [demo](http://jvectormap.com/examples/world-gdp/) GPL
 
 
 > 邮件
@@ -209,6 +210,7 @@
 
 > 进度
 
+- 加载进度条：[pace](https://github.com/HubSpot/pace/) / [demo](http://github.hubspot.com/pace/docs/welcome/) MIT
 - 页面顶部进度：[nanobar](https://github.com/jacoborus/nanobar) / [demo](http://nanobar.jacoborus.codes/) MIT
 - 页面顶部进度：[ToProgress](https://github.com/djyde/ToProgress) / [demo](http://djyde.github.io/ToProgress/) MIT
 - 页签进度：[piecon](https://github.com/lipka/piecon) / [demo](http://lipka.github.io/piecon/) MIT
