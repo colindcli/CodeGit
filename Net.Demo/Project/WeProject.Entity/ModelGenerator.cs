@@ -5,7 +5,7 @@
 // 
 //     Connection String Name: `DefaultConnectionString`
 //     Provider:               `System.Data.SqlClient`
-//     Connection String:      `Data Source=139.219.100.138;uid=sa;pwd=1qaz2wsx3edc,;database=Ourtm;Connection Timeout=5;`
+//     Connection String:      `Data Source=;uid=;pwd=;database=;Connection Timeout=5;`
 //     Include Views:          `True`
 
 using System;
@@ -22,52 +22,52 @@ namespace WeProject.Entity
 	public partial class Attachment
 	{
         /// <summary>
-        /// Ö÷¼üGuid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         [Key]
         public virtual Guid AttachmentId { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÎÄ¼þÃû£º201709
+        /// ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½201709
         /// </summary>
         public virtual string Folder { get; set; }
         /// <summary>
-        /// ÎÄ¼þÃû³Æ
+        /// ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Title { get; set; }
         /// <summary>
-        /// Ô´ÎÄ¼þ´óÐ¡
+        /// Ô´ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡
         /// </summary>
         public virtual long SizeOriginal { get; set; }
         /// <summary>
-        /// Ð¡ËõÂÔÍ¼´óÐ¡
+        /// Ð¡ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ð¡
         /// </summary>
         public virtual long SizeSmall { get; set; }
         /// <summary>
-        /// ´óËõÂÔÍ¼´óÐ¡
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ð¡
         /// </summary>
         public virtual long SizeBig { get; set; }
         /// <summary>
-        /// ÎÄ¼þÀ©Õ¹Ãû
+        /// ï¿½Ä¼ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½
         /// </summary>
         public virtual string FileExt { get; set; }
         /// <summary>
-        /// ÏÂÔØÁ¿
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int Downloads { get; set; }
         /// <summary>
-        /// ×´Ì¬£º0ÉÏ´«ÎÄ¼þ£¨³¬24Ð¡Ê±¾ÍÉ¾³ý£©£»1¿ÉÓÃµÄÎÄ¼þ£»2±êÖ¾Îª²»¿ÉÓÃÎÄ¼þ£¨±£ÁôÏµÍ³ÎÄ¼þ£¬²»»áÉ¾³ý£©
+        /// ×´Ì¬ï¿½ï¿½0ï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½24Ð¡Ê±ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Ãµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½2ï¿½ï¿½Ö¾Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -79,40 +79,40 @@ namespace WeProject.Entity
 	public partial class DynamicMsg
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual long DynamicMsgId { get; set; }
         /// <summary>
-        /// 1×éÖ¯¼Ü¹¹£»2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ
+        /// 1ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½ï¿½ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Id¡¢ÏîÄ¿Id¡¢Èº×éId¡¢ÈÎÎñId
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Idï¿½ï¿½ï¿½ï¿½Ä¿Idï¿½ï¿½Èºï¿½ï¿½Idï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Guid¡¢ÏîÄ¿Guid¡¢Èº×éGuid¡¢ÈÎÎñGuid
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Guidï¿½ï¿½ï¿½ï¿½Ä¿Guidï¿½ï¿½Èºï¿½ï¿½Guidï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¶¯Ì¬ÏûÏ¢ÀàÐÍ
+        /// ï¿½ï¿½Ì¬ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int DynamicMsgTypeId { get; set; }
         /// <summary>
-        /// ÏûÏ¢ÕªÒª
+        /// ï¿½ï¿½Ï¢ÕªÒª
         /// </summary>
         public virtual string JsonSummary { get; set; }
         /// <summary>
-        /// ÏûÏ¢ÏêÇé
+        /// ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string JsonDetail { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -124,16 +124,16 @@ namespace WeProject.Entity
 	public partial class DynamicMsgType
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual int DynamicMsgTypeId { get; set; }
         /// <summary>
-        /// 1×éÖ¯¼Ü¹¹£»2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ
+        /// 1ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½ï¿½ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ¶¯Ì¬ÏûÏ¢ÀàÐÍÃû³Æ
+        /// ï¿½ï¿½Ì¬ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string DynamicMsgTypeName { get; set; }
 	}
@@ -145,44 +145,44 @@ namespace WeProject.Entity
 	public partial class Group
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual long GroupId { get; set; }
         /// <summary>
-        /// Ö÷¼üGuid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid GroupGuid { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ×éÃû
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string GroupName { get; set; }
         /// <summary>
-        /// ÐÞ¸ÄÇ°×éÃû
+        /// ï¿½Þ¸ï¿½Ç°ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string GroupOldName { get; set; }
         /// <summary>
-        /// ×´Ì¬£º0Õý³££»1ÒÑÉ¾³ýµ½»ØÊÕÕ¾£»2³¹µ×É¾³ý
+        /// ×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// Á¥ÊôÓÚ£º0×Ô¼º£»1ÍÅ¶Ó£»
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½0ï¿½Ô¼ï¿½ï¿½ï¿½1ï¿½Å¶Ó£ï¿½
         /// </summary>
         public virtual int BelongTo { get; set; }
         /// <summary>
-        /// ¿É¼û·¶Î§£º0×Ô¼º¿É¼û£¨±¾ÍÅ¶Ó¿É¼û£©£»1±¾ÍÅ¶ÓºÍÉÏ¼¶¿É¼û£»2È«¹«Ë¾¿É¼û£»
+        /// ï¿½É¼ï¿½ï¿½ï¿½Î§ï¿½ï¿½0ï¿½Ô¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶Ó¿É¼ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Å¶Óºï¿½ï¿½Ï¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½2È«ï¿½ï¿½Ë¾ï¿½É¼ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int VisibleRange { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -194,12 +194,12 @@ namespace WeProject.Entity
 	public partial class ObjectType
 	{
         /// <summary>
-        /// 1×éÖ¯¼Ü¹¹£»2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ
+        /// 1ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½ï¿½ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Ãû³Æ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string ObjectTypeName { get; set; }
 	}
@@ -211,56 +211,56 @@ namespace WeProject.Entity
 	public partial class Project
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual long ProjectId { get; set; }
         /// <summary>
-        /// Ö÷¼üGuid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ProjectGuid { get; set; }
         /// <summary>
-        /// ¹«Ë¾
+        /// ï¿½ï¿½Ë¾
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÏîÄ¿Ãû³Æ
+        /// ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string ProjectName { get; set; }
         /// <summary>
-        /// ÐÞ¸ÄÇ°Ãû³Æ
+        /// ï¿½Þ¸ï¿½Ç°ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string ProjectOldName { get; set; }
         /// <summary>
-        /// ¿ªÊ¼ÈÕÆÚ
+        /// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual DateTime? BeginDate { get; set; }
         /// <summary>
-        /// ½áÊøÈÕÆÚ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual DateTime? EndDate { get; set; }
         /// <summary>
-        /// ÃèÊö
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Description { get; set; }
         /// <summary>
-        /// ×´Ì¬£º0Õý³££»1ÒÑÉ¾³ýµ½»ØÊÕÕ¾£»2³¹µ×É¾³ý
+        /// ×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// Á¥ÊôÓÚ£º0×Ô¼º£»1ÍÅ¶Ó£»
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½0ï¿½Ô¼ï¿½ï¿½ï¿½1ï¿½Å¶Ó£ï¿½
         /// </summary>
         public virtual int BelongTo { get; set; }
         /// <summary>
-        /// ¿É¼û·¶Î§£º0×Ô¼º¿É¼û£¨±¾ÍÅ¶Ó¿É¼û£©£»1±¾ÍÅ¶ÓºÍÉÏ¼¶¿É¼û£»2È«¹«Ë¾¿É¼û£»
+        /// ï¿½É¼ï¿½ï¿½ï¿½Î§ï¿½ï¿½0ï¿½Ô¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶Ó¿É¼ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Å¶Óºï¿½ï¿½Ï¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½2È«ï¿½ï¿½Ë¾ï¿½É¼ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int VisibleRange { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -272,20 +272,20 @@ namespace WeProject.Entity
 	public partial class RoleType
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual int RoleTypeId { get; set; }
         /// <summary>
-        /// ½ÇÉ«Ãû³Æ
+        /// ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string RoleTypeName { get; set; }
         /// <summary>
-        /// ½ÇÉ«¼ò³Æ
+        /// ï¿½ï¿½É«ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string RoleTypeShortName { get; set; }
         /// <summary>
-        /// ½ÇÉ«ÃèÊö
+        /// ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string RoleTypeDescription { get; set; }
 	}
@@ -297,56 +297,56 @@ namespace WeProject.Entity
 	public partial class TaskItem
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual long TaskItemId { get; set; }
         /// <summary>
-        /// Ö÷¼üGuid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid TaskItemGuid { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÈÎÎñÃû³Æ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TaskItemName { get; set; }
         /// <summary>
-        /// ¾ÉÈÎÎñÃû³Æ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TaskItemOldName { get; set; }
         /// <summary>
-        /// ¿ªÊ¼Ê±¼ä
+        /// ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? BeginDate { get; set; }
         /// <summary>
-        /// ½áÊøÊ±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? EndDate { get; set; }
         /// <summary>
-        /// ÃèÊö
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Description { get; set; }
         /// <summary>
-        /// ×´Ì¬£º0Õý³££»1ÒÑÉ¾³ýµ½»ØÊÕÕ¾£»2³¹µ×É¾³ý
+        /// ×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// Á¥ÊôÓÚ£º0×Ô¼º£»1ÍÅ¶Ó£»
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½0ï¿½Ô¼ï¿½ï¿½ï¿½1ï¿½Å¶Ó£ï¿½
         /// </summary>
         public virtual int BelongTo { get; set; }
         /// <summary>
-        /// ¿É¼û·¶Î§£º0×Ô¼º¿É¼û£¨±¾ÍÅ¶Ó¿É¼û£©£»1±¾ÍÅ¶ÓºÍÉÏ¼¶¿É¼û£»2È«¹«Ë¾¿É¼û£»
+        /// ï¿½É¼ï¿½ï¿½ï¿½Î§ï¿½ï¿½0ï¿½Ô¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¶Ó¿É¼ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Å¶Óºï¿½ï¿½Ï¼ï¿½ï¿½É¼ï¿½ï¿½ï¿½2È«ï¿½ï¿½Ë¾ï¿½É¼ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int VisibleRange { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -358,56 +358,56 @@ namespace WeProject.Entity
 	public partial class Team
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long TeamId { get; set; }
         /// <summary>
-        /// ¸¸Id
+        /// ï¿½ï¿½Id
         /// </summary>
         public virtual long ParentId { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// Ê÷Â·¾¶£º¶à¸öÓÃ¶ººÅ¼ä¸ô
+        /// ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½Å¼ï¿½ï¿½
         /// </summary>
         public virtual string ParentIds { get; set; }
         /// <summary>
-        /// ÀàÐÍ£º1²¿ÃÅ£»2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ
+        /// ï¿½ï¿½ï¿½Í£ï¿½1ï¿½ï¿½ï¿½Å£ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Id¡¢ÏîÄ¿Id¡¢Èº×éId¡¢ÈÎÎñId
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Idï¿½ï¿½ï¿½ï¿½Ä¿Idï¿½ï¿½Èºï¿½ï¿½Idï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Guid¡¢ÏîÄ¿Guid¡¢Èº×éGuid¡¢ÈÎÎñGuid
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Guidï¿½ï¿½ï¿½ï¿½Ä¿Guidï¿½ï¿½Èºï¿½ï¿½Guidï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ²¿ÃÅÃû³Æ£»ÏîÄ¿Ãû³Æ£»Èº×éÃû³Æ£»ÈÎÎñÃû³Æ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Æ£ï¿½Èºï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string ObjectName { get; set; }
         /// <summary>
-        /// ÅÅÐò
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int Sorting { get; set; }
         /// <summary>
-        /// ²ã¼¶
+        /// ï¿½ã¼¶
         /// </summary>
         public virtual int Depth { get; set; }
         /// <summary>
-        /// ×´Ì¬£º1Õý³££»2É¾³ýµ½»ØÊÕÕ¾£»3³¹µ×É¾³ý
+        /// ×´Ì¬ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -419,44 +419,44 @@ namespace WeProject.Entity
 	public partial class Topic
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual long TopicId { get; set; }
         /// <summary>
-        /// Ö÷¼üGuid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid TopicGuid { get; set; }
         /// <summary>
-        /// ÀàÐÍ£º1²¿ÃÅ£»2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ£»5»°Ìâ£»6ÓÃ»§£»7ÈÕ³Ì£»8ÎÄ¼þ£»
+        /// ï¿½ï¿½ï¿½Í£ï¿½1ï¿½ï¿½ï¿½Å£ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½ï¿½â£»6ï¿½Ã»ï¿½ï¿½ï¿½7ï¿½Õ³Ì£ï¿½8ï¿½Ä¼ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Id¡¢ÏîÄ¿Id¡¢Èº×éId¡¢ÈÎÎñId
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Idï¿½ï¿½ï¿½ï¿½Ä¿Idï¿½ï¿½Èºï¿½ï¿½Idï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Guid¡¢ÏîÄ¿Guid¡¢Èº×éGuid¡¢ÈÎÎñGuid
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Guidï¿½ï¿½ï¿½ï¿½Ä¿Guidï¿½ï¿½Èºï¿½ï¿½Guidï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ±êÌâ
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TopicTitle { get; set; }
         /// <summary>
-        /// ÄÚÈÝ
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TopicContent { get; set; }
         /// <summary>
-        /// °¬ÌØÈË£¬¶à¸öÓÃ¶ººÅ¼ä¸ô
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½Å¼ï¿½ï¿½
         /// </summary>
         public virtual string AtUserId { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -468,40 +468,40 @@ namespace WeProject.Entity
 	public partial class TeamMember
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual long TeamMemberId { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// 1×éÖ¯²¿ÃÅ¡¢2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ
+        /// 1ï¿½ï¿½Ö¯ï¿½ï¿½ï¿½Å¡ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Id¡¢ÏîÄ¿Id¡¢Èº×éId¡¢ÈÎÎñId
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Idï¿½ï¿½ï¿½ï¿½Ä¿Idï¿½ï¿½Èºï¿½ï¿½Idï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Guid¡¢ÏîÄ¿Guid¡¢Èº×éGuid¡¢ÈÎÎñGuid
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Guidï¿½ï¿½ï¿½ï¿½Ä¿Guidï¿½ï¿½Èºï¿½ï¿½Guidï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¹ØÁªµÄÓÃ»§
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
         /// </summary>
         public virtual long UserId { get; set; }
         /// <summary>
-        /// RoleType±íId
+        /// RoleTypeï¿½ï¿½Id
         /// </summary>
         public virtual int RoleTypeId { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -513,24 +513,24 @@ namespace WeProject.Entity
 	public partial class DailyScheduleMember
 	{
         /// <summary>
-        /// ÈÕ³Ì²ÎÓëÈËÖ÷¼ü
+        /// ï¿½Õ³Ì²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long DailyScheduleMemberId { get; set; }
         /// <summary>
-        /// ÈÕ³ÌID
+        /// ï¿½Õ³ï¿½ID
         /// </summary>
         public virtual long? DailyScheduleId { get; set; }
         /// <summary>
-        /// ²ÎÓëÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long? UserId { get; set; }
         /// <summary>
-        /// ´´½¨ÈËID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨ÈÕÆÚ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -542,53 +542,53 @@ namespace WeProject.Entity
 	public partial class Comment
 	{
         /// <summary>
-        /// ×ÔÔöID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long CommentId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷ID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Guid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ¸¸¼¶ID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ParentId { get; set; }
         /// <summary>
-        /// ÆÀÂÛÂ·¾¶ ¶à¸öÒÔ,·Ö¸ô
+        /// ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Ö¸ï¿½
         /// </summary>
         public virtual string ParentIds { get; set; }
         /// <summary>
-        /// ²ã¼¶ Ä¬ÈÏ1
+        /// ï¿½ã¼¶ Ä¬ï¿½ï¿½1
         /// </summary>
         public virtual int Depth { get; set; }
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ÆÀÂÛÈËÓÃ»§ID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual string CommentContent { get; set; }
         /// <summary>
-        /// ÆÀÂÛÄÚÈÝ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string AtUserId { get; set; }
         /// <summary>
-        /// °¬ÌØË­ ¶à¸öÓÃ»§IdÒÔ,·Ö¸ô
+        /// ï¿½ï¿½ï¿½ï¿½Ë­ ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Idï¿½ï¿½,ï¿½Ö¸ï¿½
         /// </summary>
         public virtual bool IsEnable { get; set; }
         /// <summary>
-        /// ÊÇ·ñÉ¾³ý 0:·ñ 1:ÊÇ Ä¬ÈÏ0
+        /// ï¿½Ç·ï¿½É¾ï¿½ï¿½ 0:ï¿½ï¿½ 1:ï¿½ï¿½ Ä¬ï¿½ï¿½0
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -600,28 +600,28 @@ namespace WeProject.Entity
 	public partial class OftenObject
 	{
         /// <summary>
-        /// ×ÔÔöID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long OftenObjectId { get; set; }
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual long UserId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷ID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Guid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -633,24 +633,24 @@ namespace WeProject.Entity
 	public partial class AttachmentTeam
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long AttachmentTeamId { get; set; }
         /// <summary>
-        /// 1×éÖ¯¼Ü¹¹£»2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ
+        /// 1ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½ï¿½ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Id¡¢ÏîÄ¿Id¡¢Èº×éId¡¢ÈÎÎñId
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Idï¿½ï¿½ï¿½ï¿½Ä¿Idï¿½ï¿½Èºï¿½ï¿½Idï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ×éÖ¯¼Ü¹¹Guid¡¢ÏîÄ¿Guid¡¢Èº×éGuid¡¢ÈÎÎñGuid
+        /// ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½Guidï¿½ï¿½ï¿½ï¿½Ä¿Guidï¿½ï¿½Èºï¿½ï¿½Guidï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¸½¼þId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual Guid AttachmentId { get; set; }
         public virtual long CreateUserId { get; set; }
@@ -664,28 +664,28 @@ namespace WeProject.Entity
 	public partial class ObjectTop
 	{
         /// <summary>
-        /// ×ÔÔöID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long ObjectTopId { get; set; }
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual long UserId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷ID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Guid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -697,20 +697,20 @@ namespace WeProject.Entity
 	public partial class AttitudesType
 	{
         /// <summary>
-        /// Ì¬¶ÈÀàÐÍID
+        /// Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual int AttitudesTypeId { get; set; }
         /// <summary>
-        /// Ì¬¶ÈÀàÐÍÃû³Æ
+        /// Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string AttitudesTypeName { get; set; }
         /// <summary>
-        /// Ì¬¶ÈÀàÐÍÍ¼±ê
+        /// Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
         /// </summary>
         public virtual string AttitudesTypeImage { get; set; }
         /// <summary>
-        /// ÊÇ·ñ¿ÉÓÃ 0:²»¿ÉÓÃ 1¿ÉÓÃ Ä¬ÈÏ1
+        /// ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ 0:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ Ä¬ï¿½ï¿½1
         /// </summary>
         public virtual bool IsEnable { get; set; }
 	}
@@ -722,28 +722,28 @@ namespace WeProject.Entity
 	public partial class UserCompany
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long UserCompanyId { get; set; }
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual long UserId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ×´Ì¬£¨0Õý³££¬ÆôÓÃ£»1Ëø¶¨£¬½ûÓÃ£©
+        /// ×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
 	}
@@ -755,40 +755,40 @@ namespace WeProject.Entity
 	public partial class UserFocu
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long UserFocusId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual long UserId { get; set; }
         /// <summary>
-        /// ÀàÐÍ£º1²¿ÃÅ£»2ÏîÄ¿£»3Èº×é£»4ÈÎÎñ£»5»°Ìâ£»6ÓÃ»§
+        /// ï¿½ï¿½ï¿½Í£ï¿½1ï¿½ï¿½ï¿½Å£ï¿½2ï¿½ï¿½Ä¿ï¿½ï¿½3Èºï¿½é£»4ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½ï¿½â£»6ï¿½Ã»ï¿½
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ¶ÔÏóGUID
+        /// ï¿½ï¿½ï¿½ï¿½GUID
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¶ÔÏóID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ÊÇ·ñÒþ²Ø¶¯Ì¬
+        /// ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½Ì¬
         /// </summary>
         public virtual bool IsHide { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -800,44 +800,44 @@ namespace WeProject.Entity
 	public partial class Tag
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long TagId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ±êÇ©×éID
+        /// ï¿½ï¿½Ç©ï¿½ï¿½ID
         /// </summary>
         public virtual long TagGroupId { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ±êÇ©Ãû³Æ
+        /// ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TagName { get; set; }
         /// <summary>
-        /// ±êÇ©ÃèÊö
+        /// ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TagDescription { get; set; }
         /// <summary>
-        /// ±êÇ©ÑùÊ½
+        /// ï¿½ï¿½Ç©ï¿½ï¿½Ê½
         /// </summary>
         public virtual string TagStyle { get; set; }
         /// <summary>
-        /// ÊÇ·ñÉ¾³ý 0:·ñ 1:ÊÇ Ä¬ÈÏ0
+        /// ï¿½Ç·ï¿½É¾ï¿½ï¿½ 0:ï¿½ï¿½ 1:ï¿½ï¿½ Ä¬ï¿½ï¿½0
         /// </summary>
         public virtual bool IsEnable { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -849,44 +849,44 @@ namespace WeProject.Entity
 	public partial class LoginLog
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long LoginId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual int CompanyId { get; set; }
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual string UserId { get; set; }
         /// <summary>
-        /// µÇÂ¼ÀàÐÍ£¨1PCÃÜÂë£¬2PCÉ¨Âë£¬3Î¢ÐÅ£©
+        /// ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Í£ï¿½1PCï¿½ï¿½ï¿½ë£¬2PCÉ¨ï¿½ë£¬3Î¢ï¿½Å£ï¿½
         /// </summary>
         public virtual int LoginType { get; set; }
         /// <summary>
-        /// ÓÃ»§IP
+        /// ï¿½Ã»ï¿½IP
         /// </summary>
         public virtual string UserIP { get; set; }
         /// <summary>
-        /// ²Ù×÷ÏµÍ³ÐÅÏ¢
+        /// ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ï¢
         /// </summary>
         public virtual string OsInfo { get; set; }
         /// <summary>
-        /// ä¯ÀÀÆ÷
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Browser { get; set; }
         /// <summary>
-        /// ÏûÏ¢
+        /// ï¿½ï¿½Ï¢
         /// </summary>
         public virtual string Message { get; set; }
         /// <summary>
-        /// Ô­Òò
+        /// Ô­ï¿½ï¿½
         /// </summary>
         public virtual string Reason { get; set; }
         /// <summary>
-        /// ÖÕ¶ËÉè±¸
+        /// ï¿½Õ¶ï¿½ï¿½è±¸
         /// </summary>
         public virtual string TagEquipment { get; set; }
         /// <summary>
@@ -894,7 +894,7 @@ namespace WeProject.Entity
         /// </summary>
         public virtual string UserAgent { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -906,52 +906,52 @@ namespace WeProject.Entity
 	public partial class Company
 	{
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         [Key]
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ¹«Ë¾Ãû
+        /// ï¿½ï¿½Ë¾ï¿½ï¿½
         /// </summary>
         public virtual string CompanyName { get; set; }
         /// <summary>
-        /// ¹«Ë¾µØÖ·
+        /// ï¿½ï¿½Ë¾ï¿½ï¿½Ö·
         /// </summary>
         public virtual string Address { get; set; }
         /// <summary>
-        /// ¹«Ë¾ÁªÏµµç»°
+        /// ï¿½ï¿½Ë¾ï¿½ï¿½Ïµï¿½ç»°
         /// </summary>
         public virtual string Phone { get; set; }
         /// <summary>
-        /// ¹«Ë¾ÁªÏµÈËÐÕÃû
+        /// ï¿½ï¿½Ë¾ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Linkman { get; set; }
         /// <summary>
-        /// ÓÊÏäºó×º
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½×º
         /// </summary>
         public virtual string EmailSuffix { get; set; }
         /// <summary>
-        /// ¹«Ë¾logo
+        /// ï¿½ï¿½Ë¾logo
         /// </summary>
         public virtual string Logo { get; set; }
         /// <summary>
-        /// ×´Ì¬£¨0Õý³££¬ÆôÓÃ£»1Ëø¶¨£¬½ûÓÃ£©
+        /// ×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
         /// <summary>
-        /// ¸üÐÂÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long? UpdateUserId { get; set; }
         /// <summary>
-        /// ¸üÐÂÊ±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? UpdateDate { get; set; }
 	}
@@ -963,36 +963,36 @@ namespace WeProject.Entity
 	public partial class TagGroup
 	{
         /// <summary>
-        /// ±êÇ©×éID
+        /// ï¿½ï¿½Ç©ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long TagGroupId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ±êÇ©×éÃû³Æ
+        /// ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TagGroupName { get; set; }
         /// <summary>
-        /// ±êÇ©×éÃèÊö
+        /// ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TagGroupDescription { get; set; }
         /// <summary>
-        /// ÊÇ·ñÉ¾³ý 0:·ñ 1:ÊÇ
+        /// ï¿½Ç·ï¿½É¾ï¿½ï¿½ 0:ï¿½ï¿½ 1:ï¿½ï¿½
         /// </summary>
         public virtual bool IsEnable { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1004,24 +1004,24 @@ namespace WeProject.Entity
 	public partial class CompanyInviteCode
 	{
         /// <summary>
-        /// ÑûÇëÂëID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual Guid CompanyInviteCodeId { get; set; }
         /// <summary>
-        /// ÑûÇëµÄcompanyId
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½companyId
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ³¬ÆÚÊ±¼ä(Ê§Ð§Ê±¼ä)
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½(Ê§Ð§Ê±ï¿½ï¿½)
         /// </summary>
         public virtual DateTime ExpireDate { get; set; }
         /// <summary>
-        /// ´´½¨ÈËID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1033,52 +1033,52 @@ namespace WeProject.Entity
 	public partial class Organization
 	{
         /// <summary>
-        /// Ö÷¼üId
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         [Key]
         public virtual long OrganizationId { get; set; }
         /// <summary>
-        /// Ö÷¼üGuid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid OrganizationGuid { get; set; }
         /// <summary>
-        /// Ãû³Æ
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string OrganizationName { get; set; }
         /// <summary>
-        /// Ô­Ãû³Æ
+        /// Ô­ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string OrganizationOldName { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÅÅÐò
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int Sorting { get; set; }
         /// <summary>
-        /// ¼¶±ð
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int Depth { get; set; }
         /// <summary>
-        /// ×´Ì¬£¨0Õý³££¬ÆôÓÃ£»1Í£ÓÃ£¬½ûÓÃ£©
+        /// ×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½1Í£ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
         /// <summary>
-        /// ×î½ü¸üÐÂÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long? UpdateUserId { get; set; }
         /// <summary>
-        /// ×î½ü¸üÐÂÊ±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? UpdateDate { get; set; }
 	}
@@ -1090,40 +1090,40 @@ namespace WeProject.Entity
 	public partial class ChangeHistory
 	{
         /// <summary>
-        /// ×ÔÔöID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long ChangeHistoryId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷ID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Guid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ±ä¸üÀàÐÍ 1:ÐÕÃû
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1:ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int ChangeTypeId { get; set; }
         /// <summary>
-        /// ±ä¸üÇ°
+        /// ï¿½ï¿½ï¿½Ç°
         /// </summary>
         public virtual string BeforeChange { get; set; }
         /// <summary>
-        /// ±ä¸üºó
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string AfterChange { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1135,68 +1135,68 @@ namespace WeProject.Entity
 	public partial class User
 	{
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         [Key]
         public virtual long UserId { get; set; }
         /// <summary>
-        /// ÖÐÎÄÃû
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string ChnName { get; set; }
         /// <summary>
-        /// Ó¢ÎÄÃû
+        /// Ó¢ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string EngName { get; set; }
         /// <summary>
-        /// ÓÊÏä
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Email { get; set; }
         /// <summary>
-        /// ÒÆ¶¯µç»°
+        /// ï¿½Æ¶ï¿½ï¿½ç»°
         /// </summary>
         public virtual string PhoneNumber { get; set; }
         /// <summary>
-        /// ¹Ì¶¨µç»°
+        /// ï¿½Ì¶ï¿½ï¿½ç»°
         /// </summary>
         public virtual string TelephoneNumber { get; set; }
         /// <summary>
-        /// ÃÜÂë
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Password { get; set; }
         /// <summary>
-        /// ×´Ì¬£¨0Õý³££¬ÆôÓÃ£»1Ëø¶¨£¬½ûÓÃ£©
+        /// ×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ÐÔ±ð(1ÄÐ2Å®)
+        /// ï¿½Ô±ï¿½(1ï¿½ï¿½2Å®)
         /// </summary>
         public virtual int? Gender { get; set; }
         /// <summary>
-        /// µØÖ·
+        /// ï¿½ï¿½Ö·
         /// </summary>
         public virtual string Address { get; set; }
         /// <summary>
-        /// Ð¡Í·Ïñ
+        /// Ð¡Í·ï¿½ï¿½
         /// </summary>
         public virtual string AvatarSmall { get; set; }
         /// <summary>
-        /// ÖÐÍ·Ïñ
+        /// ï¿½ï¿½Í·ï¿½ï¿½
         /// </summary>
         public virtual string AvatarMiddle { get; set; }
         /// <summary>
-        /// ´óÍ·Ïñ
+        /// ï¿½ï¿½Í·ï¿½ï¿½
         /// </summary>
         public virtual string AvatarBig { get; set; }
         /// <summary>
-        /// Í·ÏñÔ­Í¼
+        /// Í·ï¿½ï¿½Ô­Í¼
         /// </summary>
         public virtual string AvatarOriginal { get; set; }
         /// <summary>
-        /// qqºÅÂë
+        /// qqï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long? QQ { get; set; }
         /// <summary>
-        /// Î¢²©Ãû
+        /// Î¢ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string WeiBo { get; set; }
         /// <summary>
@@ -1204,31 +1204,31 @@ namespace WeProject.Entity
         /// </summary>
         public virtual string LinkedIn { get; set; }
         /// <summary>
-        /// Î¢ÐÅÃû
+        /// Î¢ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string WeChatName { get; set; }
         /// <summary>
-        /// Î¢ÐÅêÇ³Æ
+        /// Î¢ï¿½ï¿½ï¿½Ç³ï¿½
         /// </summary>
         public virtual string WeChatNick { get; set; }
         /// <summary>
-        /// ³öÉúÈÕÆÚ
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual DateTime? Birthdate { get; set; }
         /// <summary>
-        /// ×¢²áÊ±¼ä
+        /// ×¢ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? RegistTime { get; set; }
         /// <summary>
-        /// ÊÇ·ñ¼¤»î
+        /// ï¿½Ç·ñ¼¤»ï¿½
         /// </summary>
         public virtual bool IsActive { get; set; }
         /// <summary>
-        /// ×¢²ácode
+        /// ×¢ï¿½ï¿½code
         /// </summary>
         public virtual string RegCode { get; set; }
         /// <summary>
-        /// ÖØÖÃcode
+        /// ï¿½ï¿½ï¿½ï¿½code
         /// </summary>
         public virtual string ResetCode { get; set; }
         /// <summary>
@@ -1236,15 +1236,15 @@ namespace WeProject.Entity
         /// </summary>
         public virtual string UnionId { get; set; }
         /// <summary>
-        /// ¿ª·ÅÆ½Ì¨openid
+        /// ï¿½ï¿½ï¿½ï¿½Æ½Ì¨openid
         /// </summary>
         public virtual string OpenPlatformOpenId { get; set; }
         /// <summary>
-        /// ¹«ÖÚÆ½Ì¨openid
+        /// ï¿½ï¿½ï¿½ï¿½Æ½Ì¨openid
         /// </summary>
         public virtual string WechatOpenId { get; set; }
         /// <summary>
-        /// ¸üÐÂÊ±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? UpdateDate { get; set; }
         public virtual DateTime CreateDate { get; set; }
@@ -1257,32 +1257,32 @@ namespace WeProject.Entity
 	public partial class UserOrganization
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long UserOrganizationId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual long UserId { get; set; }
         /// <summary>
-        /// ×éÖ¯ID
+        /// ï¿½ï¿½Ö¯ID
         /// </summary>
         public virtual long OrganizationId { get; set; }
         /// <summary>
-        /// ×éÖ¯GUID
+        /// ï¿½ï¿½Ö¯GUID
         /// </summary>
         public virtual Guid OrganizationGuid { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1294,44 +1294,44 @@ namespace WeProject.Entity
 	public partial class Position
 	{
         /// <summary>
-        /// ¸ÚÎ»ID
+        /// ï¿½ï¿½Î»ID
         /// </summary>
         [Key]
         public virtual long PositionId { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ¸ÚÎ»Ãû³Æ
+        /// ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string PositionName { get; set; }
         /// <summary>
-        /// ÃèÊö
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Description { get; set; }
         /// <summary>
-        /// ±¸×¢
+        /// ï¿½ï¿½×¢
         /// </summary>
         public virtual string Remark { get; set; }
         /// <summary>
-        /// ×´Ì¬(0ÆôÓÃ,1½ûÓÃ)
+        /// ×´Ì¬(0ï¿½ï¿½ï¿½ï¿½,1ï¿½ï¿½ï¿½ï¿½)
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
         /// <summary>
-        /// ¸üÐÂÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long? UpdateUserId { get; set; }
         /// <summary>
-        /// ¸üÐÂÊ±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? UpdateDate { get; set; }
 	}
@@ -1343,32 +1343,32 @@ namespace WeProject.Entity
 	public partial class UserPosition
 	{
         /// <summary>
-        /// Ö÷¼ü
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long UserPositionId { get; set; }
         /// <summary>
-        /// ¹«Ë¾ID
+        /// ï¿½ï¿½Ë¾ID
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ÓÃ»§ID
+        /// ï¿½Ã»ï¿½ID
         /// </summary>
         public virtual long UserId { get; set; }
         /// <summary>
-        /// ×éÖ¯ID
+        /// ï¿½ï¿½Ö¯ID
         /// </summary>
         public virtual long OrganizationId { get; set; }
         /// <summary>
-        /// ¸ÚÎ»ID
+        /// ï¿½ï¿½Î»ID
         /// </summary>
         public virtual long PositionId { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1380,72 +1380,72 @@ namespace WeProject.Entity
 	public partial class DailySchedule
 	{
         /// <summary>
-        /// ÈÕ³ÌID
+        /// ï¿½Õ³ï¿½ID
         /// </summary>
         [Key]
         public virtual long DailyScheduleId { get; set; }
         /// <summary>
-        /// ¹«Ë¾Id
+        /// ï¿½ï¿½Ë¾Id
         /// </summary>
         public virtual long CompanyId { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍid
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½id
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ¶ÔÏóID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ¶ÔÏóGUID
+        /// ï¿½ï¿½ï¿½ï¿½GUID
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ÈÕ³ÌÃû³Æ
+        /// ï¿½Õ³ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string DailyScheduleName { get; set; }
         /// <summary>
-        /// Ô­Ãû³Æ
+        /// Ô­ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string DailyScheduleOldName { get; set; }
         /// <summary>
-        /// ¿ªÊ¼Ê±¼ä
+        /// ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? BeginTime { get; set; }
         /// <summary>
-        /// ½áÊøÊ±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? EndTime { get; set; }
         /// <summary>
-        /// ÃèÊö
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string Description { get; set; }
         /// <summary>
-        /// ÊÇ·ñÈ«Ìì
+        /// ï¿½Ç·ï¿½È«ï¿½ï¿½
         /// </summary>
         public virtual bool? IsAllDate { get; set; }
         /// <summary>
-        /// ÌáÐÑÊ±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? ReminderTime { get; set; }
         /// <summary>
-        /// ÊÇ·ñÑ­»·ÌáÐÑ
+        /// ï¿½Ç·ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual bool? IsCycle { get; set; }
         /// <summary>
-        /// 0Î´¿ªÊ¼£¬1½øÐÐÖÐ£¬2ÒÑÍê³É
+        /// 0Î´ï¿½ï¿½Ê¼ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ÊÇ·ñ¿ÉÓÃ
+        /// ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual bool IsEnable { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1457,32 +1457,32 @@ namespace WeProject.Entity
 	public partial class ObjectTag
 	{
         /// <summary>
-        /// ×ÔÔöID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long ObjectTagId { get; set; }
         /// <summary>
-        /// ±êÇ©ID
+        /// ï¿½ï¿½Ç©ID
         /// </summary>
         public virtual long TagId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷ID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Guid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual int ObjectTypeId { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1494,28 +1494,28 @@ namespace WeProject.Entity
 	public partial class ProjectTemplate
 	{
         /// <summary>
-        /// Ä£°åÖ÷¼ü
+        /// Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         [Key]
         public virtual long TemplateId { get; set; }
         /// <summary>
-        /// Ä£°åÀàÐÍ£¨0ÏµÍ³£¬1ÓÃ»§£©
+        /// Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½0ÏµÍ³ï¿½ï¿½1ï¿½Ã»ï¿½ï¿½ï¿½
         /// </summary>
         public virtual byte TemplateType { get; set; }
         /// <summary>
-        /// Ä£°åÃû³Æ
+        /// Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TemplateName { get; set; }
         /// <summary>
-        /// Ä£°å¶ÔÏó
+        /// Ä£ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual string TemplateJson { get; set; }
         /// <summary>
-        /// ±¸×¢
+        /// ï¿½ï¿½×¢
         /// </summary>
         public virtual string Remark { get; set; }
         /// <summary>
-        /// Ä£°åÓµÓÐÕß
+        /// Ä£ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long BelongUserId { get; set; }
         /// <summary>
@@ -1523,11 +1523,11 @@ namespace WeProject.Entity
         /// </summary>
         public virtual int Status { get; set; }
         /// <summary>
-        /// ´´½¨ÈË
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1539,44 +1539,44 @@ namespace WeProject.Entity
 	public partial class DynamicNotice
 	{
         /// <summary>
-        /// ×ÔÔöID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long DynamicNoticesId { get; set; }
         /// <summary>
-        /// ¶¯Ì¬·¢ÆðÈËId
+        /// ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long CreateUserId { get; set; }
         /// <summary>
-        /// ¶¯Ì¬Id
+        /// ï¿½ï¿½Ì¬Id
         /// </summary>
         public virtual long DynamicMsgId { get; set; }
         /// <summary>
-        /// ¶¯Ì¬½ÓÊÕÈËId
+        /// ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long ReceiverUserId { get; set; }
         /// <summary>
-        /// ÏÔÊ¾ÇøÓò £¨1.¸öÈË¹¤×÷Ì¨ 2.ÏîÄ¿ 3.Èº×é 4.²¿ÃÅ£©
+        /// ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½1.ï¿½ï¿½ï¿½Ë¹ï¿½ï¿½ï¿½Ì¨ 2.ï¿½ï¿½Ä¿ 3.Èºï¿½ï¿½ 4.ï¿½ï¿½ï¿½Å£ï¿½
         /// </summary>
         public virtual int DynamicShowArea { get; set; }
         /// <summary>
-        /// ÊÇ·ñÒÑ¶Á 0:Î´¶Á 1:ÒÑ¶Á Ä¬ÈÏ0
+        /// ï¿½Ç·ï¿½ï¿½Ñ¶ï¿½ 0:Î´ï¿½ï¿½ 1:ï¿½Ñ¶ï¿½ Ä¬ï¿½ï¿½0
         /// </summary>
         public virtual bool IsRead { get; set; }
         /// <summary>
-        /// ÊÇ·ñÓÐÐ§ 0:ÎÞÐ§ 1:ÓÐÐ§ Ä¬ÈÏ1
+        /// ï¿½Ç·ï¿½ï¿½ï¿½Ð§ 0:ï¿½ï¿½Ð§ 1:ï¿½ï¿½Ð§ Ä¬ï¿½ï¿½1
         /// </summary>
         public virtual bool IsEnable { get; set; }
         /// <summary>
-        /// ÊÇ·ñÍÆËÍ 0:²»ÍÆËÍ 1:ÍÆËÍ Ä¬ÈÏ1
+        /// ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ 0:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1:ï¿½ï¿½ï¿½ï¿½ Ä¬ï¿½ï¿½1
         /// </summary>
         public virtual bool IsPush { get; set; }
         /// <summary>
-        /// ¶ÁÈ¡Ê±¼ä
+        /// ï¿½ï¿½È¡Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime? ReadDate { get; set; }
         /// <summary>
-        /// ´´½¨Ê±¼ä
+        /// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
         /// </summary>
         public virtual DateTime CreateDate { get; set; }
 	}
@@ -1588,28 +1588,28 @@ namespace WeProject.Entity
 	public partial class Attitude
 	{
         /// <summary>
-        /// ×ÔÔöID
+        /// ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         [Key]
         public virtual long AttitudesId { get; set; }
         /// <summary>
-        /// ¶ÔÏóÀàÐÍID
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
         /// </summary>
         public virtual long ObjectTypeId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Id
+        /// ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual long ObjectId { get; set; }
         /// <summary>
-        /// ÈÝÆ÷Guid
+        /// ï¿½ï¿½ï¿½ï¿½Guid
         /// </summary>
         public virtual Guid ObjectGuid { get; set; }
         /// <summary>
-        /// Ì¬¶ÈÀàÐÍId
+        /// Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Id
         /// </summary>
         public virtual int AttitudesTypeId { get; set; }
         /// <summary>
-        /// ÊýÁ¿
+        /// ï¿½ï¿½ï¿½ï¿½
         /// </summary>
         public virtual int Number { get; set; }
 	}
