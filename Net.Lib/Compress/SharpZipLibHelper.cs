@@ -5,6 +5,22 @@ using System.IO;
 
 public class SharpZipLibHelper
 {
+    /// <summary>
+    ///　压缩文件
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="zipPath"></param>
+    /// <param name="fileName">压缩包里的文件名</param>
+    public static void CompressFile(string path, string zipPath, string fileName)
+    {
+        using (var zip = ZipFile.Create(zipPath))
+        {
+            zip.BeginUpdate();
+            zip.Add(path, fileName);
+            zip.CommitUpdate();
+        }
+    }
+
     #region 压缩文件夹
     /// <summary>
     ///　压缩文件夹
