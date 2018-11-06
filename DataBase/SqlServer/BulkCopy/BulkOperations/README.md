@@ -1,7 +1,7 @@
 ## 批量插入(批量添加)/批量更新/批量删除：BulkOperations
 
 
-> [Z.BulkOperations](https://www.nuget.org/packages/Z.BulkOperations/) / [doc](https://bulk-operations.net/) / [github](https://github.com/zzzprojects/Bulk-Operations)
+> [Z.BulkOperations](https://www.nuget.org/packages/Z.BulkOperations/) / [doc](https://bulk-operations.net/) / [github](https://github.com/zzzprojects/Bulk-Operations) (付费)
 
 > SQL Server, SQL Azure, SQL Compact, MySQL and SQLite.
 
@@ -23,3 +23,4 @@ Db<Demo>(db =>
     //删除
     //db.BulkDelete(items);
 });
+
