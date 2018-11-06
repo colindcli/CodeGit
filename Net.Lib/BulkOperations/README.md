@@ -5,7 +5,7 @@
 
 > SQL Server, SQL Azure, SQL Compact, MySQL and SQLite.
 
-> 调用方法：
+> 调用方法：RepositoryBulkBase.cs
 
 Db<Demo>(db =>
 {
