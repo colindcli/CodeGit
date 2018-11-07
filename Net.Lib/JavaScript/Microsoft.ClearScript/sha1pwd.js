@@ -84,8 +84,8 @@ e.a = {
                 return l(a(d(e = t), e.length * r));
                 var e
             },
-            this.encodePsw = function (e) {
-                var n = (new Date).getTime();
+            this.encodePsw = function (e, time) {
+                var n = time || (new Date).getTime();
                 return {
                     Salt: n,
                     Token: t.encodeSha1(t.encodeSha1(e) + n)
@@ -94,7 +94,7 @@ e.a = {
     }
 }
 
-window.get = function get(str) {
-    var obj = (new e.a.Encode).encodePsw(str);
+window.get = function get(str, time) {
+    var obj = (new e.a.Encode).encodePsw(str, time);
     return JSON.stringify(obj);
 }
