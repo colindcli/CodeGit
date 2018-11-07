@@ -94,7 +94,7 @@ e.a = {
     }
 }
 
-function get(str) {
+window.get = function get(str) {
     var obj = (new e.a.Encode).encodePsw(str);
     return JSON.stringify(obj);
 }
