@@ -118,6 +118,8 @@
 - md5加密：[JavaScript-MD5](https://github.com/blueimp/JavaScript-MD5) MIT  (注：.Net use EasyEncryption)
 - base64加密：[js-base64](https://github.com/dankogai/js-base64) BSD3
 - 地图：[jvectormap](https://github.com/bjornd/jvectormap) / [demo](http://jvectormap.com/examples/world-gdp/) GPL
+- 识别移动端：[isMobile](https://github.com/kaimallea/isMobile)
+- UserAgent解析库：[ua-device](https://github.com/fex-team/ua-device) BSD3
 
 
 > 邮件
