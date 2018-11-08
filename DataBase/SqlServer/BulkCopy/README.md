@@ -1,5 +1,6 @@
 ## 批量插入数据
 
+- 批量添加修改删除：[ExecuteSqlBulk](https://www.nuget.org/packages/ExecuteSqlBulk/) / [doc](https://github.com/colindcli/ExecuteSqlBulk) MIT
 - 批量更新数据：[Z.BulkOperations](https://www.nuget.org/packages/Z.BulkOperations/) [推荐收费]
 - 批量更新数据：[SqlBulkTools](https://www.nuget.org/packages/SqlBulkTools.NetStandard/) / [doc](https://github.com/olegil/SqlBulkTools) MIT
 - List批量写入：[SimpleSqlBulkCopy](https://github.com/cdemi/SimpleSqlBulkCopy) / [nuget](https://www.nuget.org/packages/SimpleSqlBulkCopy/) MIT
