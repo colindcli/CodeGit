@@ -31,23 +31,17 @@ public class SafeCodeHelper
         var image = new Bitmap(iwidth, 25);
         var g = Graphics.FromImage(image);
         g.Clear(Color.White);
-        //定义颜色
-        Color[] c = { Color.DarkBlue, Color.DarkOrange, Color.DarkRed, Color.DarkViolet, Color.Chartreuse, Color.DarkTurquoise, Color.Black };
-        var rand = new Random();
 
-        //输出不同字体和颜色的验证码字符
+        //定义颜色
+        var rand = new Random();
+        var b = new SolidBrush(Color.FromArgb(rand.Next(0, 200), rand.Next(0, 200), rand.Next(0, 200)));
+        
         for (var i = 0; i < checkCode.Length; i++)
         {
-            var cindex = rand.Next(c.Length);
             var f = new Font(FontFamily.GenericSansSerif, 14, FontStyle.Italic);
-            var b = new SolidBrush(c[cindex]);
             g.DrawString(checkCode.Substring(i, 1), f, b, (i * 14), 0, StringFormat.GenericDefault);
         }
-
-        //画一个边框
-        //g.DrawRectangle(new Pen(Color.Black, 0), 0, 0, image.Width - 1, image.Height - 1);
-
-        //输出到浏览器
+        
         var stream = new MemoryStream();
         image.Save(stream, ImageFormat.Jpeg);
         ms = stream;
