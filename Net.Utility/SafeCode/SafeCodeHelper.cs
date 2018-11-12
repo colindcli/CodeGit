@@ -2,27 +2,15 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Web.Mvc;
 
-/// <summary>SafeCode
-/// 验证码
-/// </summary>
-public class SafeCodeController : Controller
+public class SafeCodeHelper
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    [HttpGet]
-    public void Index()
-    {
-        var safeCode = GenerateSafeCode();
-        Session["SafeCode"] = safeCode;
-    }
-
     /// <summary>
     /// 生成验证码
     /// </summary>
-    private string GenerateSafeCode()
+    /// <param name="ms"></param>
+    /// <returns></returns>
+    public static string GenerateSafeCode(out MemoryStream ms)
     {
         var chars = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ".ToCharArray();
         var random = new Random();
@@ -60,13 +48,10 @@ public class SafeCodeController : Controller
         //g.DrawRectangle(new Pen(Color.Black, 0), 0, 0, image.Width - 1, image.Height - 1);
 
         //输出到浏览器
-        using (var ms = new MemoryStream())
-        {
-            image.Save(ms, ImageFormat.Jpeg);
-            Response.ClearContent();
-            Response.ContentType = "image/Jpeg";
-            Response.BinaryWrite(ms.ToArray());
-        }
+        var stream = new MemoryStream();
+        image.Save(stream, ImageFormat.Jpeg);
+        ms = stream;
+        ms.Position = 0;
         g.Dispose();
         image.Dispose();
 
