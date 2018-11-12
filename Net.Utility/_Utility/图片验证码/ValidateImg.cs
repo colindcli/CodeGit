@@ -1,62 +1,75 @@
 using System;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Web.Mvc;
 
-/// <summary>
-/// 验证码 继承 System.Web.UI.Page ，Session["xk_validate_code"]
+/// <summary>SafeCode
+/// 验证码
 /// </summary>
-public class ValidateImg : System.Web.UI.Page
+public class SafeCodeController : Controller
 {
-    private void Page_Load(object sender, EventArgs e)
+    /// <summary>
+    /// 
+    /// </summary>
+    [HttpGet]
+    public void Index()
     {
-        char[] chars = "023456789".ToCharArray();
-        System.Random random = new Random();
+        var safeCode = GenerateSafeCode();
+        Session["SafeCode"] = safeCode;
+    }
 
-        string validateCode = string.Empty;
-        for (int i = 0; i < 4; i++)
+    /// <summary>
+    /// 生成验证码
+    /// </summary>
+    private string GenerateSafeCode()
+    {
+        var chars = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ".ToCharArray();
+        var random = new Random();
+
+        var checkCode = string.Empty;
+        for (var i = 0; i < 4; i++)
         {
-            char rc = chars[random.Next(0, chars.Length)];
-            if (validateCode.IndexOf(rc) > -1)
+            var rc = chars[random.Next(0, chars.Length)];
+            if (checkCode.IndexOf(rc) > -1)
             {
                 i--;
                 continue;
             }
-            validateCode += rc;
+            checkCode += rc;
         }
-        Session["xk_validate_code"] = validateCode;
-        CreateImage(validateCode);
-    }
-    /// <summary>
-    /// 创建图片
-    /// </summary>
-    /// <param name="checkCode"></param>
-    private void CreateImage(string checkCode)
-    {
-        int iwidth = (int)(checkCode.Length * 11);
-        System.Drawing.Bitmap image = new System.Drawing.Bitmap(iwidth, 19);
-        Graphics g = Graphics.FromImage(image);
+
+        var iwidth = checkCode.Length * 17;
+        var image = new Bitmap(iwidth, 25);
+        var g = Graphics.FromImage(image);
         g.Clear(Color.White);
         //定义颜色
-        Color[] c = { Color.Black, Color.Red, Color.DarkBlue, Color.Green, Color.Chocolate, Color.Brown, Color.DarkCyan, Color.Purple };
-        Random rand = new Random();
+        Color[] c = { Color.DarkBlue, Color.DarkOrange, Color.DarkRed, Color.DarkViolet, Color.Chartreuse, Color.DarkTurquoise, Color.Black };
+        var rand = new Random();
 
         //输出不同字体和颜色的验证码字符
-        for (int i = 0; i < checkCode.Length; i++)
+        for (var i = 0; i < checkCode.Length; i++)
         {
-            int cindex = rand.Next(7);
-            Font f = new System.Drawing.Font("Microsoft Sans Serif", 11);
-            Brush b = new System.Drawing.SolidBrush(c[cindex]);
-            g.DrawString(checkCode.Substring(i, 1), f, b, (i * 10) + 1, 0, StringFormat.GenericDefault);
+            var cindex = rand.Next(c.Length);
+            var f = new Font(FontFamily.GenericSansSerif, 14, FontStyle.Italic);
+            var b = new SolidBrush(c[cindex]);
+            g.DrawString(checkCode.Substring(i, 1), f, b, (i * 14), 0, StringFormat.GenericDefault);
         }
+
         //画一个边框
-        g.DrawRectangle(new Pen(Color.Black, 0), 0, 0, image.Width - 1, image.Height - 1);
+        //g.DrawRectangle(new Pen(Color.Black, 0), 0, 0, image.Width - 1, image.Height - 1);
 
         //输出到浏览器
-        System.IO.MemoryStream ms = new System.IO.MemoryStream();
-        image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-        Response.ClearContent();
-        Response.ContentType = "image/Jpeg";
-        Response.BinaryWrite(ms.ToArray());
+        using (var ms = new MemoryStream())
+        {
+            image.Save(ms, ImageFormat.Jpeg);
+            Response.ClearContent();
+            Response.ContentType = "image/Jpeg";
+            Response.BinaryWrite(ms.ToArray());
+        }
         g.Dispose();
         image.Dispose();
+
+        return checkCode;
     }
 }
