@@ -1,5 +1,4 @@
 //var ip = Request?.ServerVariables?.Get("REMOTE_ADDR");
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,34 +9,30 @@ using System.Threading.Tasks;
 /// </summary>
 public class BlackIpHelper
 {
-    /// <summary>
-    /// 启用拦截ip
-    /// </summary>
-    private static readonly bool InterceptIp = true;
     private static readonly int Seconds = 60;
     private static readonly List<Ips> BlackIpLists = new List<Ips>();
     private static readonly List<Ips> IpLists = new List<Ips>();
 
     /// <summary>
-    /// 
+    /// 是否机器人Ip
     /// </summary>
     /// <param name="ip"></param>
     /// <returns></returns>
-    public static bool IsRobot(string ip)
+    public static bool IsRobotIp(string ip)
     {
-        if (!InterceptIp)
+        if (!Config.InterceptIp)
         {
-            return true;
+            return false;
         }
 
         if (string.IsNullOrWhiteSpace(ip))
         {
-            return false;
+            return true;
         }
 
         if (BlackIpLists.Exists(p => p.Ip.Equals(ip)))
         {
-            return false;
+            return true;
         }
 
         var item = new Ips()
@@ -65,10 +60,10 @@ public class BlackIpHelper
         if (total > Seconds)
         {
             BlackIpLists.Add(item);
-            return false;
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     public class Ips
