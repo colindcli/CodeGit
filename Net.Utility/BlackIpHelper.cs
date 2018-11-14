@@ -23,11 +23,6 @@ public class BlackIpHelper
     /// <returns></returns>
     public static bool IsRobotIp(string ip, string userAgent)
     {
-        if (!Config.InterceptIp)
-        {
-            return false;
-        }
-
         if (string.IsNullOrWhiteSpace(ip) || string.IsNullOrWhiteSpace(userAgent))
         {
             return true;
@@ -89,5 +84,5 @@ var userAgent = Request?.UserAgent;
 var b = BlackIpHelper.IsRobotIp(ip, userAgent);
 if (b)
 {
-    return Content($"他强由他强，清风拂山冈。他横任他横，明月照大江。", "text/html", Encoding.UTF8);
+    return Content($"您太敬业了，休息一下吧！", "text/html", Encoding.UTF8);
 }
