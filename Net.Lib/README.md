@@ -26,6 +26,12 @@
 - Base64Url: [Base64Url](https://www.nuget.org/packages/Base64Url/) / [doc](https://github.com/chaowlert/base64url) MIT
 - 转文件大小：[FileSize](https://www.nuget.org/packages/FileSize/) / [nuget](https://github.com/StevePotter/FileSize) MIT
 - 解码条形码：[ZXing.Net](https://github.com/micjahn/ZXing.Net) Apache2.0
+- qq机器人: [Newbe.Mahua.Framework](https://github.com/newbe36524/Newbe.Mahua.Framework)
+- 钉钉群机器人: [DingtalkChatbotSdk](https://github.com/yuzd/DingtalkChatbotSdk)
+- 微信SDK: [weixinSDK](https://github.com/night-king/weixinSDK) / [doc](https://github.com/night-king/weixinSDK/wiki/Get-Started) / [doc](http://weixinsdk.net/)
+- 微信SDK: [WeiXinSDK](https://github.com/RabbitTeam/WeiXinSDK)
+- PaypalSDK: [PayPal-NET-SDK](https://github.com/paypal/PayPal-NET-SDK) / [doc](https://developer.paypal.com/docs/api/overview/)
+- AWS SDK: [aws-sdk-net](https://github.com/aws/aws-sdk-net) / [doc](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/Index.html)
 
 
 > 压缩
