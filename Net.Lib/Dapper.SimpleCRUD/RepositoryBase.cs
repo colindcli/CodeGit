@@ -99,9 +99,9 @@ public abstract class RepositoryBase
         return Db(db => db.GetList<T>(whereConditions).ToList());
     }
 
-    public Task<IEnumerable<T>> GetListAsync<T>(object whereConditions = null)
+    public Task<List<T>> GetListAsync<T>(object whereConditions = null)
     {
-        return Task.Run(() => Db(db => db.GetList<T>(whereConditions)));
+        return Task.Run(() => Db(db => db.GetList<T>(whereConditions).ToList()));
     }
 
     public int Update<T>(T m)
