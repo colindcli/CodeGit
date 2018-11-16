@@ -20,3 +20,10 @@ public static IEnumerable<TResult> LeftJoin<TSource, TInner, TKey, TResult>(this
                 from left in joinData.DefaultIfEmpty()
                 select result(s, left);
         }
+
+
+//list2的key值赋值给list1的key值
+var rows = from a1 in list1
+            join a2 in list2 on a1.Id equals a2.Id into temp
+            let a = a1.Key = temp.FirstOrDefault()?.Key
+            select a1;
