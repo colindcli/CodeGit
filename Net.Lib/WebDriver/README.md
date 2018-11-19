@@ -1,4 +1,4 @@
-## WebDriver Net截图
+## WebDriver Net网页截图
 
 
 > 安装插件

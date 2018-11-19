@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 
+//截图
 namespace ConsoleApp
 {
     internal class Program
