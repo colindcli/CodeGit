@@ -1,4 +1,4 @@
-## Chrome开发
+## Chrome插件
 
 - Chrome脚本注入：Tampermonkey
 - 捕捉网页截图 - FireShot: [chorme](https://download.csdn.net/download/winsty2008/10467191)
@@ -9,7 +9,9 @@
 - JSONView：[JSONView-for-Chrome](https://github.com/gildas-lormeau/JSONView-for-Chrome)
 - Axure RP Extension for Chrome
 - [ReplaceGoogleCDN](https://github.com/colindcli/ReplaceGoogleCDN)
-- [Save All Resources](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb)
+- 保存网页：[Save All Resources](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb)
+- 响应式网站查看工具：[Mobile/Responsive Web Design Tester](https://chrome.google.com/webstore/detail/mobileresponsive-web-desi/elmekokodcohlommfikpmojheggnbelo)
+
 
 注：如果chrome商店下载不了，请使用QQ浏览器。
 

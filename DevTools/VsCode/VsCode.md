@@ -1,4 +1,4 @@
-## VS Code插件
+## VSCode插件
 
 系统目录: C:\Users\用户\.vscode
 配置文件: VsCode/settings.json
@@ -49,6 +49,8 @@
 - console-snippets: cl or clog
 - javascript console utils
 
+- px to rem
+- px2rem
 - Auto px2rem
 - Auto Scroll
 - html to javascript string

@@ -120,6 +120,7 @@
 - 地图：[jvectormap](https://github.com/bjornd/jvectormap) / [demo](http://jvectormap.com/examples/world-gdp/) GPL
 - 识别移动端：[isMobile](https://github.com/kaimallea/isMobile)
 - UserAgent解析库：[ua-device](https://github.com/fex-team/ua-device) BSD3
+- 响应式导航：[responsive-nav.js](https://github.com/viljamis/responsive-nav.js) / [demo](http://responsive-nav.com/) MIT
 
 
 > 邮件
