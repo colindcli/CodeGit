@@ -67,7 +67,7 @@
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
 - 确认对话框：[jquery-confirm](https://github.com/craftpip/jquery-confirm) / [demo](http://craftpip.github.io/jquery-confirm/) MIT
 - 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
-- 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) / [demo: demo/MonacoEditor/README.md] MIT
+- 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) / [demo: demo/MonacoEditor/README.md] / [eg.](https://github.com/Microsoft/monaco-editor-samples/) MIT
 - 在线编辑器：[/CodeMirror](https://github.com/codemirror/CodeMirror) / [doc/demo](http://codemirror.net/) MIT
 - 代码高亮：[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) MIT
 - 编辑器高亮：[highlight.js](https://github.com/highlightjs/highlight.js) / [demo](https://highlightjs.org/) / [doc](https://highlightjs.org/usage/) BSD
