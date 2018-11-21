@@ -37,6 +37,7 @@
 > 压缩
 
 - Zip压缩：[SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
+- zip压缩：[DotNetZip](https://www.nuget.org/packages/DotNetZip/) / [doc](https://github.com/haf/DotNetZip.Semverd) view
 - 普通压缩（压缩文件夹/解压缩文件夹）：[sharpcompress](https://www.nuget.org/packages/SharpCompress/) / [demo](https://github.com/adamhathcock/sharpcompress/blob/master/USAGE.md) MIT
 - 快速压缩：[lz4net](https://github.com/MiloszKrajewski/lz4net) / [demo](https://github.com/MiloszKrajewski/lz4net#use-with-streams) BSD2
 
