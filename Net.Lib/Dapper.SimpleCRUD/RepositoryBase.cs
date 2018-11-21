@@ -84,6 +84,16 @@ public abstract class RepositoryBase
 
     #region 操作
 
+    public bool Add<T>(T m)
+    {
+        return Db(db => db.Insert(m)) > 0;
+    }
+
+    public Task<bool> AddAsync<T>(T m)
+    {
+        return Task.Run(() => Db(db => db.Insert(m)) > 0);
+    }
+
     public T Get<T>(object id)
     {
         return Db(db => db.Get<T>(id));
@@ -104,24 +114,24 @@ public abstract class RepositoryBase
         return Task.Run(() => Db(db => db.GetList<T>(whereConditions).ToList()));
     }
 
-    public int Update<T>(T m)
+    public bool Update<T>(T m)
     {
-        return Db(db => db.Update(m));
+        return Db(db => db.Update(m)) > 0;
     }
 
-    public Task<int> UpdateAsync<T>(T m)
+    public Task<bool> UpdateAsync<T>(T m)
     {
-        return Task.Run(() => Db(db => db.Update(m)));
+        return Task.Run(() => Db(db => db.Update(m)) > 0);
     }
 
-    public int Delete<T>(T m)
+    public bool Delete<T>(T m)
     {
-        return Db(db => db.Delete(m));
+        return Db(db => db.Delete(m)) > 0;
     }
 
-    public Task<int> DeleteAsync<T>(T m)
+    public Task<bool> DeleteAsync<T>(T m)
     {
-        return Task.Run(() => Db(db => db.Delete(m)));
+        return Task.Run(() => Db(db => db.Delete(m)) > 0);
     }
 
     public int DeleteList<T>(List<T> list)
