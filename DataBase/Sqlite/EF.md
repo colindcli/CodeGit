@@ -12,7 +12,7 @@ sqlite安装： https://www.nuget.org/packages/System.Data.SQLite/
 sqlite和ef安装: https://www.nuget.org/packages/System.Data.SQLite.EF6/
 
 
-不支持vs2017
+不支持vs2017：https://system.data.sqlite.org/index.html/tktview?name=8292431f51
 
 
 
