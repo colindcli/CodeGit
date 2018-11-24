@@ -101,6 +101,7 @@
 - 对比文本差异：[jQuery.PrettyTextDiff](https://github.com/arnab/jQuery.PrettyTextDiff) MIT
 - 树脑图：[treed](https://github.com/jaredly/treed) / [demo](https://jaredforsyth.com/treed/)
 - 表格树：[jquery-treegrid](https://github.com/maxazan/jquery-treegrid) / [demo/doc](http://maxazan.github.io/jquery-treegrid/) MIT
+- 表格树：[treetable-lay](https://github.com/whvcse/treetable-lay) / [demo](https://whvse.gitee.io/treetable-lay/) MIT
 - 树：[bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview) / [demo](http://jonmiles.github.io/bootstrap-treeview/) Apache2
 - 模板渲染：[jquery-tmpl](https://github.com/BorisMoore/jquery-tmpl)
 - 模板渲染：[jsrender](https://github.com/borismoore/jsrender)
