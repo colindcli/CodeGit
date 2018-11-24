@@ -13,6 +13,49 @@ public class DirectoryHelper
     /// </summary>
     /// <param name="dir"></param>
     /// <returns></returns>
+    public static bool DeleteDirectoryContent(string dir)
+    {
+        try
+        {
+            var dirs = new List<string>();
+            var files = new List<string>();
+            GetDirectoryFiles(dir, ref dirs, ref files);
+            var success = true;
+            foreach (var p in files)
+            {
+                success = DeleteFile(p);
+                if (!success)
+                {
+                    break;
+                }
+            }
+
+            if (success)
+            {
+                dirs = dirs.Where(p => !p.IsEquals(dir)).OrderByDescending(p => p.Length).ToList();
+                foreach (var p in dirs)
+                {
+                    success = DeleteDir(p);
+                    if (!success)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return success;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+    }
+
+    /// <summary>
+    /// 删除文件夹
+    /// </summary>
+    /// <param name="dir"></param>
+    /// <returns></returns>
     public static bool DeleteDirectory(string dir)
     {
         var newDir = dir.TrimEnd('/', '\\') + "Temp";

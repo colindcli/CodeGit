@@ -1,3 +1,5 @@
+//Install-Package Dapper.SimpleCRUD
+//Install-Package ExecuteSqlBulk
 using Dapper;
 using ExecuteSqlBulk;
 using MyProject.Common;
@@ -84,14 +86,14 @@ public abstract class RepositoryBase
 
     #region 操作
 
-    public bool Add<T>(T m)
+    public TReturn Add<TReturn, T>(T m)
     {
-        return Db(db => db.Insert(m)) > 0;
+        return Db(db => db.Insert<TReturn, T>(m));
     }
 
-    public Task<bool> AddAsync<T>(T m)
+    public Task<TReturn> AddAsync<TReturn, T>(T m)
     {
-        return Task.Run(() => Db(db => db.Insert(m)) > 0);
+        return Task.Run(() => Db(db => db.Insert<TReturn, T>(m)));
     }
 
     public T Get<T>(object id)
@@ -169,11 +171,13 @@ public abstract class RepositoryBase
 
 public static class RepositoryExtension
 {
-    public static void Update<T>(this IDbConnection db, object id, Action<T> action, IDbTransaction tran = null)
+    public static void Update<T>(this SqlConnection db, object id, Action<T> action, SqlTransaction tran = null)
     {
         var obj = db.Get<T>(id, tran);
         if (obj == null)
+        {
             return;
+        }
 
         action.Invoke(obj);
         db.Update(obj, tran);
