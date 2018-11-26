@@ -1,6 +1,6 @@
 ## exe安装为服务
 
-- [doc](README.png)
+- [doc](README.png) / [doc](https://blog.csdn.net/github_39376455/article/details/78882600)
 
 - 下载安装文件：(InstallService)(http://dl.fzxgj.top/Files/Server/InstallService.zip)
 
