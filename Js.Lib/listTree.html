@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        var res = [{"AdminMenuId":1,"AdminMenuParentId":0,"AdminMenuText":"我的工作台","AdminMenuName":"Home","AdminMenuHref":"-","AdminMenuRemark":"","AdminMenuSort":1,"CreateDate":"2018-07-03T21:34:23.74+08:00","Checked":false},{"AdminMenuId":6,"AdminMenuParentId":1,"AdminMenuText":"内容管理","AdminMenuName":"Block","AdminMenuHref":"-","AdminMenuRemark":"","AdminMenuSort":1,"CreateDate":"2018-07-12T14:39:47.167+08:00","Checked":false},{"AdminMenuId":7,"AdminMenuParentId":6,"AdminMenuText":"内容分类","AdminMenuName":"blockCategory","AdminMenuHref":"/admin/blockCategory.html","AdminMenuRemark":"","AdminMenuSort":1,"CreateDate":"2018-07-12T14:40:27.117+08:00","Checked":false},{"AdminMenuId":8,"AdminMenuParentId":6,"AdminMenuText":"内容列表","AdminMenuName":"BlockContent","AdminMenuHref":"/admin/blockContent.html","AdminMenuRemark":"","AdminMenuSort":2,"CreateDate":"2018-07-12T14:41:01.553+08:00","Checked":false},{"AdminMenuId":11,"AdminMenuParentId":21,"AdminMenuText":"评论管理","AdminMenuName":"comment","AdminMenuHref":"/admin/comment.html","AdminMenuRemark":"","AdminMenuSort":5,"CreateDate":"2018-11-24T16:10:51.813+08:00","Checked":false},{"AdminMenuId":22,"AdminMenuParentId":21,"AdminMenuText":"帮助菜单","AdminMenuName":"helpClass","AdminMenuHref":"/admin/helpClass.html","AdminMenuRemark":"","AdminMenuSort":10,"CreateDate":"2018-11-25T11:09:27.797+08:00","Checked":false},{"AdminMenuId":24,"AdminMenuParentId":25,"AdminMenuText":"公告管理","AdminMenuName":"Announcement","AdminMenuHref":"/admin/announcement.html","AdminMenuRemark":"","AdminMenuSort":10,"CreateDate":"2018-11-26T15:57:52.357+08:00","Checked":false},{"AdminMenuId":9,"AdminMenuParentId":25,"AdminMenuText":"友情链接","AdminMenuName":"FriendLink","AdminMenuHref":"/admin/friendLink.html","AdminMenuRemark":"","AdminMenuSort":20,"CreateDate":"2018-11-14T15:52:56.967+08:00","Checked":false},{"AdminMenuId":21,"AdminMenuParentId":1,"AdminMenuText":"售后管理","AdminMenuName":"saleMenager","AdminMenuHref":"-","AdminMenuRemark":"","AdminMenuSort":20,"CreateDate":"2018-11-25T11:08:35.397+08:00","Checked":false},{"AdminMenuId":23,"AdminMenuParentId":25,"AdminMenuText":"系统字典","AdminMenuName":"Dictionary","AdminMenuHref":"/admin/dictionary.html","AdminMenuRemark":"","AdminMenuSort":50,"CreateDate":"2018-11-26T15:17:00.737+08:00","Checked":false},{"AdminMenuId":25,"AdminMenuParentId":1,"AdminMenuText":"系统设置","AdminMenuName":"systemSetting","AdminMenuHref":"-","AdminMenuRemark":"","AdminMenuSort":50,"CreateDate":"2018-11-26T16:18:57.767+08:00","Checked":false},{"AdminMenuId":27,"AdminMenuParentId":1,"AdminMenuText":"用户管理","AdminMenuName":"userManager","AdminMenuHref":"-","AdminMenuRemark":"","AdminMenuSort":80,"CreateDate":"2018-11-26T16:35:30.15+08:00","Checked":false},{"AdminMenuId":2,"AdminMenuParentId":1,"AdminMenuText":"系统管理","AdminMenuName":"System","AdminMenuHref":"-","AdminMenuRemark":"","AdminMenuSort":90,"CreateDate":"2018-07-03T21:37:11.99+08:00","Checked":false},{"AdminMenuId":10,"AdminMenuParentId":25,"AdminMenuText":"系统配置","AdminMenuName":"Config","AdminMenuHref":"/admin/xmlConfig.html","AdminMenuRemark":"","AdminMenuSort":100,"CreateDate":"2018-11-20T15:41:09.663+08:00","Checked":false},{"AdminMenuId":3,"AdminMenuParentId":2,"AdminMenuText":"菜单管理","AdminMenuName":"Menu","AdminMenuHref":"/admin/menu.html","AdminMenuRemark":"","AdminMenuSort":901,"CreateDate":"2018-07-03T21:44:27.087+08:00","Checked":false},{"AdminMenuId":4,"AdminMenuParentId":2,"AdminMenuText":"角色管理","AdminMenuName":"Role","AdminMenuHref":"/admin/role.html","AdminMenuRemark":"","AdminMenuSort":920,"CreateDate":"2018-07-03T21:43:49.43+08:00","Checked":false},{"AdminMenuId":26,"AdminMenuParentId":27,"AdminMenuText":"用户管理","AdminMenuName":"user","AdminMenuHref":"/admin/user.html","AdminMenuRemark":"","AdminMenuSort":990,"CreateDate":"2018-11-26T16:29:25.543+08:00","Checked":false},{"AdminMenuId":5,"AdminMenuParentId":27,"AdminMenuText":"管理员列表","AdminMenuName":"Admin","AdminMenuHref":"/admin/manager.html","AdminMenuRemark":"","AdminMenuSort":1000,"CreateDate":"2018-07-03T21:40:20.413+08:00","Checked":false}];
+
+        $(function(){
+            // 生成树形结构
+            var objToTree = {
+                option: {
+                    data: [],
+                    //根节点Id值
+                    rootIdValue: null,
+                    //ParentId名
+                    parentId: 'parentId',
+                    //Id名
+                    id: 'id',
+                    //排除子树
+                    expId: null,
+                    sort: 1
+                },
+                init: function(opt){
+                    var self = this;
+                    $.extend(self.option, opt);
+                    return self.getTree(self.option.data, self.option.rootIdValue, self.option.expId);
+                },
+                child: function (list, id) { 
+                    var self = this;
+                    var temp = [];
+                    $.each(list,function (i, item) { 
+                        if(item[self.option.parentId] == id){
+                            temp.push(item);
+                        }
+                    });
+                    return temp;
+                },
+                toTree: function(list, rootId, depth, expId, rows){
+                    var self = this;
+                    if(rootId != expId){
+                        var items = self.child(list, rootId);
+                        $.each(items, function(i, item){
+                            if(item[self.option.id] != expId){
+                                item.Depth = depth;
+                                item.Sort = self.option.sort;
+                                self.option.sort = self.option.sort + 1;
+                                rows.push(item);
+                                self.toTree(list, item[self.option.id], depth+1, expId, rows);
+                            }
+                        });
+                    }
+                },
+                getTree: function(data, rootId, expId){
+                    var self = this;
+                    var rows = [];
+                    self.toTree(data, rootId, 1, expId, rows);
+                    return rows;
+                }
+            };
+
+            //调用
+            var param = {
+                    data: res,
+                    //根节点Id值
+                    rootIdValue: 0,
+                    //ParentId名
+                    parentId: 'AdminMenuParentId',
+                    //Id名
+                    id: 'AdminMenuId',
+                    //排除子树
+                    expId: 2
+                }
+            var rows = objToTree.init(param);
+
+            $.each(rows, function(i, item){
+                console.log('------------------------------------');
+                console.log(item);
+                console.log('------------------------------------');
+            });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

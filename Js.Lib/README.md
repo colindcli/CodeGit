@@ -12,6 +12,11 @@
 - Extension/layui-extension.js（引用：jquery、layui）：layui封装
 - Extension/layui-tableExt.js（引用：jquery、layui、jquery.form）：layui table
 
+## 其他代码片段
+
+- 生成树形结构（list转树形深度/排序）：listTree.html
+
+
 ## HTML
 
 - 注册登录：[my-login](https://github.com/nauvalazhar/my-login) / [demo](https://nauvalazhar.github.io/my-login/index.html) MIT
@@ -149,6 +154,7 @@
 
 > 下拉菜单（选择菜单）
 
+- 多选下拉菜单：[layui-formSelects](https://github.com/hnzzmsf/layui-formSelects) / [doc/demo](https://hnzzmsf.github.io/layui-formSelects/docs/index.html) Apache2.0
 - 自定义下拉菜单：[multiple-select](https://github.com/wenzhixin/multiple-select) / [demo](http://selectric.js.org/demo.html) MIT
 - 美化下拉菜单：[jquery.selectBoxIt.js](https://github.com/gfranko/jquery.selectBoxIt.js) / [demo](http://gregfranko.com/jquery.selectBoxIt.js) MIT
 - 美化下拉菜单：[jquery-nice-select](https://github.com/hernansartorio/jquery-nice-select) / [demo](http://hernansartorio.com/jquery-nice-select/)
