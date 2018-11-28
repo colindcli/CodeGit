@@ -154,6 +154,7 @@
 
 > 下拉菜单（选择菜单）
 
+- 树形下拉菜单：[treeSelect](https://fly.layui.com/extend/treeSelect/) / [code](https://gitee.com/wujiawei0926/treeselect) / [demo](https://wujiawei0926.gitee.io/treeselect/)
 - 多选下拉菜单：[layui-formSelects](https://github.com/hnzzmsf/layui-formSelects) / [doc/demo](https://hnzzmsf.github.io/layui-formSelects/docs/index.html) Apache2.0
 - 自定义下拉菜单：[multiple-select](https://github.com/wenzhixin/multiple-select) / [demo](http://selectric.js.org/demo.html) MIT
 - 美化下拉菜单：[jquery.selectBoxIt.js](https://github.com/gfranko/jquery.selectBoxIt.js) / [demo](http://gregfranko.com/jquery.selectBoxIt.js) MIT
