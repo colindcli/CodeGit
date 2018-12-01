@@ -75,6 +75,9 @@ foreach(Table tbl in from t in tables where !t.Ignore select t){
         /// </summary>
 <#}#>
 <# if (tbl.PK!=null && tbl.PK.Name==col.PropertyName) { #>
+<# if (!col.IsIncrease && (col.PropertyType=="long" || col.PropertyType=="int")) { #>
+        [Required]
+<#}#>
         [Key]
 <#}#>
         public virtual <#=col.PropertyType #><#=CheckNullable(col)#> <#=col.PropertyName #> { get; set; }
@@ -162,6 +165,7 @@ public class Column
 	public bool IsAutoIncrement;
 	public bool Ignore;
 	public string Remark;
+    public bool IsIncrease;
 }
 
 public class Key
@@ -594,6 +598,7 @@ class SqlServerSchemaReader : SchemaReader
 					col.IsNullable=rdr["IsNullable"].ToString()=="YES";
 					col.IsAutoIncrement=((int)rdr["IsIdentity"])==1;
 					col.Remark=rdr["Remark"].ToString();
+					col.IsIncrease=((int)rdr["IsIncrease"])==1;
 					result.Add(col);
 				}
 			}
@@ -779,22 +784,44 @@ AND CAST(CASE WHEN indexCTE.column_id IS NULL THEN 0 ELSE 1 END AS Bit)=1;
 		WHERE TABLE_TYPE='BASE TABLE' OR TABLE_TYPE='VIEW'
 		ORDER BY TABLES.TABLE_CATALOG ASC,TABLES.TABLE_SCHEMA ASC,TABLES.TABLE_TYPE ASC,TABLES.TABLE_NAME ASC;";
 
-	const string COLUMN_SQL=@"SELECT 
-			TABLE_CATALOG AS [Database],
-			TABLE_SCHEMA AS Owner, 
-			TABLE_NAME AS TableName, 
-			COLUMN_NAME AS ColumnName, 
-			ORDINAL_POSITION AS OrdinalPosition, 
-			COLUMN_DEFAULT AS DefaultSetting, 
-			IS_NULLABLE AS IsNullable, DATA_TYPE AS DataType, 
-			CHARACTER_MAXIMUM_LENGTH AS MaxLength, 
-			DATETIME_PRECISION AS DatePrecision,
-			COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsIdentity') AS IsIdentity,
-			COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsComputed') as IsComputed,
-			(SELECT TOP 1 t.value FROM sys.extended_properties t WHERE t.major_id=OBJECT_ID(COLUMNS.TABLE_NAME) AND minor_id=COLUMNS.ORDINAL_POSITION) Remark
-		FROM  INFORMATION_SCHEMA.COLUMNS
+	const string COLUMN_SQL=@"SELECT x.*,CASE WHEN y.ColumnName IS NULL THEN 0 ELSE 1 END IsIncrease FROM (
+	SELECT x.*,y.Remark FROM (
+		SELECT 
+			c.TABLE_CATALOG AS [Database],
+			c.TABLE_SCHEMA AS Owner, 
+			c.TABLE_NAME AS TableName, 
+			c.COLUMN_NAME AS ColumnName, 
+			c.ORDINAL_POSITION AS OrdinalPosition, 
+			c.COLUMN_DEFAULT AS DefaultSetting, 
+			c.IS_NULLABLE AS IsNullable, DATA_TYPE AS DataType, 
+			c.CHARACTER_MAXIMUM_LENGTH AS MaxLength, 
+			c.DATETIME_PRECISION AS DatePrecision,
+			COLUMNPROPERTY(object_id('[' + c.TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), c.COLUMN_NAME, 'IsIdentity') AS IsIdentity,
+			COLUMNPROPERTY(object_id('[' + c.TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), c.COLUMN_NAME, 'IsComputed') as IsComputed
+		FROM  INFORMATION_SCHEMA.COLUMNS c
 		WHERE TABLE_NAME=@tableName AND TABLE_SCHEMA=@schemaName
-		ORDER BY OrdinalPosition ASC";
+	) x LEFT JOIN (
+		SELECT
+			c.[name] AS ColumnName,
+			CAST(ep.[value] AS VARCHAR (max)) AS Remark
+		FROM sys.tables AS t
+		INNER JOIN sys.columns AS c
+			ON t.object_id=c.object_id
+		LEFT JOIN sys.extended_properties AS ep
+			ON ep.major_id=c.object_id
+			   AND ep.minor_id=c.column_id
+		WHERE ep.class=1
+			  AND t.object_id=OBJECT_ID(@schemaName+'.'+@tableName)
+	) y ON x.ColumnName=y.ColumnName 
+) x LEFT JOIN (
+	SELECT
+	sc.name ColumnName
+	FROM sysobjects so
+	LEFT JOIN syscolumns sc
+		ON so.id=sc.id
+		   AND COLUMNPROPERTY(sc.id, sc.name, 'IsIdentity')=1 WHERE so.name=@tableName
+) y ON x.ColumnName=y.ColumnName
+ORDER BY OrdinalPosition ASC;";
 
 	const string OUTER_KEYS_SQL = @"SELECT 
 			FK = OBJECT_NAME(pt.constraint_object_id),
