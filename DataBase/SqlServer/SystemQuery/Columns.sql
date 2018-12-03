@@ -14,9 +14,9 @@ pk AS(
 	WHERE i.is_primary_key=1
 ),
 li AS(
-	SELECT o.schemaName,o.tableName,c.column_id columnId,c.name columnName,ISNULL(p.is_primary_key, 0) isPrimaryKey,c.is_nullable isNullable,ISNULL(ep.value, '') remark,t.name dataType,CASE WHEN ic.object_id IS NOT NULL THEN 1 ELSE 0 END hasIncrement FROM sys.columns c 
+	SELECT o.schemaName,o.tableName,c.column_id columnId,c.name columnName,c.max_length maxLength,ISNULL(p.is_primary_key, 0) isPrimaryKey,c.is_nullable isNullable,ISNULL(ep.value, '') remark,t.name dataType,CASE WHEN ic.object_id IS NOT NULL THEN 1 ELSE 0 END hasIncrement FROM sys.columns c 
 	INNER JOIN tbs o ON c.object_id = o.object_id
-	INNER JOIN sys.types t ON c.system_type_id=t.system_type_id
+	INNER JOIN sys.types t ON c.user_type_id=t.user_type_id
 	LEFT JOIN pk p ON c.object_id = p.object_id AND c.column_id = p.column_id
 	LEFT JOIN sys.extended_properties ep ON ep.major_id=c.object_id AND ep.minor_id=c.column_id
 	LEFT JOIN sys.identity_columns ic ON c.object_id = ic.object_id AND c.column_id = ic.column_id
