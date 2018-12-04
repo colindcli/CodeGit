@@ -12,3 +12,9 @@
 <#@ assembly name="GenerateCodeByT4.exe" #>
 <#@ import namespace="GenerateCodeByT4.Entity" #>
 <#@ parameter type="System.Collections.Generic.List<GenerateCodeByT4.Entity.ColumnModel>" #>
+
+
+> 引进dapper.dll
+
+<#@ assembly name="$(SolutionDir)\packages\Dapper.1.50.5\lib\net451\Dapper.dll" #>
+<#@ import namespace="Dapper" #>
