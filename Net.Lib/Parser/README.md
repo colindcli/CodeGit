@@ -18,6 +18,11 @@
 - [HtmlParserSharp](https://github.com/jamietre/HtmlParserSharp)
 
 
+> Math
+
+- [MathParser.org-mXparser](https://github.com/mariuszgromada/MathParser.org-mXparser)
+
+
 > 命令行
 
 - [net commandline](https://github.com/commandlineparser/commandline)
