@@ -15,7 +15,7 @@ public static class ObjectExtension
     /// <param name="id">Id字段</param>
     /// <param name="parentId">ParentId字段</param>
     /// <param name="includeSelf">是否包含自己节点</param>
-    /// <param name="depthAct">深度字段</param>
+    /// <param name="depthAct">深度字段: (obj, depth) => obj.Depth = depth</param>
     /// <returns></returns>
     public static List<T> GetParentNodes<T, TPkDataType>(this List<T> list, T obj, Func<T, TPkDataType> id, Func<T, TPkDataType> parentId, bool includeSelf = false, Action<T, int> depthAct = null)
     {
@@ -48,7 +48,7 @@ public static class ObjectExtension
     /// <param name="id">Id字段</param>
     /// <param name="parentId">ParentId字段</param>
     /// <param name="includeSelf">是否包含自己节点</param>
-    /// <param name="depthAct"></param>
+    /// <param name="depthAct">深度字段: (obj, depth) => obj.Depth = depth</param>
     /// <returns></returns>
     public static List<T> GetChildNodes<T, TPkDataType>(this List<T> list, T obj, Func<T, TPkDataType> id, Func<T, TPkDataType> parentId, bool includeSelf = false, Action<T, int> depthAct = null)
     {
