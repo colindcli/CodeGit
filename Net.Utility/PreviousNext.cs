@@ -1,4 +1,6 @@
 // 获取list的前一条记录、后一条记录
+//https://www.nuget.org/packages/DwrUtility
+//Install-Package DwrUtility
 using System.Collections.Generic;
 using System.Linq;
 

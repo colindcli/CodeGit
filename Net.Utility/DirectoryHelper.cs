@@ -1,3 +1,5 @@
+//https://www.nuget.org/packages/DwrUtility
+//Install-Package DwrUtility
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +11,7 @@ using System.Linq;
 public class DirectoryHelper
 {
     /// <summary>
-    /// 删除文件夹
+    /// 删除文件夹内容
     /// </summary>
     /// <param name="dir"></param>
     /// <returns></returns>
