@@ -11,16 +11,22 @@ public static class ObjectExtension
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="TPkDataType">Id字段数据类型</typeparam>
     /// <param name="list">数据列表</param>
-    /// <param name="obj">当前对象</param>
-    /// <param name="id">Id字段</param>
-    /// <param name="parentId">ParentId字段</param>
+    /// <param name="id">当前Id值</param>
+    /// <param name="idField">Id字段</param>
+    /// <param name="parentIdField">ParentId字段</param>
     /// <param name="includeSelf">是否包含自己节点</param>
-    /// <param name="depthAct">深度字段: (obj, depth) => obj.Depth = depth</param>
+    /// <param name="depthAct">设置深度值: (obj, depth) => obj.Depth = depth</param>
     /// <returns></returns>
-    public static List<T> GetParentNodes<T, TPkDataType>(this List<T> list, T obj, Func<T, TPkDataType> id, Func<T, TPkDataType> parentId, bool includeSelf = false, Action<T, int> depthAct = null)
+    public static List<T> GetParentNodes<T, TPkDataType>(this List<T> list, TPkDataType id, Func<T, TPkDataType> idField, Func<T, TPkDataType> parentIdField, bool includeSelf = false, Action<T, int> depthAct = null)
     {
+        var obj = list.Find(li => idField.Invoke(li).Equals(id));
+        if (obj == null)
+        {
+            return null;
+        }
+
         var rows = new List<T>();
-        bool Predicate(T li, T o) => id.Invoke(li).Equals(parentId.Invoke(o));
+        bool Predicate(T li, T o) => idField.Invoke(li).Equals(parentIdField.Invoke(o));
         RecursiveNode(list, obj, Predicate, ref rows, 2);
         rows.Reverse();
         if (includeSelf)
@@ -44,21 +50,27 @@ public static class ObjectExtension
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="TPkDataType">Id字段数据类型</typeparam>
     /// <param name="list">数据列表</param>
-    /// <param name="obj">当前对象</param>
-    /// <param name="id">Id字段</param>
-    /// <param name="parentId">ParentId字段</param>
+    /// <param name="id">当前id值</param>
+    /// <param name="idField">Id字段</param>
+    /// <param name="parentIdField">ParentId字段</param>
     /// <param name="includeSelf">是否包含自己节点</param>
-    /// <param name="depthAct">深度字段: (obj, depth) => obj.Depth = depth</param>
+    /// <param name="depthAct">设置深度值: (obj, depth) => obj.Depth = depth</param>
     /// <returns></returns>
-    public static List<T> GetChildNodes<T, TPkDataType>(this List<T> list, T obj, Func<T, TPkDataType> id, Func<T, TPkDataType> parentId, bool includeSelf = false, Action<T, int> depthAct = null)
+    public static List<T> GetChildNodes<T, TPkDataType>(this List<T> list, TPkDataType id, Func<T, TPkDataType> idField, Func<T, TPkDataType> parentIdField, bool includeSelf = false, Action<T, int> depthAct = null)
     {
+        var obj = list.Find(li => idField.Invoke(li).Equals(id));
+        if (obj == null)
+        {
+            return null;
+        }
+
         var rows = new List<T>();
         if (includeSelf)
         {
             depthAct?.Invoke(obj, 1);
             rows.Add(obj);
         }
-        bool Predicate(T li, T o) => parentId.Invoke(li).Equals(id.Invoke(o));
+        bool Predicate(T li, T o) => parentIdField.Invoke(li).Equals(idField.Invoke(o));
         RecursiveNode(list, obj, Predicate, ref rows, 2, depthAct);
         return rows;
     }
