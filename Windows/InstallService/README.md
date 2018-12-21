@@ -15,3 +15,14 @@
 - 单击选中它然后在右侧的窗口新建一个字符串值名称为“Application”，将其值设置为你针要做为服务运行的程序的路径，例如我的路径为“C:\InstallService\IntelliJIDEALicenseServer_windows_amd64.exe”。
 
 - 然后可以再建立一个AppDirectory指定程序运行的初始目录C:\InstallService
+
+
+
+## 注册服务软件
+
+- [添加删除服务工具](http://dl.fzxgj.top/Files/Windows/%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7.zip)
+
+
+## bat转exe
+
+- [bat转exe](http://dl.fzxgj.top/Files/Windows/bat%E8%BD%ACexe.zip)
