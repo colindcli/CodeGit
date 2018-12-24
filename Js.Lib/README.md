@@ -127,6 +127,7 @@
 - 识别移动端：[isMobile](https://github.com/kaimallea/isMobile)
 - UserAgent解析库：[ua-device](https://github.com/fex-team/ua-device) BSD3
 - 响应式导航：[responsive-nav.js](https://github.com/viljamis/responsive-nav.js) / [demo](http://responsive-nav.com/) MIT
+- 标签输入：[jQuery-Tags-Input](https://github.com/xoxco/jQuery-Tags-Input) / [demo](http://xoxco.com/projects/code/tagsinput/example.html)
 
 
 > 邮件
