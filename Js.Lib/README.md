@@ -128,6 +128,7 @@
 - UserAgent解析库：[ua-device](https://github.com/fex-team/ua-device) BSD3
 - 响应式导航：[responsive-nav.js](https://github.com/viljamis/responsive-nav.js) / [demo](http://responsive-nav.com/) MIT
 - 标签输入：[jQuery-Tags-Input](https://github.com/xoxco/jQuery-Tags-Input) / [demo](http://xoxco.com/projects/code/tagsinput/example.html)
+- 属性选择器：[ui-choose](https://github.com/wangxing218/ui-choose) / [demo](https://wangxing218.github.io/ui-choose/test/demo.html)
 
 
 > 邮件
