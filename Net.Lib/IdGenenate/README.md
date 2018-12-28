@@ -24,7 +24,9 @@
 
 ## 有顺序的Guid生成器
 
-- NewId: [NuGet](https://www.nuget.org/packages/NewId/) / [doc](https://github.com/phatboyg/NewId) Apache2.0
+- 有序Guid：[NewId](https://www.nuget.org/packages/NewId/) / [doc](https://github.com/phatboyg/NewId) Apache2.0
+- 另一个生成Guid：[SequentialGuid](https://github.com/jhtodd/SequentialGuid)
+- 相关文档：https://www.cnblogs.com/supersnowyao/p/8335397.html
 
 
 
