@@ -102,6 +102,7 @@ public class HttpService
         client.ConfigureWebRequest(req =>
         {
             req.Accept = "*/*";
+            req.Referer = url;
             if (!string.IsNullOrWhiteSpace(_acceptLanguage))
             {
                 req.Headers.Add("Accept-Language", _acceptLanguage);
