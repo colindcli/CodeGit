@@ -32,7 +32,8 @@
 - 微信SDK: [WeiXinSDK](https://github.com/RabbitTeam/WeiXinSDK)
 - PaypalSDK: [PayPal-NET-SDK](https://github.com/paypal/PayPal-NET-SDK) / [doc](https://developer.paypal.com/docs/api/overview/)
 - AWS SDK: [aws-sdk-net](https://github.com/aws/aws-sdk-net) / [doc](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/Index.html)
-- 判断文件类型：[MimeSharp](https://www.nuget.org/packages/MimeSharp/) / [doc](https://github.com/Ujjwol/MimeSharp) MIT
+- 根据内容判断文件类型：[Mime-Detective](https://www.nuget.org/packages/Mime-Detective) / [doc](https://github.com/clarkis117/Mime-Detective) MIT
+- 根据扩展名判断文件类型：[MimeSharp](https://www.nuget.org/packages/MimeSharp/) / [doc](https://github.com/Ujjwol/MimeSharp) MIT
 
 
 > 压缩
