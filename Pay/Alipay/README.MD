@@ -4,6 +4,7 @@
 - 创建网页&移动应用：https://openhome.alipay.com/platform/appManage.htm
 - 文档：https://docs.open.alipay.com/270/alipay.trade.page.pay#s4
 - SDK下载编译：https://docs.open.alipay.com/270/106291/
+- SDK: https://docs.open.alipay.com/54/103419/
 - 沙箱：https://openhome.alipay.com/platform/appDaily.htm
 - 沙箱手机工具：https://openhome.alipay.com/platform/appDaily.htm?tab=tool
 - 异步通知：https://docs.open.alipay.com/270/105902/
