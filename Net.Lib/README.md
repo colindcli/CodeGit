@@ -35,6 +35,7 @@
 - 根据内容判断文件类型：[Mime-Detective](https://www.nuget.org/packages/Mime-Detective) / [doc](https://github.com/clarkis117/Mime-Detective) MIT
 - 根据扩展名判断文件类型：[MimeSharp](https://www.nuget.org/packages/MimeSharp/) / [doc](https://github.com/Ujjwol/MimeSharp) MIT
 - 电话号码正则表达式：[ChinaMobilePhoneNumberRegex](https://github.com/VincentSit/ChinaMobilePhoneNumberRegex) MIT
+- 深度比较对象：[DeepEqual](https://www.nuget.org/packages/DeepEqual) / [demo](https://github.com/jamesfoster/DeepEqual) MIT
 
 
 > 压缩
