@@ -129,6 +129,8 @@
 - 响应式导航：[responsive-nav.js](https://github.com/viljamis/responsive-nav.js) / [demo](http://responsive-nav.com/) MIT
 - 标签输入：[jQuery-Tags-Input](https://github.com/xoxco/jQuery-Tags-Input) / [demo](http://xoxco.com/projects/code/tagsinput/example.html)
 - 属性选择器：[ui-choose](https://github.com/wangxing218/ui-choose) / [demo](https://wangxing218.github.io/ui-choose/test/demo.html)
+- 数据验证：[validator.js](https://github.com/chriso/validator.js) MIT
+- Cookie操作: [js-cookie](https://github.com/js-cookie/js-cookie) MIT
 
 
 > 邮件
