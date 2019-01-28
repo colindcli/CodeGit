@@ -9,6 +9,7 @@
 - 沙箱手机工具：https://openhome.alipay.com/platform/appDaily.htm?tab=tool
 - 异步通知：https://docs.open.alipay.com/270/105902/
 - 签名工具：https://docs.open.alipay.com/291/106097
+- 在线调试：https://openhome.alipay.com/platform/demoManage.htm
 
 
 ## 页面回跳参数
