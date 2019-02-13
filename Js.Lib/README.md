@@ -131,6 +131,7 @@
 - 属性选择器：[ui-choose](https://github.com/wangxing218/ui-choose) / [demo](https://wangxing218.github.io/ui-choose/test/demo.html)
 - 数据验证：[validator.js](https://github.com/chriso/validator.js) MIT
 - Cookie操作: [js-cookie](https://github.com/js-cookie/js-cookie) MIT
+- 时间轴：[TimelineJS](https://github.com/NUKnightLab/TimelineJS)
 
 
 > 邮件
