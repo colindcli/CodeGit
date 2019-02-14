@@ -27,7 +27,8 @@ public class FileTypeHelper
 
         if (fileType != null)
         {
-            return acceptFileType.Contains(fileType.Extension, StringComparer.OrdinalIgnoreCase);
+            var types = fileType.Extension.Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries).ToList();
+            return types.Exists(type => acceptFileType.Contains(type, StringComparer.OrdinalIgnoreCase));
         }
 
         var extension = (Path.GetExtension(path) ?? "").Trim(' ', '.');
