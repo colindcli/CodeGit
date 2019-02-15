@@ -20,3 +20,8 @@
 
 - 跳跃排序：RANK()OVER(ORDER BY t.TypeId ASC) [如成绩排名]
 - 分组跳跃排序：DENSE_RANK()OVER(PARTITION BY t.TypeId ORDER BY t.CreateDate DESC)
+
+
+## Sqlserver2012 清除服务器连接记录 | 清除SQL Server Management账号密码保存记录
+
+- C:\Users\Administrator\AppData\Roaming\Microsoft\SQL Server Management Studio\11.0\SqlStudio.bin
