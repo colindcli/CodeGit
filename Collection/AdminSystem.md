@@ -49,6 +49,7 @@
 - [larrycms](https://github.com/larryqin/larrycms)
 - [Ace](https://github.com/bopoda/ace)
 - [hadmin](https://github.com/huangyaoxin/hAdmin)
+- [](http://light.pinsupreme.com/)
 
 > 收费授权
 
