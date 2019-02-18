@@ -3,20 +3,19 @@ using Microsoft.AspNetCore.Mvc;
 #else
 using System.Web.Mvc;
 #endif
-using PaySharp.Alipay.Response;
 using PaySharp.Core;
 using System.Threading.Tasks;
 
 namespace PaySharp.Demo.Controllers
 {
-    public class AlipayNotifyController : Controller
+    public class NotifyController : Controller
     {
         private readonly IGateways _gateways;
         private bool isRedirect;
 
         public NotifyController(IGateways gateways)
         {
-            _gateways = gateways.Get<AlipayGateway>();;
+            _gateways = gateways;
         }
 
         public async Task Index()
@@ -45,9 +44,46 @@ namespace PaySharp.Demo.Controllers
              * 1、需要验证该通知数据中的OutTradeNo是否为商户系统中创建的订单号，
              * 2、判断Amount是否确实为该订单的实际金额（即商户订单创建时的金额），
              */
+            // 支付宝支付
             if (e.GatewayType == typeof(Alipay.AlipayGateway))
             {
-                var alipayNotifyResponse = (NotifyResponse)e.NotifyResponse;
+                var response = (Alipay.Response.NotifyResponse)e.NotifyResponse;
+
+                //同步通知，即浏览器跳转返回
+                if (e.NotifyType == NotifyType.Sync)
+                {
+                    isRedirect = true;
+                }
+            }
+
+            // 微信支付
+            if (e.GatewayType == typeof(Wechatpay.WechatpayGateway))
+            {
+                var response = (Wechatpay.Response.NotifyResponse)e.NotifyResponse;
+
+                //同步通知，即浏览器跳转返回
+                if (e.NotifyType == NotifyType.Sync)
+                {
+                    isRedirect = true;
+                }
+            }
+
+            // 银联支付
+            if (e.GatewayType == typeof(Unionpay.UnionpayGateway))
+            {
+                var response = (Unionpay.Response.NotifyResponse)e.NotifyResponse;
+
+                //同步通知，即浏览器跳转返回
+                if (e.NotifyType == NotifyType.Sync)
+                {
+                    isRedirect = true;
+                }
+            }
+
+            // QQ支付
+            if (e.GatewayType == typeof(Qpay.QpayGateway))
+            {
+                var response = (Qpay.Response.NotifyResponse)e.NotifyResponse;
 
                 //同步通知，即浏览器跳转返回
                 if (e.NotifyType == NotifyType.Sync)

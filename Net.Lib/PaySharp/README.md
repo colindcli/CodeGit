@@ -13,6 +13,6 @@
 - QQ钱包安装：https://www.nuget.org/packages/PaySharp.Qpay
 
 
-- 添加Global.asax.cs文件内容
+- 添加Global.asax.cs文件内容（如果使用Register注册需要添加Web.config文件）
 - 添加Certs
 - 添加Controlers文件（AlipayNotifyController.cs是支付宝付款通知，其他付款通知类似）

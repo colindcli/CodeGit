@@ -20,7 +20,11 @@ namespace PaySharp.Demo_Net_
             PaySharpConfig.Register(typeof(MvcApplication), containerBuilder, a =>
              {
                  var gateways = new Gateways();
+
                  //gateways.RegisterAlipay();
+                 //gateways.RegisterUnionpay();
+                 //gateways.RegisterWechatpay();
+                 //gateways.RegisterQpay();
 
                  var alipayMerchant = new Alipay.Merchant
                  {
