@@ -6,7 +6,6 @@ internal class Program
     private static void Main(string[] args)
     {
         var settings = (ServiceSettings)(dynamic)ConfigurationManager.GetSection("serviceSettings");
-
     }
 }
 
