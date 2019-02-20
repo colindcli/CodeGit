@@ -12,8 +12,13 @@ namespace WebApplication1.Controllers
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
-                //res.result
+                var m = new
+                {
+                    uid = res.result.Value<string>("uid"),
+                    name = res.result.Value<string>("nickname"),
+                    img = res.result.Value<string>("headimgurl"),
+                    token = res.token
+                };
             }
 
             return null;
@@ -27,8 +32,13 @@ namespace WebApplication1.Controllers
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
-                //res.result
+                var m = new
+                {
+                    uid = res.result.Value<string>("openid"),
+                    name = res.result.Value<string>("nickname"),
+                    img = res.result.Value<string>("figureurl"),
+                    token = res.token
+                };
             }
 
             return null;
@@ -42,8 +52,13 @@ namespace WebApplication1.Controllers
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
-                //res.result
+                var m = new
+                {
+                    uid = res.result.Value<string>("idstr"),
+                    name = res.result.Value<string>("name"),
+                    img = res.result.Value<string>("profile_image_url"),
+                    token = res.token
+                };
             }
 
             return null;
@@ -57,8 +72,13 @@ namespace WebApplication1.Controllers
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
-                //res.result
+                var m = new
+                {
+                    uid = res.result.Value<string>("id"),
+                    name = res.result.Value<string>("name"),
+                    img = res.result["picture"]["data"].Value<string>("url"),
+                    token = res.token
+                };
             }
 
             return null;
@@ -72,8 +92,13 @@ namespace WebApplication1.Controllers
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
-                //res.result
+                var m = new
+                {
+                    uid = res.result.Value<string>("uid"),
+                    name = res.result.Value<string>("nickname"),
+                    img = res.result.Value<string>("thumbnail_image"),
+                    token = res.token
+                };
             }
 
             return null;
