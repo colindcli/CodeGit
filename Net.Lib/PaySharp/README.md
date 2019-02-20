@@ -3,9 +3,13 @@
 - 项目地址：https://github.com/Varorbc/PaySharp MIT
 
 
-> 项目安装
+### 项目安装: 
 
-- 核心文件：https://www.nuget.org/packages/PaySharp.Core 、Install-Package PaySharp.Core
+```
+Install-Package PaySharp.Core
+```
+
+- 核心文件：https://www.nuget.org/packages/PaySharp.Core
 - Mvc必须安装(包含注入)：https://www.nuget.org/packages/PaySharp.Core.Mvc
 - Alipay安装：https://www.nuget.org/packages/PaySharp.Alipay
 - Wechat安装：https://www.nuget.org/packages/PaySharp.Wechatpay
@@ -18,4 +22,12 @@
 - 添加Controlers文件
 
 
-> 支付官方Demo：https://github.com/Varorbc/PaySharp/tree/master/document
+### 支付官方例子：https://github.com/Varorbc/PaySharp/tree/master/document
+
+
+### Wiki
+
+- 支付宝支付文档：https://openhome.alipay.com/developmentDocument.htm
+- 微信支付文档：https://pay.weixin.qq.com/wiki/doc/api/index.html
+- 银联支付文档：https://open.unionpay.com/ajweb/product
+- QQ钱包支付文档：https://qpay.qq.com/qpaywiki.shtml
