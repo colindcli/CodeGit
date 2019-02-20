@@ -66,8 +66,9 @@
 
 - 登录
 
-- [OAuthLogin](https://github.com/seven1986/OAuthLogin) / [Nuget](https://www.nuget.org/packages/OAuthLogin) Apache2.0
-- [OAuthLogin.AspNetCore](https://github.com/seven1986/OAuthLogin.AspNetCore) / [Nuget](https://www.nuget.org/packages/OAuthLogin.AspNetCore) Apache2.0
+- facebook、微信、微博、QQ、Kakao: [OAuthLogin](https://github.com/seven1986/OAuthLogin) / [Nuget](https://www.nuget.org/packages/OAuthLogin) Apache2.0
+- facebook、微信、微博、QQ、Kakao: [OAuthLogin.AspNetCore](https://github.com/seven1986/OAuthLogin.AspNetCore) / [Nuget](https://www.nuget.org/packages/OAuthLogin.AspNetCore) Apache2.0
+- facebook, google ,windows live ,PayPal Oauth 2: [OAuth2Login](https://github.com/ericzo/OAuth2Login) / [Nuget](https://www.nuget.org/packages/Oauth2Login/) Apache2.0
 
 
 > 文件预览
