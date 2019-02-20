@@ -5,19 +5,22 @@ namespace WebApplication1.Controllers
 {
     public class ThirdPartyLoginController : Controller
     {
-        // Wechat
+        /// <summary>
+        /// 微信登录
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Wechat()
         {
             var res = new Wechat().Authorize();
 
             if (res != null && res.code == 0)
             {
-                var m = new
+                var m = new ThirdPartyUserModel
                 {
-                    uid = res.result.Value<string>("uid"),
-                    name = res.result.Value<string>("nickname"),
-                    img = res.result.Value<string>("headimgurl"),
-                    token = res.token
+                    Uid = res.result.Value<string>("uid"),
+                    Name = res.result.Value<string>("nickname"),
+                    Img = res.result.Value<string>("headimgurl"),
+                    Token = res.token
                 };
             }
 
@@ -25,19 +28,22 @@ namespace WebApplication1.Controllers
         }
 
 
-        // QQ
+        /// <summary>
+        /// QQ登录
+        /// </summary>
+        /// <returns></returns>
         public ActionResult QQ()
         {
             var res = new QQ().Authorize();
 
             if (res != null && res.code == 0)
             {
-                var m = new
+                var m = new ThirdPartyUserModel
                 {
-                    uid = res.result.Value<string>("openid"),
-                    name = res.result.Value<string>("nickname"),
-                    img = res.result.Value<string>("figureurl"),
-                    token = res.token
+                    Uid = res.result.Value<string>("openid"),
+                    Name = res.result.Value<string>("nickname"),
+                    Img = res.result.Value<string>("figureurl"),
+                    Token = res.token
                 };
             }
 
@@ -45,19 +51,22 @@ namespace WebApplication1.Controllers
         }
 
 
-        // Weibo
+        /// <summary>
+        /// 微博登录
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Weibo()
         {
             var res = new Weibo().Authorize();
 
             if (res != null && res.code == 0)
             {
-                var m = new
+                var m = new ThirdPartyUserModel
                 {
-                    uid = res.result.Value<string>("idstr"),
-                    name = res.result.Value<string>("name"),
-                    img = res.result.Value<string>("profile_image_url"),
-                    token = res.token
+                    Uid = res.result.Value<string>("idstr"),
+                    Name = res.result.Value<string>("name"),
+                    Img = res.result.Value<string>("profile_image_url"),
+                    Token = res.token
                 };
             }
 
@@ -65,19 +74,22 @@ namespace WebApplication1.Controllers
         }
 
 
-        // Facebook
+        /// <summary>
+        /// Facebook登录
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Facebook()
         {
             var res = new Facebook().Authorize();
 
             if (res != null && res.code == 0)
             {
-                var m = new
+                var m = new ThirdPartyUserModel
                 {
-                    uid = res.result.Value<string>("id"),
-                    name = res.result.Value<string>("name"),
-                    img = res.result["picture"]["data"].Value<string>("url"),
-                    token = res.token
+                    Uid = res.result.Value<string>("id"),
+                    Name = res.result.Value<string>("name"),
+                    Img = res.result["picture"]["data"].Value<string>("url"),
+                    Token = res.token
                 };
             }
 
@@ -85,19 +97,22 @@ namespace WebApplication1.Controllers
         }
 
 
-        // Kakao
+        /// <summary>
+        /// Kakao登录
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Kakao()
         {
             var res = new Kakao().Authorize();
 
             if (res != null && res.code == 0)
             {
-                var m = new
+                var m = new ThirdPartyUserModel
                 {
-                    uid = res.result.Value<string>("uid"),
-                    name = res.result.Value<string>("nickname"),
-                    img = res.result.Value<string>("thumbnail_image"),
-                    token = res.token
+                    Uid = res.result.Value<string>("uid"),
+                    Name = res.result.Value<string>("nickname"),
+                    Img = res.result.Value<string>("thumbnail_image"),
+                    Token = res.token
                 };
             }
 
