@@ -25,9 +25,13 @@ Install-Package PaySharp.Core
 ### 支付官方例子：https://github.com/Varorbc/PaySharp/tree/master/document
 
 
-### Wiki
+### Wiki开发文档
 
 - 支付宝支付文档：https://openhome.alipay.com/developmentDocument.htm
 - 微信支付文档：https://pay.weixin.qq.com/wiki/doc/api/index.html
 - 银联支付文档：https://open.unionpay.com/ajweb/product
 - QQ钱包支付文档：https://qpay.qq.com/qpaywiki.shtml
+
+### 接入申请
+
+- 微信支付：https://pay.weixin.qq.com
