@@ -14,24 +14,16 @@ public class AlipayController : Controller
     /// <summary>
     /// 
     /// </summary>
-    /// <returns></returns>
-    // GET: Pay
-    public ActionResult Pay()
+    public class AlipayController : Controller
     {
-        var serverUrl = "https://openapi.alipaydev.com/gateway.do";
-        var appId = Config.AlipayAppId;
-        var privateKeyPem = Config.AlipayAppPrivateKey;
-        var format = "json";
-        var version = "1.0";
-        var signType = "RSA2";
-        var alipayPulicKey = Config.AlipayAlipayPublicKey;
-        var notifyUrl = $"{Config.Domain}/alipay/PayNotify";
-        var returnUrl = $"{Config.Domain}/alipay/Return";
-        var charset = "utf-8";
-        var client = new DefaultAopClient(serverUrl, appId, privateKeyPem, format, version, signType, alipayPulicKey, charset, false);
-        var request = new AlipayTradePagePayRequest
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        // GET: Pay
+        public ActionResult Pay()
         {
-            BizContent = JsonConvert.SerializeObject(new BizContentModel()
+            var m = new AlipayBizContentModel()
             {
                 body = "Iphone6 16G",
                 subject = "Iphone6 16G",
@@ -39,37 +31,41 @@ public class AlipayController : Controller
                 out_trade_no = DateTime.Now.Ticks.ToString(),
                 total_amount = decimal.Parse("88.88"),
                 product_code = "FAST_INSTANT_TRADE_PAY"
-            })
-        };
-        request.SetNotifyUrl(notifyUrl);
-        request.SetReturnUrl(returnUrl);
-        var response = client.pageExecute(request);
-        var form = response.Body;
+            };
+            var form = PayHelper.AliPay(m);
+            return Content(form, "text/html", Encoding.UTF8);
+        }
 
-        return Content(form, "text/html", Encoding.UTF8);
-    }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult PayNotify()
+        {
+            var dict = Request.Form.Cast<string>().ToDictionary(s => s, s => Request.Form[s]);
+            var str = JsonConvert.SerializeObject(dict);
+            var model = JsonConvert.DeserializeObject<AlipayNotifyModel>(str);
 
-    [HttpPost]
-    public ActionResult PayNotify()
-    {
-        var dict = Request.Form.Cast<string>().ToDictionary(s => s, s => Request.Form[s]);
-        var str = JsonConvert.SerializeObject(dict);
-        var model = JsonConvert.DeserializeObject<NotifyModel>(str);
+            LogHelper.Debug($"PayNotify: {JsonConvert.SerializeObject(model)}");
 
-        LogHelper.Debug($"PayNotify: {JsonConvert.SerializeObject(model)}");
+            return null;
+        }
 
-        return null;
-    }
-
-    [HttpGet]
-    public ActionResult Return()
-    {
-        LogHelper.Debug($"Return: {Request.Url}");
-        return null;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult Return()
+        {
+            LogHelper.Debug($"Return: {Request.Url}");
+            return null;
+        }
     }
 }
 
-public class BizContentModel
+public class AlipayBizContentModel
 {
     public string body { get; set; }
     public string subject { get; set; }
@@ -79,7 +75,7 @@ public class BizContentModel
 }
 
 //https://docs.open.alipay.com/270/105902/
-public class NotifyModel
+public class AlipayNotifyModel
 {
     /// <summary>
     /// 交易创建时间
