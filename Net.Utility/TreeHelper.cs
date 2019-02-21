@@ -1,7 +1,9 @@
+//https://www.nuget.org/packages/DwrUtility
+//Install-Package DwrUtility
 /// <summary>
 /// 树结构
 /// </summary>
-public class TreeStructure
+public class TreeHelper
 {
     /// <summary>
     /// 生成树结构
