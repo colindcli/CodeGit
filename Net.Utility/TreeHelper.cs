@@ -13,9 +13,9 @@ public class TreeHelper
     /// <param name="rows"></param>
     /// <param name="id"></param>
     /// <param name="parentId"></param>
-    /// <param name="child">(item, list) => item.Child = list; 其中Child为子节点</param>
+    /// <param name="child">(item, list) => item.Child = list; 其中Child为子节点集合</param>
     /// <returns></returns>
-    public static List<T> CreateTreeView<T, TIdType>(List<T> rows, Func<T, TIdType> id, Func<T, TIdType> parentId, Action<T, List<T>> child)
+    public static List<T> ToTreeView<T, TIdType>(List<T> rows, Func<T, TIdType> id, Func<T, TIdType> parentId, Action<T, List<T>> child)
     {
         rows.ForEach(row => child.Invoke(row, rows.Where(item => parentId.Invoke(item).Equals(id.Invoke(row))).ToList()));
         return rows.Where(j => !rows.Exists(i => id.Invoke(i).Equals(parentId.Invoke(j)))).ToList();
