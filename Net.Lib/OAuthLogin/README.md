@@ -15,3 +15,5 @@ PM> Install-Package OAuthLogin
 ## 登录申请地址
 
 - QQ：https://connect.qq.com/
+- 微信：https://open.weixin.qq.com/
+- 微博：https://open.weibo.com/
