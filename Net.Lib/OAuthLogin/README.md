@@ -9,3 +9,9 @@
 ```
 PM> Install-Package OAuthLogin
 ```
+
+
+
+## 登录申请地址
+
+- QQ：https://connect.qq.com/
