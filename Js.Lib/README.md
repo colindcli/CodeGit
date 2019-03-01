@@ -289,6 +289,12 @@
 - 头像裁剪：[cropbox](https://github.com/hongkhanh/cropbox) MIT
 
 
+> 截图
+
+- 当前页面元素生成canvas，不支持跨域：[html2canvas](https://github.com/niklasvh/html2canvas) MIT
+- canvas转图片：[canvas2image](https://github.com/hongru/canvas2image)
+
+
 > 屏幕视频截屏
 
 - 屏幕视频截屏：[FFcast](https://github.com/lolilolicon/FFcast) / [demo](https://github.com/lolilolicon/FFcast/wiki/Demos) GPL3.0
