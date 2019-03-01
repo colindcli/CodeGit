@@ -1,6 +1,6 @@
 //https://www.nuget.org/packages/Selenium.Support/
-//https://www.nuget.org/packages/Selenium.WebDriver/
 //https://www.nuget.org/packages/Selenium.WebDriverBackedSelenium/
+//http://chromedriver.storage.googleapis.com/index.html（下载73文件放到bin目录）
 
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
