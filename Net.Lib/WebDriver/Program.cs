@@ -21,7 +21,6 @@ namespace ConsoleApp
         private static void Main(string[] args)
         {
             Console.Write("请输入网址：");
-            //var url = "https://blog.nuget.org/";
             var url = Console.ReadLine()?.Replace("请输入网址：", "");
 
             var guid = Guid.NewGuid().ToString();
@@ -32,18 +31,21 @@ namespace ConsoleApp
             driver.Navigate().GoToUrl(url);
 
             var heightStr = driver.ExecuteJavaScript<object>("return document.documentElement.scrollHeight+\"|\"+document.documentElement.clientHeight+\"|\"+document.documentElement.clientWidth").ToString();
-
-
+            
             var obj = heightStr.Split('|');
             var scrollHeight = int.Parse(obj[0]);
             var clientHeight = int.Parse(obj[1]);
             var clientWidth = int.Parse(obj[2]);
 
             var pageSize = scrollHeight / clientHeight;
+
             int index = 0;
             for (; index < pageSize; index++)
             {
                 driver.ExecuteScript($"window.scrollTo(0,{clientHeight * index})");
+                Thread.Sleep(500);
+                driver.ExecuteScript("var items=document.querySelectorAll('*');var array=[];for(var i=0;i<items.length;i++){var name=items[i].tagName.toLocaleLowerCase();var flag=false;for(var j=0;j<array.length;j++){if(array[j]===name){flag=true;break}}if(!flag){array.push(name)}}for(var i=0;i<array.length;i++){var tagName=array[i];var rows=document.getElementsByTagName(tagName);for(var j=0;j<rows.length;j++){var pt=window.getComputedStyle(rows[j],null).position;if(pt==='fixed'){rows[j].style.setProperty('position','absolute','important');rows[j].style.setProperty('top','','important');rows[j].style.setProperty('bottom','','important');rows[j].style.setProperty('left','','important');rows[j].style.setProperty('right','','important')}}};");
+                Thread.Sleep(1000);
                 driver.GetScreenshot().SaveAsFile($@"{fileName}{index}.png", ScreenshotImageFormat.Png);
             }
 
@@ -54,7 +56,7 @@ namespace ConsoleApp
             }
 
 
-            var bmp = new Bitmap(clientWidth - (scrollHeight % clientHeight > 0 ? 18 : 0), clientHeight * (index + 1));
+            var bmp = new Bitmap(clientWidth - (scrollHeight % clientHeight > 0 ? 18 : 0), scrollHeight);
             var g = Graphics.FromImage(bmp);
             g.Clear(Color.White);
 
@@ -70,6 +72,8 @@ namespace ConsoleApp
             {
                 var img = Image.FromFile($@"{fileName}{i}.png");
                 g.DrawImage(img, 0, scrollHeight - clientHeight, clientWidth, clientHeight);
+
+
                 img.Dispose();
             }
 
