@@ -3,6 +3,8 @@
 //https://chromedriver.storage.googleapis.com/index.html?path=2.46/（下载2.46文件放到bin目录）
 //chrome 版本 72.0.3626.119（正式版本） （64 位）
 
+//版本对应表：https://sites.google.com/a/chromium.org/chromedriver/downloads
+
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.Extensions;
