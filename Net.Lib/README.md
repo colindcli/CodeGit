@@ -37,6 +37,7 @@
 - 电话号码正则表达式：[ChinaMobilePhoneNumberRegex](https://github.com/VincentSit/ChinaMobilePhoneNumberRegex) MIT
 - 深度比较对象：[DeepEqual](https://www.nuget.org/packages/DeepEqual) / [demo](https://github.com/jamesfoster/DeepEqual) MIT
 - 深度比较对象：[CompareNETObjects](https://www.nuget.org/packages/CompareNETObjects/) / [doc](https://github.com/GregFinzer/Compare-Net-Objects/wiki/Getting-Started) Ms-PL
+- 修改显示器分辨率：[ScreenResolutionChanger](https://github.com/timmui/ScreenResolutionChanger) MIT
 
 
 > 压缩
