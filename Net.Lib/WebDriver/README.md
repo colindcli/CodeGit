@@ -3,9 +3,11 @@
 
 > 安装插件
 
-- https://www.nuget.org/packages/Selenium.Support/
-- https://www.nuget.org/packages/Selenium.WebDriver/
-- https://www.nuget.org/packages/Selenium.WebDriverBackedSelenium/
+
+- https://www.nuget.org/packages/Selenium.Support/ (3.141.0)
+- https://www.nuget.org/packages/Selenium.WebDriverBackedSelenium/ (3.141.0)
+- https://chromedriver.storage.googleapis.com/index.html?path=2.46/（下载2.46文件放到bin目录）
+- chrome 版本 72.0.3626.119（正式版本） （64 位）
 
 
-> Program.cs
+> Screenshot.cs
