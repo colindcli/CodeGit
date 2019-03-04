@@ -1,4 +1,4 @@
-## WebDriver Net网页截图
+## WebDriver网页截图
 
 
 > 安装插件: Screenshot.cs
