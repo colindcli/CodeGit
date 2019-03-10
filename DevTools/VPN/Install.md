@@ -1,4 +1,4 @@
-## VPN搭建：
+## VPN搭建
 
 
 > 服务端
@@ -30,3 +30,4 @@ C:\Users\Administrator\AppData\Roaming\npm\node_modules\shadowsocks\config.json
 
 6、下载客户端：https://github.com/shadowsocks/shadowsocks-windows/releases
 
+7、安卓手机端：https://github.com/shadowsocks/shadowsocks-android
