@@ -37,13 +37,16 @@ internal class Program
             }
             var fileName = $"{dir}/{Guid.NewGuid()}";
 
-            var driver = new ChromeDriver();
+            var option = new ChromeOptions();
+            //option.AddArgument("--window-size=1920,1080");
+            option.AddArgument("headless");
+            var driver = new ChromeDriver(option);
 
             var win = driver.Manage().Window;
 
             // LogHelper.Debug($"设置前窗口大小：{win.Size.Width} {win.Size.Height}");
 
-            win.Size = new Size(1971, 1080);
+            win.Size = new Size(1955, 1080);
 
             // LogHelper.Debug($"设置后窗口大小：{win.Size.Width} {win.Size.Height}");
 
