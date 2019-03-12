@@ -25,12 +25,14 @@ internal class Program
     /// </summary>
     /// <param name="url"></param>
     /// <param name="savePath"></param>
-    /// <param name="report"></param>
-    private bool Run(string url, string savePath, Action<string, ConsoleColor> report)
+    /// <param name="pageSource"></param>
+    /// <param name="log"></param>
+    public static bool Run(string url, string savePath, out string pageSource, Action<object, Exception> log = null)
     {
+        pageSource = null;
         try
         {
-            var dir = $"{AppDomain.CurrentDomain.BaseDirectory}Files";
+            var dir = $"{AppDomain.CurrentDomain.BaseDirectory.TrimEnd('/', '\\')}/Files";
             if (!Directory.Exists(dir))
             {
                 Directory.CreateDirectory(dir);
@@ -44,13 +46,14 @@ internal class Program
 
             var win = driver.Manage().Window;
 
-            // LogHelper.Debug($"设置前窗口大小：{win.Size.Width} {win.Size.Height}");
+            log?.Invoke($"设置前窗口大小：{win.Size.Width} {win.Size.Height}", null);
 
-            win.Size = new Size(1955, 1080);
+            win.Size = new Size(1971, 1080);
 
-            // LogHelper.Debug($"设置后窗口大小：{win.Size.Width} {win.Size.Height}");
+            log?.Invoke($"设置后窗口大小：{win.Size.Width} {win.Size.Height}", null);
 
             driver.Navigate().GoToUrl(url);
+            pageSource = driver.PageSource;
             var heightStr = driver.ExecuteJavaScript<object>("return document.documentElement.scrollHeight+\"|\"+document.documentElement.clientHeight+\"|\"+document.documentElement.clientWidth").ToString();
 
             var obj = heightStr.Split('|');
@@ -60,22 +63,22 @@ internal class Program
 
             var pageSize = scrollHeight / clientHeight;
 
-            // LogHelper.Debug($"Js获取窗口大小：{clientWidth}  {scrollHeight}  {clientHeight}");
+            log?.Invoke($"Js获取窗口大小：{clientWidth}  {scrollHeight}  {clientHeight}", null);
 
             int index = 0;
             for (; index < pageSize; index++)
             {
                 driver.ExecuteScript($"window.scrollTo(0,{clientHeight * index})");
-                //Thread.Sleep(500);
+                Thread.Sleep(500);
                 driver.ExecuteScript("var items=document.querySelectorAll('*');var array=[];for(var i=0;i<items.length;i++){var name=items[i].tagName.toLocaleLowerCase();var flag=false;for(var j=0;j<array.length;j++){if(array[j]===name){flag=true;break}}if(!flag){array.push(name)}}for(var i=0;i<array.length;i++){var tagName=array[i];var rows=document.getElementsByTagName(tagName);for(var j=0;j<rows.length;j++){var pt=window.getComputedStyle(rows[j],null).position;if(pt==='fixed'){rows[j].style.setProperty('position','absolute','important');rows[j].style.setProperty('top','','important');rows[j].style.setProperty('bottom','','important');rows[j].style.setProperty('left','','important');rows[j].style.setProperty('right','','important')}}};");
-                //Thread.Sleep(5000);
-                driver.GetScreenshot().SaveAsFile($@"{fileName}{index}.png", ScreenshotImageFormat.Png);
+                Thread.Sleep(2000);
+                driver.GetScreenshot().SaveAsFile($@"{fileName}{index}.jpg", ScreenshotImageFormat.Jpeg);
             }
 
             if (scrollHeight % clientHeight > 0)
             {
                 driver.ExecuteScript($"window.scrollTo(0,{scrollHeight})");
-                driver.GetScreenshot().SaveAsFile($@"{fileName}{index}.png", ScreenshotImageFormat.Png);
+                driver.GetScreenshot().SaveAsFile($@"{fileName}{index}.jpg", ScreenshotImageFormat.Jpeg);
             }
             driver.Close();
             driver.Dispose();
@@ -87,21 +90,21 @@ internal class Program
             var i = 0;
             for (; i < index; i++)
             {
-                var img = Image.FromFile($@"{fileName}{i}.png");
+                var img = Image.FromFile($@"{fileName}{i}.jpg");
                 g.DrawImage(img, 0, i * clientHeight, clientWidth, clientHeight);
                 img.Dispose();
             }
 
             if (scrollHeight % clientHeight > 0)
             {
-                var img = Image.FromFile($@"{fileName}{i}.png");
+                var img = Image.FromFile($@"{fileName}{i}.jpg");
                 g.DrawImage(img, 0, scrollHeight - clientHeight, clientWidth, clientHeight);
 
 
                 img.Dispose();
             }
 
-            bmp.Save($@"{savePath}", ImageFormat.Png);
+            bmp.Save($@"{savePath}", ImageFormat.Jpeg);
 
             g.Dispose();
             bmp.Dispose();
@@ -109,15 +112,14 @@ internal class Program
 
             for (var j = 0; j <= i; j++)
             {
-                File.Delete($@"{fileName}{j}.png");
+                File.Delete($@"{fileName}{j}.jpg");
             }
 
             return true;
         }
         catch (Exception ex)
         {
-            report?.Invoke(ex.ToString(), ConsoleColor.Red);
-            // LogHelper.Fatal(ex.Message, ex);
+            log?.Invoke(ex.Message, ex);
             return false;
         }
     }
