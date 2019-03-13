@@ -37,3 +37,8 @@
 
 - umeditor1_2_2-utf8-net：修复两端对齐，justifyjustify替换为justifyfull
 
+
+
+## 百度地图生成器
+
+- http://api.map.baidu.com/lbsapi/createmap/index.html
