@@ -1,6 +1,6 @@
 ## UMeditor
 
-- [下载](http://ueditor.baidu.com/website/download.html#mini)
+- [下载](http://ueditor.baidu.com/website/download.html#mini) / [github](https://github.com/fex-team/umeditor)
 
 > 引用 (需jquery.js)
 
