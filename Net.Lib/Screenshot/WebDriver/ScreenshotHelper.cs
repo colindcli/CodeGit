@@ -69,9 +69,28 @@ internal class Program
             for (; index < pageSize; index++)
             {
                 driver.ExecuteScript($"window.scrollTo(0,{clientHeight * index})");
-                Thread.Sleep(500);
                 driver.ExecuteScript("var items=document.querySelectorAll('*');var array=[];for(var i=0;i<items.length;i++){var name=items[i].tagName.toLocaleLowerCase();var flag=false;for(var j=0;j<array.length;j++){if(array[j]===name){flag=true;break}}if(!flag){array.push(name)}}for(var i=0;i<array.length;i++){var tagName=array[i];var rows=document.getElementsByTagName(tagName);for(var j=0;j<rows.length;j++){var pt=window.getComputedStyle(rows[j],null).position;if(pt==='fixed'){rows[j].style.setProperty('position','absolute','important');rows[j].style.setProperty('top','','important');rows[j].style.setProperty('bottom','','important');rows[j].style.setProperty('left','','important');rows[j].style.setProperty('right','','important')}}};");
-                Thread.Sleep(2000);
+
+                // 通过截图文件MD5值判断是否加载完成
+                var num = 0;
+                var md5 = new List<string>();
+                while (num < 50)
+                {
+                    var ph = $@"{fileName}{index}_{num}.jpg";
+                    driver.GetScreenshot().SaveAsFile(ph, ScreenshotImageFormat.Jpeg);
+                    var m5 = FileMd5(ph);
+                    md5.Add(m5);
+                    File.Delete(ph);
+
+                    var c = md5.Count(p => p == m5);
+                    if (c >= 3)
+                    {
+                        break;
+                    }
+                    num++;
+                    Thread.Sleep(200);
+                }
+
                 driver.GetScreenshot().SaveAsFile($@"{fileName}{index}.jpg", ScreenshotImageFormat.Jpeg);
             }
 
@@ -121,6 +140,34 @@ internal class Program
         {
             log?.Invoke(ex.Message, ex);
             return false;
+        }
+    }
+
+    /// <summary>
+    /// 判读文件MD5值
+    /// </summary>
+    /// <param name="fileName"></param>
+    /// <returns></returns>
+    private static string FileMd5(string fileName)
+    {
+        try
+        {
+            var md5 = new MD5CryptoServiceProvider();
+            var file = new FileStream(fileName, FileMode.Open);
+            var retVal = md5.ComputeHash(file);
+            file.Close();
+
+            var sb = new StringBuilder();
+            foreach (var t in retVal)
+            {
+                sb.Append(t.ToString("x2"));
+            }
+
+            return sb.ToString();
+        }
+        catch (Exception)
+        {
+            return null;
         }
     }
 }
