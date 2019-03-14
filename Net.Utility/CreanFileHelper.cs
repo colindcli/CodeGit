@@ -1,3 +1,5 @@
+// 定时删除文件
+
 using DwrUtility;
 using System;
 using System.Collections.Generic;
