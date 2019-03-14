@@ -1,11 +1,12 @@
-// 定时删除文件
-
 using DwrUtility;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
+/// <summary>
+/// 定时删除文件
+/// </summary>
 public class CreanFileHelper
 {
     /// <summary>
