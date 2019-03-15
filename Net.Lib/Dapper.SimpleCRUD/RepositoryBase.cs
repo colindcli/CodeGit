@@ -126,6 +126,14 @@ public abstract class RepositoryBase
 
     public Task<List<T>> GetListAsync<T>(object whereConditions = null)
     {
+        if (whereConditions == null)
+        {
+            return Task.Run(() => Db(db => db.GetList<T>().ToList()));
+        }
+        if (whereConditions is string)
+        {
+            return Task.Run(() => Db(db => db.GetList<T>(whereConditions.ToString()).ToList()));
+        }
         return Task.Run(() => Db(db => db.GetList<T>(whereConditions).ToList()));
     }
 
