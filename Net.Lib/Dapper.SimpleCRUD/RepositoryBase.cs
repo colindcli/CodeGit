@@ -86,6 +86,11 @@ public abstract class RepositoryBase
 
     #region 操作
 
+    public int Add<T>(T m)
+    {
+        return Db(db => db.Insert<int, T>(m));
+    }
+
     public TReturn Add<TReturn, T>(T m)
     {
         return Db(db => db.Insert<TReturn, T>(m));
@@ -105,9 +110,17 @@ public abstract class RepositoryBase
     {
         return Task.Run(() => Db(db => db.Get<T>(id)));
     }
-
+    
     public List<T> GetList<T>(object whereConditions = null)
     {
+        if (whereConditions == null)
+        {
+            return Db(db => db.GetList<T>().ToList());
+        }
+        if (whereConditions is string)
+        {
+            return Db(db => db.GetList<T>(whereConditions.ToString()).ToList());
+        }
         return Db(db => db.GetList<T>(whereConditions).ToList());
     }
 
