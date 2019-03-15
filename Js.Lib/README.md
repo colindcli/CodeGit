@@ -184,7 +184,7 @@
 - 整页滚动：[onepage-scroll](https://github.com/peachananr/onepage-scroll) / [demo](http://www.thepetedesign.com/demos/onepage_scroll_demo.html)
 - 页面块滚动响应：[ScrollTrigger](https://github.com/terwanerik/ScrollTrigger) / [demo](https://terwanerik.github.io/ScrollTrigger/) MIT
 - 平滑进度滚动：[naturalScroll](https://github.com/asvd/naturalScroll) / [demo](http://asvd.github.io/viewport/) MIT
-- 滚动到某高度固定块：[ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed) MIT
+- 滚动到某高度固定块/滚动固定：[ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed) MIT
 - 滚动动画：[WOW](https://github.com/matthieua/WOW) / [demo](http://mynameismatthieu.com/WOW/) Commercial
 - 列表滚动特效：[stroll.js](https://github.com/hakimel/stroll.js) / [demo](https://lab.hakim.se/scroll-effects/) MIT
 
