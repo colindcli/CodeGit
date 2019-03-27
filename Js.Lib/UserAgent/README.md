@@ -1,0 +1,37 @@
+## 判断Pc端|移动端、安卓|IOS、微信|QQ
+
+
+> PC端移动端
+
+- 简单判断
+
+(/mobile/i).test(navigator.userAgent.toLowerCase());
+
+
+-- 复杂判断
+
+if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+    alert('手机端')
+}else{
+    alert('PC端')
+}
+
+
+> 安卓
+
+(/android|adr/i).test(navigator.userAgent.toLowerCase());
+
+
+> 苹果【不确定】
+
+(/iphone|iPad|ipod|ios|mac/i).test(navigator.userAgent.toLowerCase());
+
+
+> 微信
+
+(/micromessenger/i).test(navigator.userAgent.toLowerCase());
+
+
+> Pc版微信
+
+(/micromessenger/i).test(navigator.userAgent.toLowerCase()) && (/windowswechat/i).test(navigator.userAgent.toLowerCase());
