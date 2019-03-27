@@ -35,3 +35,9 @@ if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobi
 > Pc版微信
 
 (/micromessenger/i).test(navigator.userAgent.toLowerCase()) && (/windowswechat/i).test(navigator.userAgent.toLowerCase());
+
+
+
+## 所有的UserAgent
+
+- [useragentstring](http://www.useragentstring.com/pages/useragentstring.php?name=All)
