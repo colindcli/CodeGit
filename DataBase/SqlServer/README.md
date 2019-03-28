@@ -11,6 +11,7 @@
 - 分割字符串：FnStringSplit.sql
 - 查找区间日期：BetweenDate.sql
 - 编译执行时间：ExcuteTime.sql
+- 截断数据库日志：CutLog.sql
 
 
 ## 查询
