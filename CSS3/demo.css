@@ -1,0 +1,16 @@
+/* 动画 */
+a:hover {
+    -webkit-transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);
+    -webkit-box-shadow: 0px 5px 12px rgba(126,142,177,0.2);
+    box-shadow: 0px 5px 12px rgba(126,142,177,0.2);
+}
+
+/* 背景灰 */
+.bg{
+    background-color: #f2f4f8;
+}
+
+.bg-box{
+    background-color: #1b55e2;
+}
