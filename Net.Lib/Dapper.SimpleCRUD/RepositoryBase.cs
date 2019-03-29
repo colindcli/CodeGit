@@ -219,19 +219,21 @@ public static class RepositoryExtension
         if (fields?.Length > 0)
         {
             sb.Append(" WHERE");
-            var i = 0;
+            var addAnd = false;
             foreach (var field in fields)
             {
-                if (i > 0)
+                if (addAnd)
                 {
                     sb.Append(" AND");
+                }
+                else
+                {
+                    addAnd = true;
                 }
 
                 var fieldName = field.Name;
                 var fieldValue = field.GetValue(whereConditions);
                 sb.Append(fieldValue is IEnumerable ? $" {fieldName} IN @{fieldName}" : $" {fieldName}=@{fieldName}");
-
-                i++;
             }
         }
 
@@ -239,6 +241,7 @@ public static class RepositoryExtension
 
         return connection.Query<T>(sb.ToString(), whereConditions, transaction: transaction, commandTimeout: commandTimeout);
     }
+    
     public static void Update<T>(this SqlConnection db, object id, Action<T> action, SqlTransaction tran = null)
     {
         var obj = db.Get<T>(id, tran);
