@@ -137,6 +137,16 @@ public abstract class RepositoryBase
         return Task.Run(() => Db(db => db.GetList<T>(whereConditions).ToList()));
     }
 
+    public List<T> GetListByBulk<T>(object whereConditions)
+    {
+        return Db(db => db.GetListByBulk<T>(whereConditions).ToList());
+    }
+
+    public Task<List<T>> GetListByBulkAsync<T>(object whereConditions)
+    {
+        return Task.Run(() => Db(db => db.GetListByBulk<T>(whereConditions).ToList()));
+    }
+
     public bool Update<T>(T m)
     {
         return Db(db => db.Update(m)) > 0;
@@ -192,6 +202,43 @@ public abstract class RepositoryBase
 
 public static class RepositoryExtension
 {
+    /// <summary>
+    /// 获取列表
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="connection"></param>
+    /// <param name="whereConditions"></param>
+    /// <param name="transaction"></param>
+    /// <param name="commandTimeout"></param>
+    /// <returns></returns>
+    public static IEnumerable<T> GetListByBulk<T>(this IDbConnection connection, object whereConditions, IDbTransaction transaction = null, int? commandTimeout = null)
+    {
+        var name = typeof(T).Name;
+        var sb = new StringBuilder($"SELECT * FROM {name} t");
+        var fields = whereConditions?.GetType().GetProperties();
+        if (fields?.Length > 0)
+        {
+            sb.Append(" WHERE");
+            var i = 0;
+            foreach (var field in fields)
+            {
+                if (i > 0)
+                {
+                    sb.Append(" AND");
+                }
+
+                var fieldName = field.Name;
+                var fieldValue = field.GetValue(whereConditions);
+                sb.Append(fieldValue is IEnumerable ? $" {fieldName} IN @{fieldName}" : $" {fieldName}=@{fieldName}");
+
+                i++;
+            }
+        }
+
+        sb.Append(";");
+
+        return connection.Query<T>(sb.ToString(), whereConditions, transaction: transaction, commandTimeout: commandTimeout);
+    }
     public static void Update<T>(this SqlConnection db, object id, Action<T> action, SqlTransaction tran = null)
     {
         var obj = db.Get<T>(id, tran);
