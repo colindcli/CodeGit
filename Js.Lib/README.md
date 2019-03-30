@@ -132,6 +132,8 @@
 - 数据验证：[validator.js](https://github.com/chriso/validator.js) MIT
 - Cookie操作: [js-cookie](https://github.com/js-cookie/js-cookie) MIT
 - 时间轴：[TimelineJS](https://github.com/NUKnightLab/TimelineJS) MPL2.0
+- 到计时：[jCountdown](https://github.com/tomgrohl/jCountdown) MIT
+- 到计时：https://www.fzxgj.top/Demo/2a25d385-68c7-401b-9810-2c5fa167f2bf
 
 
 > 邮件
