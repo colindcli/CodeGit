@@ -203,18 +203,15 @@ public abstract class RepositoryBase
 public static class RepositoryExtension
 {
     /// <summary>
-    /// 获取列表
+    /// 批量获取列表(依赖Dapper)
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <param name="connection"></param>
     /// <param name="whereConditions"></param>
-    /// <param name="transaction"></param>
-    /// <param name="commandTimeout"></param>
     /// <returns></returns>
-    public static IEnumerable<T> GetListByBulk<T>(this IDbConnection connection, object whereConditions, IDbTransaction transaction = null, int? commandTimeout = null)
+    private static string ToSelectSql<T>(object whereConditions)
     {
         var name = typeof(T).Name;
-        var sb = new StringBuilder($"SELECT * FROM {name} t");
+        var sb = new StringBuilder($"SELECT * FROM {name}");
         var fields = whereConditions?.GetType().GetProperties();
         if (fields?.Length > 0)
         {
@@ -233,13 +230,39 @@ public static class RepositoryExtension
 
                 var fieldName = field.Name;
                 var fieldValue = field.GetValue(whereConditions);
-                sb.Append(fieldValue is IEnumerable ? $" {fieldName} IN @{fieldName}" : $" {fieldName}=@{fieldName}");
+                switch (fieldValue)
+                {
+                    case string _:
+                        sb.Append($" {fieldName}=@{fieldName}");
+                        break;
+                    case IEnumerable _:
+                        sb.Append($" {fieldName} IN @{fieldName}");
+                        break;
+                    default:
+                        sb.Append($" {fieldName}=@{fieldName}");
+                        break;
+                }
             }
         }
 
         sb.Append(";");
 
-        return connection.Query<T>(sb.ToString(), whereConditions, transaction: transaction, commandTimeout: commandTimeout);
+        return sb.ToString();
+    }
+    
+    /// <summary>
+    /// 获取列表
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="connection"></param>
+    /// <param name="whereConditions"></param>
+    /// <param name="transaction"></param>
+    /// <param name="commandTimeout"></param>
+    /// <returns></returns>
+    public static IEnumerable<T> GetListByBulk<T>(this IDbConnection connection, object whereConditions, IDbTransaction transaction = null, int? commandTimeout = null)
+    {
+        var sqlStr = ToSelectSql<T>(whereConditions);
+        return connection.Query<T>(sqlStr, whereConditions, transaction: transaction, commandTimeout: commandTimeout);
     }
     
     public static void Update<T>(this SqlConnection db, object id, Action<T> action, SqlTransaction tran = null)
