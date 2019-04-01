@@ -2,12 +2,14 @@
 //Install-Package ExecuteSqlBulk
 using Dapper;
 using ExecuteSqlBulk;
-using MyProject.Common;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 public abstract class RepositoryBase
@@ -110,7 +112,7 @@ public abstract class RepositoryBase
     {
         return Task.Run(() => Db(db => db.Get<T>(id)));
     }
-    
+
     public List<T> GetList<T>(object whereConditions = null)
     {
         if (whereConditions == null)
@@ -264,7 +266,7 @@ public static class RepositoryExtension
         var sqlStr = ToSelectSql<T>(whereConditions);
         return connection.Query<T>(sqlStr, whereConditions, transaction: transaction, commandTimeout: commandTimeout);
     }
-    
+
     public static void Update<T>(this SqlConnection db, object id, Action<T> action, SqlTransaction tran = null)
     {
         var obj = db.Get<T>(id, tran);
