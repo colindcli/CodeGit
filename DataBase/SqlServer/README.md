@@ -6,6 +6,7 @@
 
 - 截断数据库日志：CutLog.sql
 - 数据备份：Backup.sql
+- 还原数据库：Restore.sql
 
 - 日期转换：DateVarchar.sql [转换示例](https://github.com/colindcli/CodeGit/blob/master/SqlServer/images/date.png)
 - 分割字符串：FnStringSplit.sql
