@@ -243,6 +243,7 @@
 
 > 动画
 
+- 生成运动动画(贝塞尔曲线)：[stylie](https://github.com/jeremyckahn/stylie) / [demo](http://jeremyckahn.github.io/stylie/) View
 - 文字跳动：[animate.css](https://github.com/daneden/animate.css) / [demo](https://daneden.github.io/animate.css/) MIT
 - 文字动画：[vivify](https://github.com/Martz90/vivify) / [demo](http://vivify.mkcreative.cz/) MIT
 - 动作运动：[anime](https://github.com/juliangarnier/anime) / [demo](http://animejs.com/documentation/) MIT
@@ -255,6 +256,7 @@
 - 图形跳动：[bounce.js](https://github.com/tictail/bounce.js) / [demo](http://bouncejs.com/) MIT
 - div动画变化：[](https://github.com/thednp/kute.js) / [demo](http://thednp.github.io/kute.js/css.html) MIT
 - 页面动画：[barba.js](https://github.com/luruke/barba.js) / [demo](http://barbajs.org/demos.html) MIT
+- 运动函数：[easings.net](https://github.com/ai/easings.net) / [demo](https://easings.net/) GPL3
 
 
 > 图片放大
