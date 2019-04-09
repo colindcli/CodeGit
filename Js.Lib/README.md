@@ -134,6 +134,7 @@
 - 时间轴：[TimelineJS](https://github.com/NUKnightLab/TimelineJS) MPL2.0
 - 到计时：[jCountdown](https://github.com/tomgrohl/jCountdown) MIT
 - 到计时：https://www.fzxgj.top/Demo/2a25d385-68c7-401b-9810-2c5fa167f2bf
+- 排序：[Sortable](https://github.com/SortableJS/Sortable) / [demo](https://sortablejs.github.io/Sortable/)
 
 
 > 邮件
