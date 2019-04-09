@@ -12,6 +12,7 @@
 - 分割字符串：FnStringSplit.sql
 - 查找区间日期：BetweenDate.sql
 - 编译执行时间：ExcuteTime.sql
+- 修改表备注：Description.sql
 
 
 ## 查询
