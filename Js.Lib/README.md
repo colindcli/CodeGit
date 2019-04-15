@@ -129,18 +129,27 @@
 
 > 日期时间
 
-- 格式化时间：[moment](https://github.com/moment/moment/) / [demo](http://momentjs.com/)
-- 时间时区：[moment-timezone](https://github.com/moment/moment-timezone/) / [doc](http://momentjs.com/timezone/)
-- 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
-- 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
-- 日期选择：[jemui](https://github.com/singod/jeDate) / [doc](http://www.jemui.com/) MIT
-- 日期选择：[pickerjs](https://github.com/fengyuanchen/pickerjs) / [demo](https://fengyuanchen.github.io/pickerjs/) MIT
-- 时间轴：[TimelineJS](https://github.com/NUKnightLab/TimelineJS) MPL2.0
-- 横向时间轴：[TimelineJS3](https://github.com/NUKnightLab/TimelineJS3) / [demo](https://timeline.knightlab.com/#preview-embed) MPL2.0
+- 日期时间库: [Datejs](https://github.com/datejs/Datejs) View
 - 时间库(返回格式)：[Time](https://github.com/PaulStoffregen/Time) / [doc](http://playground.arduino.cc/code/time)
 - 时间库(addDate)：[Time](https://github.com/dreymonde/Time)
+- 格式化时间：[moment](https://github.com/moment/moment/) / [demo](http://momentjs.com/)
+- 日期操作格式：[dayjs](https://github.com/iamkun/dayjs) MIT
+- 时间时区：[moment-timezone](https://github.com/moment/moment-timezone/) / [doc](http://momentjs.com/timezone/)
+- 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
+- 日期区间选择: [daterangepicker](https://github.com/dangrossman/daterangepicker) / [demo](http://www.daterangepicker.com/)  MIT
+- 日期选择：[jemui](https://github.com/singod/jeDate) / [doc](http://www.jemui.com/) MIT
+- 日期选择：[pickerjs](https://github.com/fengyuanchen/pickerjs) / [demo](https://fengyuanchen.github.io/pickerjs/) MIT
+- 日期时间选择：[datetimepicker](https://github.com/xdan/datetimepicker) / [demo](https://xdsoft.net/jqplugins/datetimepicker/) MIT
+- 手机端圆形选择时间：[timedropper](https://github.com/felicegattuso/timedropper) / [demo](https://felicegattuso.com/projects/timedropper/)  MIT
+- 时间轴：[TimelineJS](https://github.com/NUKnightLab/TimelineJS) MPL2.0
+- 横向时间轴：[TimelineJS3](https://github.com/NUKnightLab/TimelineJS3) / [demo](https://timeline.knightlab.com/#preview-embed) MPL2.0
+- 时间轴：[Timeline](https://github.com/wnyc/Timeline)
+- 横向人物历史轴：[history-timeline](https://github.com/ybogdanov/history-timeline) / [demo](https://ybogdanov.github.io/history-timeline/) GPL2
 - 过去时间显示：[jquery-timeago](https://github.com/rmm5t/jquery-timeago) / [demo](http://timeago.yarp.com/) MIT
 - 显示过去时间格式：[timeago.js](https://github.com/hustcc/timeago.js) / [demo](https://timeago.org/) MIT
+- 过去时间：[javascript-time-ago](https://github.com/catamphetamine/javascript-time-ago) MIT
+- 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
+- 计时：[timer.jquery](https://github.com/walmik/timer.jquery) / [demo](https://jquerytimer.com/) MIT
 - 到计时：[jCountdown](https://github.com/tomgrohl/jCountdown) MIT
 - 到计时：https://www.fzxgj.top/Demo/2a25d385-68c7-401b-9810-2c5fa167f2bf
 
@@ -266,6 +275,8 @@
 - div动画变化：[](https://github.com/thednp/kute.js) / [demo](http://thednp.github.io/kute.js/css.html) MIT
 - 页面动画：[barba.js](https://github.com/luruke/barba.js) / [demo](http://barbajs.org/demos.html) MIT
 - 运动函数：[easings.net](https://github.com/ai/easings.net) / [demo](https://easings.net/) GPL3
+- 生成动画工具: [timeliner](https://github.com/zz85/timeliner) / [demo](http://zz85.github.io/timeliner/test.html) MIT
+- 动画工具: [TweenTime](https://github.com/idflood/TweenTime) / [demo](https://idflood.github.io/TweenTime/examples/basic.html)  MIT
 
 
 > 图片放大
