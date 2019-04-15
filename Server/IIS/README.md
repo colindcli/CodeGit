@@ -45,3 +45,25 @@ URL Rewriter2.0（For IIS7.0，支持Win 2012 R2）直接安装即可。
 - 点击站点，选Url rewrite添加规则。
 
 注意：编辑入站规则的模式匹配域名后半部分，如：`http://www.iis.net/downloads/microsoft/application-request-routing`，匹配 `downloads/microsoft/application-request-routing`
+
+
+## 一台服务器IIS支持绑定多个HTTPS站点
+
+
+> 方法一：
+
+- 打开注册表：Win+R组合键打开运行，输入“regedit”。
+
+- 找到注册表项：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters\SslSniBindingInfo，将注册表值改为2。
+
+- 重启IIS服务。
+
+
+> 方法二：
+
+- C:\Windows\system32\inetsrv\config\applicationHost.config、
+
+- 默认一个站点带一个这样的配置：<binding protocol="https" bindingInformation="*:443" />
+- 修改成：<binding protocol="https" bindingInformation="*:443:www.baidu.om" />
+
+- 切记需要对应的每个站点都修改。
