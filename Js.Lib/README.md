@@ -31,9 +31,8 @@
 - 地区城市选择：[city-picker](https://github.com/tshi0912/city-picker) / [demo](http://tshi0912.github.io/city-picker/) MIT
 - vue地区选择：[element-china-area-data](https://github.com/Plortinus/element-china-area-data) / [demo](https://plortinus.github.io/element-china-area-data/index.html) MIT
 - 图片轮换/格式化输入框/滚动条/倒计时/图片聚焦/搜索建议/颜色选择器/聊天表情：[widget](https://github.com/mumuy/widget)
-- 类库：[underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
-- 类库：[lodash](https://github.com/lodash/lodash) / [doc](https://lodash.com/)
-
+- JS操作类库：[underscore](https://github.com/jashkenas/underscore) / [demo](http://www.css88.com/doc/underscore/)
+- JS操作类库：[lodash](https://github.com/lodash/lodash) / [doc](https://lodash.com/)
 - 甘特图：[gantt](https://github.com/DHTMLX/gantt)
 - 日程：[fullcalendar](https://github.com/fullcalendar/fullcalendar)
 - 电话输入：[intl-tel-input](https://github.com/jackocnr/intl-tel-input)
@@ -53,7 +52,6 @@
 - 类似excel进度：[timesheet.js](https://github.com/sbstjn/timesheet.js)
 - 弹框页面缩小：[Avgrund](https://github.com/hakimel/Avgrund) / [demo](https://lab.hakim.se/avgrund/) MIT
 - 发送页面弹幕：[jquery.barrager.js](https://github.com/yaseng/jquery.barrager.js)
-- 过去时间显示：[jquery-timeago](https://github.com/rmm5t/jquery-timeago) / [demo](http://timeago.yarp.com/) MIT
 - 鼠标滚轮插件：[jquery-mousewheel](https://github.com/jquery/jquery-mousewheel)
 - 复制到粘贴板：[zeroclipboard](https://github.com/zeroclipboard/zeroclipboard)
 - 复制到粘贴板：[clipboard.js](https://github.com/zenorocha/clipboard.js) / [demo](https://clipboardjs.com/) MIT
@@ -62,16 +60,13 @@
 - 格式化电话信用卡：[cleave.js](https://github.com/nosir/cleave.js) / [demo](http://nosir.github.io/cleave.js/) Apache-2.0
 - 格式化信用卡：[card](https://github.com/jessepollak/card) / [demo](https://jessepollak.github.io/card/) MIT
 - 格式化数量：[Numeral-js](https://github.com/adamwdraper/Numeral-js) / [demo](http://numeraljs.com/) MIT
-- 格式化时间：[moment](https://github.com/moment/moment/) / [demo](http://momentjs.com/)
 - 美化格式化文档：[js-beautify](https://github.com/beautify-web/js-beautify) [demo](http://jsbeautifier.org/) MIT
 - C#格式化js：[Jsbeautifier](https://github.com/denis-ivanov/Jsbeautifier) MIT
 - C#格式化html：[jsBeautifier.net](https://github.com/rhoney/jsBeautifier.net) MIT
 - java格式化文档：[beautify](https://github.com/hwangfantasy/beautify)
-- 时间时区：[moment-timezone](https://github.com/moment/moment-timezone/) / [doc](http://momentjs.com/timezone/)
 - 图片下雨点：[rainyday.js](https://github.com/maroslaw/rainyday.js) / [demo](https://mubaidr.github.io/rainyday.js/) GPL
 - 确认信息框：[alertify.js](https://github.com/fabien-d/alertify.js) / [demo](http://fabien-d.github.io/alertify.js/) MIT
 - 确认对话框：[jquery-confirm](https://github.com/craftpip/jquery-confirm) / [demo](http://craftpip.github.io/jquery-confirm/) MIT
-- 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
 - 网页编辑器、对比文本：[monaco-editor](https://github.com/Microsoft/monaco-editor) / [demo: demo/MonacoEditor/README.md] / [eg.](https://github.com/Microsoft/monaco-editor-samples/) MIT
 - 在线编辑器：[/CodeMirror](https://github.com/codemirror/CodeMirror) / [doc/demo](http://codemirror.net/) MIT
 - 代码高亮：[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) MIT
@@ -83,9 +78,6 @@
 - DIV固定粘性：[fixed-sticky](https://github.com/filamentgroup/fixed-sticky) / [demo](http://filamentgroup.github.io/fixed-sticky/demos/demo-control.html) MIT
 - DIV固定粘性：[fixto](https://github.com/bbarakaci/fixto) / [demo](http://bbarakaci.github.io/fixto/) MIT
 - 滚动固定位置：[stickymojo](https://github.com/mojotech/stickymojo) / [demo](http://mojotech.github.io/stickymojo/)
-- 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
-- 日期选择：[jemui](https://github.com/singod/jeDate) / [doc](http://www.jemui.com/) MIT
-- 日期选择：[pickerjs](https://github.com/fengyuanchen/pickerjs) / [demo](https://fengyuanchen.github.io/pickerjs/) MIT
 - H5首屏加载速度：[VasSonic](https://github.com/Tencent/VasSonic) BSD
 - 下拉刷新：[minirefresh](https://github.com/minirefresh/minirefresh) MIT
 - 切页面动画：[H5FullscreenPage](https://github.com/lvming6816077/H5FullscreenPage) / [demo](https://www.nihaoshijie.com.cn/H5FullscreenPage/)
@@ -131,10 +123,26 @@
 - 属性选择器：[ui-choose](https://github.com/wangxing218/ui-choose) / [demo](https://wangxing218.github.io/ui-choose/test/demo.html)
 - 数据验证：[validator.js](https://github.com/chriso/validator.js) MIT
 - Cookie操作: [js-cookie](https://github.com/js-cookie/js-cookie) MIT
+- 排序：[Sortable](https://github.com/SortableJS/Sortable) / [demo](https://sortablejs.github.io/Sortable/) MIT
+- 不断切换方块：[resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill) / [demo](https://que-etc.github.io/resize-observer-polyfill/) MIT
+
+
+> 日期时间
+
+- 格式化时间：[moment](https://github.com/moment/moment/) / [demo](http://momentjs.com/)
+- 时间时区：[moment-timezone](https://github.com/moment/moment-timezone/) / [doc](http://momentjs.com/timezone/)
+- 计时器：[countUp.js](https://github.com/inorganik/countUp.js) / [demo](http://inorganik.github.io/countUp.js/) MIT
+- 日期区间选择：[jquery-date-range-picker](https://github.com/longbill/jquery-date-range-picker) / [demo](http://longbill.github.io/jquery-date-range-picker/) MIT
+- 日期选择：[jemui](https://github.com/singod/jeDate) / [doc](http://www.jemui.com/) MIT
+- 日期选择：[pickerjs](https://github.com/fengyuanchen/pickerjs) / [demo](https://fengyuanchen.github.io/pickerjs/) MIT
 - 时间轴：[TimelineJS](https://github.com/NUKnightLab/TimelineJS) MPL2.0
+- 横向时间轴：[TimelineJS3](https://github.com/NUKnightLab/TimelineJS3) / [demo](https://timeline.knightlab.com/#preview-embed) MPL2.0
+- 时间库(返回格式)：[Time](https://github.com/PaulStoffregen/Time) / [doc](http://playground.arduino.cc/code/time)
+- 时间库(addDate)：[Time](https://github.com/dreymonde/Time)
+- 过去时间显示：[jquery-timeago](https://github.com/rmm5t/jquery-timeago) / [demo](http://timeago.yarp.com/) MIT
+- 显示过去时间格式：[timeago.js](https://github.com/hustcc/timeago.js) / [demo](https://timeago.org/) MIT
 - 到计时：[jCountdown](https://github.com/tomgrohl/jCountdown) MIT
 - 到计时：https://www.fzxgj.top/Demo/2a25d385-68c7-401b-9810-2c5fa167f2bf
-- 排序：[Sortable](https://github.com/SortableJS/Sortable) / [demo](https://sortablejs.github.io/Sortable/)
 
 
 > 邮件
