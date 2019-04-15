@@ -47,6 +47,8 @@ URL Rewriter2.0（For IIS7.0，支持Win 2012 R2）直接安装即可。
 注意：编辑入站规则的模式匹配域名后半部分，如：`http://www.iis.net/downloads/microsoft/application-request-routing`，匹配 `downloads/microsoft/application-request-routing`
 
 
+
+
 ## 一台服务器IIS支持绑定多个HTTPS站点
 
 
