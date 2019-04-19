@@ -23,3 +23,17 @@
     location ~ /api/ {
         proxy_pass   http://dev.oa.com:8061;
     }
+
+
+
+## 安装服务
+
+> [Github](https://github.com/daptiv/NginxService)，包含文件：nginxservice.exe和Topshelf.dll
+
+注意：用admin运行cmd安装
+
+1、将NginxService.exe复制到与nginx.exe相同的目录中
+2、运行NginxService.exe install
+3、运行NginxService.exe start
+
+要卸载，只需运行即可 nginxservice.exe uninstall

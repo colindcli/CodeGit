@@ -52,7 +52,7 @@ URL Rewriter2.0（For IIS7.0，支持Win 2012 R2）直接安装即可。
 ## 一台服务器IIS支持绑定多个HTTPS站点
 
 
-> 方法一：
+> 方法一：(不可用)
 
 - 打开注册表：Win+R组合键打开运行，输入“regedit”。
 
@@ -61,9 +61,9 @@ URL Rewriter2.0（For IIS7.0，支持Win 2012 R2）直接安装即可。
 - 重启IIS服务。
 
 
-> 方法二：
+> 方法二：(不可用)
 
-- C:\Windows\system32\inetsrv\config\applicationHost.config、
+- C:\Windows\system32\inetsrv\config\applicationHost.config
 
 - 默认一个站点带一个这样的配置：<binding protocol="https" bindingInformation="*:443" />
 - 修改成：<binding protocol="https" bindingInformation="*:443:www.baidu.om" />
