@@ -23,7 +23,7 @@
 - 底部显示文件路径：File Path On Footer
 
 
-- Mapping Generator 映射生成对象
+- 根据方法的返回对象生成对象字段：Mapping Generator 映射生成对象
 - xeam Project Rename Tool VS 2013 项目命名
 - Fix Namespace 修复命名空间
 - Regionizer 2.1 with Auto Commenting
