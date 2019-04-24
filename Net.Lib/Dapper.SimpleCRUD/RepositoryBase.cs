@@ -213,7 +213,7 @@ public static class RepositoryExtension
     private static string ToSelectSql<T>(object whereConditions)
     {
         var name = typeof(T).Name;
-        var sb = new StringBuilder($"SELECT * FROM {name}");
+        var sb = new StringBuilder($"SELECT * FROM [{name}]");
         var fields = whereConditions?.GetType().GetProperties();
         if (fields?.Length > 0)
         {
@@ -235,13 +235,13 @@ public static class RepositoryExtension
                 switch (fieldValue)
                 {
                     case string _:
-                        sb.Append($" {fieldName}=@{fieldName}");
+                        sb.Append($" [{fieldName}]=@{fieldName}");
                         break;
                     case IEnumerable _:
-                        sb.Append($" {fieldName} IN @{fieldName}");
+                        sb.Append($" [{fieldName}] IN @{fieldName}");
                         break;
                     default:
-                        sb.Append($" {fieldName}=@{fieldName}");
+                        sb.Append($" [{fieldName}]=@{fieldName}");
                         break;
                 }
             }
