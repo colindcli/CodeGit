@@ -11,7 +11,7 @@
 - [ReplaceGoogleCDN](https://github.com/colindcli/ReplaceGoogleCDN)
 - 保存网页：[Save All Resources](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb)
 - 响应式网站查看工具：[Mobile/Responsive Web Design Tester](https://chrome.google.com/webstore/detail/mobileresponsive-web-desi/elmekokodcohlommfikpmojheggnbelo)
-
+- 拦截网址/请求转移：Reres：[github](https://github.com/annnhan/ReRes)
 
 注：如果chrome商店下载不了，请使用QQ浏览器。
 
