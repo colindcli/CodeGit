@@ -23,3 +23,26 @@ a:hover {
 .text-warning：警告，使用黄色（#8a6d3b）
 .text-danger：危险，使用褐色（#a94442）
 */
+
+
+/* 文字激活时从下往上运动 */
+.active {
+    animation: moveNum .3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes moveNum {
+    from {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    to {
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+}
