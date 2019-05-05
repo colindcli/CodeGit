@@ -150,13 +150,20 @@ internal class Program
     /// <returns></returns>
     private static string FileMd5(string fileName)
     {
+        if (!File.Exists(fileName))
+        {
+            return null;
+        }
         try
         {
             var md5 = new MD5CryptoServiceProvider();
-            var file = new FileStream(fileName, FileMode.Open);
-            var retVal = md5.ComputeHash(file);
-            file.Close();
-
+            byte[] retVal;
+            lock (fileName)
+            {
+                var file = new FileStream(fileName, FileMode.Open);
+                retVal = md5.ComputeHash(file);
+                file.Close();
+            }
             var sb = new StringBuilder();
             foreach (var t in retVal)
             {
