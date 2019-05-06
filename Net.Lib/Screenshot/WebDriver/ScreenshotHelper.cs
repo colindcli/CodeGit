@@ -157,13 +157,9 @@ internal class Program
         try
         {
             var md5 = new MD5CryptoServiceProvider();
-            byte[] retVal;
-            lock (fileName)
-            {
-                var file = new FileStream(fileName, FileMode.Open);
-                retVal = md5.ComputeHash(file);
-                file.Close();
-            }
+            var file = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            var retVal = md5.ComputeHash(file);
+            file.Close();
             var sb = new StringBuilder();
             foreach (var t in retVal)
             {
