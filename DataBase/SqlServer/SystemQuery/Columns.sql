@@ -18,7 +18,7 @@ li AS(
 	INNER JOIN tbs o ON c.object_id = o.object_id
 	INNER JOIN sys.types t ON c.user_type_id=t.user_type_id
 	LEFT JOIN pk p ON c.object_id = p.object_id AND c.column_id = p.column_id
-	LEFT JOIN sys.extended_properties ep ON ep.major_id=c.object_id AND ep.minor_id=c.column_id
+	LEFT JOIN sys.extended_properties ep ON ep.major_id=c.object_id AND ep.minor_id=c.column_id AND ep.class_desc='OBJECT_OR_COLUMN'
 	LEFT JOIN sys.identity_columns ic ON c.object_id = ic.object_id AND c.column_id = ic.column_id
 )
 SELECT * FROM li t ORDER BY t.schemaName ASC,t.tableName ASC,t.columnId ASC;
