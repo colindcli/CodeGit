@@ -4,6 +4,8 @@
 - 基库(字符截断、格式化英文、格式化时间、枚举、字节)：[Humanizer](https://github.com/Humanizr/Humanizer)
 - 枚举：[Enums.NET](https://github.com/TylerBrinkley/Enums.NET)
 - 中文转拼音：[TinyPinyin.Net](https://github.com/hstarorg/TinyPinyin.Net)
+- 中文转拼音：[Pinyin4Net](https://gitee.com/hyjiacan/Pinyin4Net)
+- 非法词(敏感词)检测组件: [ToolGood.Words](https://gitee.com/toolgood/ToolGood.Words)
 - 反编译：[ILSpy](https://github.com/icsharpcode/ILSpy)
 - 失败重试：[Polly](https://github.com/App-vNext/Polly)
 - 对象模型验证：[FluentValidation](https://github.com/JeremySkinner/FluentValidation) apache2.0
