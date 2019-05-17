@@ -24,15 +24,8 @@ public class AssemblyHelper
     /// <returns></returns>
     public static object CallObjectMethod<T>(T instance, string methodName, object[] param = null)
     {
-        var type = instance.GetType();
-        var method = type.GetMethod(methodName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
-        object result = null;
-        if (method != null)
-        {
-            result = method.Invoke(instance, param);
-        }
-
-        return result;
+        var method = instance.GetType().GetMethod(methodName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+        return method?.Invoke(instance, param);
     }
 
     /// <summary>
