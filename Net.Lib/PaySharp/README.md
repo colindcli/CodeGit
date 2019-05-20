@@ -35,3 +35,4 @@ Install-Package PaySharp.Core
 ### 接入申请
 
 - 微信支付：https://pay.weixin.qq.com
+- 支付宝申请：[蚂蚁金服开放平台](https://open.alipay.com/platform/manageHome.htm)
