@@ -1,41 +1,117 @@
+//https://www.nuget.org/packages/DwrUtility
+//Install-Package DwrUtility
 /// <summary>
-/// 服务端
+/// 缓存帮助类
 /// </summary>
-public class ServerPoint
+public class CacheHelper
 {
     /// <summary>
-    /// 获取当前应用程序指定CacheKey的Cache值
+    /// 获取数据缓存
     /// </summary>
-    /// <param name="CacheKey"></param>
+    /// <param name="cacheKey">键</param>
+    public static T GetCache<T>(string cacheKey)
+    {
+        return GetCache<T>(cacheKey, 0);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="cacheKey"></param>
+    /// <param name="tryNumber"></param>
     /// <returns></returns>
-    public static object GetCache(string CacheKey)
+    private static T GetCache<T>(string cacheKey, int tryNumber)
     {
-        System.Web.Caching.Cache objCache = HttpRuntime.Cache;
-        return objCache[CacheKey];
+        var objCache = HttpRuntime.Cache;
+        var result = (T)objCache[cacheKey];
+        if (result != null)
+        {
+            return result;
+        }
+
+        //保证并发写入还会命中
+        if (tryNumber > 10)
+        {
+            return default(T);
+        }
+
+        if (tryNumber > 0)
+        {
+            Thread.Sleep(tryNumber * tryNumber * tryNumber);
+        }
+
+        return GetCache<T>(cacheKey, tryNumber + 1);
     }
 
     /// <summary>
-    /// 设置当前应用程序指定CacheKey的Cache值
+    /// 设置数据缓存
     /// </summary>
-    /// <param name="CacheKey"></param>
-    /// <param name="objObject"></param>
-    public static void SetCache(string CacheKey, object objObject)
+    public static void SetCache<T>(string cacheKey, T objObject)
     {
-        System.Web.Caching.Cache objCache = HttpRuntime.Cache;
-        objCache.Insert(CacheKey, objObject);
+        if (objObject == null)
+        {
+            return;
+        }
+
+        var objCache = HttpRuntime.Cache;
+        objCache.Insert(cacheKey, objObject);
     }
 
     /// <summary>
-    /// 设置当前应用程序指定CacheKey的Cache值
+    /// 设置数据缓存(缓存滑动过期时间)
     /// </summary>
-    /// <param name="CacheKey"></param>
-    /// <param name="objObject"></param>
-    /// <param name="absoluteExpiration">所插入对象将到期并被从缓存中移除的时间。要避免可能的本地时间问题（例如从标准时间改为夏时制），请使用 System.DateTime.UtcNow</param>
-    /// <param name="slidingExpiration">最后一次访问所插入对象时与该对象到期时之间的时间间隔。如果该值等效于 20 分钟，则对象在最后一次被访问 20 分钟之后将到期并被从缓存中移除。如果使用可调到期，则absoluteExpiration 参数必须为 System.Web.Caching.Cache.NoAbsoluteExpiration</param>
-    public static void SetCache(string CacheKey, object objObject, DateTime absoluteExpiration, TimeSpan slidingExpiration)
+    public static void SetCache<T>(string cacheKey, T objObject, TimeSpan timeout)
     {
-        System.Web.Caching.Cache objCache = HttpRuntime.Cache;
-        objCache.Insert(CacheKey, objObject, null, absoluteExpiration, slidingExpiration);
+        if (objObject == null)
+        {
+            return;
+        }
+
+        SetCache(cacheKey, objObject, DateTime.Now.Add(timeout));
+    }
+
+    /// <summary>
+    /// 设置数据缓存(指定缓存到时间)
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="cacheKey"></param>
+    /// <param name="objObject"></param>
+    /// <param name="absoluteExpiration">具体到期时间。5秒钟后过期：DateTime.Now.AddSeconds(5)</param>
+    public static void SetCache<T>(string cacheKey, T objObject, DateTime absoluteExpiration)
+    {
+        if (objObject == null)
+        {
+            return;
+        }
+
+        var objCache = HttpRuntime.Cache;
+        objCache.Insert(cacheKey, objObject, null, absoluteExpiration.ToUniversalTime(), TimeSpan.Zero, CacheItemPriority.NotRemovable, null);
+    }
+
+    /// <summary>
+    /// 移除指定数据缓存
+    /// </summary>
+    public static void RemoveCache(string cacheKey)
+    {
+        var cache = HttpRuntime.Cache;
+        cache.Remove(cacheKey);
+    }
+
+    /// <summary>
+    /// 移除全部缓存
+    /// </summary>
+    public static void RemoveAllCache()
+    {
+        var cache = HttpRuntime.Cache;
+        var cacheEnum = cache.GetEnumerator();
+        while (cacheEnum.MoveNext())
+        {
+            if (cacheEnum.Key != null)
+            {
+                cache.Remove(cacheEnum.Key.ToString());
+            }
+        }
     }
 }
 
