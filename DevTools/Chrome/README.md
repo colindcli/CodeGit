@@ -13,6 +13,11 @@
 - 响应式网站查看工具：[Mobile/Responsive Web Design Tester](https://chrome.google.com/webstore/detail/mobileresponsive-web-desi/elmekokodcohlommfikpmojheggnbelo)
 - 拦截网址/请求转移：Reres：[github](https://github.com/annnhan/ReRes)
 
+
+- 让浏览器支持打开文件(m3u8)：[Reproductor M3U8 - HLS Player](https://chrome.google.com/webstore/detail/reproductor-m3u8-hls-play/lcipembjfkmeggpihdpdgnjildgniffl)
+- 让浏览器发现视频下载: [Video Downloader professional](https://chrome.google.com/webstore/detail/video-downloader-professi/bacakpdjpomjaelpkpkabmedhkoongbi)
+
+
 注：如果chrome商店下载不了，请使用QQ浏览器。
 
 

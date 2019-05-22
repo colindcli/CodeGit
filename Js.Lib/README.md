@@ -336,6 +336,7 @@
 - [plyr](https://github.com/sampotts/plyr)
 - [clappr](https://github.com/clappr/clappr) / [demo](http://clappr.io/demo/) BSD3
 - [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js) / [demo](https://sachinchoolur.github.io/lightgallery.js/demos/) GPL3
+- [酷播](http://www.cuplayer.com/cuplayer/index.html)
 
 
 > 音频
