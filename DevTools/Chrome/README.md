@@ -18,6 +18,9 @@
 - 让浏览器发现视频下载: [Video Downloader professional](https://chrome.google.com/webstore/detail/video-downloader-professi/bacakpdjpomjaelpkpkabmedhkoongbi)
 
 
+> 测试视频地址：https://cloud.video.taobao.com/play/u/10654505/p/1/e/6/t/1/50032658929.mp4
+
+
 注：如果chrome商店下载不了，请使用QQ浏览器。
 
 
