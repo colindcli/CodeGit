@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 写法一 -->
+    <button class="btn" data-clipboard-text="Copy1">Copy1</button>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+        clipboard.on('success', function (e) {
+            var text = e.text;
+            console.log(text);
+        });
+        clipboard.on('error', function (e) {
+            console.log(e);
+        });
+    </script>
+
+    
+    <!-- 写法二 -->
+    <button class="btn2">Copy2</button>
+    <script>
+        var cb = new ClipboardJS('.btn2', {
+            text: function () {
+                return 'Copy2';
+            }
+        });
+        cb.on('success', function (e) {
+            var text = e.text;
+            console.log(text);
+        });
+        cb.on('error', function (e) {
+            console.log(e);
+        });
+    </script>
+
+</body>
+
+</html>
