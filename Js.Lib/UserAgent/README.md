@@ -11,6 +11,7 @@
 
 - 判断PC移动：[express-useragent](https://github.com/biggora/express-useragent)
 - UA转换库：[ua-parser-js](https://github.com/faisalman/ua-parser-js)
+- UA解析库：[bowser](https://github.com/lancedikson/bowser)
 - UA解析库：[Browser.js](https://github.com/mumuy/browser/blob/master/Browser.js)
 
 
