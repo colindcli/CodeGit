@@ -60,3 +60,15 @@ function wxPc() {
     }
     return false;
 };
+
+
+/** * 是否为mac系统（包含iphone手机） * */ 
+var isMac = function() { 
+    return /macintosh|mac os x/i.test(navigator.userAgent); 
+}();
+
+
+/** * 是否为windows系统 * */
+var isWindows = function() { 
+    return /windows|win32|win64|wow32|wow64/i.test(navigator.userAgent);
+}();
