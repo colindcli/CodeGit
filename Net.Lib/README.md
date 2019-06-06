@@ -40,6 +40,7 @@
 - 深度比较对象：[DeepEqual](https://www.nuget.org/packages/DeepEqual) / [demo](https://github.com/jamesfoster/DeepEqual) MIT
 - 深度比较对象/对象对比/对象相等：[CompareNETObjects](https://www.nuget.org/packages/CompareNETObjects/) / [doc](https://github.com/GregFinzer/Compare-Net-Objects/wiki/Getting-Started) Ms-PL
 - 修改显示器分辨率：[ScreenResolutionChanger](https://github.com/timmui/ScreenResolutionChanger) MIT
+- 数学函数/矩阵/欧几里得/积分/傅里叶变换：[MathNet.Numerics](https://www.nuget.org/packages/MathNet.Numerics/)
 
 
 > 压缩
