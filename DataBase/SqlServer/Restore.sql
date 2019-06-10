@@ -1,3 +1,5 @@
+--还原数据库
+
 USE [master]
 GO
 

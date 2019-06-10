@@ -1,5 +1,6 @@
 ### SqlServer脚本
 
+- 创建数据库：CreateDatabase.sql
 - 系统表列查询：SystemQuery
 - 创建表值函数：FunctionTable.sql
 - 创建标量值函数：FunctionValue.sql
