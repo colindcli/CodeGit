@@ -37,3 +37,15 @@
 3、运行NginxService.exe start
 
 要卸载，只需运行即可 nginxservice.exe uninstall
+
+
+
+## Nginx快捷键
+
+- 启动：start nginx 或 nginx.exe
+
+- 停止: nginx.exe -s stop 或 nginx.exe -s quit  （stop是快速停止nginx，可能并不保存相关信息；quit是完整有序的停止nginx，并保存相关信息。）
+
+- 重新载入: nginx.exe -s reload
+
+- 查看版本: nginx -v
