@@ -13,6 +13,7 @@
 - 响应式网站查看工具：[Mobile/Responsive Web Design Tester](https://chrome.google.com/webstore/detail/mobileresponsive-web-desi/elmekokodcohlommfikpmojheggnbelo)
 - 拦截网址/请求转移：Reres：[github](https://github.com/annnhan/ReRes)
 - 录制gif：[Chrome Capture](https://chrome.google.com/webstore/detail/chrome-capture/ggaabchcecdbomdcnbahdfddfikjmphe) 免费10m
+- 按Ctrl+选中文字自动复制内容：[Auto Copy](https://chrome.google.com/webstore/detail/auto-copy/bijpdibkloghppkbmhcklkogpjaenfkg)
 
 
 - 让浏览器支持打开文件(m3u8)：[Reproductor M3U8 - HLS Player](https://chrome.google.com/webstore/detail/reproductor-m3u8-hls-play/lcipembjfkmeggpihdpdgnjildgniffl)
