@@ -9,6 +9,7 @@
 - Install-Package Microsoft.VisualStudio.TextTemplating.15.0 -Version 16.0.28727
 - Install-Package EnvDTE -Version 8.0.2
 - Install-Package EnvDTE100 -Version 10.0.3
+- Install-Package System.ComponentModel.Annotations -Version 4.5.0
 
 
 > App.config或Web.config必须用一下方式
