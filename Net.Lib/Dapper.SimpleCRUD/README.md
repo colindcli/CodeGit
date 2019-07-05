@@ -19,3 +19,8 @@
 <add name="DefaultConnectionString" connectionString="Data Source=.;uid=sa;pwd=123456;database=;" providerName="System.Data.SqlClient" />
 </connectionStrings>
 ```
+
+
+> 问题
+
+- 正在运行转换: System.NullReferenceException: 未将对象引用设置到对象的实例: 调试T4看哪里出错(之前连接字符串写死报错)
