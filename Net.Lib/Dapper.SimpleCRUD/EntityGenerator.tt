@@ -187,7 +187,7 @@ foreach (var table in tables)
                 ExeConfigFilename = ConfigPath
             };
             var config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
-            var connStr = config.ConnectionStrings.ConnectionStrings["DefaultConnectionString"].ToString();
+            var connStr = config.ConnectionStrings.ConnectionStrings[ConnectionStringName].ToString();
             using (var db = new SqlConnection(connStr))
             {
                 db.Open();
