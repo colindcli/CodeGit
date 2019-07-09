@@ -11,7 +11,7 @@ using System.Linq;
 /// <summary>
 /// 读取Excel
 /// </summary>
-public class NpoiMapperHelper
+public class ImportHelper
 {
     /// <summary>
     /// 读取Excel

@@ -10,9 +10,9 @@ using System.IO;
 /// 导出Excel
 /// Install-Package NPOI
 /// </summary>
-public class NpoiHelper
+public class ExportHelper
 {
-    /// <summary>  
+    /// <summary>
     /// 导出Excel
     /// </summary>
     /// <param name="lists"></param>
