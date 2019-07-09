@@ -8,19 +8,21 @@
 - [marketplace visualstudio](https://marketplace.visualstudio.com/)
 
 - AnkhSVN
-- Select Next Occurrence:多选编辑，快捷键搜索SelectNextOccurrence（选择下一个：Alt+D；全选：Alt+F3）
+- 多选编辑：Select Next Occurrence 快捷键搜索SelectNextOccurrence（选择下一个：Alt+D；全选：Alt+F3）
 - Resharper
-- Debug Attach Manager
+- 调试：Debug Attach Manager
 - SQL Prompt Core: sql智能感知
-- Toggle Comment
-- Hot Commands
-- Snippet Designer  系统目录：C:\Users\Administrator\Documents\Visual Studio 2017\Code Snippets
-- Autosave2017
-- Browser Reload on Save
-- Enum Case Generator 枚举生成器
-- Highlight all occurrences of selected word++  （编辑》Selected Highlight++，选择第3行第7个棕色）
+- 注释切换：Toggle Comment
+- 关闭右边选项卡：Close Tabs To Right
+- 常用快捷键：Hot Commands
+- 生成代码段：Snippet Designer  系统目录：C:\Users\Administrator\Documents\Visual Studio 2017\Code Snippets
+- 自动保存：Autosave2017
+- 自动刷新：Browser Reload on Save
+- 枚举生成器：Enum Case Generator
+- 选中文字高亮：Highlight all occurrences of selected word++  （编辑》Selected Highlight++，选择第3行第7个棕色）
 - 选中文字高亮：Highlight all occurrences of selected word
 - 底部显示文件路径：File Path On Footer
+- Dll版本自增长：Auto Version Incrementer
 
 
 - 根据方法的返回对象生成对象字段：Mapping Generator 映射生成对象
