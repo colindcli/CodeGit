@@ -28,3 +28,8 @@
 ## Sqlserver2012 清除服务器连接记录 | 清除SQL Server Management账号密码保存记录
 
 - C:\Users\Administrator\AppData\Roaming\Microsoft\SQL Server Management Studio\11.0\SqlStudio.bin
+
+
+## 数据库连接面板： https://www.cnblogs.com/zfanlong1314/p/3577465.html
+
+- Microsoft.Data.ConnectionUI.Dialog.dll
