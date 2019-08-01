@@ -7,7 +7,7 @@
 
 - 创建winform，引用CefSharp.dll、CefSharp.Core.dll、CefSharp.WinForms.dll。
 
-- 复制文件到bin目录，文件参考图片cefSharp.jpg，文件在csdn下载。
+- 复制文件到bin目录，文件参考图片cefSharp.jpg，文件在csdn下载：https://download.csdn.net/download/winsty2008/11460255。
 
 - 初始化，调用InitBrowser()方法
 
