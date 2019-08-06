@@ -10,6 +10,7 @@
 - Axure RP Extension for Chrome
 - [ReplaceGoogleCDN](https://github.com/colindcli/ReplaceGoogleCDN)
 - 保存网页：[Save All Resources](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb)
+- 保存网页为单页面：[SingleFile](https://chrome.google.com/extensions/detail/mpiodijhokgodhhofbcjdecpffjipkle) / [github](https://github.com/gildas-lormeau/SingleFile)
 - 响应式网站查看工具：[Mobile/Responsive Web Design Tester](https://chrome.google.com/webstore/detail/mobileresponsive-web-desi/elmekokodcohlommfikpmojheggnbelo)
 - 拦截网址/请求转移：Reres：[github](https://github.com/annnhan/ReRes)
 - 录制gif：[Chrome Capture](https://chrome.google.com/webstore/detail/chrome-capture/ggaabchcecdbomdcnbahdfddfikjmphe) 免费10m
