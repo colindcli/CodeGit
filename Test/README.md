@@ -42,3 +42,8 @@ selenium.Start();
 selenium.Open("/");
 selenium.Type("css=#kw", "key"); //https://www.seleniumhq.org/docs/09_selenium_ide.jsp#locating-elements
 ```
+
+
+> UI.Vision Kantu 浏览器自动化工具
+
+- [UI.Vision Kantu](https://chrome.google.com/webstore/detail/uivision-kantu-for-chrome/gcbalfbdmfieckjlnblleoemohcganoc)
