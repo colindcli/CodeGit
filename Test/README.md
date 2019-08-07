@@ -3,6 +3,7 @@
 > Chrome浏览器测试插件
 
 - [Selenium IDE](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
+- [Github](https://github.com/seleniumhq/selenium-ide)
 - [命令行文档](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/)
 
 > C#调用浏览器测试
