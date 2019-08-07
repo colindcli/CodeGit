@@ -1,0 +1,20 @@
+# Selenium测试
+
+> Chrome浏览器测试插件
+
+- [Selenium IDE](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
+- [命令行文档](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/)
+
+> C#调用浏览器测试
+
+- 官方网站：https://www.seleniumhq.org/download/（Selenium Client & WebDriver Language Bindings的C#）
+- NuGet安装：WebDriver、WebDriverBackedSelenium、Support
+- C# Code：
+
+```C#
+var driver = new ChromeDriver(new ChromeOptions());
+var selenium = new WebDriverBackedSelenium(driver, "https://www.baidu.com/");
+selenium.Start();
+selenium.Open("/");
+selenium.Type("css=#kw", "key"); //https://www.seleniumhq.org/docs/09_selenium_ide.jsp#locating-elements
+```

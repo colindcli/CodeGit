@@ -16,6 +16,7 @@
 - 录制gif：[Chrome Capture](https://chrome.google.com/webstore/detail/chrome-capture/ggaabchcecdbomdcnbahdfddfikjmphe) 免费10m
 - 按Ctrl+选中文字自动复制内容：[Auto Copy](https://chrome.google.com/webstore/detail/auto-copy/bijpdibkloghppkbmhcklkogpjaenfkg)
 
+- 测试插件：[Selenium IDE](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
 
 - 让浏览器支持打开文件(m3u8)：[Reproductor M3U8 - HLS Player](https://chrome.google.com/webstore/detail/reproductor-m3u8-hls-play/lcipembjfkmeggpihdpdgnjildgniffl)
 - 让浏览器发现视频下载: [Video Downloader professional](https://chrome.google.com/webstore/detail/video-downloader-professi/bacakpdjpomjaelpkpkabmedhkoongbi)
