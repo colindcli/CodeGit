@@ -17,6 +17,20 @@
 - C# Code：
 
 ```C#
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System.Drawing;
+
+var driver = new ChromeDriver(new ChromeOptions());
+driver.Url = "https://www.baidu.com/";
+driver.Manage().Window.Size = new Size(1920, 1080);
+//driver.FindElement(By.CssSelector(".kw")).SendKeys("搜索");
+driver.FindElement(By.Id("kw")).SendKeys("搜索");
+driver.FindElement(By.Id("su")).Click();
+```
+
+```C#
 var driver = new ChromeDriver(new ChromeOptions());
 var selenium = new WebDriverBackedSelenium(driver, "https://www.baidu.com/");
 selenium.Start();
