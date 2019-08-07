@@ -18,7 +18,7 @@
 > C#调用浏览器测试
 
 - 官方网站：https://www.seleniumhq.org/download/（Selenium Client & WebDriver Language Bindings的C#）
-- NuGet安装：WebDriver、WebDriverBackedSelenium、Support
+- NuGet安装：WebDriver、WebDriverBackedSelenium、Support、Selenium.WebDriver.ChromeDriver
 - C# Code：
 
 ```C#
@@ -41,6 +41,17 @@ var selenium = new WebDriverBackedSelenium(driver, "https://www.baidu.com/");
 selenium.Start();
 selenium.Open("/");
 selenium.Type("css=#kw", "key"); //https://www.seleniumhq.org/docs/09_selenium_ide.jsp#locating-elements
+```
+
+- 如果有报错
+  
+```c#
+var option = new ChromeOptions();
+//禁止报错
+option.AddArgument("--no-sandbox");
+//option.AddArgument("headless");
+//option.AddArgument("--disable-extensions");
+var driver = new ChromeDriver(option);
 ```
 
 
