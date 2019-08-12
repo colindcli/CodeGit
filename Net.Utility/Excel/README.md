@@ -30,6 +30,6 @@
 - 解决：ICSharpCode.SharpZipLib 只能使用1.0.145版本
 
 
-> sheet.CopyRow: System.NullReferenceException: 未将对象引用设置到对象的实例。在 NPOI.XSSF.UserModel.XSSFSheet.RemoveRow(IRow row)
+> sheet.CopyRow: System.NullReferenceException: 未将对象引用设置到对象的实例。在 NPOI.SS.Util.SheetUtil.CopyRow(ISheet sheet, Int32 sourceRowIndex, Int32 targetRowIndex)
 
 - 解决：
