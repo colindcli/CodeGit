@@ -27,7 +27,7 @@
 
 程序集“NPOI.OpenXml4Net, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1”标记为 AllowPartiallyTrustedCallersAttribute 并且使用 2 级安全透明模型。默认情况下，2 级透明将导致 AllowPartiallyTrustedCallers 程序集中的所有方法都变成安全透明的，这可能是导致发生此异常的原因。
 
-- 解决：ICSharpCode.SharpZipLib 只能使用1.0.145版本
+- 解决：ICSharpCode.SharpZipLib 只能使用1.0.145版本（不能使用新版本）
 
 
 > sheet.CopyRow: System.NullReferenceException: 未将对象引用设置到对象的实例。在 NPOI.SS.Util.SheetUtil.CopyRow(ISheet sheet, Int32 sourceRowIndex, Int32 targetRowIndex)
