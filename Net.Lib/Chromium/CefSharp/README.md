@@ -5,7 +5,7 @@
 
 > 创建一个项目：
 
-- 创建winform，引用CefSharp.dll、CefSharp.Core.dll、CefSharp.WinForms.dll。
+- 创建winform，引用CefSharp.dll、CefSharp.Core.dll、CefSharp.WinForms.dll、CefSharp.BrowserSubprocess.Core.dll。
 
 - 复制文件到bin目录，文件参考图片cefSharp.jpg，文件在csdn下载：https://download.csdn.net/download/winsty2008/11460255。
 
