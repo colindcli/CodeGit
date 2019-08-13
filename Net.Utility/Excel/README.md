@@ -1,4 +1,4 @@
-# Excel转换
+# Excel转换: DwrExcel
 
 
 > 导入(推荐)：
@@ -35,4 +35,4 @@
 
 > sheet.CopyRow: System.NullReferenceException: 未将对象引用设置到对象的实例。在 NPOI.SS.Util.SheetUtil.CopyRow(ISheet sheet, Int32 sourceRowIndex, Int32 targetRowIndex)
 
-- 解决：
+- 解决：复制行时复制合并单元格的bug（https://github.com/dotnetcore/NPOI/issues/134）
