@@ -4,14 +4,17 @@
     1:产生Guid：NewId.NextGuid()
     2:排序：new SqlGuid(Guid)
 
-> 生成指定时间NewId：参考NewId.cs
+> 生成指定时间NewId
 
 ```C#
 private static void Main(string[] args)
 {
+    //
     var generator = new NewIdGenerator(new MockTickProvider(Convert.ToDateTime("2000-01-01").Ticks), new NetworkAddressWorkerIdProvider(), new CurrentProcessIdProvider());
     var dt = generator.Next().Timestamp.ToString("yyyy-MM-dd HH:mm:ss");
     Console.WriteLine(dt);//2000-01-01 00:00:00
+
+    //复杂点的参考文档：NewId.cs
 
     Console.ReadKey();
 }
