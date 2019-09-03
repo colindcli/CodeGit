@@ -1,3 +1,39 @@
+## 有顺序的Guid生成器
+
+- 有序Guid：[NewId](https://www.nuget.org/packages/NewId/) / [doc](https://github.com/phatboyg/NewId) Apache2.0
+    1:产生Guid：NewId.NextGuid()
+    2:排序：new SqlGuid(Guid)
+
+> 生成指定时间NewId
+
+```C#
+private static void Main(string[] args)
+{
+    //
+    var generator = new NewIdGenerator(new MockTickProvider(Convert.ToDateTime("2000-01-01").Ticks), new NetworkAddressWorkerIdProvider(), new CurrentProcessIdProvider());
+    var dt = generator.Next().Timestamp.ToString("yyyy-MM-dd HH:mm:ss");
+    Console.WriteLine(dt);//2000-01-01 00:00:00
+
+    //复杂点的参考文档：NewId.cs
+
+    Console.ReadKey();
+}
+
+private class MockTickProvider : ITickProvider
+{
+    public MockTickProvider(long ticks)
+    {
+        Ticks = ticks;
+    }
+
+    public long Ticks { get; }
+}
+```
+
+- 另一个生成Guid库：[SequentialGuid](https://github.com/jhtodd/SequentialGuid)
+- 参考文档：https://www.cnblogs.com/supersnowyao/p/8335397.html
+
+
 ## IdGen  Id生成器
 
 - IdGen: [NuGet](https://www.nuget.org/packages/IdGen/) / [doc](https://github.com/RobThree/IdGen) MIT
@@ -20,17 +56,6 @@
 
 
 - 如果突破Js最大值限制，需要在Json返回值将long转string，参考：Global.asax.cs
-
-
-## 有顺序的Guid生成器
-
-- 有序Guid：[NewId](https://www.nuget.org/packages/NewId/) / [doc](https://github.com/phatboyg/NewId) Apache2.0
-    1:产生Guid：NewId.NextGuid()
-    2:排序：new SqlGuid(Guid)
-
-- 另一个生成Guid库：[SequentialGuid](https://github.com/jhtodd/SequentialGuid)
-- 参考文档：https://www.cnblogs.com/supersnowyao/p/8335397.html
-
 
 
 ## 分布式/独立/有序/无状态/线程安全/随机Id生成器
