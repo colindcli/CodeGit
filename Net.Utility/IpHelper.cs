@@ -41,7 +41,7 @@ public class IpHelper
 
 
 // ip地址库: https://github.com/lionsoul2014/ip2region 下载ip库ip2region.db
-// 安装：Install-Package IP2Region -Version 1.2.0
+// 安装：Install-Package IP2Region
 
 var path = $"{AppDomain.CurrentDomain.BaseDirectory}App_Data/ip2region.db";
 var db = new DbSearcher(path);
