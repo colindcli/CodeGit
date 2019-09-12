@@ -3,4 +3,4 @@
 
 - http://pv.sohu.com/cityjson?ie=utf-8
 
-- http://ip.taobao.com/service/getIpInfo.php?ip=14.17.22.253
+- http://ip.taobao.com/service/getIpInfo.php?ip=
