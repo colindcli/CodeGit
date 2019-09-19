@@ -38,3 +38,11 @@ public class IpHelper
 
     //ip 获取地址：http://int.dpool.sina.com.cn/iplookup/iplookup.php?ip=
 }
+
+
+// ip地址库: https://github.com/lionsoul2014/ip2region 下载ip库ip2region.db
+// 安装：Install-Package IP2Region
+
+var path = $"{AppDomain.CurrentDomain.BaseDirectory}App_Data/ip2region.db";
+var db = new DbSearcher(path);
+var region = db.BtreeSearch(ip)?.Region ?? "";
