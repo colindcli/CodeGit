@@ -21,3 +21,10 @@ private static void Decompression(string zipPath, string extractPath)
         }
     }
 }
+
+
+// 解压缩
+// ZipFile.ExtractToDirectory(zip, dir);
+ 
+// 压缩
+// ZipFile.CreateFromDirectory(dir, file);
