@@ -47,3 +47,24 @@
 - Resharper取消Ctrl+左键跳转：Environment - Search&Navigation - Rich mouse navigation in the editor)
 - 取消VS Ctrl+点击: 选项 - 文本编辑器 - 常规 - 使用鼠标单击可执行转到定义
 - 禁用VS警告：项目右键属性 - 生成 - “取消警告(S)”填写“1591”即可  （如：1591 是缺少对公共可见类型或成员“***”的 XML 注释）
+
+## Release生成时，排除文件
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <!-- 不复制pdb文件 -->
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <!-- 阻止默认的 XML 和 PDB 文件复制到 RELEASE 的输出目录. 如*.dll、*.exe.config、*.exe 扩展名的文件可以被复制-->
+    <AllowedReferenceRelatedFileExtensions>
+    .dll
+    .exe.config
+    .exe
+    </AllowedReferenceRelatedFileExtensions>
+</PropertyGroup>
+```
