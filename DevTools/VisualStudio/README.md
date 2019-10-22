@@ -48,7 +48,7 @@
 - 取消VS Ctrl+点击: 选项 - 文本编辑器 - 常规 - 使用鼠标单击可执行转到定义
 - 禁用VS警告：项目右键属性 - 生成 - “取消警告(S)”填写“1591”即可  （如：1591 是缺少对公共可见类型或成员“***”的 XML 注释）
 
-## Release生成时，排除文件
+## Release生成时，排除文件，打开csproj
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
