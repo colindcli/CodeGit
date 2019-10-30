@@ -29,7 +29,7 @@
 
 - 解决：（卸载后重新引用NPOI和SharpZipLib）
 - 检查packages.config文件引用的版本：NPOI的targetFramework版本比ICSharpCode.SharpZipLib的targetFramework版本低。
-- 检查csproj的Reference引用的版本：..\packages\NPOI.2.4.1\lib\net40\NPOI.dll改：..\packages\NPOI.2.4.1\lib\net45\NPOI.dll（4条记录）
+- 检查csproj的Reference引用的版本：packages\NPOI.2.4.1\lib\net40\NPOI.dll改：$(AppData)\Packages\NPOI.2.4.1\lib\net45\NPOI.dll（4条记录）
 
 
 
