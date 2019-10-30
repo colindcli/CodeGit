@@ -12,7 +12,7 @@ C:
 @echo on
 MSBuild.exe "%FolderName%\%names%"
 @echo off
-echo 按任意键开始删除obj和bin目录
+echo Click any key to start deleting the bin/obj folder!
 pause>nul
 @echo off
 cd %FolderName%
@@ -23,5 +23,5 @@ for /f "tokens=*" %%a in ('dir obj /b /ad /s ^|sort') do rd "%%a" /s/q
 for /f "tokens=*" %%a in ('dir bin /b /ad /s ^|sort') do rd "%%a" /s/q
 del *.sln.cache
 @echo off
-echo 按任意键退出
+echo Click any key to exit!
 pause>nul
