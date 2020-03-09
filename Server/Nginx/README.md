@@ -49,3 +49,19 @@
 - 重新载入: nginx.exe -s reload
 
 - 查看版本: nginx -v
+
+
+## bug
+
+- 代理后加载很慢，还报错如下。 解决办法：将 **localhost** 改用IP **127.0.0.1**
+``` txt
+2020/01/01 22:27:00 [error] 13396#9788: *73 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while connecting to upstream, client: 127.0.0.1, server: www.demo.com, request: "GET /app.js HTTP/1.1", upstream: "http://[::1]:9527/app.js", host: "localhost:8050", referrer: "http://localhost:8050/"
+```
+
+- nginx 进程杀不死
+
+``` bat
+cd /d E:\nginx-1.13.9
+taskkill /f /t /im nginx.exe
+start nginx
+```

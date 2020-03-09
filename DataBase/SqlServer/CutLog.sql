@@ -1,7 +1,7 @@
 -- 截断数据库日志
 
 
--- Sqlserver2012 截断日记
+-- Sqlserver2008/2012 截断日记
 ALTER DATABASE DbName SET RECOVERY SIMPLE WITH NO_WAIT
 ALTER DATABASE DbName SET RECOVERY SIMPLE   --简单模式
 DBCC SHRINKFILE (N'DbName_Log' , 1, TRUNCATEONLY)   --数据库文件逻辑名称；1是大小1M
