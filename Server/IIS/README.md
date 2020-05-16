@@ -31,6 +31,22 @@
     64位机器： c:\windows\microsoft.net\framework64\v4.0.30319\aspnet_regiis.exe -i
 
 
+> Server Error in ‘/' Application. The current identity (ECS-XXXXX\testweb) does not have write access to ‘C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files'.
+
+1、添加用户"Network Service” 和 “IIS_IUSERS” ASPNET，Everyone 读下面目录的读写权限
+
+    a) C:\Windows\Temp
+    b) C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files
+
+2、在C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+
+    32位机器： c:\windows\microsoft.net\framework\v4.0.30319\aspnet_regiis.exe -i
+    64位机器： c:\windows\microsoft.net\framework64\v4.0.30319\aspnet_regiis.exe -i
+
+3、重启iis
+
+    iisreset /retart 
+
 
 ## IIS反向代理
 
