@@ -39,6 +39,11 @@
 要卸载，只需运行即可 nginxservice.exe uninstall
 
 
+## 删除服务
+
+> sc delete 服务名称
+> 如：sc delete nginx
+
 
 ## Nginx快捷键
 
