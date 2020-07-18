@@ -1,6 +1,7 @@
 ## Chrome插件
 
 - Chrome脚本注入：Tampermonkey
+- 删除多余无用的css：CSS remove and combine
 - 捕捉网页截图 - FireShot: [chorme](https://download.csdn.net/download/winsty2008/10467191)
 - Vue.js devtools：vue开发工具
 - EditThisCookie：Cookie修改: [chorme](https://download.csdn.net/download/winsty2008/10467191)
