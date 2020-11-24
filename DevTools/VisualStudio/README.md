@@ -20,7 +20,6 @@
 - 自动刷新：Browser Reload on Save
 - 枚举生成器：Enum Case Generator
 - 选中文字高亮：Highlight all occurrences of selected word++  （编辑》Selected Highlight++，选择第3行第7个棕色）
-- 选中文字高亮：Highlight all occurrences of selected word
 - 底部显示文件路径：File Path On Footer
 - Dll版本自增长：Auto Version Incrementer
 
@@ -45,8 +44,10 @@
 - 默认不显示代码块竖线: 工具=>选项=>文本编辑器=>显示结构参考线
 - 修改cs文件模板: D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\ItemTemplates\CSharp\Code\2052\Class
 - Resharper取消Ctrl+左键跳转：Environment - Search&Navigation - Rich mouse navigation in the editor)
+- Resharper取消变量类型注释：Environment - Editor - Inlay Hints - Show Inlay Hints 取消勾选
 - 取消VS Ctrl+点击: 选项 - 文本编辑器 - 常规 - 使用鼠标单击可执行转到定义
 - 禁用VS警告：项目右键属性 - 生成 - “取消警告(S)”填写“1591”即可  （如：1591 是缺少对公共可见类型或成员“***”的 XML 注释）
+- 设置文档格式快捷键：选项 - 环境 - 键盘，搜索CleanupCode，设置快捷键Alt+Shit+F。或者Resharper设置保存时自动格式：Options - Code Editing - Code Cleanup - General，勾选Save after...和Autom...和Only in...
 
 ## Release生成时，排除文件，打开csproj
 

@@ -1,4 +1,17 @@
-## 压缩及解压缩
+## 7z压缩
 
-- [sharpcompress](https://github.com/adamhathcock/sharpcompress) / [doc](https://github.com/adamhathcock/sharpcompress/wiki/API-Examples) / [Nuget](https://www.nuget.org/packages/SharpCompress/) (code：SharpCompressHelper.cs)
-- https://github.com/colindcli/CodeGit/issues/10
+- 安装 SevenZipSharp.Interop
+
+``` c#
+static void Main(string[] args)
+{
+    var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory.TrimEnd('/', '\\'), Environment.Is64BitProcess ? "x64" : "x86", "7z.dll");
+    SevenZipBase.SetLibraryPath(path);
+
+    var zip = new SevenZipCompressor
+    {
+        CompressionLevel = CompressionLevel.Ultra
+    };
+    zip.CompressFiles(@"E:\1.7z", new[] { @"E:\1.bak" });
+}
+```
